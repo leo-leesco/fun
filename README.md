@@ -81,3 +81,15 @@ We also show the limits of dependently-typed functional programming.
 * Total functional programming.
 * Generic functional programming.
 * Open problems in dependent functional programming.
+
+## Recommended software
+
+OCaml 4.0x and Coq **8.5**.
+
+Once you have installed [opam](https://opam.ocaml.org/doc/Install.html), use the following commands:
+```bash
+opam init --comp=4.05 # for instance
+opam repo add coq-released https://coq.inria.fr/opam/released
+opam update
+opam install -j4 -v coq.8.5.3
+```
