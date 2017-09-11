@@ -93,3 +93,8 @@ opam repo add coq-released https://coq.inria.fr/opam/released
 opam update
 opam install -j4 -v coq.8.5.3
 ```
+
+## Bibliography
+
+[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
+Benjamin C. Pierce, MIT Press, 2002.
