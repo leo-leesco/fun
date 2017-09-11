@@ -60,13 +60,11 @@ We also show the limits of dependently-typed functional programming.
 
 ### Metatheory of Typed Programming Languages
 
-First lesson on Sep 15, other lessons  on Oct 27, Nov 02, 17, 24.
-
-* Metatheory of System F. (Type soundness. Erasure.)
-* ADTs, existential types, GADTs. (Typed program transformations.)
-* Logical relations.
-* Subtyping. Rows. (Covariant arrays and covariant functions!)
-* References. (Value restriction.)
+* (15/09/2017) Metatheory of System F. (Type soundness. Erasure.)
+* (27/10/2017) ADTs, existential types, GADTs. (Typed program transformations.)
+* (03/11/2017) Logical relations.
+* (17/11/2017) Sub(typing. Rows. (Covariant arrays and covariant functions!)
+* (24/11/2017) References. (Value restriction.)
 
 ### Advanced Aspects of Type Systems
 
