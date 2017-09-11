@@ -52,34 +52,34 @@ We also show the limits of dependently-typed functional programming.
 
 ### Functional Programming: Under the Hood
 
-    * (22/09/2017) From a small-step operational semantics...
-    * (29/09/2017) ... to an efficient interpreter. (2 weeks.)
-    * (06/10/2017) Compiling away first-class functions: closure conversion, defunctionalization.
-    * (13/10/2017) Compiling away the call stack: the CPS transformation.
-    * (20/10/2017) Equational reasoning and program optimizations.
+* (22/09/2017) From a small-step operational semantics...
+* (29/09/2017) ... to an efficient interpreter. (2 weeks.)
+* (06/10/2017) Compiling away first-class functions: closure conversion, defunctionalization.
+* (13/10/2017) Compiling away the call stack: the CPS transformation.
+* (20/10/2017) Equational reasoning and program optimizations.
 
 ### Metatheory of Typed Programming Languages
 
 First lesson on Sep 15, other lessons  on Oct 27, Nov 02, 17, 24.
 
-    * Metatheory of System F. (Type soundness. Erasure.)
-    * ADTs, existential types, GADTs. (Typed program transformations.)
-    * Logical relations.
-    * Subtyping. Rows. (Covariant arrays and covariant functions!)
-    * References. (Value restriction.)
+* Metatheory of System F. (Type soundness. Erasure.)
+* ADTs, existential types, GADTs. (Typed program transformations.)
+* Logical relations.
+* Subtyping. Rows. (Covariant arrays and covariant functions!)
+* References. (Value restriction.)
 
 ### Advanced Aspects of Type Systems
 
-    * Exceptions and effect handlers. (Compiled away via CPS.)
-    * Typechecking exceptions and handlers.
-    * Type inference. (ML. Bidirectional. Elaboration.)
-    * Data/control flow analysis.
-    * Functional correctness. Intro to dependent/refinement types.
+* Exceptions and effect handlers. (Compiled away via CPS.)
+* Typechecking exceptions and handlers.
+* Type inference. (ML. Bidirectional. Elaboration.)
+* Data/control flow analysis.
+* Functional correctness. Intro to dependent/refinement types.
 
 ### Dependently-typed Functional Programming
 
-    * Effectful functional programming.
-    * Dependent functional programming.
-    * Total functional programming.
-    * Generic functional programming.
-    * Open problems in dependent functional programming.
+* Effectful functional programming.
+* Dependent functional programming.
+* Total functional programming.
+* Generic functional programming.
+* Open problems in dependent functional programming.
