@@ -1,6 +1,13 @@
 # Functional programming and type systems (2017-2018)
 
-[The official MPRI page](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2)
+[The official MPRI
+page](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2)
+
+## Location
+
+The lessons take place at University of Paris 7 - Denis Diderot,
+Batiment Sophie Germain in room 2035 on Fridays at 12:45 and ends at 15:30.
+There will be a break of 15' in the middle of the course.
 
 ## Teachers
 
