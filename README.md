@@ -1,5 +1,7 @@
 # Functional programming and type systems (2017-2018)
 
+[The official MPRI page](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2)
+
 ## Teachers
 
    * Functional Programming: Under the Hood (12h30, [François Pottier](http://gallium.inria.fr/~fpottier))
@@ -89,8 +91,8 @@ or several programming exercises are used to evaluate the students that
 follow the full course.  Only the partial exam will count to grade students
 who split the course.
 
-Although the course has changed, you may still have a look at
-Previous exams available with solutions:
+Although the course has changed, you may still have a look at previous exams
+available with solutions:
 
 - mid-term exam 2016-2017: 
  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf)
