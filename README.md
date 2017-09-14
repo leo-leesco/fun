@@ -3,7 +3,7 @@
 ## Teachers
 
    * Functional Programming: Under the Hood (12h30, [François Pottier](http://gallium.inria.fr/~fpottier))
-   * Metatheory of Typed Programming Languages (12h30, [Didier Rémy](http://gallium.inria.fr/~remy/), *head*)
+   * [Metatheory of Typed Programming Languages](http://gallium.inria.fr/~remy/mpri/) (12h30, [Didier Rémy](http://gallium.inria.fr/~remy/), *head*)
    * Advanced Aspects of Type Systems (12h30, [Yann Régis Gianas](http://www.pps.jussieu.fr/~yrg/))
    * Dependently-typed Functional Programming (12h30, [Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
 
@@ -61,10 +61,10 @@ We also show the limits of dependently-typed functional programming.
 ### Metatheory of Typed Programming Languages
 
 * (15/09/2017) Metatheory of System F. (Type soundness. Erasure.)
-* (27/10/2017) ADTs, existential types, GADTs. (Typed program transformations.)
+* (27/10/2017) ADTs, existential types, GADTs. 
 * (03/11/2017) Logical relations.
-* (10/11/2017) Subtyping. Rows. (Covariant arrays and covariant functions!)
-* (17/11/2017) References. (Value restriction.)
+* (10/11/2017) Subtyping. Rows. 
+* (17/11/2017) References, Value restriction, Side effects.
 
 ### Advanced Aspects of Type Systems
 
@@ -96,5 +96,8 @@ opam install -j4 -v coq.8.5.3
 
 ## Bibliography
 
-[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
+[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages), 
 Benjamin C. Pierce, MIT Press, 2002.
+
+[Advanced Topics in Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/attapl/),
+Edited by Benjamin C. Pierce, MIT Press, 2005.
