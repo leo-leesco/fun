@@ -69,12 +69,12 @@ We also show the limits of dependently-typed functional programming.
 
 ### Metatheory of Typed Programming Languages
 
-* [(15/09/2017)]
+* (15/09/2017)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
-  See also [Intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf), 
+  (See also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf), 
   and chap [1](http://gallium.inria.fr/~remy/mpri/2016/cours1.pdf) 
   and [2](http://gallium.inria.fr/~remy/mpri/2016/cours2.pdf) 
-  of course notes.
+  of [course notes](http://gallium.inria.fr/~remy/mpri/2016/cours.pdf))
 * (27/10/2017) ADTs, existential types, GADTs. 
 * (03/11/2017) Logical relations.
 * (10/11/2017) Subtyping. Rows. 
