@@ -145,6 +145,15 @@ opam update
 opam install -j4 -v coq.8.5.3
 ```
 
+Please also install François Pottier's
+[variant](https://github.com/fpottier/autosubst)
+of the
+[AutoSubst](https://www.ps.uni-saarland.de/autosubst/) library:
+```bash
+git clone git@github.com:fpottier/autosubst.git
+make -C autosubst install
+```
+
 ## Bibliography
 
 [Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
