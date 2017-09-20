@@ -1,13 +1,15 @@
 # Functional programming and type systems (2017-2018)
 
-[The official MPRI
-page](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2)
+This page supplements
+[the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
-## Location
+## Location and duration
 
-The lessons take place at University of Paris 7 - Denis Diderot,
-Batiment Sophie Germain in room 2035 on Fridays at 12:45 and ends at 15:30.
-There will be a break of 15' in the middle of the course.
+The lectures take place at University Paris 7 - Denis Diderot,
+Bâtiment Sophie Germain, in room 2035.
+
+They are scheduled on Fridays from 12:45 to 15:30.
+There is a 15-minute break in the middle of each lecture.
 
 ## Teachers
 
@@ -43,8 +45,8 @@ systems.  We study parametric polymorphism (as in System F and ML), data
 types and type abstraction. We show syntactic type soundness (via progress
 and subject reduction) by reasoning by induction on typing derivations.  We
 also show how to obtain semantic properties via logical relations by
-reasoning by induction on the structure of types.  We also introduce
-subtyping and row polymorphism and illustrate typing problems induced by
+reasoning by induction on the structure of types.  Finally, we introduce
+subtyping, row polymorphism, and illustrate the problems induced by
 side effects (references) and the need for the value restriction.
 
 The third part of the course describes more advanced features of type
@@ -71,13 +73,13 @@ We also show the limits of dependently-typed functional programming.
 
 * (15/09/2017)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
-  (See also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf), 
-  and chap [1](http://gallium.inria.fr/~remy/mpri/cours1.pdf) 
-  and [2](http://gallium.inria.fr/~remy/mpri/cours2.pdf) 
+  (See also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
+  and chap [1](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
+  and [2](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (27/10/2017) ADTs, existential types, GADTs. 
+* (27/10/2017) ADTs, existential types, GADTs.
 * (03/11/2017) Logical relations.
-* (10/11/2017) Subtyping. Rows. 
+* (10/11/2017) Subtyping. Rows.
 * (17/11/2017) References, Value restriction, Side effects.
 
 ### Advanced Aspects of Type Systems
@@ -106,24 +108,24 @@ who split the course.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
-- mid-term exam 2016-2017: 
+- mid-term exam 2016-2017:
  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf)
-- mid-term exam 2015-2016: 
+- mid-term exam 2015-2016:
  [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf)
 - final exam 2014-2015: [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf)
-- mid-term exam 2014-2015: 
+- mid-term exam 2014-2015:
  [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf)
-- final exam 2013-2014: 
+- final exam 2013-2014:
  [Operation on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf)
-- mid-term exam 2013-2014: 
+- mid-term exam 2013-2014:
  [Typechecking Effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf)
-- final exam 2012-2013: 
+- final exam 2012-2013:
  [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf)
-- mid-term exam 2012-2013: 
+- mid-term exam 2012-2013:
  [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf)
-- final exam  2011-2012: 
+- final exam  2011-2012:
  [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf)
-- mid-term exam  2011-2012: 
+- mid-term exam  2011-2012:
  [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf)
 - final exam 2010-2011:
   [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf)
@@ -145,7 +147,7 @@ opam install -j4 -v coq.8.5.3
 
 ## Bibliography
 
-[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages), 
+[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
 Benjamin C. Pierce, MIT Press, 2002.
 
 [Advanced Topics in Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/attapl/),
