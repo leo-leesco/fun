@@ -185,6 +185,13 @@ sudo rm -rf $TARGET
 sudo mv /tmp/PG $TARGET
 ```
 
+Enable ProofGeneral by adding the following line to your `.emacs` file:
+```elisp
+(load-file "/usr/local/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")
+```
+If desired, ProofGeneral can be further
+[customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
+
 ## Bibliography
 
 [Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
