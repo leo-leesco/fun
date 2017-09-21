@@ -22,6 +22,7 @@ There is a 15-minute break in the middle of each lecture.
 
 This course presents the principles and formalisms that underlie many of
 today's typed functional programming languages.
+(Here are some [introductory slides](slides/fpottier-00.pdf).)
 
 The course is made up of four parts and can be split after the first two
 parts.
