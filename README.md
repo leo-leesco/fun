@@ -143,15 +143,19 @@ available with solutions:
 
 ## Recommended software
 
-OCaml 4.0x and Coq **8.5**.
+Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
 
-Once you have installed [opam](https://opam.ocaml.org/doc/Install.html), use the following commands:
+Then, install OCaml 4.0x and Coq **8.5** via the following commands:
 ```bash
 opam init --comp=4.05 # for instance
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam update
 opam install -j4 -v coq.8.5.3
 ```
+(Do *not* install Coq 8.6. The version of AutoSubst that I am using is
+not compatible with it. If for some reason you need Coq 8.6, or have
+already installed Coq 8.6, note that `opam switch` can be used to let
+multiple versions of Coq coexist.)
 
 Please also install François Pottier's
 [variant](https://github.com/fpottier/autosubst)
@@ -160,6 +164,25 @@ of the
 ```bash
 git clone git@github.com:fpottier/autosubst.git
 make -C autosubst install
+```
+
+In order to use Coq inside `emacs`,
+[ProofGeneral](https://proofgeneral.github.io/)
+is highly recommended.
+Here is a suggested installation script:
+```bash
+rm -rf /tmp/PG
+cd /tmp
+git clone git@github.com:ProofGeneral/PG.git
+cd PG
+EMACS=/Applications/Aquamacs.app/Contents/MacOS/Aquamacs
+if [ ! -x $EMACS ]; then
+  EMACS=emacs
+fi
+make EMACS=$EMACS compile
+TARGET=/usr/local/share/emacs/site-lisp/ProofGeneral
+sudo rm -rf $TARGET
+sudo mv /tmp/PG $TARGET
 ```
 
 ## Bibliography
