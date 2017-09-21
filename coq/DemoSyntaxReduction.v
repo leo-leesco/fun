@@ -1,4 +1,3 @@
-Require Import MyTactics.
 Require Import Autosubst.Autosubst.
 
 (* This file is intended as a mini-demonstration of:
