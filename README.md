@@ -69,7 +69,8 @@ We also show the limits of dependently-typed functional programming.
   Syntax and operational semantics, on paper and on a machine
   ([slides 01a](slides/fpottier-01a.pdf))
   ([slides 01b](slides/fpottier-01b.pdf))
-  ([Coq demo](coq/DemoSyntaxReduction.v)).
+  ([Coq demo](coq/DemoSyntaxReduction.v))
+  ([OCaml solution to Newton-Raphson exercise](ocaml/NewtonRaphson.ml)).
 * (29/09/2017)
   From a small-step semantics down to an efficient interpreter,
   in several stages.

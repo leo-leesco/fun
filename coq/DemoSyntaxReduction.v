@@ -137,7 +137,28 @@ Hint Extern 1 (_ = _) => autosubst : autosubst.
 
 (* -------------------------------------------------------------------------- *)
 
-(* Let us now prove that the semantics is stable under arbitrary substitutions. *)
+(* Demo: a term that reduces to itself. *)
+
+Definition Delta :=
+  Lam (App (Var 0) (Var 0)).
+
+Definition Omega :=
+  App Delta Delta.
+
+Goal
+  red Omega Omega.
+Proof.
+  (* Apply the beta-reduction rule.
+     (This forces Coq to unfold the left-hand [Omega].) *)
+  eapply RedBeta.
+  (* Check this equality. *)
+  asimpl. (* optional *)
+  reflexivity.
+Qed.
+
+(* -------------------------------------------------------------------------- *)
+
+(* Let us prove that the semantics is stable under arbitrary substitutions. *)
 
 Lemma red_subst:
   forall t1 t2,
@@ -223,3 +244,7 @@ Qed.
 (* As another EXERCISE, extend the operational semantics with a rule that
    allows strong reduction, that is, reduction under a lambda-abstraction.
    This exercise is more difficult; do not hesitate to ask for help or hints. *)
+
+(* Another suggested EXERCISE: define call-by-value reduction, [cbv]. Prove
+   that [cbv] is a subset of [red]. Prove that values do not reduce. Prove
+   that [cbv] is deterministic. *)
