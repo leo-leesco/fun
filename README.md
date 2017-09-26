@@ -69,11 +69,12 @@ We also show the limits of dependently-typed functional programming.
   Syntax and operational semantics, on paper and on a machine
   ([slides 01a](slides/fpottier-01a.pdf))
   ([slides 01b](slides/fpottier-01b.pdf))
-  ([Coq demo](coq/DemoSyntaxReduction.v))
-  ([OCaml solution to Newton-Raphson exercise](ocaml/NewtonRaphson.ml)).
+  ([OCaml solution to Newton-Raphson exercise](ocaml/NewtonRaphson.ml))
+  ([Even.v](coq/Even.v)).
 * (29/09/2017)
   From a small-step semantics down to an efficient interpreter,
-  in several stages.
+  in several stages
+  ([Coq demo](coq/DemoSyntaxReduction.v)).
 * (06/10/2017) Compiling away first-class functions: closure conversion, defunctionalization.
 * (13/10/2017) Compiling away the call stack: the CPS transformation.
 * (20/10/2017) Equational reasoning and program optimizations.
