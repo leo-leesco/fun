@@ -121,7 +121,7 @@ Qed.
 
 (* In conclusion, we have the following equivalence: *)
 
-Theorem star_cbv_bigcbv_eq:
+Lemma star_cbv_bigcbv_eq:
   forall t v,
   (star cbv t v /\ is_value v) <-> bigcbv t v.
 Proof.
@@ -141,13 +141,11 @@ Qed.
 (* We break the mutual induction between [cvalue] and [cenv] by inlining the
    definition of [cenv] into the definition of [cvalue]. *)
 
-(* CVALUE *)
 Inductive cvalue :=
 | Clo: {bind term} -> list cvalue -> cvalue.
 
 Definition cenv :=
   list cvalue.
-(* CVALUE *)
 
 (* This dummy cvalue is passed below as an argument to [nth], but is really
    irrelevant, as the condition [x < length e] ensures that the dummy cvalue

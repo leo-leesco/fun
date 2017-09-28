@@ -21,7 +21,6 @@ Require Import LambdaCalculusBigStep.
    evaluation diverges. (Exercise: exhibit a term that reduces to itself
    in one or more reduction steps. Prove in Coq that this is the case.) *)
 
-(* FAILINTERPRET *)
 Fail Fixpoint interpret (e : cenv) (t : term) : cvalue :=
   match t with
   | Var x =>
@@ -35,13 +34,10 @@ Fail Fixpoint interpret (e : cenv) (t : term) : cvalue :=
       match cv1 with Clo u1 e' =>
         interpret (cv2 :: e') u1
       end
-(* FAILINTERPRET *)
   | Let t1 t2 =>
       let cv1 := interpret e t1 in
       interpret (cv1 :: e) t2
-(* FAILINTERPRET *)
   end.
-(* FAILINTERPRET *)
 
 (* -------------------------------------------------------------------------- *)
 
@@ -62,7 +58,6 @@ Fail Fixpoint interpret (e : cenv) (t : term) : cvalue :=
    [interpret] by well-founded recursion. This can be done in Coq but is more
    complicated, so (here) not worth the trouble. *)
 
-(* FIXINTERPRET *)
 Fixpoint interpret (n : nat) e t : option cvalue :=
   match n with
   | 0   => None (* not enough fuel *)
@@ -76,13 +71,10 @@ Fixpoint interpret (n : nat) e t : option cvalue :=
           match cv1 with Clo u1 e' =>
             interpret n (cv2 :: e') u1
           end
-(* FIXINTERPRET *)
       | Let t1 t2 =>
           interpret n e t1 >>= fun cv1 =>
           interpret n (cv1 :: e) t2
-(* FIXINTERPRET *)
   end end.
-(* FIXINTERPRET *)
 
 (* -------------------------------------------------------------------------- *)
 
