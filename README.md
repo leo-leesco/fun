@@ -72,9 +72,12 @@ We also show the limits of dependently-typed functional programming.
   ([OCaml solution to Newton-Raphson exercise](ocaml/NewtonRaphson.ml))
   ([Even.v](coq/Even.v)).
 * (29/09/2017)
-  From a small-step semantics down to an efficient interpreter,
+  From a small-step semantics down to an efficient verified interpreter,
   in several stages
-  ([Coq demo](coq/DemoSyntaxReduction.v)).
+  ([Coq demo](coq/DemoSyntaxReduction.v))
+  ([slides 02](slides/fpottier-02.pdf))
+  ([OCaml code](ocaml/Lambda.ml))
+  ([Coq repo](coq/)).
 * (06/10/2017) Compiling away first-class functions: closure conversion, defunctionalization.
 * (13/10/2017) Compiling away the call stack: the CPS transformation.
 * (20/10/2017) Equational reasoning and program optimizations.
