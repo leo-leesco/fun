@@ -1,5 +1,6 @@
 Require Import Omega.
 Require Import Autosubst.Autosubst.
+Require Import MyTactics. (* TEMPORARY *)
 
 (* -------------------------------------------------------------------------- *)
 
@@ -167,3 +168,5 @@ Hint Extern 1 (_ = _) => autosubst : autosubst.
    metavariables, so the tactic [autosubst] fails. *)
 
 Hint Resolve scons_scomp : autosubst.
+
+(* -------------------------------------------------------------------------- *)

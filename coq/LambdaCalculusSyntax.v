@@ -3,6 +3,8 @@ Require Import MyTactics.
 Require Export Autosubst.Autosubst.
 Require Export AutosubstExtra.
 Require Export Autosubst_IsRen.
+(* Require Export Autosubst_EOS. *)
+Require Export Autosubst_FreeVars.
 
 (* The syntax of the lambda-calculus. *)
 
@@ -17,6 +19,9 @@ Instance Ids_term : Ids term. derive. Defined.
 Instance Rename_term : Rename term. derive. Defined.
 Instance Subst_term : Subst term. derive. Defined.
 Instance SubstLemmas_term : SubstLemmas term. derive. Qed.
+
+Instance IdsLemmas_term : IdsLemmas term.
+Proof. econstructor. intros. injections. eauto. Qed.
 
 (* If the image of [t] through a substitution is a variable, then [t] must
    itself be a variable. *)

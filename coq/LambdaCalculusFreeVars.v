@@ -14,12 +14,6 @@ Qed.
 
 (* -------------------------------------------------------------------------- *)
 
-(* The predicate [fv k t] means that the free variables of the term [t] are
-   contained in the semi-open interval [0..k). *)
-
-Definition fv k t :=
-  t.[upn k (ren (+1))] = t.
-
 (* The predicate [fv] is characterized by the following lemmas. *)
 
 Lemma fv_Var_eq:
@@ -67,27 +61,7 @@ Qed.
 
 Hint Rewrite fv_Var_eq fv_Lam_eq fv_App_eq fv_Let_eq : fv.
 
-(* The tactic [fv] uses the above lemmas as rewriting rules. *)
-
-Ltac fv :=
-  autorewrite with fv in *.
-
 (* -------------------------------------------------------------------------- *)
-
-(* The predicate [closed t] means that the term [t] is closed, that is, [t]
-   has no free variables. *)
-
-Definition closed :=
-  fv 0.
-
-(* [closed t] is equivalent to [lift 1 t = t]. *)
-
-Lemma closed_eq:
-  forall t,
-  closed t <-> lift 1 t = t.
-Proof.
-  unfold closed, fv. asimpl. tauto.
-Qed.
 
 (* The following lemmas allow decomposing a closedness hypothesis.
    Because [closed] is not an inductive notion, there is no lemma
