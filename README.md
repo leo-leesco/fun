@@ -78,7 +78,10 @@ We also show the limits of dependently-typed functional programming.
   ([slides 02](slides/fpottier-02.pdf))
   ([OCaml code](ocaml/Lambda.ml))
   ([Coq repo](coq/)).
-* (06/10/2017) Compiling away first-class functions: closure conversion, defunctionalization.
+* (06/10/2017) Compiling away first-class functions:
+  closure conversion, defunctionalization
+  ([slides 03](slides/fpottier-03.pdf))
+  ([Coq repo](coq/)).
 * (13/10/2017) Compiling away the call stack: the CPS transformation.
 * (20/10/2017) Equational reasoning and program optimizations.
 
