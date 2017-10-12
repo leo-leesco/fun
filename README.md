@@ -82,7 +82,15 @@ We also show the limits of dependently-typed functional programming.
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
-* (13/10/2017) Compiling away the call stack: the CPS transformation.
+* (13/10/2017) Making the stack explicit: the CPS transformation
+  ([slides 04](slides/fpottier-04.pdf))
+  ([Coq repo](coq/)).
+  Transforming a call-by-value interpreter
+  ([exercise](ocaml/EvalCBVExercise.ml), [solution](ocaml/EvalCBVCPS.ml)).
+  Transforming a call-by-name interpreter
+  ([solution](ocaml/EvalCBNCPS.ml)).
+  Transforming a graph traversal
+  ([solution](ocaml/Graph.ml)).
 * (20/10/2017) Equational reasoning and program optimizations.
 
 ### Metatheory of Typed Programming Languages
