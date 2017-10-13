@@ -68,9 +68,9 @@ We also show the limits of dependently-typed functional programming.
   Introduction ([slides 00](slides/fpottier-00.pdf)).
   Syntax and operational semantics, on paper and on a machine
   ([slides 01a](slides/fpottier-01a.pdf))
-  ([slides 01b](slides/fpottier-01b.pdf))
-  ([OCaml solution to Newton-Raphson exercise](ocaml/NewtonRaphson.ml))
-  ([Even.v](coq/Even.v)).
+  ([slides 01b](slides/fpottier-01b.pdf)).
+  * Newton-Raphson in OCaml ([solution](ocaml/NewtonRaphson.ml)).
+  * 1 is not even in Coq ([Even.v](coq/Even.v)).
 * (29/09/2017)
   From a small-step semantics down to an efficient verified interpreter,
   in several stages
@@ -85,12 +85,12 @@ We also show the limits of dependently-typed functional programming.
 * (13/10/2017) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
-  Transforming a call-by-value interpreter
-  ([exercise](ocaml/EvalCBVExercise.ml), [solution](ocaml/EvalCBVCPS.ml)).
-  Transforming a call-by-name interpreter
-  ([solution](ocaml/EvalCBNCPS.ml)).
-  Transforming a graph traversal
-  ([solution](ocaml/Graph.ml)).
+  * Transforming a call-by-value interpreter
+    ([exercise](ocaml/EvalCBVExercise.ml), [solution](ocaml/EvalCBVCPS.ml)).
+  * Transforming a call-by-name interpreter
+    ([solution](ocaml/EvalCBNCPS.ml)).
+  * Transforming a graph traversal
+    ([solution](ocaml/Graph.ml)).
 * (20/10/2017) Equational reasoning and program optimizations.
 
 ### Metatheory of Typed Programming Languages
