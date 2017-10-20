@@ -91,7 +91,8 @@ We also show the limits of dependently-typed functional programming.
     ([solution](ocaml/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/Graph.ml)).
-* (20/10/2017) Equational reasoning and program optimizations.
+* (20/10/2017) Equational reasoning and program optimizations
+  ([slides 05](slides/fpottier-05.pdf)).
 
 ### Metatheory of Typed Programming Languages
 
