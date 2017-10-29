@@ -108,9 +108,10 @@ We also show the limits of dependently-typed functional programming.
   ([without](http://gallium.inria.fr/~remy/mpri/slides2a.pdf) or
    [only](http://gallium.inria.fr/~remy/mpri/slides2b.pdf)
    the extra material; 
-  and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)).
+  and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (03/11/2017) Logical relations.
+* (03/11/2017) Logical relations
+  (See also [chap ](http://gallium.inria.fr/~remy/mpri/cours6.pdf)).
 * (10/11/2017) Subtyping. Rows.
 * (17/11/2017) References, Value restriction, Side effects.
 
