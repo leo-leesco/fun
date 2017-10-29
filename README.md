@@ -105,13 +105,14 @@ We also show the limits of dependently-typed functional programming.
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
 * (27/10/2017)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
-  ([without](http://gallium.inria.fr/~remy/mpri/slides2a.pdf) or
+  (slides
+   [without](http://gallium.inria.fr/~remy/mpri/slides2a.pdf) or
    [only](http://gallium.inria.fr/~remy/mpri/slides2b.pdf)
    the extra material; 
   and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-* (03/11/2017) Logical relations
-  (See also [chap ](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
+* (03/11/2017) [Logical relations](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
+  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
 * (10/11/2017) Subtyping. Rows.
 * (17/11/2017) References, Value restriction, Side effects.
