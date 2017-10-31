@@ -135,10 +135,12 @@ We also show the limits of dependently-typed functional programming.
 
 ## Evaluation of the course
 
-Two written exams (a partial and a final exam) and one programming project
-or several programming exercises are used to evaluate the students that
-follow the full course.  Only the partial exam will count to grade students
-who split the course.
+Two written exams (a partial exam on Friday Dec 12 and a final exam) and one
+programming project or several programming exercises are used to evaluate
+the students that follow the full course.  Only the partial exam will count
+to grade students who split the course.
+
+Only course notes and hand written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
