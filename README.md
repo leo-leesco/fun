@@ -99,19 +99,22 @@ We also show the limits of dependently-typed functional programming.
 
 * (15/09/2017)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
   (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
 * (27/10/2017)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
-  (slides
-   [without](http://gallium.inria.fr/~remy/mpri/slides2a.pdf) or
-   [only](http://gallium.inria.fr/~remy/mpri/slides2b.pdf)
+  ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
+   [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
+   [only](http://gallium.inria.fr/~remy/mpri/handout2b.pdf)
    the extra material; 
   and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-* (03/11/2017) [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
+* (03/11/2017)
+  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
 * (10/11/2017) Subtyping. Rows.
