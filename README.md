@@ -117,7 +117,13 @@ We also show the limits of dependently-typed functional programming.
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-* (10/11/2017) Subtyping. Rows.
+# * (10/11/2017) Subtyping. Rows.
+* (10/11/2017)
+  [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
+  (see also [chap 7](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
+  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
+
 * (17/11/2017) References, Value restriction, Side effects.
 
 ### Advanced Aspects of Type Systems
