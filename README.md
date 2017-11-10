@@ -103,7 +103,7 @@ We also show the limits of dependently-typed functional programming.
   (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
+  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (27/10/2017)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
@@ -111,19 +111,18 @@ We also show the limits of dependently-typed functional programming.
    [only](http://gallium.inria.fr/~remy/mpri/handout2b.pdf)
    the extra material; 
   and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (03/11/2017)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-# * (10/11/2017) Subtyping. Rows.
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (10/11/2017) ~~Subtyping. Rows.~~
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-* (17/11/2017) References, Value restriction, Side effects.
+  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* (17/11/2017) References, Value restriction, Side effects
 
 ### Advanced Aspects of Type Systems
 
