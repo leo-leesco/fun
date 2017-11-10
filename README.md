@@ -123,7 +123,6 @@ We also show the limits of dependently-typed functional programming.
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)).
-
 * (17/11/2017) References, Value restriction, Side effects.
 
 ### Advanced Aspects of Type Systems
