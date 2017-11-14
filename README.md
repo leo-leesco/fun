@@ -109,8 +109,8 @@ We also show the limits of dependently-typed functional programming.
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
    [only](http://gallium.inria.fr/~remy/mpri/handout2b.pdf)
-   the extra material; 
-  and [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
+   the extra material)
+  (se also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (03/11/2017)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
@@ -122,7 +122,14 @@ We also show the limits of dependently-typed functional programming.
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (17/11/2017) References, Value restriction, Side effects
+* (17/11/2017)
+  [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
+  ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
+  (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
+   and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
+
 
 ### Advanced Aspects of Type Systems
 
@@ -175,7 +182,7 @@ available with solutions:
   [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf)
 - mid-term exam 2010-2011:
  [Compilation
- of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/2010/partiel-2010-2011.pdf)
+ of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf)
 
 ## Recommended software
 
