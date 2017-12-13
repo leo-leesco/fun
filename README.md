@@ -138,7 +138,9 @@ We also show the limits of dependently-typed functional programming.
 
 ### Rich types, tractable typing
 
-* Type inference
+* (08/12/2017)
+  [Introduction](slides/yrg-00-introduction.pdf),
+  [ML and Type inference](slides/yrg-01-type-inference.pdf)
 * Subtyping
 * Effects and resources
 * Modules
