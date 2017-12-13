@@ -65,6 +65,11 @@ effectful programming with monads and algebraic effects; tagless
 interpreters; programming with total functions; generic programming.
 We also show the limits of dependently-typed functional programming.
 
+## Project
+
+The [programming project](project/) is now available!
+The deadline is **Friday, February 16, 2018**.
+
 ## Approximate syllabus
 
 ### Functional Programming: Under the Hood
@@ -159,7 +164,7 @@ We also show the limits of dependently-typed functional programming.
 
 Two written exams (a partial exam on Friday Dec 1 and a final exam) and one
 programming project or several programming exercises are used to evaluate
-the students that follow the full course.  Only the partial exam will count
+the students that follow the full course. Only the partial exam will count
 to grade students who split the course.
 
 Only course notes and hand written notes are allowed for the exams.
