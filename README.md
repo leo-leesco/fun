@@ -50,15 +50,25 @@ reasoning by induction on the structure of types.  Finally, we introduce
 subtyping, row polymorphism, and illustrate the problems induced by
 side effects (references) and the need for the value restriction.
 
-The third part of the course describes more advanced features of type
-systems: exceptions and effect handlers, including their typechecking and
-static analyses: type inference, data flow and control flow analyses.
-Finally, it introduces dependent types and refinement types.
+The third part of the course introduces "rich" type systems designed
+to guarantee extra properties in addition to safety: principality,
+information hiding, modularity, extensionality, purity, control of
+effects, algorithmic invariants, complexity, resource usage, or full
+functional correctness. The expressivity of these systems sometimes
+endangers the tractability, or even the feasibility, of type checking
+and type inference: a common thread between these lectures discusses
+the tradeoffs made on the design of these systems to balance
+expressivity and tractability.
 
 The last part focuses on the use of dependent types for programming:
 effectful programming with monads and algebraic effects; tagless
 interpreters; programming with total functions; generic programming.
 We also show the limits of dependently-typed functional programming.
+
+## Project
+
+The [programming project](project/) is now available!
+The deadline is **Friday, February 16, 2018**.
 
 ## Approximate syllabus
 
@@ -131,13 +141,16 @@ We also show the limits of dependently-typed functional programming.
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
 
-### Advanced Aspects of Type Systems
+### Rich types, tractable typing
 
-* Exceptions and effect handlers. (Compiled away via CPS.)
-* Typechecking exceptions and handlers.
-* Type inference. (ML. Bidirectional. Elaboration.)
-* Data/control flow analysis.
-* Functional correctness. Intro to dependent/refinement types.
+* (08/12/2017)
+  [Introduction](slides/yrg-00-introduction.pdf),
+  [ML and Type inference](slides/yrg-01-type-inference.pdf)
+* Subtyping
+* Effects and resources
+* Modules
+* Dependent types
+* Functional correctness
 
 ### Dependently-typed Functional Programming
 
@@ -151,7 +164,7 @@ We also show the limits of dependently-typed functional programming.
 
 Two written exams (a partial exam on Friday Dec 1 and a final exam) and one
 programming project or several programming exercises are used to evaluate
-the students that follow the full course.  Only the partial exam will count
+the students that follow the full course. Only the partial exam will count
 to grade students who split the course.
 
 Only course notes and hand written notes are allowed for the exams.
