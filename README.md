@@ -159,6 +159,8 @@ Only course notes and hand written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+- mid-term exam 2017-2018:
+ [Call-by-name. Extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
 - mid-term exam 2016-2017:
  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf)
 - mid-term exam 2015-2016:
