@@ -173,31 +173,32 @@ Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
 - mid-term exam 2017-2018:
- [Call-by-name. Extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
+  [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
+  ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
 - mid-term exam 2016-2017:
- [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf)
+  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf).
 - mid-term exam 2015-2016:
- [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf)
-- final exam 2014-2015: [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf)
+  [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf).
+- final exam 2014-2015:
+  [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf).
 - mid-term exam 2014-2015:
- [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf)
+  [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf).
 - final exam 2013-2014:
- [Operation on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf)
+  [Operations on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf).
 - mid-term exam 2013-2014:
- [Typechecking Effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf)
+  [Typechecking effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf).
 - final exam 2012-2013:
- [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf)
+  [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf).
 - mid-term exam 2012-2013:
- [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf)
+  [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf).
 - final exam  2011-2012:
- [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf)
+  [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf).
 - mid-term exam  2011-2012:
- [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf)
+  [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf).
 - final exam 2010-2011:
-  [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf)
+  [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf).
 - mid-term exam 2010-2011:
- [Compilation
- of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf)
+  [Compilation of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf).
 
 ## Recommended software
 
