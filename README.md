@@ -146,11 +146,15 @@ The deadline is **Friday, February 16, 2018**.
 * (08/12/2017)
   [Introduction](slides/yrg-00-introduction.pdf),
   [ML and Type inference](slides/yrg-01-type-inference.pdf)
-* Subtyping
-* Effects and resources
+* (15/12/2017) Subtyping
+  [Exercises](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf)
+  [Answers](slides/yrg-03-diy-lambda-calculus-with-subtyping-answers.pdf)
+* (22/12/2017 - 12/01/2018) Dependent types
+  [GADTs](slides/yrg-04-gadt-metatheory.pdf)
 * Modules
-* Dependent types
 * Functional correctness
+* Effects and resources
+
 
 ### Dependently-typed Functional Programming
 
