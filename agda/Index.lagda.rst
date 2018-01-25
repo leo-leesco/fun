@@ -11,32 +11,6 @@ MPRI 2.4 : Dependently-typed Functional Programming
   open import 01-effectful.Monad
 
 
-This course is organized as follows:
-
-.. toctree::
-   :maxdepth: 1
-
-   00-agda/Warmup
-   01-effectful/Monad
-   02-dependent/Indexed
-   03-total/Recursion
-   04-generic/Desc
-   05-open/Problems
-
-************************************************
-Build
-************************************************
-
-You will need 
-  * Agda (tested with version 2.5.3)
-  * Sphinx (tested with version 1.6.4)
-
-Type:
-
-    ``make html``
-
-which will produce the lecture notes in ``build/html/index.html``.
-
 ************************************************
 Contributing
 ************************************************
