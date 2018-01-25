@@ -159,6 +159,7 @@ The deadline is **Friday, February 16, 2018**.
 
 ### Dependently-typed Functional Programming
 
+* [Guidelines](agda/Index.lagda.rst)
 * [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
 * Dependent functional programming.
 * Total functional programming.
@@ -255,6 +256,9 @@ Enable ProofGeneral by adding the following line to your `.emacs` file:
 ```
 If desired, ProofGeneral can be further
 [customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
+
+To install and familiarize yourself with Agda, please follow the
+[instructions](agda/00-agda/Warmup.lagda.rst).
 
 ## Bibliography
 
