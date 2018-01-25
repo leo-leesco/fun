@@ -159,7 +159,7 @@ The deadline is **Friday, February 16, 2018**.
 
 ### Dependently-typed Functional Programming
 
-* Effectful functional programming.
+* [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
 * Dependent functional programming.
 * Total functional programming.
 * Generic functional programming.
