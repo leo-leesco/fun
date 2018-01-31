@@ -38,7 +38,7 @@ Historical background
 `Notions of computations and monads`_, Eugenio Moggi (1991):
   - "generic" syntax for writing effectful programs
   - denotational model based on a categorical notion
-  - key idea: interpretation in the `Kleisli category`_ of a `monad`_ 
+  - key idea: interpretation in the `Kleisli category`_ of a `monad`_
   - compositionality: that's what a `category`_ is for!
 
 `The essence of functional programming`_, Phil Wadler (1992):
@@ -70,7 +70,7 @@ Nowadays:
     - `Even OCaml has some <http://ocamllabs.io/doc/effects.html>`_
     - Open problems (probably): comparing expressive power & modular compilation
 
-.. 
+..
   ::
 
   module Monad where
@@ -87,8 +87,8 @@ Nowadays:
 
   open import Relation.Nullary
   open import Relation.Binary
-  open import Relation.Binary.PropositionalEquality 
-    renaming (trans to trans≡ ; sym to sym≡ ; cong to cong≡ ; cong₂ to cong₂≡) 
+  open import Relation.Binary.PropositionalEquality
+    renaming (trans to trans≡ ; sym to sym≡ ; cong to cong≡ ; cong₂ to cong₂≡)
     hiding (setoid ; isEquivalence)
 
 ************************************************
@@ -98,7 +98,7 @@ Stateful operations
 Let ``S`` be a Set. In this section, we are interested in programs
 manipulating a single reference cell of monomorphic type ``S``.
 
-.. 
+..
   ::
 
   module StateMonad where
@@ -240,27 +240,27 @@ At this stage, we can write (but not execute!) stateful programs, such
 as::
 
     test0 : StateF S
-    test0 = get tt >>= λ s → 
-            set s >>= λ _ → 
-            get tt >>= λ s' → 
+    test0 = get tt >>= λ s →
+            set s >>= λ _ →
+            get tt >>= λ s' →
             return s'
 
     test1 : StateF S
-    test1 = get tt >>= λ s' → 
+    test1 = get tt >>= λ s' →
             return  s'
 
     test2 : StateF S
-    test2 = get tt >>= λ s → 
-            set s >>= λ _ → 
+    test2 = get tt >>= λ s →
+            set s >>= λ _ →
             return s
 
     random : StateF ℕ
-    random = get tt >>= λ seed → 
+    random = get tt >>= λ seed →
              let n = toℕ ((seed *ℕ 25173 + 1725) mod 65536) in
              set n >>= λ _ →
              return n
 
-    
+
 --------------------------------
 Monad laws
 --------------------------------
@@ -275,8 +275,8 @@ The monadic laws specify the interaction between ``return`` -- which
 brings pure values into stateful programs -- and ``_>>=_`` -- which
 applies stateful functions.
 
-.. 
-  :: 
+..
+  ::
     module Exercise-bind-left-unit where
 
 **Exercise (difficulty: 1)** the first law states that applying a
@@ -284,13 +284,13 @@ stateful program to a pure value amounts to performing a standard
 function application or, put otherwise, ``return`` is a left unit for
 ``_>>=_``::
 
-      bind-left-unit : ∀ {X Y} → (x : X)(k : X -> StateF Y) →
+      bind-left-unit : ∀ {X Y} → (x : X)(k : X → StateF Y) →
         (return x >>= k) ≡ k x
       bind-left-unit x k = {!!}
 
 
 ..
-  :: 
+  ::
     module Exercise-bind-right-unit where
 
 **Exercise (difficulty: 4)** the second law states that returning a
@@ -311,7 +311,7 @@ of fighting the termination checker. We will also need to postulate
 functional extensionality.
 
 ..
-  :: 
+  ::
     module Exercise-bind-compose where
 
 **Exercise (difficult: 2)** finally, the third law states that we
@@ -319,12 +319,12 @@ can always parenthesize ``_>>=_`` from left to right or, put
 otherwise, ``_>>=`` is associative::
 
       {-# TERMINATING #-}
-      bind-compose : ∀ {X Y Z} → (mx : StateF X)(f : X -> StateF Y)(g : Y -> StateF Z) →
+      bind-compose : ∀ {X Y Z} → (mx : StateF X)(f : X → StateF Y)(g : Y → StateF Z) →
         ((mx >>= f) >>= g) ≡ (mx >>= λ x → (f x >>= g))
       bind-compose = {!!}
         where postulate ext : Extensionality Level.zero Level.zero
 
-   
+
 There is a familiar object that offers a similar interface: (pure)
 function! For which ``_>>=_`` amounts to composition and ``return`` is
 the identity function. Monads can be understood as offering "enhanced"
@@ -351,16 +351,16 @@ embedded language. We want::
     data _↝_ {V : Set} : StateF V → StateF V → Set where
 
 
-      get-get : ∀{k : S → S → StateF V} → 
+      get-get : ∀{k : S → S → StateF V} →
               (get tt >>= (λ s → get tt >>= λ s' → k s s' )) ↝ (get tt >>= λ s → k s s )
 
-      set-set : ∀{k s₁ s₂} → 
+      set-set : ∀{k s₁ s₂} →
               (set s₁ >>= (λ _ → set s₂ >>= λ _ → k)) ↝ (set s₂ >>= λ _ → k)
 
-      get-set : ∀{k} → 
+      get-set : ∀{k} →
               (get tt >>= λ s → set s >>= λ _ → k) ↝ k
 
-      set-get : ∀{k s} → 
+      set-get : ∀{k s} →
               (set s >>= (λ _ → get tt >>= k)) ↝ (set s >>= λ _ → k s)
 
 In English, this amounts to the following rules:
@@ -401,8 +401,8 @@ terms)::
       refl : ∀{p} → p ∼ p
       sym : ∀{p q} → p ∼ q → q ∼ p
 
-      cong : ∀{W}(tm : StateF W){ps qs : W → StateF V}  → 
-             (∀ w → ps w ∼ qs w) → 
+      cong : ∀{W}(tm : StateF W){ps qs : W → StateF V}  →
+             (∀ w → ps w ∼ qs w) →
              (tm >>= ps) ∼ (tm >>= qs)
 
 To reason up to this equivalence relation, we can state that elements
@@ -429,7 +429,7 @@ so-called (and dreaded) `setoid`_::
 **Exercise (difficulty: 1 or 5)** we can now formally reason about the
 equivalence of programs. This is not only of formal interest, this is
 also at the heart of compiler optimizations, code refactoring, etc.::
-  
+
       prog1 : StateF ℕ
       prog1 =
         get tt >>= λ x →
@@ -467,7 +467,7 @@ term of ``StateF`` quotiented by ``∼`` will start with a ``get``,
 followed by a ``set``, concluded with a ``return``. We thus expect the
 following normal form::
 
-    State : Set → Set 
+    State : Set → Set
     State V = ΣGet (ΣSet V)
 
 Unfolding the definition of ``ΣGet`` and ``ΣSet``, we realize that
@@ -496,11 +496,11 @@ quotiented by the theory of State::
 
 This function should satisfy the following unit-proofs::
 
-    test-eval-get : ∀ {A} tt (k : S → StateF A) s → 
+    test-eval-get : ∀ {A} tt (k : S → StateF A) s →
                  eval (get tt >>= k) s ≡ eval (k s) s
     test-eval-get = {!!}
 
-    test-eval-set : ∀ {A} (k : ⊤ → StateF A) s s' → 
+    test-eval-set : ∀ {A} (k : ⊤ → StateF A) s s' →
                  eval (set s' >>= k) s ≡ eval (k tt) s'
     test-eval-set = {!!}
 
@@ -523,8 +523,8 @@ The normalization procedure thus genuinely computes the normal form::
 
 and these normal forms are indeed a subset of terms::
 
-    ⌈_⌉ : ∀{A} → State A → StateF A 
-    ⌈ `get (tt , k) ⌉ = get tt >>= λ s → help (k s) 
+    ⌈_⌉ : ∀{A} → State A → StateF A
+    ⌈ `get (tt , k) ⌉ = get tt >>= λ s → help (k s)
       where help : ∀ {A} → ΣSet A → StateF A
             help (`set (s , k)) = set s >>= λ _ → return (k tt)
 
@@ -542,7 +542,7 @@ syntactic objects -- of type ``StateF A`` -- to semantics objects --
 of type ``STATE A``. The natural question to ask is whether all the
 structure defined over ``StateF A`` carries over to ``STATE A``,
 ie. is there a semantical counterpart to ``return``, ``get``, ``set``
-and ``_>>=_``? 
+and ``_>>=_``?
 
 ..
   ::
@@ -551,7 +551,7 @@ and ``_>>=_``?
 **Exercise (difficult: 1)** guided by ``eval``, implement the
 semantical counterparts of ``return``, ``get`` and ``set``::
 
-      sem-return : ∀{A} → A → STATE A 
+      sem-return : ∀{A} → A → STATE A
       sem-return a = {!!}
 
       sem-get : ⊤ → STATE S
@@ -580,12 +580,12 @@ specifications::
 **Exercise (difficulty: 2)** similarly, there is a ``_>>=_`` over
 semantical states::
 
-      _sem->>=_ : ∀ {X Y} → (mx : STATE X)(k : X -> STATE Y) → STATE Y
+      _sem->>=_ : ∀ {X Y} → (mx : STATE X)(k : X → STATE Y) → STATE Y
       _sem->>=_ mx k = {!!}
 
 whose unit-proof is::
-      
-      test-eval-compose : ∀ {X Y} (mx : StateF X)(k : X -> StateF Y) (s : S) →
+
+      test-eval-compose : ∀ {X Y} (mx : StateF X)(k : X → StateF Y) (s : S) →
         eval (mx >>= k) s ≡ (eval mx sem->>= λ x → eval (k x)) s
       test-eval-compose = {!!}
 
@@ -625,7 +625,7 @@ belong to the same congruence class::
     sound {V} p q r =
         begin
           p
-         ≈⟨ pf-sound p ⟩ 
+         ≈⟨ pf-sound p ⟩
           ⌈ norm p ⌉
          ≡⟨ r ⟩
           ⌈ norm q ⌉
@@ -638,7 +638,7 @@ Second, ``norm`` is complete: if two terms belong to the same congruence
 class, they have the same normal form::
 
     complete : ∀ {A} {p q : StateF A} → p ∼ q → ⌈ norm p ⌉ ≡ ⌈ norm q ⌉
-    complete {p = p} {q} r = 
+    complete {p = p} {q} r =
         begin
           ⌈ norm p ⌉
         ≡⟨ refl ⟩
@@ -649,7 +649,7 @@ class, they have the same normal form::
           ⌈ norm q ⌉
         ∎
         where open ≡-Reasoning
-              postulate ext : Extensionality Level.zero Level.zero 
+              postulate ext : Extensionality Level.zero Level.zero
 
 Note that this last proof needs functional extensionality (which, in
 Agda, is an axiom that does not compute). This is not a problem here
@@ -692,14 +692,14 @@ right-leaning (we can only substitute for subterms ``ps`` and ``qs``
 under a common ``tm``) while one might want to have a more general
 version::
 
-      cong₂ : ∀{V W}(tm tm' : StateF W){ps qs : W → StateF V}  → 
+      cong₂ : ∀{V W}(tm tm' : StateF W){ps qs : W → StateF V}  →
               (tm ∼ tm') →
-              (∀ w → ps w ∼ qs w) → 
+              (∀ w → ps w ∼ qs w) →
               (tm >>= ps) ∼ (tm' >>= qs)
       cong₂ = {!!}
 
 We prove this more general statement by working over the normal
-forms. 
+forms.
 
 ..
   ::
@@ -790,13 +790,13 @@ thesis`_, is defined as follows::
 
     data _↝_ {V : Set} : TickF V → TickF V → Set where
       -- 1. Counting ε ticks amounts to doing nothing:
-      tick-eps : ∀{k : TickF V} → 
+      tick-eps : ∀{k : TickF V} →
         (tick ε >>= λ _ → k) ↝ k
 
-      -- 2. Counting r₁ ticks followed by r₂ ticks amounts to counting 
+      -- 2. Counting r₁ ticks followed by r₂ ticks amounts to counting
       --    r₁ ∙ r₂ ticks:
       tick-com : ∀{k : TickF V}{r₁ r₂} →
-        (tick r₁ >>= λ _ → 
+        (tick r₁ >>= λ _ →
          tick r₂ >>= λ _ → k) ↝ (tick (r₁ ∙ r₂) >>= λ _ → k)
 
 --------------------------------
@@ -806,7 +806,7 @@ Normal forms
 We realize that every 'TickF' program amounts to a single tick
 accumulating the sum of all sub-ticks::
 
-    Tick : Set → Set 
+    Tick : Set → Set
     Tick X = ΣTick X
 
 This type being isomorphic to::
@@ -913,7 +913,7 @@ we can later perform formal reasoning to establish complexity results
 (see `A Machine-Checked Proof of the Average-Case Complexity of
 Quicksort in Coq`_ ).
 
-.. 
+..
   ::
       module Exercise-insert where
 
@@ -921,7 +921,7 @@ Quicksort in Coq`_ ).
 ``x`` in a sorted list, counting the number of comparisons performed::
 
         insert : ℕ → List ℕ → Count (List ℕ)
-        insert n l = {!!} 
+        insert n l = {!!}
 
 
 --------------------------------
@@ -944,7 +944,7 @@ which constructio the ``Tick`` monad essentially gives a model of
       log s = (s ∷ []) , tt
 
 **Exercise (difficulty: 1)** Implement ``return``, ``_>>=_`` and prove
-the monad laws.  
+the monad laws.
 
 --------------------------------
 Non-determinism monad
@@ -1006,11 +1006,11 @@ Some (many, in fact) monads have several equally valid semantics for a
 given signature, making yet another argument for following the
 algebraic approach. We would thus specify the ``Random`` monad through
 the following signature::
-  
+
       data ΣRand (X : Set) : Set where
         `rand : ℕ × (ℕ → X) → ΣRand X
         `choose : Float × (Bool → X) → ΣRand X
-  
+
       data RandF (V : Set) : Set where
         return : V → RandF V
         op : ΣRand (RandF V) → RandF V
@@ -1104,7 +1104,7 @@ algorithms in Coq`_)::
 
       Distr : Set → Set
       Distr A = List (A × Float)
-    
+
       rand : ℕ → Distr ℕ
       rand n = Data.List.map (λ k → (k , 1.0 / ⟨ n ⟩)) (downFrom n)
 
@@ -1173,7 +1173,7 @@ proofs by reflection.
   #. Implement a generic "free monad construction", equipped with its
      operators (return, map, and bind).
 
-  #. Recast the State and Tick monads in that mold. 
+  #. Recast the State and Tick monads in that mold.
 
   #. Implement another monad in that framework. Careful, you're
      probably thinking about the Exception monad with a ``catch``
@@ -1183,7 +1183,7 @@ proofs by reflection.
 
 
 **Going further:**
- 
+
   * If you look up a category theory textbook (such as `Categories for
     the Working Mathematician`_), the formal definition of a monad
     will differ from the one we have used: we have looked at monads
