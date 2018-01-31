@@ -9,6 +9,7 @@ MPRI 2.4 : Dependently-typed Functional Programming
 
   open import 00-agda.Warmup
   open import 01-effectful.Monad
+  open import 02-dependent.Indexed
 
 
 ************************************************

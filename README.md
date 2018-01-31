@@ -161,7 +161,7 @@ The deadline is **Friday, February 16, 2018**.
 
 * [Guidelines](agda/Index.lagda.rst)
 * [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
-* Dependent functional programming.
+* [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
 * Total functional programming.
 * Generic functional programming.
 * Open problems in dependent functional programming.
