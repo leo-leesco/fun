@@ -152,10 +152,8 @@ The deadline is **Friday, February 16, 2018**.
 * (22/12/2017 - 12/01/2018) Dependent types
   [GADTs](slides/yrg-04-gadt-metatheory.pdf),
   [Exercises](slides/yrg-05-diy-lambda-pi.pdf)
-* Functional correctness
-* Modules
+* (19/01/2018) [Functional correctness](slides/yrg-06-functional-correctness.pdf)
 * Effects and resources
-
 
 ### Dependently-typed Functional Programming
 
