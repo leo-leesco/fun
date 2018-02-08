@@ -211,7 +211,7 @@ evaluator would have to deal with type errors dynamically::
       ... | _ | _ | _ = nothing
 
 **Exercise (difficulty: 1)** The above implementation is needlessly
-verbose, use the Maybe monad to hide the treatment of errors.
+verbose, use the Maybe monad to abstract away error handling.
 
 The moral of this implementation is that we failed to encode our
 invariant in the datatype ``exp'`` and paid the price in the
@@ -346,7 +346,9 @@ structuring compilers and proving them correct`_, (1980). This
 reflects the influence it had on a generation of computer scientists
 interested in language design on one hand (they gave us algebraic
 datatypes) and verified compilation on the other hand (they gave us
-denotational models).
+denotational models). I learned these ideas from `Conor
+McBride <http://strictlypositive.org/>`_, who had learned them from
+`James McKinna <http://homepages.inf.ed.ac.uk/jmckinna/>`_.
 
 ************************************************
 Computing normal forms of λ-terms
@@ -819,24 +821,24 @@ This might not deter the brave monadic programmer: we can emulate
 We then simply translate the previous code to a monadic style, a
 computer could do it automatically::
 
-      mutual
-        reify : ∀{T} → ⟦ T ⟧Type → Fresh term
-        reify {unit} nf       = return nf
-        reify {A * B} (a , b) = reify a >>= λ a →
-                                reify b >>= λ b →
-                                return (pair a b)
-        reify {S ⇒ T} f       = gensym tt >>= λ s →
-                                reflect S (var s) >>= λ t →
-                                reify (f t) >>= λ b →
-                                return (lam s b)
+      reify : ∀{T} → ⟦ T ⟧Type → Fresh term
+      reflect : (T : type) → term → Fresh ⟦ T ⟧Type
 
-        reflect : (T : type) → term → Fresh ⟦ T ⟧Type
-        reflect unit nf     = return nf
-        reflect (A * B) nf  = reflect A (fst nf) >>= λ a →
-                              reflect B (snd nf) >>= λ b →
-                              return (a , b)
-        reflect (S ⇒ T) neu = return (λ s → {!!})
-          -- XXX: cannot conclude with `reflect T (neu ! reify s)`
+      reify {unit} nf       = return nf
+      reify {A * B} (a , b) = reify a >>= λ a →
+                              reify b >>= λ b →
+                              return (pair a b)
+      reify {S ⇒ T} f       = gensym tt >>= λ s →
+                              reflect S (var s) >>= λ t →
+                              reify (f t) >>= λ b →
+                              return (lam s b)
+
+      reflect unit nf     = return nf
+      reflect (A * B) nf  = reflect A (fst nf) >>= λ a →
+                            reflect B (snd nf) >>= λ b →
+                            return (a , b)
+      reflect (S ⇒ T) neu = return (λ s → {!!})
+      -- XXX: cannot conclude with `reflect T (neu ! reify s)`
 
 Excepted that, try as we might, we cannot reflect a function.
 
@@ -1159,7 +1161,8 @@ can easily be equipped with a renaming: we therefore take it as the
 **Remark:** The above construction of the exponential is taken from
 MacLane & Moerdijk's `Sheaves in Geometry and Logic`_ (p.46).
 
-At this stage, we have enough structure to interpret types::
+
+At this stage, we have enough structure to interpret the types::
 
     ⟦_⟧ : type → Sem
     ⟦ unit ⟧  = ⊤̂
