@@ -62,6 +62,14 @@ The vision: `Total Functional Programming`_
   - zealously pursued with dependent types by `Conor McBride <http://strictlypositive.org/>`_
   - at the origin of *all* of today's examples
 
+Takeaways:
+  - you will be *able* to reify a measure by indexing an inductive type
+  - you will be *able* to define your own induction principles
+  - you will be *able* to give a "step-indexed" interpretation of a general recursive function
+  - you will be *familiar* with the Bove-Capretta technique
+  - you will be *familiar* with the notion of monad morphism
+
+
 ************************************************
 First-order Unification
 ************************************************
@@ -482,6 +490,7 @@ underlying composition of substitutions::
 --------------------------------------
 Structurally: most-general unifier
 --------------------------------------
+
 
 The implementation of the most-general unifier is exactly the same,
 excepted that termination has become self-evident: when performing the
