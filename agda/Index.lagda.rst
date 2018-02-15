@@ -11,6 +11,7 @@ MPRI 2.4 : Dependently-typed Functional Programming
   open import 01-effectful.Monad
   open import 02-dependent.Indexed
   open import 03-total.Recursion
+  open import 04-generic.Desc
 
 
 ************************************************
