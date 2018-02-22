@@ -1,0 +1,11 @@
+let rec exp = fun e -> fun n -> ifzero n then 1 else e * exp e (n-1) in
+let rec lots_digit = fun d -> fun n -> ifzero (n-1) then d else d + 10 * lots_digit d (n-1) in
+let line = fun i -> fun n -> lots_digit 1 i * exp 10 (n-i) in
+let rec triangle = fun i -> fun n ->
+    	ifzero (n-i)
+	then print (line n n)
+	else (let _ = print (line i n) in triangle (i+1) n) in
+triangle 1 10
+
+
+

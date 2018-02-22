@@ -1,0 +1,5 @@
+let _ = print  ((ifzero 0 then fun x -> x else fun x -> x + 1) 3) in
+let _ = print  ((ifzero 1 then fun x -> x else fun x -> x + 1) 3) in
+let ifprint = fun x -> print (ifzero x then 3 else 4) in
+let _ = ifprint 0 in
+ifprint 1

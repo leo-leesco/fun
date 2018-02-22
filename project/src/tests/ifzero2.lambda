@@ -1,0 +1,2 @@
+let x = 2 in
+ifzero x then print(x+1) else print(x-1)

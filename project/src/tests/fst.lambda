@@ -1,0 +1,2 @@
+let fst = fun x -> fun y -> x in
+print (fst 1 2)

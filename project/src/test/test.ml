@@ -18,9 +18,19 @@ let verbosity =
 let usage =
   sprintf "Usage: %s\n" argv.(0)
 
+let good =
+  ref None
+
+let root =
+  ref None
+
 let spec = Arg.align [
   "--create-expected", Arg.Set create_expected,
                        " recreate the expected-output files";
+  "--test",            Arg.String (fun d -> good := Some d),
+                       "<directory> set test directory (default: $root/tests)";
+  "--root",            Arg.String (fun d -> root := Some d),
+                       "<directory> set root directory (default: ..)";
   "--verbosity",       Arg.Int ((:=) verbosity),
                        " set the verbosity level (0-2)";
 ]
@@ -68,13 +78,21 @@ let command cmd =
 (* Paths. *)
 
 let root =
-  absolute_directory ".."
+  match !root with
+  | Some root ->
+      root
+  | None ->
+      absolute_directory ".."
 
 let src =
   root
 
 let good =
-  root ^ "/tests"
+  match !good with
+  | Some good ->
+      good
+  | None ->
+      root ^ "/tests"
 
 let good_slash filename =
   good ^ "/" ^ filename

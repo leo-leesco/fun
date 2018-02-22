@@ -1,0 +1,20 @@
+(* This weird function returns 0 if its input
+ * is even, 1 if it is odd. *)
+let rec f = fun x ->
+	let rec g = fun y ->
+		ifzero y
+			then 1
+			else f (y-1)
+	in
+	ifzero x
+		then 0
+		else g (x-1)
+in
+let _ = print (f 0) in
+let _ = print (f 1) in
+let _ = print (f 2) in
+let _ = print (f 3) in
+let _ = print (f 28) in
+let _ = print (f 21) in
+
+print 99

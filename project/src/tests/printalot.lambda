@@ -1,0 +1,7 @@
+let rec f = fun x ->
+	ifzero x
+		then 0
+		else f (print (x-1))
+in
+let _ = f 10 in
+print 50

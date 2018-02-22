@@ -1,0 +1,11 @@
+(* Thunks. *)
+(* Church naturals. *)
+let zero = fun f -> fun x -> x in
+let one = fun f -> fun x -> let _ = print 422 in f x in
+let plus = fun m -> fun n -> fun f -> fun x -> m f (n f x) in
+let two = plus one one in
+let three = plus one two in
+let convert = fun n -> let _ = print 21 in n (fun x -> x + 1) 0 in
+let _ = print (convert three) in
+
+print 42

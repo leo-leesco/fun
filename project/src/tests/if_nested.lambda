@@ -1,0 +1,20 @@
+let test = fun x -> fun y ->
+  ifzero x then
+    ifzero y then
+      fun z -> z+13
+    else
+      fun z -> z+37
+  else
+    ifzero y then
+      fun z -> z+42
+    else
+      fun z -> z+57
+in
+
+
+let _ = print (test 0 0     100) in
+let _ = print (test 0 7     100) in
+let _ = print (test 4 0     100) in
+let _ = print (test 9 (0-1) 100) in
+
+print (0-1)

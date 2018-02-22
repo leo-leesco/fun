@@ -1,0 +1,20 @@
+let btrue = 0 in
+let bfalse = 1 in
+let bnot = fun b -> ifzero b then bfalse else btrue in
+let band = fun b1 -> fun b2 -> ifzero b1 then b2 else bfalse in
+let idiv = fun i -> fun n -> ifzero (n - i * (n / i)) then btrue else bfalse in
+let rec bnot_idiv_until = fun i -> fun n ->
+		   	    ifzero (i-1)
+		   	    then btrue
+			    else band (bnot (idiv i n)) (bnot_idiv_until (i-1) n) in
+let prime = fun n -> bnot_idiv_until (n-1) n in
+
+let rec print_primes = fun n ->
+				ifzero (n-2)
+				then print 2
+				else ifzero prime n
+				     then let _ = print n in
+				     	  print_primes (n-1)
+				     else print_primes (n-1) in
+
+print_primes (20)

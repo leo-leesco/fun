@@ -1,0 +1,33 @@
+(* Pairs *)
+let pair = fun x -> fun y -> fun p -> p x y in
+let fst = fun p -> p (fun x -> fun y -> x) in
+let snd = fun p -> p (fun x -> fun y -> y) in
+(* Euclidian Division *)
+let rec diveuclid = fun a -> fun b ->
+	ifzero a
+		then pair 0 0
+		else
+			let p = diveuclid (a-1) b in
+			let q = fst p in
+			let r = snd p in
+			ifzero (r+1 - b)
+				then pair (q+1) 0
+				else pair q (r+1)
+in
+let p = diveuclid 0 999 in
+let _ = print (fst p) in
+let _ = print (snd p) in
+let p = diveuclid 1 2 in
+let _ = print (fst p) in
+let _ = print (snd p) in
+let p = diveuclid 54 7 in
+let _ = print (fst p) in
+let _ = print (snd p) in
+let p = diveuclid 35 8 in
+let _ = print (fst p) in
+let _ = print (snd p) in
+let p = diveuclid 10 2 in
+let _ = print (fst p) in
+let _ = print (snd p) in
+
+print 82

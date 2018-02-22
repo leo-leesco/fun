@@ -1,0 +1,8 @@
+let pair = fun x -> fun y -> fun p -> p x y in
+let fst = fun p -> p (fun x -> fun y -> x) in
+let snd = fun p -> p (fun x -> fun y -> y) in
+let _ = print (fst (pair 183 0)) in
+let _ = print (snd (pair 0 681)) in
+let _ = print ((fst (pair 9 3)) / (snd (pair 9 3))) in
+
+print 2

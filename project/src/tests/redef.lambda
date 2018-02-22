@@ -1,0 +1,6 @@
+let increase = fun x -> x + 1 in
+let increase = fun x ->
+    let lop = (increase x) in
+    lop + 1 in
+
+print (increase 40)
