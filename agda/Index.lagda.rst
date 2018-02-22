@@ -12,6 +12,19 @@ MPRI 2.4 : Dependently-typed Functional Programming
   open import 02-dependent.Indexed
   open import 03-total.Recursion
   open import 04-generic.Desc
+  open import 05-open.Problems
+
+This course is organized as follows:
+
+.. toctree::
+   :maxdepth: 1
+
+   00-agda/Warmup
+   01-effectful/Monad
+   02-dependent/Indexed
+   03-total/Recursion
+   04-generic/Desc
+   05-open/Problems
 
 
 ************************************************
