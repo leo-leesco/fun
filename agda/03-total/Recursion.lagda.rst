@@ -592,6 +592,7 @@ We consider the purely negative fragment of propositional logic::
         Atom : (a : A) → Formula
         _⊃_ : (P Q : Formula) → Formula
 
+
 The decision procedure checks whether a Formula (in a context) is
 true. This amounts to implementing a traditional focusing presentation
 of the sequent calculus::
@@ -703,6 +704,7 @@ context/list::
 
 
 
+
 With a bit of refactoring, we can integrate indices as well as absorb
 the zipper traversal, making the structural recursion slightly more
 obvious (to us, not to Agda)::
@@ -761,17 +763,17 @@ definitions on ``Formulas``::
       {-# TERMINATING #-}
       search : ∀ {n} → Context n → A → Bool
       search {zero} tt α = false
-      search {suc n} ((l , B) , Γ) α =
+      search {suc m} ((l , B) , Γ) α =
         let try = map (λ { (P , B) → B / Γ [ P ]⊢ α }) 
                       (pick1 B)
         in
         any try ∨ search Γ α
-          where _/_[_]⊢_ : Vec (Formula n) (pred l) → Context n → Formula n → A → Bool
+          where _/_[_]⊢_ : Vec (Formula m) (pred l) → Context m → Formula m → A → Bool
                 B / Γ [ Atom α ]⊢ β = ⌊ α ≟ β ⌋
                 B / Γ [ _⊃_ {n} P Q  ]⊢ β = B / Γ [ Q ]⊢ β ∧ B / Γ ⊢ P
                   where  _/_⊢_ : Vec (Formula (suc n)) (pred l) → Context (suc n) → Formula n → Bool
                          B / Γ ⊢ Atom α = search ((, B) , Γ) α
-                         B / B₂ , Γ ⊢ P ⊃ Q  = B / B₂ , Γ ▹C P  ⊢ Q
+                         B / B' , Γ ⊢ P ⊃ Q  = B / B' , Γ ▹C P  ⊢ Q
 
       _⊢_ : ∀ {n} → Context n → Formula n → Bool
       Γ ⊢ Atom α = search Γ α
@@ -809,10 +811,11 @@ With `The View from the Left`_ came the idea that one could get the
 benefits of pattern-matching *syntax* while actually appealing to
 induction principles to back them up *semantically*. 
 
-Assuming that we had this machinery (which we have not), it becomes
-interesting to study and develop the algebra of induction
-principles. Let us dissect the induction principle for natural
-numbers.
+Assuming that we had this machinery (which we have not in Agda but is
+available in Coq thanks to `Equations
+<http://mattam82.github.io/Coq-Equations/>`_), it becomes interesting
+to study and develop the algebra of induction principles. Let us
+dissect the induction principle for natural numbers.
 
 The first ingredient of an induction principle is the *induction
 hypothesis*. We can generically define an induction hypothesis as a
@@ -1103,10 +1106,13 @@ Let ``M : Set → Set`` be a monad. We have:
 
 .. code-block:: guess
 
-    Monad(RecMon X, M X)
-        ≅ Set(Σ[ a ∈ A ] B a → X, M X)    -- by the free/forgetful adjunction
-        ≅ (a : A) → ∀ X → (B a → X) → M X -- by uncurry, etc.
-        ≅ (a : A) → M (B a)               -- by Yoneda lemma
+    Monad(RecMon, M)
+        ≅ Monad(Free(λ X → Σ[ a ∈ A ] B a → X), M)  -- by def. of RecMon
+        ≅ [Set,Set](λ X → Σ[ a ∈ A ] B a → X, U(M)) -- by the free/forgetful adjunction
+        ≅ ∀ X → (Σ[ a ∈ A ] B a → X) → M X          -- morphism of functors are natural trans.
+        ≅ (a : A) → ∀ X → (B a → X) → M X           -- by uncurry, etc.
+        ≅ (a : A) → M (B a)                         -- by Yoneda lemma
+
 
 Or, put otherwise, a monad morphism from RecMon is entirely specified
 by a mere function of type ``(a : A) → M (B a)``::
