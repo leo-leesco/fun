@@ -1,0 +1,23 @@
+let pair = fun a1 -> fun a2 -> fun f -> f a1 a2 in
+let fst = fun p -> p (fun a1 -> fun a2 -> a1) in
+let snd = fun p -> p (fun a1 -> fun a2 -> a2) in
+let unit = 0 in
+let true = 0 in
+let false = 1 in
+let rec evenodd = fun unit ->
+    pair (fun n -> ifzero n then true else snd (evenodd unit) (n-1))
+    	 (fun n -> ifzero n then false else fst (evenodd unit) (n-1)) in
+let even = fst (evenodd unit) in
+
+let rec print_even_until = fun n ->
+  let rec print_from = fun i ->
+    ifzero (n-i)
+    then let _ = print i in
+    	 print (even i)
+    else let _ = print i in
+    	 let _ = print (even i) in
+	 print_from (i+1) in
+  print_from 0 in
+  
+print_even_until 20
+

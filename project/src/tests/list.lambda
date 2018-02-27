@@ -1,0 +1,23 @@
+let nil = fun f -> fun seed -> seed in
+let cons = fun h -> fun t -> fun f -> fun seed -> t f (f seed h) in
+
+let rev = fun l -> l (fun seed -> fun h -> cons h seed) nil in
+let rec map_rev = fun f -> fun l -> l (fun seed -> fun h -> cons (f h) seed) nil in
+let map = fun f -> fun l -> rev (map_rev f l) in
+let printlist = fun l -> l (fun seed -> fun h -> print h) 0 in
+
+let pair = fun a1 -> fun a2 -> fun proj -> proj a1 a2 in
+let fst = fun p -> p (fun a1 -> fun a2 -> a1) in
+let snd = fun p -> p (fun a1 -> fun a2 -> a2) in
+
+let hd = fun l -> (rev l) (fun seed -> fun h -> h) 0 in
+let tl = fun l ->
+    let tlandl = (rev l) (fun p -> fun h -> pair (snd p) (cons h (snd p))) (pair nil nil) in
+    fst tlandl in
+
+let l = cons 1 (cons 2 (cons 3 nil)) in
+let _ = print (hd l) in
+let _ = print (hd (tl l)) in
+let _ = print (hd (tl (tl l))) in 
+printlist (map (fun x -> 3 * x) l)
+

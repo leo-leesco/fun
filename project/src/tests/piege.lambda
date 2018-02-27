@@ -1,0 +1,12 @@
+(* should print 3; 2,
+   but could print something else
+   if there is variable capture *)
+
+let x = 2 in
+let y = x in
+let z = x in
+let y = 3 in
+let _ = print y in
+let x = 4 in
+let _ = print z in
+0
