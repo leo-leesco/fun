@@ -13,6 +13,7 @@ Inductive term :=
 | Lam (t : {bind term})
 | App (t1 t2 : term)
 | Let (t1 : term) (t2 : {bind term})
+| Record (fields : list (nat * term))
 .
 
 Instance Ids_term : Ids term. derive. Defined.

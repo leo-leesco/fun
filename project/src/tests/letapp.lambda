@@ -1,0 +1,4 @@
+(* The CPS translation optimizes an identity
+ * let expression here. *)
+let a = (fun x -> x + x) 45 in
+print a

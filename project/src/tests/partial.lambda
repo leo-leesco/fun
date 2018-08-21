@@ -1,0 +1,4 @@
+let f = fun x -> fun y -> fun z -> x z
+in
+let g = f (fun c -> c + 1) in
+print (g 4 7)

@@ -1,0 +1,8 @@
+let rec print_n = fun cur -> fun n ->
+    ifzero n - cur then
+        0
+    else
+        let x = print 0 in
+        print_n (cur + 1) n
+    in
+print_n 0 10

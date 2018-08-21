@@ -1,0 +1,8 @@
+let succeed = fun x -> print 1 in
+let fail = fun x -> print 0 in
+
+let true = fun x -> 0 in
+let false = fun x -> 1 in
+
+let nothing = ifzero true 0 then succeed 0 else fail 0 in
+ifzero false 0 then fail 0 else succeed 0

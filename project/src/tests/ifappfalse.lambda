@@ -1,0 +1,1 @@
+print(ifzero (fun x -> x)2 then  3 + 5 else 9 + 10)

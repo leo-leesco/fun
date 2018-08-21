@@ -1,0 +1,5 @@
+let sum = fun x -> fun y -> fun z -> x + y + z in
+let plus2 = sum 1 1 in
+
+let _ = print (sum 30 10 2) in
+print (plus2 40)

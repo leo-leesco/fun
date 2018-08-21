@@ -1,0 +1,15 @@
+let test1 = 2 in
+let _ = print test1 in
+let test2 = fun y -> ( fun x -> x + y + 3) in
+let _ = print ((test2 test1) test1) in
+let rec test_f1 = fun y -> ((y - 2)*3)/3 in
+let _ = print (test_f1 4) in
+let _ = ifzero 0 then print 5 else print 1 in
+let test_if = ifzero 1 then fun x -> x +1 else fun y -> y+2
+in
+let _ = print (test_if 3) in
+let rec test_frec1 = fun x ->
+(ifzero x then test_frec1 (x-1) else print 2)
+in
+let _ = print (test_frec1 5) in
+print (print 5)

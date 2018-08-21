@@ -147,21 +147,25 @@ The deadline is **Friday, February 16, 2018**.
 
 * [Introduction](slides/yrg-00-introduction.pdf),
   [ML and Type inference](slides/yrg-01-type-inference.pdf)
-* Subtyping
+* (15/12/2017) Subtyping
+  [Exercises](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf)
+  [Answers](slides/yrg-03-diy-lambda-calculus-with-subtyping-answers.pdf)
+* (22/12/2017 - 12/01/2018) Dependent types
+  [GADTs](slides/yrg-04-gadt-metatheory.pdf),
+  [Exercises](slides/yrg-05-diy-lambda-pi.pdf)
+* (19/01/2018) [Functional correctness](slides/yrg-06-functional-correctness.pdf)
 * Effects and resources
-* Modules
-* Dependent types
-* Functional correctness
 
 ### Dependently-typed Functional Programming
 
 (25/01/2019) (/01/02/2019) (08/02/2019) (15/02/2019) (22/02/2019)
 
-* Effectful functional programming.
-* Dependent functional programming.
-* Total functional programming.
-* Generic functional programming.
-* Open problems in dependent functional programming.
+* [Guidelines](agda/Index.lagda.rst)
+* [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
+* [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
+* [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
+* [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
+* [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
 
 ## Evaluation of the course
 
@@ -176,31 +180,32 @@ Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
 - mid-term exam 2017-2018:
- [Call-by-name. Extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
+  [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
+  ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
 - mid-term exam 2016-2017:
- [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf)
+  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf).
 - mid-term exam 2015-2016:
- [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf)
-- final exam 2014-2015: [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf)
+  [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf).
+- final exam 2014-2015:
+  [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf).
 - mid-term exam 2014-2015:
- [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf)
+  [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf).
 - final exam 2013-2014:
- [Operation on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf)
+  [Operations on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf).
 - mid-term exam 2013-2014:
- [Typechecking Effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf)
+  [Typechecking effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf).
 - final exam 2012-2013:
- [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf)
+  [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf).
 - mid-term exam 2012-2013:
- [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf)
+  [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf).
 - final exam  2011-2012:
- [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf)
+  [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf).
 - mid-term exam  2011-2012:
- [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf)
+  [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf).
 - final exam 2010-2011:
-  [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf)
+  [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf).
 - mid-term exam 2010-2011:
- [Compilation
- of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf)
+  [Compilation of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf).
 
 ## Recommended software
 
@@ -252,6 +257,9 @@ Enable ProofGeneral by adding the following line to your `.emacs` file:
 ```
 If desired, ProofGeneral can be further
 [customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
+
+To install and familiarize yourself with Agda, please follow the
+[instructions](agda/00-agda/Warmup.lagda.rst).
 
 ## Bibliography
 

@@ -1,0 +1,11 @@
+let ping = fun pong -> fun x ->
+  let _ = print 42 in
+  ifzero x then 0 else
+  pong (x - 1)
+in
+let rec pong = fun y ->
+  let _ = print 24 in
+  ifzero y then 0 else
+  ping pong (y - 1)
+in
+print (ping pong 5)

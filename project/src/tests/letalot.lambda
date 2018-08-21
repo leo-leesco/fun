@@ -1,0 +1,12 @@
+let x =
+	let f = fun x -> x + x in
+	let y = f 5 in
+	let g = fun x ->
+		let h = fun x -> fun y -> x - 3 * y in
+		let k = h 3 in
+		let z = k y in
+		z / 2
+	in
+	f (let z = g 4 in z - 1)
+in
+print x
