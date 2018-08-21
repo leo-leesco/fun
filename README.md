@@ -1,4 +1,4 @@
-# Functional programming and type systems (2017-2018)
+# Functional programming and type systems (2018-2019)
 
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
@@ -74,25 +74,25 @@ The deadline is **Friday, February 16, 2018**.
 
 ### Functional Programming: Under the Hood
 
-* (22/09/2017)
+* (14/09/2018)
   Introduction ([slides 00](slides/fpottier-00.pdf)).
   Syntax and operational semantics, on paper and on a machine
   ([slides 01a](slides/fpottier-01a.pdf))
   ([slides 01b](slides/fpottier-01b.pdf)).
   * Newton-Raphson in OCaml ([solution](ocaml/NewtonRaphson.ml)).
   * 1 is not even in Coq ([Even.v](coq/Even.v)).
-* (29/09/2017)
+* (21/09/2018)
   From a small-step semantics down to an efficient verified interpreter,
   in several stages
   ([Coq demo](coq/DemoSyntaxReduction.v))
   ([slides 02](slides/fpottier-02.pdf))
   ([OCaml code](ocaml/Lambda.ml))
   ([Coq repo](coq/)).
-* (06/10/2017) Compiling away first-class functions:
+* (28/09/2018) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
-* (13/10/2017) Making the stack explicit: the CPS transformation
+* (05/10/2018) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
@@ -101,20 +101,20 @@ The deadline is **Friday, February 16, 2018**.
     ([solution](ocaml/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/Graph.ml)).
-* (20/10/2017) Equational reasoning and program optimizations
+* (12/10/2018) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
 ### Metatheory of Typed Programming Languages
 
-* (15/09/2017)
+* (19/10/2018)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
   (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (27/10/2017)
+* (26/10/2018)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
@@ -122,17 +122,17 @@ The deadline is **Friday, February 16, 2018**.
    the extra material)
   (se also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (03/11/2017)
+* (02/11/2018)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (10/11/2017) ~~Subtyping. Rows.~~
+* (09/11/2018) ~~Subtyping. Rows.~~
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (17/11/2017)
+* (16/11/2018)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
@@ -143,8 +143,9 @@ The deadline is **Friday, February 16, 2018**.
 
 ### Rich types, tractable typing
 
-* (08/12/2017)
-  [Introduction](slides/yrg-00-introduction.pdf),
+(07/12/2018) (14/12/2018) (21/12/2018) (11/01/2019) (18/01/2019)
+
+* [Introduction](slides/yrg-00-introduction.pdf),
   [ML and Type inference](slides/yrg-01-type-inference.pdf)
 * Subtyping
 * Effects and resources
@@ -154,6 +155,8 @@ The deadline is **Friday, February 16, 2018**.
 
 ### Dependently-typed Functional Programming
 
+(25/01/2019) (/01/02/2019) (08/02/2019) (15/02/2019) (22/02/2019)
+
 * Effectful functional programming.
 * Dependent functional programming.
 * Total functional programming.
@@ -162,10 +165,10 @@ The deadline is **Friday, February 16, 2018**.
 
 ## Evaluation of the course
 
-Two written exams (a partial exam on Friday Dec 1 and a final exam) and one
-programming project or several programming exercises are used to evaluate
-the students that follow the full course. Only the partial exam will count
-to grade students who split the course.
+Two written exams (a partial exam on Friday Nov 23 or 30 and a final exam on
+March 1 or 8) and one programming project or several programming exercises
+are used to evaluate the students that follow the full course. Only the
+partial exam will count to grade students who split the course.
 
 Only course notes and hand written notes are allowed for the exams.
 
