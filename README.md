@@ -208,51 +208,30 @@ available with solutions:
 ## Recommended software
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
+If you have installed it already, skip this step.
 
-Then, install OCaml 4.0x and Coq **8.5** via the following commands:
+Then, install OCaml 4.0x, Coq **8.5.3** and AutoSubst by executing
+[this script](coq/installation.sh).
+This script **does not destroy** your existing installation of
+OCaml and Coq. It creates a new "switch" named `mpri24` and installs
+appropriate versions of OCaml, Coq, and AutoSubst in it. You can activate
+these versions with the following commands:
 ```bash
-opam init --comp=4.05 # for instance
-opam repo add coq-released https://coq.inria.fr/opam/released
-opam update
-opam install -j4 -v coq.8.5.3
+  opam switch mpri24
+  eval `opam config env`
 ```
-(Do *not* install Coq 8.6. The version of AutoSubst that I am using is
-not compatible with it. If for some reason you need Coq 8.6, or have
-already installed Coq 8.6, note that `opam switch` can be used to let
-multiple versions of Coq coexist.)
-
-Please also install François Pottier's
-[variant](https://github.com/fpottier/autosubst)
-of the
-[AutoSubst](https://www.ps.uni-saarland.de/autosubst/) library:
+and return to your usual version of OCaml (say, 4.07.0) with the following commands:
 ```bash
-git clone git@github.com:fpottier/autosubst.git
-make -C autosubst install
+  opam switch 4.07.0
+  eval `opam config env`
 ```
 
 In order to use Coq inside `emacs`,
 [ProofGeneral](https://proofgeneral.github.io/)
 is highly recommended.
-Here is a suggested installation script:
-```bash
-rm -rf /tmp/PG
-cd /tmp
-git clone git@github.com:ProofGeneral/PG.git
-cd PG
-EMACS=/Applications/Aquamacs.app/Contents/MacOS/Aquamacs
-if [ ! -x $EMACS ]; then
-  EMACS=emacs
-fi
-make EMACS=$EMACS compile
-TARGET=/usr/local/share/emacs/site-lisp/ProofGeneral
-sudo rm -rf $TARGET
-sudo mv /tmp/PG $TARGET
-```
+Here is a suggested
+[installation script](coq/proofgeneral.sh).
 
-Enable ProofGeneral by adding the following line to your `.emacs` file:
-```elisp
-(load-file "/usr/local/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")
-```
 If desired, ProofGeneral can be further
 [customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
 
