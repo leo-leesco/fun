@@ -79,7 +79,6 @@ The programming project is not yet available.
   ([slides 01a](slides/fpottier-01a.pdf))
   ([slides 01b](slides/fpottier-01b.pdf)).
   * Newton-Raphson in OCaml ([solution](ocaml/NewtonRaphson.ml)).
-  * 1 is not even in Coq ([Even.v](coq/Even.v)).
 * (21/09/2018)
   From a small-step semantics down to an efficient verified interpreter,
   in several stages
