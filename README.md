@@ -67,8 +67,7 @@ We also show the limits of dependently-typed functional programming.
 
 ## Project
 
-The [programming project](project/) is now available!
-The deadline is **Friday, February 16, 2018**.
+The programming project is not yet available.
 
 ## Approximate syllabus
 
