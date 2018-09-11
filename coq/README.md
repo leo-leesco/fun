@@ -1,16 +1,6 @@
-This code has been tested with Coq 8.5pl3.
-
-For now, this code requires my slightly patched version of Autosubst.
-To install this library, proceed as follows:
-
-```
-  git clone git@github.com:fpottier/autosubst.git
-  cd autosubst
-  make && make install
-```
-
-You can then compile the Coq code as follows:
-
+These proofs require Coq 8.5.3 and a specific version of Autosubst;
+please use [this installation script](coq/installation.sh).
+You can then check the proofs as follows:
 ```
   make _CoqProject
   make -j4
