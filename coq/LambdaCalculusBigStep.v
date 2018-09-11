@@ -530,3 +530,70 @@ Proof.
   intros. eapply bigcbv_ebigcbv; eauto with wf_cvalue.
   rewrite closed_unaffected by eauto. reflexivity.
 Qed.
+
+(* -------------------------------------------------------------------------- *)
+(* -------------------------------------------------------------------------- *)
+
+(* Suppose the big-step semantics [bigcbv] is taken as the primary definition
+   of the meaning of terms. Then, in terms of [bigcbv], we can define a
+   relation [sim] between terms, which has the flavor of a small-step
+   reduction relation. *)
+
+(* The definition is as follows: if, whenever [u] can produce the value [v],
+   [t] can produce [v] as well, then [t] simulates [u]. *)
+
+Definition sim t u :=
+  forall v,
+  bigcbv u v ->
+  bigcbv t v.
+
+(* This simulation relation is reflexive and transitive, hence a preorder. *)
+
+Lemma reflexive_sim:
+  forall t,
+  sim t t.
+Proof.
+  unfold sim. eauto.
+Qed.
+
+Lemma transitive_sim:
+  forall t1 t2 t3,
+  sim t1 t2 ->
+  sim t2 t3 ->
+  sim t1 t3.
+Proof.
+  unfold sim. eauto.
+Qed.
+
+Hint Resolve reflexive_sim transitive_sim : sim.
+
+(* This simulation relation includes the small-step relation [cbv]. *)
+
+Lemma cbv_sim:
+  forall t u,
+  cbv t u ->
+  sim t u.
+Proof.
+  (* This is a direct consequence of the fact that the composition
+     [cbv . bigcbv] is a subset of [bigcbv] -- a fact that was proved above. *)
+  unfold sim. eauto using cbv_bigcbv_bigcbv.
+Qed.
+
+(* As a consequence, [star cbv] is also a subset of [sim]. *)
+
+Lemma star_cbv_sim:
+  forall t u,
+  star cbv t u ->
+  sim t u.
+Proof.
+  induction 1; eauto using cbv_sim with sim.
+Qed.
+
+(* The converse is not true. Clearly, [star cbv] forbids all reductions under
+   a lambda-abstraction, whereas (somewhat nonobviously) [sim] allows certain
+   reductions under lambda-abstractions: intuitively, it allows all necessary
+   reductions, in a certain sense (?). *)
+
+(* For this reason, [sim] can be more comfortable to work with than [star cbv].
+   The proof of correctness of the CPS transformation in CPSCorrectnessBigStep
+   provides an example. *)

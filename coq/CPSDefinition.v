@@ -440,7 +440,7 @@ Qed.
    Attempting to work with transparent [cpsv] and [cps] would be problematic
    for several reasons. The tactics [simpl] and [asimpl] would sometimes
    expand these functions too far. Furthermore, because we have used the term
-   [smaller_wf_transparent] inside the definition of [cps], expanding [cps]
+   [smaller_wf_transparent] inside the definition of [cps], expanding this
    definition would often give rise to uncontrollably large terms. *)
 
 Global Opaque cps cpsv.

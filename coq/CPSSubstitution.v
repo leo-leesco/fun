@@ -132,6 +132,22 @@ Proof.
   { eauto using substc_liftc_single. }
 Qed.
 
+(* A similar corollary where the substitution is [v .: w .: ids]. Here, the
+   continuation is of the form [liftc 2 c], so is again unaffected. *)
+
+Lemma cps_substitution_0_1:
+  forall t c v w,
+  is_value v ->
+  is_value w ->
+  (cps t (liftc 2 c)).[cpsv v, cpsv w/] =
+  cps t.[v, w/] c.
+Proof.
+  intros. eapply cps_substitution.
+  { autosubst. }
+  { obvious. }
+  { eauto using substc_liftc_double. }
+Qed.
+
 (* A corollary where the substitution [sigma] is [up (v .: ids)], that is, a
    substitution of the value [v] for the variable 1, and the continuation is
    the variable 0, so it is unaffected. *)

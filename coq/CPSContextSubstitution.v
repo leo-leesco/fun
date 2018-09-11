@@ -75,3 +75,13 @@ Lemma substc_liftc_single:
 Proof.
   intros. destruct c; autosubst.
 Qed.
+
+(* Similarly, lifting [c] by 2, then applying a substitution of the form
+   [v1 .: v2 .: ids], yields [c] again. *)
+
+Lemma substc_liftc_double:
+  forall c v1 v2,
+  substc (v1 .: v2 .: ids) (liftc 2 c) = c.
+Proof.
+  intros. destruct c; autosubst.
+Qed.
