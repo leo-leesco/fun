@@ -76,17 +76,18 @@ The programming project is not yet available.
 * (14/09/2018)
   * Introduction
       ([slides 00](slides/fpottier-00.pdf)).
-  * Syntax and operational semantics on paper
+  * Syntax and operational semantics, on paper
       ([slides 01a](slides/fpottier-01a.pdf)).
-  * Syntax and operational semantics on a machine
+  * Syntax, on a machine
       ([slides 01b](slides/fpottier-01b.pdf)).
 * (21/09/2018)
-  From a small-step semantics down to an efficient verified interpreter,
-  in several stages
-  ([Coq demo](coq/DemoSyntaxReduction.v))
-  ([slides 02](slides/fpottier-02.pdf))
-  ([OCaml code](ocaml/Lambda.ml))
-  ([Coq repo](coq/)).
+  * Operational semantics, on a machine
+      ([Coq demo](coq/DemoSyntaxReduction.v)).
+  * From a small-step semantics down to an efficient verified interpreter,
+    in several stages
+      ([slides 02](slides/fpottier-02.pdf))
+      ([the lambda-calculus in OCaml](ocaml/Lambda.ml))
+      ([Coq repo](coq/)).
 * (28/09/2018) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
