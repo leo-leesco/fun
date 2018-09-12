@@ -111,7 +111,6 @@ let rec repeat (f : 'a -> 'a) (a : 'a thunk) : 'a stream =
     )
   )
 
-
 (* We define a wrapper so [repeat] has the desired type again: *)
 
 let repeat (f : 'a -> 'a) (a : 'a) : 'a stream =
@@ -133,6 +132,10 @@ let () =
   ignore xs
 
 (* Back to Newton-Rapshon. *)
+
+(* Even though every element of the stream [xs] is possibly read twice
+   by [within] (once in the role of [a], once in the role of [b]), it
+   is computed only once, thanks to memoization. *)
 
 let rec within (eps : float) (xs : float stream) : float =
   match force xs with
