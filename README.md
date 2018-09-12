@@ -6,7 +6,7 @@ This page supplements
 ## Location and duration
 
 The lectures take place at University Paris 7 - Denis Diderot,
-Bâtiment Sophie Germain, in room 2035.
+Bâtiment Sophie Germain, in room **1003**.
 
 They are scheduled on Fridays from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
