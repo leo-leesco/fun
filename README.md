@@ -74,11 +74,12 @@ The programming project is not yet available.
 ### Functional Programming: Under the Hood
 
 * (14/09/2018)
-  Introduction ([slides 00](slides/fpottier-00.pdf)).
-  Syntax and operational semantics, on paper and on a machine
-  ([slides 01a](slides/fpottier-01a.pdf))
-  ([slides 01b](slides/fpottier-01b.pdf)).
-  * Newton-Raphson in OCaml ([solution](ocaml/NewtonRaphson.ml)).
+  * Introduction
+      ([slides 00](slides/fpottier-00.pdf)).
+  * Syntax and operational semantics, on paper
+      ([slides 01a](slides/fpottier-01a.pdf)).
+  * Syntax and operational semantics, on a machine
+      ([slides 01b](slides/fpottier-01b.pdf)).
 * (21/09/2018)
   From a small-step semantics down to an efficient verified interpreter,
   in several stages
