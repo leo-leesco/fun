@@ -246,4 +246,7 @@ To install and familiarize yourself with Agda, please follow the
 Benjamin C. Pierce, MIT Press, 2002.
 
 [Advanced Topics in Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/attapl/),
-Edited by Benjamin C. Pierce, MIT Press, 2005.
+edited by Benjamin C. Pierce, MIT Press, 2005.
+
+[Practical Foundations for Programming Languages, Second Edition](http://www.cs.cmu.edu/~rwh/pfpl.html),
+Robert Harper, Cambridge University Press, 2016.
