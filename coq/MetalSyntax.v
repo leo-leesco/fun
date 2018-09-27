@@ -8,7 +8,7 @@ Require Export Autosubst_FreeVars.
 
 (* -------------------------------------------------------------------------- *)
 
-(* Metal is a lambda-calculus where every lambda-abstractions must be closed.
+(* Metal is a lambda-calculus where every lambda-abstraction must be closed.
    It is equipped with pairs and projections. It is intended to serve as the
    target of closure conversion. *)
 
