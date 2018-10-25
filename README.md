@@ -3,6 +3,20 @@
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
+## Research internship proposals
+
+The following internship proposals have been posted by the teachers
+of this course:
+
+  * [How to be an Effective Liar: Higher-Order Memoization
+    Algorithms in Iris](http://gallium.inria.fr/~fpottier/stages/sujet2019-m2.pdf),
+    by François Pottier, Inria Paris.
+
+Please do not hesitate to talk to us during the break or
+at the end of each lecture,
+to contact us by email,
+or to visit us at our offices.
+
 ## Location and duration
 
 The lectures take place at University Paris 7 - Denis Diderot,
