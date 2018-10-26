@@ -11,6 +11,8 @@ of this course:
   * [How to be an Effective Liar: Higher-Order Memoization
     Algorithms in Iris](http://gallium.inria.fr/~fpottier/stages/sujet2019-m2.pdf),
     by François Pottier, Inria Paris.
+  * [Effectful programs and their proofs in a dependently-typed setting](https://pages.lip6.fr/Pierre-Evariste.Dagand/stuffs/internship-2018-mpri-monad/sep-monad.pdf)
+    by Pierre-Évariste Dagand, CNRS -- Inria Paris -- LIP6
 
 Please do not hesitate to talk to us during the break or
 at the end of each lecture,
@@ -172,14 +174,14 @@ The programming project is not yet available.
 
 ### Dependently-typed Functional Programming
 
-(25/01/2019) (/01/02/2019) (08/02/2019) (15/02/2019) (22/02/2019)
+ 
 
 * [Guidelines](agda/Index.lagda.rst)
-* [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
-* [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
-* [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
-* [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
-* [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
+* (25/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
+* (01/02/2019) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
+* (08/02/2019) [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
+* (15/02/2019) [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
+* (22/02/2019) [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
 
 ## Evaluation of the course
 
