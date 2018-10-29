@@ -13,6 +13,8 @@ of this course:
     by François Pottier, Inria Paris.
   * [Effectful programs and their proofs in a dependently-typed setting](https://pages.lip6.fr/Pierre-Evariste.Dagand/stuffs/internship-2018-mpri-monad/sep-monad.pdf)
     by Pierre-Évariste Dagand, CNRS -- Inria Paris -- LIP6
+  * [Différences sémantiques : théorie, techniques et applications](http://yann.regis-gianas.org/public/proposal.pdf)
+    by Yann Régis-Gianas, IRIF -- Univ Paris Diderot -- Inria Paris
 
 Please do not hesitate to talk to us during the break or
 at the end of each lecture,
