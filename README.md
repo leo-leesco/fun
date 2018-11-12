@@ -10,7 +10,7 @@ of this course:
 
   * [How to be an Effective Liar: Higher-Order Memoization
     Algorithms in Iris](http://gallium.inria.fr/~fpottier/stages/sujet2019-m2.pdf),
-    by François Pottier, Inria Paris.
+    by François Pottier, Inria Paris. (**This offer is closed.**)
   * [Effectful programs and their proofs in a dependently-typed setting](https://pages.lip6.fr/Pierre-Evariste.Dagand/stuffs/internship-2018-mpri-monad/sep-monad.pdf)
     by Pierre-Évariste Dagand, CNRS -- Inria Paris -- LIP6
   * [Différences sémantiques : théorie, techniques et applications](http://yann.regis-gianas.org/public/proposal.pdf)
@@ -145,7 +145,7 @@ The programming project is not yet available.
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (09/11/2018) 
+* (09/11/2018)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
@@ -176,7 +176,7 @@ The programming project is not yet available.
 
 ### Dependently-typed Functional Programming
 
- 
+
 
 * [Guidelines](agda/Index.lagda.rst)
 * (25/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
