@@ -163,15 +163,10 @@ The programming project is not yet available.
 
 (07/12/2018) (14/12/2018) (21/12/2018) (11/01/2019) (18/01/2019)
 
-* [Introduction](slides/yrg-00-introduction.pdf),
-  [ML and Type inference](slides/yrg-01-type-inference.pdf)
-* (15/12/2017) Subtyping
-  [Exercises](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf)
-  [Answers](slides/yrg-03-diy-lambda-calculus-with-subtyping-answers.pdf)
-* (22/12/2017 - 12/01/2018) Dependent types
-  [GADTs](slides/yrg-04-gadt-metatheory.pdf),
-  [Exercises](slides/yrg-05-diy-lambda-pi.pdf)
-* (19/01/2018) [Functional correctness](slides/yrg-06-functional-correctness.pdf)
+* ML
+* Subtyping
+* Dependent types
+* Functional correctness
 * Effects and resources
 
 ### Dependently-typed Functional Programming
