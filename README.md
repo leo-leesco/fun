@@ -161,17 +161,13 @@ The programming project is not yet available.
 
 ### Rich types, tractable typing
 
-(07/12/2018) (14/12/2018) (21/12/2018) (11/01/2019) (18/01/2019)
-
-* ML
-* Subtyping
-* Dependent types
-* Functional correctness
-* Effects and resources
+* (07/12/2018) ML
+* (14/12/2018) Subtyping
+* (21/12/2018) Dependent types
+* (11/01/2019) Functional correctness
+* (18/01/2019) Effects and resources
 
 ### Dependently-typed Functional Programming
-
-
 
 * [Guidelines](agda/Index.lagda.rst)
 * (25/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
