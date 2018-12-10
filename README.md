@@ -104,7 +104,7 @@ The programming project is not yet available.
   * From a small-step semantics down to an efficient verified interpreter,
     in several stages
       ([slides 02](slides/fpottier-02.pdf))
-      ([the lambda-calculus in OCaml](ocaml/Lambda.ml))
+      ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
 * (28/09/2018) Compiling away first-class functions:
   closure conversion, defunctionalization
@@ -114,11 +114,11 @@ The programming project is not yet available.
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
-    ([exercise](ocaml/EvalCBVExercise.ml), [solution](ocaml/EvalCBVCPS.ml)).
+    ([exercise](ocaml/pottier/EvalCBVExercise.ml), [solution](ocaml/pottier/EvalCBVCPS.ml)).
   * Transforming a call-by-name interpreter
-    ([solution](ocaml/EvalCBNCPS.ml)).
+    ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
-    ([solution](ocaml/Graph.ml)).
+    ([solution](ocaml/pottier/Graph.ml)).
 * (12/10/2018) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
