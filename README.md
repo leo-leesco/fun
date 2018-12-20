@@ -162,7 +162,7 @@ The programming project is not yet available.
 ### Rich types, tractable typing
 
 * (07/12/2018) ML and type inference ([Introduction](slides/yrg-00-introduction.pdf)), ([ML](slides/yrg-01-type-inference.pdf)), ([programming exercise](ocaml/yrg/ml/README.md))
-* (14/12/2018) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-03-diy-lambda-calculus-with-subtyping.pdf))
+* (14/12/2018) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf))
 * (21/12/2018) GADTs ([support](slides/yrg-03-gadts.pdf)), [LambdaPI](slides/yrg-03-diy-lambda-pi.pdf)
 * (11/01/2019) Functional correctness
 * (18/01/2019) Effects and resources
