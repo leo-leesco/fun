@@ -1,0 +1,2 @@
+let fst = fun x y -> x in
+(fun f -> fst (f (fun x -> x)) (f 0)) (fun x -> x)

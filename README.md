@@ -104,7 +104,7 @@ The programming project is not yet available.
   * From a small-step semantics down to an efficient verified interpreter,
     in several stages
       ([slides 02](slides/fpottier-02.pdf))
-      ([the lambda-calculus in OCaml](ocaml/Lambda.ml))
+      ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
 * (28/09/2018) Compiling away first-class functions:
   closure conversion, defunctionalization
@@ -114,11 +114,11 @@ The programming project is not yet available.
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
-    ([exercise](ocaml/EvalCBVExercise.ml), [solution](ocaml/EvalCBVCPS.ml)).
+    ([exercise](ocaml/pottier/EvalCBVExercise.ml), [solution](ocaml/pottier/EvalCBVCPS.ml)).
   * Transforming a call-by-name interpreter
-    ([solution](ocaml/EvalCBNCPS.ml)).
+    ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
-    ([solution](ocaml/Graph.ml)).
+    ([solution](ocaml/pottier/Graph.ml)).
 * (12/10/2018) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
@@ -161,22 +161,13 @@ The programming project is not yet available.
 
 ### Rich types, tractable typing
 
-(07/12/2018) (14/12/2018) (21/12/2018) (11/01/2019) (18/01/2019)
-
-* [Introduction](slides/yrg-00-introduction.pdf),
-  [ML and Type inference](slides/yrg-01-type-inference.pdf)
-* (15/12/2017) Subtyping
-  [Exercises](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf)
-  [Answers](slides/yrg-03-diy-lambda-calculus-with-subtyping-answers.pdf)
-* (22/12/2017 - 12/01/2018) Dependent types
-  [GADTs](slides/yrg-04-gadt-metatheory.pdf),
-  [Exercises](slides/yrg-05-diy-lambda-pi.pdf)
-* (19/01/2018) [Functional correctness](slides/yrg-06-functional-correctness.pdf)
-* Effects and resources
+* (07/12/2018) ML and type inference ([Introduction](slides/yrg-00-introduction.pdf)), ([ML](slides/yrg-01-type-inference.pdf)), ([programming exercise](ocaml/yrg/ml/README.md))
+* (14/12/2018) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf))
+* (21/12/2018) GADTs ([support](slides/yrg-03-gadts.pdf)), [LambdaPI](slides/yrg-03-diy-lambda-pi.pdf)
+* (11/01/2019) Functional correctness
+* (18/01/2019) Effects and resources
 
 ### Dependently-typed Functional Programming
-
-
 
 * [Guidelines](agda/Index.lagda.rst)
 * (25/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
