@@ -197,6 +197,9 @@ Only course notes and hand written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+- mid-term exam 2018-2019:
+  [A simple object encoding](http://gallium.inria.fr/~remy/mpri/exams/partiel-2018-2019.pdf)
+
 - mid-term exam 2017-2018:
   [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
