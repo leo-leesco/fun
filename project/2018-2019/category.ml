@@ -136,7 +136,7 @@ end
 
    An initial (or universal or coterminal) object [unit] of a category
    is such that for every object ['a] there is exactly one morphism
-   [it] from [t] to ['a].
+   [ti] from [t] to ['a].
 
 *)
 module type HasInitialObject = sig
@@ -147,9 +147,8 @@ end
 
 (**
 
-   A terminal (or final) object [unit] of a category is such that for
-   every object ['a] there is exactly one morphism [ti] from ['a] to
-   [t].
+   A terminal object [unit] of a category is such that for every
+   object ['a] there is exactly one morphism [it] from ['a] to [t].
 
 *)
 module type HasTerminalObject = sig
