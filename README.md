@@ -170,6 +170,11 @@ The programming project assignment is [available](project/2018-2019/sujet.pdf).
 
 ### Dependently-typed Functional Programming
 
+This lecture will involve some hands-on experience. To this end, it is
+necessary to bring a laptop on which Agda (version 2.5.4.1 or higher)
+is installed. A quick installation guide as well as further pointers
+can be found [here](agda/00-agda/Warmup.lagda.rst).
+
 * [Guidelines](agda/Index.lagda.rst)
 * (25/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
 * (01/02/2019) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
