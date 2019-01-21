@@ -508,10 +508,6 @@ module AdditiveFunctionsCat : sig
           with type ('a, 'b) k := ('a, 'b) k
           with type 'a ok := 'a ok
 
-  include CartesianClosedCat
-          with type ('a, 'b) k := ('a, 'b) k
-          with type 'a ok := 'a ok
-
 end
 = struct
 
@@ -564,18 +560,6 @@ end
     failwith "Student! This is your job!"
 
   let ok_unit : unit ok =
-    failwith "Student! This is your job!"
-
-  let apply oka okb =
-    failwith "Student! This is your job!"
-
-  let curry oka okb okc (AdditiveFun f) =
-    failwith "Student! This is your job!"
-
-  let uncurry oka okb okc (AdditiveFun f) =
-    failwith "Student! This is your job!"
-
-  let ok_arrow (type a b) oka okb =
     failwith "Student! This is your job!"
 
 end
