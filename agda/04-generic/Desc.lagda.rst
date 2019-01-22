@@ -54,7 +54,8 @@ Extensional Generic Programming
     open import Data.Product hiding (map)
     open import Data.Nat
     open import Data.Fin hiding (_+_)
-    open import Data.List hiding (map ; replicate ; zipWith ; foldr ; sum ; sequence)
+    open import Data.List
+      hiding (map ; replicate ; zipWith ; foldr ; sum ; lookup ; tabulate)
 
     open import Relation.Binary.PropositionalEquality
 
@@ -154,8 +155,7 @@ manner:
                                (4 ∷ 9 ∷ 15 ∷ []) ∷ [])))
 
 Or "per column", using the *reranking* operator ```¹``, which amounts
-to pre- and post-compositing the desired operation with a
-transposition:
+to pre- and post-composing the desired operation with a transposition:
 
  .. code-block:: agda
 
@@ -239,6 +239,7 @@ Another (arbitrary) example of functor is the following::
 **Exercise (difficulty: 1)** Prove the functor law for ``Pair``.
 
 **Exercise (difficulty: 1)** Show that lists define a functor.
+
 
 
 --------------------------------
@@ -360,9 +361,10 @@ Lecture 1) is an applicative::
                                           let (x , s'') = xs s' in 
                                           f x , s''
 
-.. TODO: write the instances above (<$>, pure and ⊛) using the monadic operations
 
 **Exercise (difficulty: 1)** Write a program that takes a monad (specified with ``return`` and ``>>=``) and produces its underlying applicative.
+
+
 
 --------------------------------
 Naperian
@@ -383,10 +385,10 @@ n-elements vectors::
                  (4 ∷ 5 ∷ 6 ∷ []) ∷ []
   
 
-To implement transposition (and, therefore, reranking), we need to
-access to be able to *index* into a vector (say, "get the value on row
-``i`` and column ``j``") as well as to be able to *create* a vector as
-a function from its indices (say, "define the matrix of value ``f(i,
+To implement transposition (and, therefore, reranking), we need to be
+able to *index* into a vector (say, "get the value on row ``i`` and
+column ``j``") as well as to be able to *create* a vector as a
+function from its indices (say, "define the matrix of value ``f(i,
 j)`` at row ``i`` and column ``j``). The first corresponds to a lookup
 while the second corresponds to a tabulation::
 
@@ -424,7 +426,7 @@ An applicative functor such that there exists a set ``Log`` supporting
         Log : Set
         lookup : ∀ {A} → F A → (Log → A)
         tabulate : ∀ {A} → (Log → A) → F A
-        overlap {{super}} : Applicative F
+        overlap {{super}} : Functor F
   
       positions : F Log
       positions = tabulate λ ix → ix
@@ -440,6 +442,9 @@ An applicative functor such that there exists a set ``Log`` supporting
 .. TODO: add `comonad instance <https://stackoverflow.com/questions/12963733/writing-cojoin-or-cobind-for-n-dimensional-grid-type/13100857#13100857>`_
 
 
+
+
+
 **Exercise (difficulty: 2)** State the Naperian laws and prove them
 for vectors.
 
@@ -451,6 +456,7 @@ Pairs are Naperian too::
       lookup {{PairNaperian}} (P x y) true = x
       lookup {{PairNaperian}} (P x y) false = y
       tabulate {{PairNaperian}} f = P (f true) (f false)
+
 
 
 Given any pair of Naperian functors, transposition is expressed as
@@ -498,6 +504,7 @@ structure of a given set::
         _<>_ : A → A → A
   
     open Monoid ⦃...⦄
+
 
 
 Famous monoids include ``(ℕ, 0, _+_)`` and ``(List A, [], _++_)``
@@ -586,6 +593,7 @@ A functor offering such an iterator is said to be `foldable
       VecFoldable : ∀ {n} → Foldable (λ A → Vec A n)
       foldMap {{VecFoldable}} = foldMap-Vec
     
+
 Pairs are foldable too::
 
     instance
@@ -660,6 +668,7 @@ A functor offering such an iterator is said to be `traversable
       traverse {{VectorTraversable}} f [] = pure []
       traverse {{VectorTraversable}} f (x ∷ v) = _∷_ <$> f x ⊛ traverse f v
 
+
 Surprise, pairs are traversable too::
 
     instance
@@ -696,8 +705,10 @@ to be both traversable (ie. support effectful iteration) and naperian
 
     record Dimension (F : Set → Set) : Set₁ where
       field
-        overlap {{super₁}} : Traversable F
+        overlap {{super₁}} : Applicative F
         overlap {{super₂}} : Naperian F
+        overlap {{super₃}} : Traversable F
+
   
       size : ∀ {α} → F α → ℕ
       size as = length (toList as)
@@ -746,6 +757,9 @@ dimension::
       BVectorFoldable : ∀ {n} → Foldable (bvector n)
       BVectorFoldable = {!!}
   
+      BVectorApplicative : ∀ {n} → Applicative (bvector n)
+      BVectorApplicative = {!!}
+
       BVectorNaperian : ∀ {n} → Naperian (bvector n)
       BVectorNaperian = {!!}
   
@@ -791,6 +805,9 @@ dimension::
   
         MFoldable : ∀ {r c} → Foldable (λ A → M A r c)
         MFoldable = {!!}
+
+        MApplicative : ∀ {r c} → Applicative (λ A → M A r c)
+        MApplicative = {!!}
   
         MNaperian : ∀ {r c} → Naperian (λ A → M A r c)
         MNaperian = {!!}
@@ -809,7 +826,7 @@ defined by ``MDimension`` is equivalent to the following function::
     toNat (B l r)  = toNat l + toNat r
 
 
-Programming solely with the structured offered by dimensions, we can
+Programming solely with the structure offered by dimensions, we can
 implement a generic inner product and matrix product::
 
     inner-product : ∀ {F} → {{_ : Dimension F}} → 
@@ -939,7 +956,7 @@ which is interpreted as-is in the monoid of endofunctor on ``Set``::
     Hyper [] A = Id A
     Hyper (F ∷ Fs) A = Seq F (Hyper Fs) A
 
-that is (but this would play nice with unification):
+that is (but this would not play nice with unification):
 
 .. code-block:: agda
 
@@ -1211,7 +1228,7 @@ Intensional Generic Programming
     open import Data.Bool
     open import Data.Product hiding (map)
     open import Data.Sum hiding (map)
-    open import Data.Nat hiding (fold)
+    open import Data.Nat
     open import Data.Fin renaming (suc to sucF) hiding (fold)
     open import Data.Vec hiding (map)
 
@@ -1290,7 +1307,7 @@ of two functors to be a functor. Implement composition of descriptions::
 
       correctness-∘ : ∀ {X D₁ D₂} → ⟦ D₁ ∘D D₂ ⟧ X ≡ ⟦ D₁ ⟧ (⟦ D₂ ⟧ X)
       correctness-∘ = {!!}
-        where postulate ext : Extensionality 0ℓ 0ℓ
+        where postulate ext : Extensionality Level.zero Level.zero
 
 
 
@@ -1305,13 +1322,13 @@ and (generically) prove the functor laws::
 
     proof-map-id : ∀ {X} → (D : Desc)(v : ⟦ D ⟧ X) → map D id v ≡ v
     proof-map-id = {!!}
-      where postulate ext : Extensionality 0ℓ 0ℓ
+      where postulate ext : Extensionality Level.zero Level.zero
 
     proof-map-compos : ∀ {X Y Z}{f : X → Y}{g : Y → Z} → 
                        (D : Desc)(v : ⟦ D ⟧ X) → 
                        map D (λ x → g (f x)) v ≡ map D g (map D f v)
     proof-map-compos = {!!}
-      where postulate ext : Extensionality 0ℓ 0ℓ
+      where postulate ext : Extensionality Level.zero Level.zero
 
 
 

@@ -7,7 +7,8 @@
   open import Data.Empty
   open import Data.Unit hiding (_≤_ ; _≤?_)
   open import Data.Bool
-  open import Data.Maybe hiding (map) renaming (monad to monad-Maybe)
+  open import Data.Maybe hiding (map)
+  import Data.Maybe.Categorical
   open import Data.Product hiding (map)
   open import Data.Sum hiding (map)
   open import Data.Nat
@@ -80,7 +81,7 @@ First-order Unification
 
     open import Data.Maybe
     open import Category.Monad
-    open RawMonadZero {0ℓ} Data.Maybe.monadZero
+    open RawMonadZero {Level.zero} Data.Maybe.Categorical.monadZero
 
 
 In this first example, we set out to implement first-order
@@ -286,7 +287,7 @@ Structurally: terms
   module Unif where
 
     open import Category.Monad
-    open RawMonadZero {0ℓ} Data.Maybe.monadZero
+    open RawMonadZero {Level.zero} Data.Maybe.Categorical.monadZero
 
 As it stands, we will have a hard time convincing Agda that this
 implementation is indeed terminating: the terms grow as substitutions
@@ -523,16 +524,16 @@ is able to spot it::
 
     flex-flex {zero} ()
     flex-flex {suc _} x y with x Δ y
-    ... | just y' = , id ∷[ var y' / x ]
-    ... | nothing = , id
+    ... | just y' = -, id ∷[ var y' / x ]
+    ... | nothing = -, id
 
     flex-rigid {0} ()
     flex-rigid {suc _} x t = check x t >>= λ t' →
-                             return (, id ∷[ t' / x ])
+                             return (-, id ∷[ t' / x ])
    
 
     mgu : ∀ {m} → (s t : Term m) → Maybe (∃ (Subst m))
-    mgu s t = amgu s t (, id)
+    mgu s t = amgu s t (-, id)
 
 
 The key idea was thus to reify the (decreasing) *measure* as an
@@ -728,7 +729,7 @@ obvious (to us, not to Agda)::
       _/_[_]⊢_ : ∀ {n l} → Vec (Formula n) l → Context n → Formula n → A → Bool
       search : ∀ {n} → Context n → A → Bool
 
-      B / Γ      ⊢ Atom α      = search ((, B) , Γ) α
+      B / Γ      ⊢ Atom α      = search ((-, B) , Γ) α
       B / B₂ , Γ ⊢ P ⊃ Q       = B / B₂ , Γ ▹C P  ⊢ Q
 
       B / Γ [ Atom α ]⊢ β      = ⌊ α ≟ β ⌋
@@ -772,7 +773,7 @@ definitions on ``Formulas``::
                 B / Γ [ Atom α ]⊢ β = ⌊ α ≟ β ⌋
                 B / Γ [ _⊃_ {n} P Q  ]⊢ β = B / Γ [ Q ]⊢ β ∧ B / Γ ⊢ P
                   where  _/_⊢_ : Vec (Formula (suc n)) (pred l) → Context (suc n) → Formula n → Bool
-                         B / Γ ⊢ Atom α = search ((, B) , Γ) α
+                         B / Γ ⊢ Atom α = search ((-, B) , Γ) α
                          B / B' , Γ ⊢ P ⊃ Q  = B / B' , Γ ▹C P  ⊢ Q
 
       _⊢_ : ∀ {n} → Context n → Formula n → Bool
@@ -1147,7 +1148,7 @@ Interpretation: immediate values
   ::
   module Fuel (A : Set)(B : A → Set) where
     open RecMonad A B
-    open Morphism Maybe monad-Maybe A B
+    open Morphism Maybe Data.Maybe.Categorical.monad A B
     open Identity A B
 
 We may blankly refuse to iterate::
@@ -1318,7 +1319,7 @@ simply have to prove that ``DomGCD`` is inhabited for any input
 numbers m and n (the proof is not really important)::
 
   gcd-wf : (m n : ℕ) → DomGCD (m , n)
-  gcd-wf m n = build ([_⊗_] IndNat.<-rec-builder IndNat.<-rec-builder) 
+  gcd-wf m n = build ([_⊗_] IndNat.<-recBuilder IndNat.<-recBuilder) 
                    (λ { (m , n) → DomGCD (m , n) }) 
                    (λ { (m , n) rec → con (ih m n rec) })
                    (m , n)
@@ -1326,8 +1327,10 @@ numbers m and n (the proof is not really important)::
                ih zero y rec = tt
                ih (suc x) zero rec = tt
                ih (suc x) (suc y) rec with x ≤? y 
-               ih (suc x) (suc y) (rec-x , rec-y) | yes p = (rec-x (y ∸ x) (s≤′s (≤⇒≤′ (n∸m≤n x y)))) , (λ _ → tt)
-               ih (suc x) (suc y) (rec-x , rec-y) | no ¬p = rec-y ((x ∸ y)) ((s≤′s (≤⇒≤′ (n∸m≤n y x)))) (suc y) , (λ _ → tt)
+               ih (suc x) (suc y) (rec-x , rec-y) 
+                 | yes p = rec-x (y ∸ x) (s≤s (n∸m≤n x y)) , λ _ → tt
+               ih (suc x) (suc y) (rec-x , rec-y) 
+                 | no ¬p = rec-y ((x ∸ y)) (s≤s (n∸m≤n y x)) (suc y) , λ _ → tt
 
 And we get the desired gcd function::
 
