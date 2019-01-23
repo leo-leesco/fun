@@ -196,6 +196,8 @@ available with solutions:
 
 - mid-term exam 2018-2019:
   [A simple object encoding](http://gallium.inria.fr/~remy/mpri/exams/partiel-2018-2019.pdf)
+- final exam 2017-2018:
+  [Static differentiation](https://gitlab.inria.fr/fpottier/mpri-2.4-public/blob/master/exams/final-2017-2018.pdf)
 - mid-term exam 2017-2018:
   [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
