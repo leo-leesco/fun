@@ -337,9 +337,9 @@ function! For which ``_>>=_`` amounts to composition and ``return`` is
 the identity function. Monads can be understood as offering "enhanced"
 functions, presenting a suitable notion of composition and identity
 *as well as* effectful operations. For the programmer, this means that
-we have ``let _ = _ in _`` for pure functions and ``_>>=_`` for
-effectful functions, both subject to (morally) the same laws of
-function composition.
+we have ``let x = e₁ in e₂ ≅ e₁ (λ x → e₂)`` for pure functions and
+``let! x = e₁ in e₂ ≅ e₁ >>= λ x → e₂`` for effectful functions, both
+subject to (morally) the same laws of function composition.
 
 
 --------------------------------
@@ -616,10 +616,12 @@ form. This is captured by two statement, a *soundness* result and a
 lemmas (whose proof is left as an exercise)::
 
     pf-sound : ∀{A} → (p : StateF A) → p ∼ ⌈ norm p ⌉
-    pf-sound = {!!}
+    pf-sound {A} = {!!}
+        where open import Relation.Binary.EqReasoning (setoid A)
 
     pf-complete : ∀ {A} {p q : StateF A} → p ∼ q → ∀{s} → eval p s ≡ eval q s
     pf-complete = {!!}
+      where open ≡-Reasoning
 
 
 so as to focus on the overall architecture of the proof.
