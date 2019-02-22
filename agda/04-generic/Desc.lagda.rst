@@ -181,8 +181,7 @@ Applying an operation pointwise to every elements of a vector is
 exactly what ``map`` does::
 
     map-Vec : ∀ {n}{A B : Set} → (A → B) → vec n A → vec n B
-    map-Vec f [] = []
-    map-Vec f (x ∷ xs) = f x ∷ map-Vec f xs
+    map-Vec f xs = {!!}
 
 This would allow us to lift the operation ``square`` on numbers to
 apply on vectors of numbers.
@@ -275,23 +274,20 @@ need a (total!) ``zipWith``::
 
     zipWith-Vec : ∀ {n} {A B C : Set} →
               (A → B → C) → vec n A → vec n B → vec n C
-    zipWith-Vec f [] [] = []
-    zipWith-Vec f (x ∷ xs) (y ∷ ys) = f x y ∷ zipWith-Vec f xs ys
+    zipWith-Vec f xs ys = {!!}
 
 However, ``zipWith`` can be obtained from two more primitive
 operations and the functoriality of vectors::
 
     replicate-Vec : ∀ {n} {A : Set} → A → vec n A
-    replicate-Vec {n = zero}  x = []
-    replicate-Vec {n = suc n} x = x ∷ replicate-Vec x
+    replicate-Vec {n = n} x = {!!}
 
     _<*>-Vec_ : ∀ {n} {A B : Set} → vec n (A → B) → vec n A → vec n B
-    []       <*>-Vec []       = []
-    (f ∷ fs) <*>-Vec (x ∷ xs) = f x ∷ (fs <*>-Vec xs)
+    fs <*>-Vec xs = {!!}
 
     zipWith-Vec' : ∀ {n} {A B C : Set} →
               (A → B → C) → vec n A → vec n B → vec n C
-    zipWith-Vec' f xs ys = f <$> xs <*>-Vec ys
+    zipWith-Vec' f xs ys = {!!}
 
 A functor equipped with these two operations is an `applicative
 functor <https://wiki.haskell.org/Typeclassopedia#Applicative>`_::
@@ -306,7 +302,7 @@ functor <https://wiki.haskell.org/Typeclassopedia#Applicative>`_::
         overlap {{super}} : Functor F
 
       zipWith : ∀ {A B C} → (A → B → C) → F A → F B → F C
-      zipWith f x y = f <$> x ⊛ y
+      zipWith f x y = {!!}
 
       _<⊛_ : ∀ {A B} → F A → F B → F A
       a <⊛ b = const <$> a ⊛ b
@@ -377,13 +373,11 @@ Lecture 1) is an applicative::
 
     instance
       StateFunctor : ∀ {A : Set} → Functor (State A)
-      _<$>_ {{StateFunctor}} f m s = let (x , s') = m s in
-                                     f x , s'
+      _<$>_ {{StateFunctor}} f m s = {!!}
+
       StateApplicative : ∀ {A : Set} → Applicative (State A)
-      pure {{StateApplicative}} x s = x , s
-      _⊛_  {{StateApplicative}} fs xs s = let (f , s') = fs s in
-                                          let (x , s'') = xs s' in
-                                          f x , s''
+      pure {{StateApplicative}} x s = {!!}
+      _⊛_  {{StateApplicative}} fs xs s = {!!}
 
 
 **Exercise (difficulty: 1)** Write a program that takes a monad (specified with ``return`` and ``>>=``) and produces its underlying applicative.
@@ -442,17 +436,13 @@ j)`` at row ``i`` and column ``j``). The first corresponds to a lookup
 while the second corresponds to a tabulation::
 
     lookup-Vec : ∀ {n} {A : Set} → vec n A → Fin n → A
-    lookup-Vec (x ∷ xs)  zero = x
-    lookup-Vec (x ∷ xs) (suc i) = lookup-Vec xs i
+    lookup-Vec xs k = {!!}
 
     tabulate-Vec : ∀ {n} {A : Set} → (Fin n → A) → vec n A
-    tabulate-Vec {zero}  f = []
-    tabulate-Vec {suc n} f = f zero ∷ tabulate-Vec (f ∘ suc)
+    tabulate-Vec {n}  f = {!!}
 
     transpose-Matrix : ∀ {m n} {A : Set} → matrix m n A → matrix n m A
-    transpose-Matrix m = tabulate-Vec (λ i →
-                         tabulate-Vec (λ j →
-                         lookup-Vec (lookup-Vec m j) i))
+    transpose-Matrix m = {!!}
 
 ..
   ::
@@ -478,7 +468,7 @@ functor`_::
         overlap {{super}} : Functor F
 
       positions : F Log
-      positions = tabulate λ ix → ix
+      positions = {!!}
 
     open Naperian {{...}}
 
@@ -524,7 +514,7 @@ swapping the composition of structures::
     transpose : ∀ {F G : Set → Set}
                   {{_ : Naperian F}}{{_ : Naperian G}} →
                 ∀ {A} → F (G A) → G (F A)
-    transpose fga = tabulate <$> (tabulate (λ gx fx → lookup (lookup fga fx) gx))
+    transpose fga = {!!}
 
 ..
   ::
@@ -604,8 +594,7 @@ iteration over a vector can be implemented as the interpretation into
 a given monoid::
 
     foldMap-Vec : ∀ {n}{A}{W : Set} {{MonW : Monoid W}} → (A → W) → vec n A → W
-    foldMap-Vec f [] = mempty
-    foldMap-Vec f (x ∷ xs) = f x <> foldMap-Vec f xs
+    foldMap-Vec f xs = {!!}
 
     sumAll-Vec : ∀ {n} → vec n ℕ → ℕ
     sumAll-Vec = foldMap-Vec id
@@ -614,13 +603,13 @@ Note that we recover the 70's embodiment of iteration, the ``foldr``,
 by exploiting the fact that endomorphisms form a monoid::
 
     foldr-Vec : ∀ {n}{A B : Set} → (A → B → B) → B → vec n A → B
-    foldr-Vec su ze fs = foldMap-Vec su fs ze
+    foldr-Vec su ze fs = {!!}
 
 Conversely, we can interpret it into the initial model of foldability,
 namely lists::
 
     toList-Vec : ∀ {n A} → vec n A → List A
-    toList-Vec = foldMap-Vec (λ a → a ∷ [])
+    toList-Vec = {!!}
 
 ..
   ::
@@ -646,12 +635,12 @@ A functor offering such an iterator is said to be `foldable
       foldr su ze fs = foldMap su fs ze
 
       toList : ∀ {A} → F A → List A
-      toList = foldMap (λ a → a ∷ [])
+      toList = {!!}
 
     open Foldable {{...}}
 
     sumAll : ∀ {F} → {{ _ : Foldable F}} → F ℕ → ℕ
-    sumAll = foldMap id
+    sumAll = {!!}
 
     instance
       VecFoldable : ∀ {n} → Foldable (λ A → Vec A n)
@@ -689,14 +678,13 @@ running sum of a vector, we need to perform a stateful
 iteration::
 
     traverse-Vec : ∀ {n F A B} {{_ : Applicative F}} → (A → F B) → vec n A → F (vec n B)
-    traverse-Vec f [] = pure []
-    traverse-Vec f (x ∷ v) = _∷_ <$> f x ⊛ traverse-Vec f v
+    traverse-Vec f xs = {!!}
 
     increase : ℕ → State ℕ ℕ
     increase n = λ m → let n' = m + n in n' , n'
 
     sumsAll-Vec : ∀ {n} → vec n ℕ → vec n ℕ
-    sumsAll-Vec xs = proj₁ (traverse-Vec increase xs 0)
+    sumsAll-Vec xs = {!!}
 
 ..
   ::
@@ -724,7 +712,7 @@ A functor offering such an iterator is said to be `traversable
         overlap {{super}} : Foldable T
 
       sequence :  ∀ {F : Set → Set} {A} {{_ : Applicative F}} → T (F A) -> F (T A)
-      sequence = traverse id
+      sequence = {!!}
 
     open Traversable ⦃...⦄
     instance
@@ -775,7 +763,7 @@ to be both traversable (ie. support effectful iteration) and naperian
 
 
       size : ∀ {α} → F α → ℕ
-      size as = length (toList as)
+      size as = {!!}
 
     open Dimension ⦃...⦄
 
@@ -895,13 +883,12 @@ implement a generic inner product and matrix product::
 
     inner-product : ∀ {F} → {{_ : Dimension F}} →
                     F ℕ → F ℕ → ℕ
-    inner-product xs ys = sumAll (zipWith _*_ xs ys)
+    inner-product xs ys = {!!}
 
     matrix-product : ∀ {F G H} →
                      {{_ : Dimension F}}{{_ : Dimension G}}{{_ : Dimension H}} →
                      F (G ℕ) → G (H ℕ) → F (H ℕ)
-    matrix-product {F}{G}{H} {{dimF}} xss yss =
-        zipWith (zipWith inner-product) (replicate <$> xss) (replicate (transpose yss))
+    matrix-product {F}{G}{H} {{dimF}} xss yss = {!!}
 
 ..
   ::
@@ -1122,7 +1109,7 @@ As a result, we can define::
 
 and seamlessly apply it to any hyper-matrix.
 
-We can also define the generalized running sum::
+We can also define the generalized running sum:
 
     sums : ∀ {F Fs}
              {{_ : Shapely Fs}}{{_ : Dimension F}} →
@@ -1173,6 +1160,7 @@ and apply it to any matrix of dimension at least ``F``.
                              ((10 ∷ 12 ∷ []) ∷ []))))
         example7 = refl
 
+        {-
         example10 : sums v123
                       ≡ S (I (1 ∷ 3 ∷ 6 ∷ []))
         example10 = refl
@@ -1181,7 +1169,7 @@ and apply it to any matrix of dimension at least ``F``.
                       ≡ S (S (I ((1 ∷ 3 ∷ 6 ∷ []) ∷
                                  (4 ∷ 9 ∷ 15 ∷ []) ∷ [])))
         example11 = refl
-
+        -}
 
 We can also iterate over all "rows" of an hyper-matrix, bringing the
 dimension down by ``F``::
@@ -1189,7 +1177,7 @@ dimension down by ``F``::
     reduceBy : ∀ {F Fs A M} →
                  {{_ : Shapely Fs}}{{_ : Monoid M}}{{_ : Dimension F}} →
                  (A → M) → Hyper (F ∷ Fs) A → Hyper Fs M
-    reduceBy {{shapeFs}} f (S fga) = (foldMap f) <$>H fga
+    reduceBy {{shapeFs}} f fga = {!!}
         where open Functor (HyperFunctor shapeFs) renaming (_<$>_ to _<$>H_)
 
     sum : ∀ {F Fs} →
@@ -1215,7 +1203,7 @@ obtain the reranking operator::
     transpose' : ∀ {A F G Fs} →
                  {{_ : Shapely Fs}}{{_ : Dimension F}}{{_ : Dimension G}} →
                  Hyper (F ∷ G ∷ Fs) A → Hyper (G ∷ F ∷ Fs) A
-    transpose' {{shapeFs}} (S (S x)) = S (S (transpose <$>H x))
+    transpose' {{shapeFs}} x = {!!}
         where open Functor (HyperFunctor shapeFs) renaming (_<$>_ to _<$>H_)
 
     _`¹_ : ∀ {A F₁ F₂ Fs G₁ G₂ Gs} →
@@ -1245,10 +1233,11 @@ obtain the reranking operator::
                                    ((6 ∷ (8 ∷ [])) ∷ [])) ∷ [])))))
         example12b = refl
 
+        {-
         example12 : sums `¹ v123-456 ≡ S (S (I ((1 ∷ 2 ∷ 3 ∷ []) ∷
                                                 (5 ∷ 7 ∷ 9 ∷ []) ∷ [])))
         example12 = refl
-
+        -}
 
 At this stage, we are merely touching upon what Gibbons' talks about
 in `APLicative Programming Naperian Functors`_. For instance, when
@@ -1404,7 +1393,7 @@ The functors captured by our grammar have also the property of being
 "strictly-positive". We are therefore allowed to take their fixpoint::
 
     data μ (D : Desc) : Set where
-      ⟨_⟩ : ⟦ D ⟧ (μ D) → μ D
+      ⟨_⟩ : {!!} → μ D
 
 Over this (standard) inductive type, we can implement the traditional
 ``fold`` operator::
@@ -1412,7 +1401,7 @@ Over this (standard) inductive type, we can implement the traditional
     {-# TERMINATING #-}
     fold : (D : Desc){T : Set} →
            (⟦ D ⟧ T → T) → μ D → T
-    fold D α ⟨ x ⟩ = α (map D (fold D α) x)
+    fold D α ⟨ x ⟩ = {!!}
 
 **Exercise (difficulty: 3)** Convince the termination checker that
 ``fold`` is indeed terminating. Hint: manually specialize the
@@ -1424,7 +1413,7 @@ mutually-recursive with ``fold``.
     module Example-Nat where
 
 **Example: natural numbers**:: Natural numbers are thus described as
-follows::
+follows:
 
       data NatTag : Set where
         `Ze `Su : NatTag
@@ -1439,7 +1428,7 @@ follows::
       pattern ze = ⟨ `Ze , tt ⟩
       pattern su n = ⟨ `Su , n ⟩
 
-Using the ``fold``, we can implement addition over these numbers::
+Using the ``fold``, we can implement addition over these numbers:
 
       plus : Nat → Nat → Nat
       plus x = fold NatD (λ { (`Ze , tt) → x
@@ -1453,7 +1442,7 @@ Using the ``fold``, we can implement addition over these numbers::
   ::
     module Example-List where
 
-**Example: lists**:: Similarly, here are lists::
+**Example: lists**:: Similarly, here are lists:
 
       data ListTag : Set where
         `Nil `Cons : ListTag
@@ -1485,25 +1474,13 @@ for induction::
 
 
     All : ∀{X} → (D : Desc)(P : X → Set) → ⟦ D ⟧ X → Set
-    All `X         P x         = P x
-    All (`K Z)     P x         = ⊤
-    All (D₁ `× D₂) P (d₁ , d₂) = All D₁ P d₁ × All D₂ P d₂
-    All (D₁ `+ D₂) P (inj₁ d₁) = All D₁ P d₁
-    All (D₁ `+ D₂) P (inj₂ d₂) = All D₂ P d₂
-    All (`Σ S T)   P (s , xs)  = All (T s) P xs
-    All (`Π S T)   P k         = ∀ s → All (T s) P (k s)
+    All D P x = {!!}
 
     Rec-μ : ∀ D → RecStruct (μ D) _ _
     Rec-μ D P ⟨ xs ⟩ = All D P xs
 
     all : ∀ {X P} → (D : Desc) → (rec : (x : X) → P x)(x : ⟦ D ⟧ X) → All D P x
-    all `X rec x = rec x
-    all (`K S) rec z = tt
-    all (D₁ `× D₂) rec (d₁ , d₂) = all D₁ rec d₁ , all D₂ rec d₂
-    all (D₁ `+ D₂) rec (inj₁ d₁) = all D₁ rec d₁
-    all (D₁ `+ D₂) rec (inj₂ d₂) = all D₂ rec d₂
-    all (`Σ S T) rec (s , xs) = all (T s) rec xs
-    all (`Π S T) rec k = λ s → all (T s) rec (k s)
+    all D rec x = {!!}
 
     {-# TERMINATING #-}
     rec-μ-builder : ∀{D} → RecursorBuilder (Rec-μ D)
@@ -1523,7 +1500,7 @@ in terms of ``all``.
 ..
   ::
     module Example-Plus where
-      open Example-Nat hiding (plus)
+      open Example-Nat -- hiding (plus)
 
 Using induction, we can write any dependently-typed programs or proofs
 over described inductive types: they have become (mostly, modulo the
@@ -1531,7 +1508,7 @@ fact that we have to go trough the fold/induction principle, which is
 not idiomatic Agda) first-class objects.
 
 But we can also take this as a opportunity to understand what we did
-earlier, in a simply-typed setting::
+earlier, in a simply-typed setting:
 
       plus[_∶_] : Nat → Nat → Set
       plus[ m ∶ n ] = Nat
@@ -1556,30 +1533,29 @@ the elements of the earlier signature being integrated as operations
 ``op``::
 
     _*D_ : Desc → Set → Desc
-    D *D X = `Σ Bool λ { true → `K X ; false → D }
+    D *D X = {!!}
 
     Free : Desc → Set → Set
     Free D X = μ (D *D X)
 
     return : ∀ {D X} → X → Free D X
-    return x = ⟨ true , x ⟩
+    return x = {!!}
 
     op : ∀ {D X} → ⟦ D ⟧ (Free D X) → Free D X
-    op xs = ⟨ false , xs ⟩
+    op xs = {!!}
 
 Doing so, the resulting description has a monadic structure, which we
-can realize generically::
+can realize generically:
 
     subst[_∶_∶_] : ∀ {X Y} → (D : Desc) → Free D X → (X → Free D Y) → Set
     subst[_∶_∶_] {X}{Y} D _ _ = Free D Y
 
     subst : ∀ {X Y} → (D : Desc) →
             Free D X → (X → Free D Y) → Free D Y
-    subst {X}{Y} D mx k =
+    subst {X}{Y} D mx k = 
       induction (D *D X) (λ mx₁ → subst[ D ∶ mx ∶ k ])
-        (λ { (true , x) tt → k x
-           ; (false , xs) as → ⟨ false , help D xs as ⟩ })
-        mx
+        {!!}
+        ?
       where help : ∀ {X Y} D → (ds : ⟦ D ⟧ X) → All D (λ _ → Y) ds → ⟦ D ⟧ Y
             help `X ds as = as
             help (`K x) ds as = ds
@@ -1590,7 +1566,7 @@ can realize generically::
             help (`Π S D₁) ds as = λ s → help (D₁ s) (ds s) (as s)
 
 ..
-  ::
+  :
     module Example-Free (A : Set)(B : A → Set) where
 
       CallD : Desc
@@ -1636,12 +1612,7 @@ latter. The key idea consists in noticing that ``Desc`` itself is an
 inductive type. As such, it can be described::
 
     DescD : Desc
-    DescD =  `K ⊤
-          `+ `K Set
-          `+ (`X `× `X)
-          `+ (`X `× `X)
-          `+ (`Σ Set λ S → `Π S (λ _ → `X))
-          `+ (`Σ Set λ S → `Π S (λ _ → `X))
+    DescD =  ?
 
     Desc' : Set₁
     Desc' = μ DescD
