@@ -185,7 +185,7 @@ can be found [here](agda/00-agda/Warmup.lagda.rst).
 ## Evaluation of the course
 
 Two written exams (a partial exam on Friday Nov 30 and a final exam on
-March 1 or 8) and one programming project or several programming exercises
+March 8) and one programming project or several programming exercises
 are used to evaluate the students that follow the full course. Only the
 partial exam will count to grade students who split the course.
 
