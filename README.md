@@ -80,14 +80,14 @@ The programming project is not yet available.
 
 ### Functional Programming: Under the Hood
 
-* (13/09/2018)
+* (13/09/2019)
   * Introduction
       ([slides 00](slides/fpottier-00.pdf)).
   * Syntax and operational semantics, on paper
       ([slides 01a](slides/fpottier-01a.pdf)).
   * Syntax, on a machine
       ([slides 01b](slides/fpottier-01b.pdf)).
-* (20/09/2018)
+* (20/09/2019)
   * Operational semantics, on a machine
       ([Coq demo](coq/DemoSyntaxReduction.v)).
   * From a small-step semantics down to an efficient verified interpreter,
@@ -95,11 +95,11 @@ The programming project is not yet available.
       ([slides 02](slides/fpottier-02.pdf))
       ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
-* (27/09/2018) Compiling away first-class functions:
+* (27/09/2019) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
-* (04/10/2018) Making the stack explicit: the CPS transformation
+* (04/10/2019) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
@@ -108,20 +108,20 @@ The programming project is not yet available.
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (11/10/2018) Equational reasoning and program optimizations
+* (11/10/2019) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
 ### Metatheory of Typed Programming Languages
 
-* (18/10/2018)
+* (18/10/2019)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
   (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (25/10/2018)
+* (25/10/2019)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
@@ -129,18 +129,18 @@ The programming project is not yet available.
    the extra material)
   (se also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (01/11/2018)
+* (01/11/2019)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (08/11/2018)
+* (08/11/2019)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
    and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (15/11/2018)
+* (15/11/2019)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
@@ -150,20 +150,20 @@ The programming project is not yet available.
 
 ### Rich types, tractable typing
 
-* (06/12/2018) ML and type inference ([Introduction](slides/yrg-00-introduction.pdf)), ([ML](slides/yrg-01-type-inference.pdf)), ([programming exercise](ocaml/yrg/ml/README.md))
-* (13/12/2018) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf))
-* (20/12/2018) GADTs ([support](slides/yrg-03-gadts.pdf)), [LambdaPI](slides/yrg-03-diy-lambda-pi.pdf)
-* (10/01/2019) Functional correctness
-* (17/01/2019) Effects and resources
+* (06/12/2019) ML and type inference ([Introduction](slides/yrg-00-introduction.pdf)), ([ML](slides/yrg-01-type-inference.pdf)), ([programming exercise](ocaml/yrg/ml/README.md))
+* (13/12/2019) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf))
+* (20/12/2019) GADTs ([support](slides/yrg-03-gadts.pdf)), [LambdaPI](slides/yrg-03-diy-lambda-pi.pdf)
+* (10/01/2020) Functional correctness
+* (17/01/2020) Effects and resources
 
 ### Dependently-typed Functional Programming
 
 * [Guidelines](agda/Index.lagda.rst)
-* (24/01/2019) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
-* (31/01/2019) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
-* (07/02/2019) [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
-* (14/02/2019) [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
-* (21/02/2019) [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
+* (24/01/2020) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
+* (31/01/2020) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
+* (07/02/2020) [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
+* (14/02/2020) [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
+* (21/02/2020) [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
 
 ## Evaluation of the course
 
