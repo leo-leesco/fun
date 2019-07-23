@@ -74,7 +74,7 @@ We also show the limits of dependently-typed functional programming.
 
 ## Project
 
-The programming project is not yet available.
+The programming project assignment is [available](project/2018-2019/sujet.pdf).
 
 ## Approximate syllabus
 
@@ -153,10 +153,15 @@ The programming project is not yet available.
 * (06/12/2019) ML and type inference ([Introduction](slides/yrg-00-introduction.pdf)), ([ML](slides/yrg-01-type-inference.pdf)), ([programming exercise](ocaml/yrg/ml/README.md))
 * (13/12/2019) Subtyping ([support](slides/yrg-02-subtyping.pdf), [DIY](slides/yrg-02-diy-lambda-calculus-with-subtyping.pdf))
 * (20/12/2019) GADTs ([support](slides/yrg-03-gadts.pdf)), [LambdaPI](slides/yrg-03-diy-lambda-pi.pdf)
-* (10/01/2020) Functional correctness
-* (17/01/2020) Effects and resources
+* (10/01/2020) Type inference and GADTs ([support](slides/yrg-04-type-inference-reloaded.pdf)),
+* (17/01/2020) Functional Correctness ([support](slides/yrg-04-functional-correctness.pdf))
 
 ### Dependently-typed Functional Programming
+
+This lecture will involve some hands-on experience. To this end, it is
+necessary to bring a laptop on which Agda (version 2.5.4.1 or higher)
+is installed. A quick installation guide as well as further pointers
+can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 * [Guidelines](agda/Index.lagda.rst)
 * (24/01/2020) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
@@ -167,7 +172,7 @@ The programming project is not yet available.
 
 ## Evaluation of the course
 
-Two written exams (a partial exam on Friday Nov 29 and a final exam on
+Two written exams (a partial exam on Friday Nov 22 or 29 and a final exam on
 February 28 or March 6) and one programming project or several programming
 exercises are used to evaluate the students that follow the full
 course. Only the partial exam will count to grade students who split the
@@ -180,6 +185,8 @@ available with solutions:
 
 - mid-term exam 2018-2019:
   [A simple object encoding](http://gallium.inria.fr/~remy/mpri/exams/partiel-2018-2019.pdf)
+- final exam 2017-2018:
+  [Static differentiation](https://gitlab.inria.fr/fpottier/mpri-2.4-public/blob/master/exams/final-2017-2018.pdf)
 - mid-term exam 2017-2018:
   [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
