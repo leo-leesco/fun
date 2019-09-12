@@ -72,10 +72,6 @@ effectful programming with monads and algebraic effects; tagless
 interpreters; programming with total functions; generic programming.
 We also show the limits of dependently-typed functional programming.
 
-## Project
-
-The programming project assignment is [available](project/2018-2019/sujet.pdf).
-
 ## Approximate syllabus
 
 ### Functional Programming: Under the Hood
