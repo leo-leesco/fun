@@ -174,7 +174,7 @@ exercises are used to evaluate the students that follow the full
 course. Only the partial exam will count to grade students who split the
 course.
 
-Only course notes and hand written notes are allowed for the exams.
+Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
@@ -214,6 +214,7 @@ available with solutions:
 ## Recommended software
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
+A recent version is recommended (at the time of writing, 2.0.5).
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.0x, Coq **8.5.3** and AutoSubst by executing
