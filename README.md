@@ -104,7 +104,7 @@ We also show the limits of dependently-typed functional programming.
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (11/10/2019) Equational reasoning and program optimizations
+* (??/10/2019) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
