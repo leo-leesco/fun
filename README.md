@@ -129,18 +129,18 @@ The programming project assignment is [available](project/2018-2019/sujet.pdf).
    the extra material)
   (se also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (01/11/2019)
+* (08/11/2019)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (08/11/2019)
+* (15/11/2019)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
    and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (15/11/2019)
+* (22/11/2019)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
@@ -172,7 +172,7 @@ can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 ## Evaluation of the course
 
-Two written exams (a partial exam on Friday Nov 22 or 29 and a final exam on
+Two written exams (a partial exam on Friday Nov 29 and a final exam on
 February 28 or March 6) and one programming project or several programming
 exercises are used to evaluate the students that follow the full
 course. Only the partial exam will count to grade students who split the
