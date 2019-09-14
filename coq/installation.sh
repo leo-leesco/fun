@@ -6,10 +6,10 @@ IFS=$'\n\t'
 
 export OPAMYES=true
 
-# Create a new opam switch.
+# Create a new opam switch. (We assume opam 2 is installed.)
 
 echo "Creating a new opam switch..."
-opam switch mpri24 -A 4.05.0
+opam switch create mpri24 4.05.0
 eval `opam config env`
 
 # Declare the Coq repository (not a switch-local command, unfortunately).

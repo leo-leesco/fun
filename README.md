@@ -72,10 +72,6 @@ effectful programming with monads and algebraic effects; tagless
 interpreters; programming with total functions; generic programming.
 We also show the limits of dependently-typed functional programming.
 
-## Project
-
-The programming project assignment is [available](project/2018-2019/sujet.pdf).
-
 ## Approximate syllabus
 
 ### Functional Programming: Under the Hood
@@ -108,7 +104,7 @@ The programming project assignment is [available](project/2018-2019/sujet.pdf).
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (11/10/2019) Equational reasoning and program optimizations
+* (??/10/2019) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
@@ -174,11 +170,11 @@ can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 Two written exams (a partial exam on Friday Nov 29 and a final exam on
 February 28 or March 6) and one programming project or several programming
-exercises are used to evaluate the students that follow the full
-course. Only the partial exam will count to grade students who split the
+exercises are used to evaluate the students who follow the full
+course. Only the partial exam is used to grade students who split the
 course.
 
-Only course notes and hand written notes are allowed for the exams.
+Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
@@ -218,6 +214,7 @@ available with solutions:
 ## Recommended software
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
+A recent version is recommended (at the time of writing, 2.0.5).
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.0x, Coq **8.5.3** and AutoSubst by executing

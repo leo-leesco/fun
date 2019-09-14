@@ -147,6 +147,22 @@ let rec within (eps : float) (xs : float stream) : float =
           if abs_float (a /. b -. 1.) <= eps then b
           else within eps xs
 
+(* OCaml allows forcing a thunk as part of pattern-matching construct,
+   via the syntax [lazy p] where [p] is a pattern. Thus, [within] can
+   also be written as follows: *)
+
+let rec within (eps : float) (xs : float stream) : float =
+  match xs with
+  | lazy (Cons (a,
+      ((lazy (Cons (b, _))) as xs)
+    )) ->
+      if abs_float (a /. b -. 1.) <= eps then b
+      else within eps xs
+  | _ ->
+      assert false
+
+(* We can finally define [sqrt] and check that it seems to work: *)
+
 let sqrt (n : float) : float =
   within 0.0001 (repeat (next n) n)
 
