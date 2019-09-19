@@ -104,20 +104,20 @@ We also show the limits of dependently-typed functional programming.
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (??/10/2019) Equational reasoning and program optimizations
+* (18/10/2019, *to be confirmed*) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
 ### Metatheory of Typed Programming Languages
 
-* (18/10/2019)
+* (11/10/2019)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
   (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (25/10/2019)
+* (25/10/2019, *to be confirmed*)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
