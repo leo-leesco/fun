@@ -37,11 +37,14 @@ Goal
    Lam (App (Var 0) (sigma 0).[ren (+1)]).
 Proof.
   intros.
-  (* The tactic [autosubst] proves this equality. *)
+  (* The two sides of this equation are distinct terms: the built-in
+     tactic [reflexivity] cannot prove this equation. *)
+  Fail reflexivity.
+  (* The tactic [autosubst] is able to prove this equality. *)
   autosubst.
 Restart.
   intros.
-  (* If desired, we can first simplify this equality using [asimpl]. *)
+  (* Another way of proceeding is to first simplify the goal using [asimpl]. *)
   asimpl.
   (* [ids], the identity substitution, maps 0 to [Var 0], 1 to [Var 1],
      and so on, so it is really equal to [Var] itself. As a result, the
@@ -171,6 +174,7 @@ Proof.
   induction 1; intros.
   (* Case: [RedBeta]. *)
   { subst u.
+    asimpl.
     eapply RedBeta.
     (* Wow -- we have to prove a complicated-looking commutation property
        of substitutions. Fortunately, [autosubst] is here for us! *)
@@ -211,6 +215,7 @@ Restart.
      are no longer distinguished: *)
 Restart.
   induction 1; intros; subst; asimpl; econstructor; eauto with autosubst.
+  (* Actually, [asimpl] on the previous line seems not even needed. *)
   (* The proof is now finished (yet again). *)
 
   (* There are several lessons that one can draw from this demo:
