@@ -104,7 +104,7 @@ We also show the limits of dependently-typed functional programming.
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (18/10/2019, *to be confirmed*) Equational reasoning and program optimizations
+* (18/10/2019) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
@@ -117,7 +117,7 @@ We also show the limits of dependently-typed functional programming.
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (25/10/2019, *to be confirmed*)
+* (25/10/2019)
   [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
