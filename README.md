@@ -168,11 +168,12 @@ can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 ## Evaluation of the course
 
-Two written exams (a partial exam on Friday Nov 29 and a final exam on
-February 28 or March 6) and one programming project or several programming
-exercises are used to evaluate the students who follow the full
-course. Only the partial exam is used to grade students who split the
-course.
+Two written exams and one programming project are used to evaluate the
+students who follow the full course. Only the mid-term exam is used to
+grade students who choose to split the course.
+
+The mid-term exam will take place on **Friday, November 29** (this is confirmed).
+The final exam will take place on February 28 or March 6 (to be confirmed).
 
 Only course notes and hand-written notes are allowed for the exams.
 
