@@ -5,6 +5,11 @@ This page supplements
 
 ## Research internship proposals
 
+We have posted the following proposals:
+
+* [Verifying Chunked Sequences](http://gallium.inria.fr/~fpottier/stages/sujet2020-m2.pdf),
+  co-advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier (Inria, Paris).
+
 Please do not hesitate to talk to us during the break or
 at the end of each lecture,
 to contact us by email,
