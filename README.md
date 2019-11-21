@@ -16,6 +16,9 @@ We have posted the following proposals:
 * [Propagation of type annotations in Hindley Milner based
   type-systems](http://gallium.inria.fr/~remy/stages/propagation-master.pdf) 
   advised by Didier Rémy (Inria, Paris)
+* [MLF type inference and
+  semi-unification](http://gallium.inria.fr/~scherer/topics/low-level-ocaml.pdf) 
+  advised by Didier Rémy (Inria, Paris)
 
 Please do not hesitate to talk to us during the break or
 at the end of each lecture,
