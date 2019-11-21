@@ -7,7 +7,7 @@ This page supplements
 
 We have posted the following proposals:
 
-* [Verifying Chunked Sequences](http://gallium.inria.fr/~fpottier/stages/sujet2020-m2.pdf),
+* [Verification of Chunk Sequences](http://gallium.inria.fr/~fpottier/stages/sujet2020-m2.pdf),
   co-advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier
   (Inria, Paris).
 * [Sharing and Unsharing in Hindley
