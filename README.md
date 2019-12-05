@@ -17,7 +17,7 @@ We have posted the following proposals:
   type-systems](http://gallium.inria.fr/~remy/stages/propagation-master.pdf),
   advised by Didier Rémy (Inria, Paris).
 * [MLF type inference and
-  semi-unification](http://gallium.inria.fr/~scherer/topics/low-level-ocaml.pdf), 
+  semi-unification](http://gallium.inria.fr/~scherer/topics/low-level-ocaml.pdf),
   advised by Didier Rémy (Inria, Paris).
 
 Please, do not hesitate to talk to us during the break or
@@ -195,10 +195,14 @@ Only course notes and hand-written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+- mid-term exam 2019-2020:
+  [A type system for information flow control](exams/partiel-2019-2020.pdf).
+- final exam 2018-2019:
+  (not available)
 - mid-term exam 2018-2019:
-  [A simple object encoding](http://gallium.inria.fr/~remy/mpri/exams/partiel-2018-2019.pdf)
+  [A simple object encoding](exams/partiel-2018-2019.pdf).
 - final exam 2017-2018:
-  [Static differentiation](exams/final-2017-2018.pdf)
+  [Static differentiation](exams/final-2017-2018.pdf).
 - mid-term exam 2017-2018:
   [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
