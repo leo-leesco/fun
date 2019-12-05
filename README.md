@@ -187,8 +187,8 @@ Two written exams and one programming project are used to evaluate the
 students who follow the full course. Only the mid-term exam is used to
 grade students who choose to split the course.
 
-The mid-term exam will take place on **Friday, November 29** (this is confirmed).
-The final exam will take place on February 28 or March 6 (to be confirmed).
+The mid-term exam took place on Friday, November 29, 2019.
+The final exam will take place on **February 28 or March 6, 2020** (to be confirmed).
 
 Only course notes and hand-written notes are allowed for the exams.
 
