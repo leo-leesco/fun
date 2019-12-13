@@ -19,6 +19,9 @@ We have posted the following proposals:
 * [MLF type inference and
   semi-unification](http://gallium.inria.fr/~scherer/topics/low-level-ocaml.pdf),
   advised by Didier Rémy (Inria, Paris).
+* [Une sémantique formelle pour la fusion de changements de code source](https://drive.google.com/open?id=1bstS9vgpdqBT-AU9B6wGBujgtO1elytF), advised by Yann Régis-Gianas.
+* [Formalisation mécanisée du développement dirigé par les types](https://drive.google.com/open?id=1SKM4m1Wqqf4M9eWbA1Z2NHaK3I0w8t0j)
+, advised by Yann Régis-Gianas.
 
 Please, do not hesitate to talk to us during the break or
 at the end of each lecture,
