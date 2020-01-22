@@ -183,11 +183,13 @@ is installed. A quick installation guide as well as further pointers
 can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 * [Guidelines](agda/Index.lagda.rst)
-* (24/01/2020) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
-* (31/01/2020) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst), [McCompiler.v](coq/McCompiler.v)).
-* (07/02/2020) [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
-* (14/02/2020) [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)).
-* (21/02/2020) [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
+* (24/01/2020) Introduction & Setup ([Source](agda/00-agda/Warmup.lagda.rst), [McCompiler.v](coq/McCompiler.v))
+* (31/01/2020) **NO CLASS THIS WEEK**
+* (07/02/2020) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
+* (14/02/2020) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst)).
+* (21/02/2020) [Total functional programming](slides/pedagand-03.pdf) ([Source](agda/03-total/Recursion.lagda.rst)).
+* (28/02/2020) [Generic functional programming](slides/pedagand-04.pdf) ([Source](agda/04-generic/Desc.lagda.rst)) &
+   [Open problems in dependent functional programming](slides/pedagand-05.pdf) ([Source](agda/05-open/Problems.lagda.rst)).
 
 ## Evaluation of the course
 
@@ -196,7 +198,7 @@ students who follow the full course. Only the mid-term exam is used to
 grade students who choose to split the course.
 
 The mid-term exam took place on Friday, November 29, 2019.
-The final exam will take place on **February 28 or March 6, 2020** (to be confirmed).
+The final exam will take place on **March 6, 2020**.
 
 Only course notes and hand-written notes are allowed for the exams.
 
