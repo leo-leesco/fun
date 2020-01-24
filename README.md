@@ -178,7 +178,7 @@ for the end of the decade to get started!
 ### Dependently-typed Functional Programming
 
 This lecture will involve some hands-on experience. To this end, it is
-necessary to bring a laptop on which Agda (version 2.5.4.1 or higher)
+necessary to bring a laptop on which Agda (version 2.6.0.1 or higher)
 is installed. A quick installation guide as well as further pointers
 can be found [here](agda/00-agda/Warmup.lagda.rst).
 
