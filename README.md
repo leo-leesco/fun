@@ -183,7 +183,7 @@ is installed. A quick installation guide as well as further pointers
 can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 * [Guidelines](agda/Index.lagda.rst)
-* (24/01/2020) Introduction & Setup ([Source](agda/00-agda/Warmup.lagda.rst), [McCompiler.v](coq/McCompiler.v))
+* (24/01/2020) Introduction & Setup ([Source](agda/00-agda/Warmup.lagda.rst), [categorical cheatsheet](slides/pedagand-00.pdf), [McCompiler.v](coq/McCompiler.v))
 * (31/01/2020) **NO CLASS THIS WEEK**
 * (07/02/2020) [Effectful functional programming](slides/pedagand-01.pdf) ([Source](agda/01-effectful/Monad.lagda.rst)).
 * (14/02/2020) [Dependent functional programming](slides/pedagand-02.pdf) ([Source](agda/02-dependent/Indexed.lagda.rst)).
