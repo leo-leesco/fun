@@ -85,9 +85,9 @@ Nowadays:
   open import Level hiding (suc)
 
   open import Data.Unit hiding (setoid ; _≟_)
-  open import Data.Nat renaming (_*_ to _*ℕ_)
-  open import Data.Nat.DivMod renaming (_/_ to _/ℕ_)
-  open import Data.Fin hiding (_+_ ; raise ; _-_ ; _≟_)
+  open import Data.Nat renaming (_*_ to _*ℕ_ ; _≟_ to _≟ℕ_)
+  open import Data.Nat.DivMod
+  open import Data.Fin hiding (_+_ ; raise ; _-_ )
   open import Data.Product
 
   open import Function
@@ -96,8 +96,7 @@ Nowadays:
   open import Relation.Binary
   open import Relation.Binary.PropositionalEquality
     renaming (trans to trans≡ ; sym to sym≡ ; cong to cong≡ ; cong₂ to cong₂≡)
-    hiding (setoid ; isEquivalence ; Extensionality)
-  open import Axiom.Extensionality.Propositional
+    hiding (setoid ; isEquivalence)
 
 ************************************************
 Stateful operations
@@ -1178,8 +1177,10 @@ About syntax
 The ``return`` and bind operator ``_>>=_`` are so ubiquitous that
 `syntactic sugar`_ has been introduced to lighten the notational load
 of monadic programs. Haskell introduced the ``do`` notation, which has
-been adapted to Agda. One can for example write the following in the
-``List`` monad::
+been adapted to Agda, starting with version 2.6. One can for example
+write the following in the ``List`` monad:
+
+.. code-block:: agda
 
   open import Category.Monad
   import Data.List.Categorical

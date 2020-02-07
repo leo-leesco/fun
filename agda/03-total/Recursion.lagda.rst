@@ -6,8 +6,8 @@
 
   open import Data.Empty
   open import Data.Unit hiding (_≤_ ; _≤?_)
-  open import Data.Bool hiding (_≤?_)
-  open import Data.Maybe hiding (map ; _>>=_)
+  open import Data.Bool
+  open import Data.Maybe hiding (map)
   import Data.Maybe.Categorical
   open import Data.Product hiding (map)
   open import Data.Sum hiding (map)
@@ -79,7 +79,7 @@ First-order Unification
   ::
   module UnifNaive where
 
-    open import Data.Maybe hiding (_>>=_)
+    open import Data.Maybe
     open import Category.Monad
     open RawMonadZero {Level.zero} Data.Maybe.Categorical.monadZero
 
@@ -109,16 +109,14 @@ One can easily generalize this to any term signature but this would
 needlessly pollute our definitions. Crucially, all the definitions
 below will behave *functorially* over ``leaf`` and ``fork``.
 
+
+
 Indeed, ``Term`` is a free term algebra! It therefore comes with a
 simultaneous substitution::
 
     sub : (Var → Term) → Term → Term
-    sub ρ (var i) = ρ i
-    sub ρ leaf = leaf
-    sub ρ (fork s t) = fork (sub ρ s) (sub ρ t)
+    sub ρ t = {!!}
 
-    _∘K_ : (Var → Term) → (Var → Term) → Var → Term
-    ρ₁ ∘K ρ₂ = λ k → sub ρ₁ (ρ₂ k)
 
 
 In the first lecture, the function ``sub`` was called ``bind`` but it
@@ -182,22 +180,24 @@ consider::
       id : Subst
       _∷[_/_] : (σ : Subst)(t : Term)(i : Var) → Subst
 
+
+
 In turn, we interpret this initial model in the target
 one. Substituting a single term ``t : Term`` for a variable ``i : Var``
 amounts to a substitution that returns ``t`` if ``i ≟ j``, and the
 remainder of ``j`` by ``i`` otherwise::
 
     _for_ : Term → Var → (Var → Term)
-    (t for i) j with i Δ j
-    ... | nothing = t
-    ... | just j' = var j'
+    (t for i) = {!!}
+
+
+
 
 The interpretation of a list of single substitutions is merely
 function composition::
 
     ⟦_⟧ : Subst → (Var → Term)
-    ⟦ id ⟧ = var
-    ⟦ ρ ∷[ t / i ] ⟧ = ⟦ ρ ⟧ ∘K (t for i)
+    ⟦ ρ ⟧ = {!!}
 
 
 
@@ -432,13 +432,15 @@ that injecting ``x`` into ``t'`` amounts to the exact same term
 Structurally: single term substitution
 --------------------------------------
 
+
+
 Crucially, a (single) substitution ensures that a variable denotes a
 term with one less variable::
 
     _for_ : ∀ {n} → Term n → Var (suc n) → (Var (suc n) → Term n)
-    (t' for x) y with x Δ y
-    ... | just y' = var y'
-    ... | nothing = t'
+    (t' for x) y = {!!}
+
+
 
 ..
   ::
@@ -461,15 +463,20 @@ The composition of ``_for_`` and ``inj[_]`` amounts to an identity::
 Structurally: substitution
 --------------------------------------
 
+
 Iteratively, a substitution counts the upper-bound of variables::
 
     data Subst : ℕ → ℕ → Set where
       id : ∀ {n} → Subst n n
       _∷[_/_] : ∀ {m n} → (σ : Subst m n)(t' : Term m)(x : Var (suc m)) → Subst (suc m) n
 
+
+
+::
+
     ⟦_⟧ : ∀ {m n} → Subst m n → (Var m → Term n)
-    ⟦_⟧ id = var
-    ⟦_⟧ (ρ ∷[ t' / x ]) = ⟦ ρ ⟧ ∘K (t' for x)
+    ⟦ ρ ⟧ = {!!}
+
 
 
 ..
@@ -524,16 +531,16 @@ is able to spot it::
 
     flex-flex {zero} ()
     flex-flex {suc _} x y with x Δ y
-    ... | just y' = -, id ∷[ var y' / x ]
-    ... | nothing = -, id
+    ... | just y' = _ , id ∷[ var y' / x ]
+    ... | nothing = _ , id
 
     flex-rigid {0} ()
     flex-rigid {suc _} x t = check x t >>= λ t' →
-                             return (-, id ∷[ t' / x ])
+                             return (_ , id ∷[ t' / x ])
 
 
     mgu : ∀ {m} → (s t : Term m) → Maybe (∃ (Subst m))
-    mgu s t = amgu s t (-, id)
+    mgu s t = amgu s t (_ , id)
 
 
 The key idea was thus to reify the (decreasing) *measure* as an
@@ -666,6 +673,8 @@ Structural search
       infix 60 _/_⊢_
       infix 60 _/_[_]⊢_
 
+
+
 Following the lesson from the first part, we turn the ordering, which
 justifies our definition, into an indexing discipline. Despite the
 fact that the context shrinks then grows, an important observation is
@@ -675,8 +684,10 @@ lower order*. We thus capture the (upper-bound) order of formuli by a
 suitable indexing strategy::
 
       data Formula : ℕ → Set where
-        Atom : ∀ {n} → (a : A) → Formula n
-        _⊃_ : ∀ {n} → (P : Formula n)(Q : Formula (suc n)) → Formula (suc n)
+        Atom : ∀ {n} → (a : A) → Formula {!!}
+        _⊃_ : ∀ {n} → (P : Formula {!!})(Q : Formula {!!}) → Formula {!!}
+
+
 
 The representation of context also needs to be stratified, so that
 formulis come up sorted along their respective order::
@@ -729,7 +740,7 @@ obvious (to us, not to Agda)::
       _/_[_]⊢_ : ∀ {n l} → Vec (Formula n) l → Context n → Formula n → A → Bool
       search : ∀ {n} → Context n → A → Bool
 
-      B / Γ      ⊢ Atom α      = search ((-, B) , Γ) α
+      B / Γ      ⊢ Atom α      = search ((_ , B) , Γ) α
       B / B₂ , Γ ⊢ P ⊃ Q       = B / B₂ , Γ ▹C P  ⊢ Q
 
       B / Γ [ Atom α ]⊢ β      = ⌊ α ≟ β ⌋
@@ -773,7 +784,7 @@ definitions on ``Formulas``::
                 B / Γ [ Atom α ]⊢ β = ⌊ α ≟ β ⌋
                 B / Γ [ _⊃_ {n} P Q  ]⊢ β = B / Γ [ Q ]⊢ β ∧ B / Γ ⊢ P
                   where  _/_⊢_ : Vec (Formula (suc n)) (pred l) → Context (suc n) → Formula n → Bool
-                         B / Γ ⊢ Atom α = search ((-, B) , Γ) α
+                         B / Γ ⊢ Atom α = search ((_ , B) , Γ) α
                          B / B' , Γ ⊢ P ⊃ Q  = B / B' , Γ ▹C P  ⊢ Q
 
       _⊢_ : ∀ {n} → Context n → Formula n → Bool
@@ -825,9 +836,12 @@ predicate transformer computing the necessary hypothesis::
       RecStruct : Set → Set₁
       RecStruct A = (A → Set) → (A → Set)
 
+
+::
       Rec-ℕ : RecStruct ℕ
-      Rec-ℕ P zero    = ⊤
-      Rec-ℕ P (suc n) = P n
+      Rec-ℕ P n = {!!}
+
+
 
 Assuming that we have established the *induction step*, we ought to be
 able to prove any induction hypothesis::
@@ -835,9 +849,12 @@ able to prove any induction hypothesis::
       RecursorBuilder : ∀ {A : Set} → RecStruct A → Set₁
       RecursorBuilder Rec = ∀ P → (∀ a → Rec P a → P a) → ∀ a → Rec P a
 
+
+::
       rec-ℕ-builder : RecursorBuilder Rec-ℕ
-      rec-ℕ-builder P f zero    = tt
-      rec-ℕ-builder P f (suc n) = f n (rec-ℕ-builder P f n)
+      rec-ℕ-builder P f n = {!!}
+
+
 
 Therefore, typing the knot, given an induction step, we ought to be
 able to establish the desired predicate::
@@ -928,19 +945,19 @@ We thus have:
 
     Σ1-builder rec-A = Σ-rec-builder rec-A (λ _ → rec-1-builder)
 
-The ``search`` axtually exploited iterated lexicographic recursion on contexts, meaning that we can
-  - either take out a formula in bucket of order ``n`` and insert in any context of order ``n``, or
-  - maintain the bucket size but act on a lower-order context
 
-::
+
+The ``search`` axtually exploited iterated lexicographic recursion on contexts, meaning that we can
+- either take out a formula in bucket of order ``n`` and insert in any context of order ``n``, or
+- maintain the bucket size but act on a lower-order context::
 
       Rec-Context : (n : ℕ) → RecStruct (Context n)
-      Rec-Context zero = Rec-1
-      Rec-Context (suc n) = Σ-Rec Rec-Bucket λ _ → Rec-Context n
+      Rec-Context = {!!}
 
       rec-Context-builder : ∀ {n} → RecursorBuilder (Rec-Context n)
-      rec-Context-builder {zero} = λ P x x₁ → tt
-      rec-Context-builder {suc n} = Σ-rec-builder rec-Bucket-builder (λ _ → rec-Context-builder {n})
+      rec-Context-builder {n} = {!!}
+
+
 
 
 **Remark:** These definition can be found (suitably generalized) in
@@ -1134,11 +1151,15 @@ Interpretation: identity
     open RecMonad A B
     open Morphism RecMon monad A B
 
+
+
 There is a straightforward interpetation of ``RecMon``, namely its
 interpretation into ``RecMon``::
 
     expand : Π[ a ∈ A ] B a → ∀ {X} → RecMon X → RecMon X
-    expand f = morph f
+    expand f = {!!}
+
+
 
 --------------------------------
 Interpretation: immediate values
@@ -1151,10 +1172,14 @@ Interpretation: immediate values
     open Morphism Maybe Data.Maybe.Categorical.monad A B
     open Identity A B
 
+
+
 We may blankly refuse to iterate::
 
     already : ∀ {X} → RecMon X → Maybe X
-    already = morph (λ _ → nothing)
+    already = {!!}
+
+
 
 --------------------------------
 Interpretation: step-indexing
@@ -1306,12 +1331,16 @@ definition of gcd, we obtain the Bove-Capretta predicate::
   DomGCD : ℕ × ℕ → Set
   DomGCD (m , n) = μ (BC.Dom gcd) (m , n)
 
+
+
 And, still applying our generic machinery, we get that, for any two
 input numbers satisfying the Bove-Capretta predicate, we can compute
 their gcd::
 
   gcd-bove : (m n : ℕ) → DomGCD (m , n) → ℕ
-  gcd-bove m n xs = BC.run gcd (m , n) xs
+  gcd-bove m n xs = {!!}
+
+
 
 Now, we can get rid of that pesky ``DomGCD`` predicate by proving,
 post facto, that our gcd function is indeed terminating. For that, we
