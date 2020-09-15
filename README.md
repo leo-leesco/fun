@@ -232,14 +232,14 @@ these versions with the following commands:
 
 ```bash
   opam switch mpri24
-  eval `opam config env`
+  eval "$(opam config env)"
 ```
 
-and return to your usual version of OCaml (say, 4.07.0) with the following commands:
+and return to your usual version of OCaml (say, 4.11.1) with the following commands:
 
 ```bash
-  opam switch 4.07.0
-  eval `opam config env`
+  opam switch 4.11.1
+  eval "$(opam config env)"
 ```
 
 In order to use Coq inside `emacs`,
