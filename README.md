@@ -220,7 +220,7 @@ available with solutions:
 ## Recommended software
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
-A recent version is recommended (at the time of writing, 2.0.5).
+A recent version is recommended (at the time of writing, 2.0.7).
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.0x, Coq **8.5.3** and AutoSubst by executing
