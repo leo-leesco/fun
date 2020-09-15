@@ -10,7 +10,7 @@ export OPAMYES=true
 
 echo "Creating a new opam switch..."
 opam switch create mpri24 4.05.0
-eval `opam config env`
+eval "$(opam config env)"
 
 # Declare the Coq repository (not a switch-local command, unfortunately).
 
@@ -26,7 +26,7 @@ opam update
 
 case $OSTYPE in
 darwin*)
-  export EMACS=/Applications/Aquamacs.app/Contents/MacOS/Aquamacs
+  export EMACS=/Applications/Aquamacs*.app/Contents/MacOS/Aquamacs
   ;;
 esac
 
