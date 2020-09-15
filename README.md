@@ -181,6 +181,8 @@ Only course notes and hand-written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* final exam 2019-2020:
+  [Gradually-typed functional languages](exams/final-2019-2020.pdf).
 * mid-term exam 2019-2020:
   [A type system for information flow control](exams/partiel-2019-2020.pdf).
 * final exam 2018-2019:
