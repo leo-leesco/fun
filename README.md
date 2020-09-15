@@ -3,16 +3,6 @@
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
-## Research internship proposals
-
-We have posted the following proposals:
-
-* None posted this year yet.
-
-Please do not hesitate to talk to us (during the break or at the end of each lecture),
-to contact us by email,
-or to visit us at our offices.
-
 ## Location and duration
 
 The lectures take place at University of Paris,
@@ -70,6 +60,14 @@ We also show the limits of dependently-typed functional programming.
 
 A programming project will be made available somewhere near the middle
 of the course.
+
+## Research internship proposals
+
+No internship proposals have been posted by us this year yet.
+
+Please do not hesitate to talk to us (during the break or at the end of each lecture),
+to contact us by email,
+or to visit us at our offices.
 
 ## Approximate syllabus
 
