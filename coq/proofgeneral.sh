@@ -19,4 +19,4 @@ TARGET=/usr/local/share/emacs/site-lisp/ProofGeneral
 sudo rm -rf $TARGET
 sudo mv /tmp/PG $TARGET
 # Add a line to the user's .emacs file.
-echo '(load-file "/usr/local/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")' >> $HOME/.emacs
+echo '(load-file "/usr/local/share/emacs/site-lisp/ProofGeneral/generic/proof-site.el")' >> "$HOME"/.emacs
