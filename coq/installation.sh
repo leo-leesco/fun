@@ -26,7 +26,8 @@ opam update
 
 case $OSTYPE in
 darwin*)
-  export EMACS=/Applications/Aquamacs*.app/Contents/MacOS/Aquamacs
+  EMACS="$(ls /Applications/Aquamacs*.app/Contents/MacOS/Aquamacs)"
+  export EMACS
   ;;
 esac
 
