@@ -122,18 +122,18 @@ or to visit us at our offices.
    the extra material)
   (see also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (04/11/2020?)
+* (date to be determined)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
    and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (25/11/2020?)
+* (date to be determined)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (02/12/2020?)
+* (date to be determined)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
@@ -148,20 +148,20 @@ is installed. A quick installation guide as well as further pointers
 can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 * [Guidelines](agda/Index.lagda.rst)
-* (09/12/2020?) Introduction & Setup
+* (date to be determined) Introduction & Setup
   ([Source](agda/00-agda/Warmup.lagda.rst),
    [categorical cheatsheet](slides/pedagand-00.pdf),
    [McCompiler.v](coq/McCompiler.v))
-* (16/12/2020?)
+* (date to be determined)
   [Effectful functional programming](slides/pedagand-01.pdf)
   ([Source](agda/01-effectful/Monad.lagda.rst)).
-* (06/01/2021?)
+* (date to be determined)
   [Dependent functional programming](slides/pedagand-02.pdf)
   ([Source](agda/02-dependent/Indexed.lagda.rst)).
-* (13/01/2021?)
+* (date to be determined)
   [Total functional programming](slides/pedagand-03.pdf)
   ([Source](agda/03-total/Recursion.lagda.rst)).
-* (20/01/2021?)
+* (date to be determined)
   [Generic functional programming](slides/pedagand-04.pdf)
   ([Source](agda/04-generic/Desc.lagda.rst)) &
   [Open problems in dependent functional programming](slides/pedagand-05.pdf)
