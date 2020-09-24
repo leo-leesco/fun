@@ -122,22 +122,30 @@ or to visit us at our offices.
    the extra material)
   (see also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (date to be determined)
+* (04/11/2020)
   [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
   ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
    and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (date to be determined)
+* **No lecture on 11/11/2020**.
+* (18/11/2020)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (date to be determined)
+* (25/11/2020)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* The **mid-term exam** takes place on 02/12/2020.
+* (09/12/2020)
+  To be determined.
+* (16/12/2020)
+  To be determined.
+* (08/01/2021)
+  To be determined.
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
 ### Dependently-typed Functional Programming
@@ -148,7 +156,7 @@ is installed. A quick installation guide as well as further pointers
 can be found [here](agda/00-agda/Warmup.lagda.rst).
 
 * [Guidelines](agda/Index.lagda.rst)
-* (date to be determined) Introduction & Setup
+* (13/01/2021) Introduction & Setup
   ([Source](agda/00-agda/Warmup.lagda.rst),
    [categorical cheatsheet](slides/pedagand-00.pdf),
    [McCompiler.v](coq/McCompiler.v))
@@ -173,7 +181,7 @@ Two written exams and one programming project are used to evaluate the
 students who follow the full course. Only the mid-term exam is used to
 grade students who choose to split the course.
 
-The mid-term exam will take place on (to be determined).
+The mid-term exam will take place on **02/12/2020**.
 The final exam will take place on (to be determined).
 
 Only course notes and hand-written notes are allowed for the exams.
