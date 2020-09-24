@@ -173,7 +173,7 @@ Two written exams and one programming project are used to evaluate the
 students who follow the full course. Only the mid-term exam is used to
 grade students who choose to split the course.
 
-The mid-term exam wil ltake place on (to be determined).
+The mid-term exam will take place on (to be determined).
 The final exam will take place on (to be determined).
 
 Only course notes and hand-written notes are allowed for the exams.
