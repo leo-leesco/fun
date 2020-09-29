@@ -11,6 +11,10 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
+As an experiment, on September 30,
+the course will be [remotely accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n)
+(slides and live audio).
+
 ## Teachers
 
 * Functional Programming: Under the Hood
