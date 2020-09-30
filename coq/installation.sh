@@ -44,6 +44,6 @@ opam install -j4 \
 echo "Installing AutoSubst..."
 cd /tmp && \
   rm -rf autosubst && \
-  git clone git@github.com:fpottier/autosubst.git && \
+  git clone https://github.com/fpottier/autosubst.git && \
   make -C autosubst lib install && \
   rm -rf autosubst
