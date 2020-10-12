@@ -11,16 +11,10 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-On September 7,
-**physical participation is limited to 16 students**.
-The course will be
-[remotely accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n)
+On October 14,
+**the course will be online-only** and
+[accessible via BigBlueButton](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n)
 (slides and live audio).
-If you wish to physically attend,
-**please register** by filling
-[this form](https://framadate.org/Skak4iclI5SUwREg).
-It is up to you to respect the 16-student limit,
-which is not enforced by the software.
 
 ## Teachers
 
