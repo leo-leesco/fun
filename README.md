@@ -140,13 +140,14 @@ or to visit us at our offices.
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (25/11/2020)
+  A (slow) walk through the garden of type soundness.
+  In Coq, by François Pottier.
+* The **mid-term exam** takes place on 02/12/2020.
+* (09/12/2020)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* The **mid-term exam** takes place on 02/12/2020.
-* (09/12/2020)
-  To be determined.
 * (16/12/2020)
   To be determined.
 * (08/01/2021)
