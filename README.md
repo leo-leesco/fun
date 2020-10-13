@@ -19,9 +19,9 @@ On October 14,
 ## Teachers
 
 * Functional Programming: Under the Hood
-  (6 installments, [François Pottier](http://cambium.inria.fr/~fpottier))
+  (5 installments, [François Pottier](http://cambium.inria.fr/~fpottier))
 * Metatheory of Typed Programming Languages
-  (7 installements, [Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
+  (7 installments, [Didier Rémy](http://cambium.inria.fr/~remy/), *head*; 1 installment, François Pottier)
 * Dependently-typed Functional Programming
   (7 installments, [Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
 
@@ -140,7 +140,7 @@ or to visit us at our offices.
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (25/11/2020)
-  A (slow) walk through the garden of type soundness.
+  A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier.
 * The **mid-term exam** takes place on 02/12/2020.
 * (09/12/2020)
