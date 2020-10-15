@@ -11,10 +11,16 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-On October 14,
-**the course will be online-only** and
-[accessible via BigBlueButton](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n)
+On September 21,
+**physical participation is limited to 16 students**.
+The course will be
+[remotely accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
 (slides and live audio).
+If you wish to physically attend,
+**please register** by filling
+[this form](https://framadate.org/tBY1wHaIzFFAlZQX).
+It is up to you to respect the 16-student limit,
+which is not enforced by the software.
 
 ## Teachers
 
@@ -135,23 +141,24 @@ or to visit us at our offices.
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * **No lecture on 11/11/2020**.
 * (18/11/2020)
-  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
-  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  This slot will (most likely) be used to finish and/or revised the material
+  in the previous 3 lesons.   
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier.
 * The **mid-term exam** takes place on 02/12/2020.
 * (09/12/2020)
+  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
+  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* (16/12/2020)
+  To be determined.
+* (08/01/2021)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (16/12/2020)
-  To be determined.
-* (08/01/2021)
-  To be determined.
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
 ### Dependently-typed Functional Programming
