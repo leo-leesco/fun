@@ -78,6 +78,7 @@ We have posted the following internship proposals (more to come):
 
 * [Specification and Verification of a Transient Data Structure](http://cambium.inria.fr/~fpottier/stages/sujet2021-m2.pdf),
   advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier (Inria, Paris).
+  **Offer already tentatively taken.**
 
 Please do not hesitate to talk to us (during the break or at the end of each lecture),
 to contact us by email,
