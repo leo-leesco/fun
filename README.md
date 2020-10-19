@@ -11,7 +11,7 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-On September 21,
+On October 21,
 **physical participation is limited to 16 students**.
 The course will be
 [remotely accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
@@ -145,7 +145,7 @@ or to visit us at our offices.
 * **No lecture on 11/11/2020**.
 * (18/11/2020)
   This slot will (most likely) be used to finish and/or revised the material
-  in the previous 3 lesons.   
+  in the previous 3 lectures.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier.
