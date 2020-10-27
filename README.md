@@ -74,6 +74,7 @@ We have posted the following internship proposals (more to come):
 
 * [Specification and Verification of a Transient Data Structure](http://cambium.inria.fr/~fpottier/stages/sujet2021-m2.pdf),
   advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier (Inria, Paris).
+  **Offer already tentatively taken.**
 
 Please do not hesitate to talk to us (during the break or at the end of each lecture),
 to contact us by email,
@@ -141,7 +142,7 @@ or to visit us at our offices.
 * **No lecture on 11/11/2020**.
 * (18/11/2020)
   This slot will (most likely) be used to finish and/or revised the material
-  in the previous 3 lesons.   
+  in the previous 3 lectures.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier.
