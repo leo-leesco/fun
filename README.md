@@ -11,11 +11,10 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-On October 28, the course will still be hybrid,
-with physical participation (limited to 16 students) 
-and
-[remotely accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
-(slides and live audio).
+Starting from November 4, the course will only be
+[remotely
+accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
+with slides and live audio.
 
 
 ## Teachers
