@@ -153,7 +153,7 @@ or to visit us at our offices.
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (16/12/2020)
   To be determined.
-* (08/01/2021)
+* (06/01/2021)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
