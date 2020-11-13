@@ -23,13 +23,13 @@ Proof.
   unfold fv. asimpl. induction k; intros.
   (* Base case. *)
   { asimpl. split; intros; false.
-    { unfold ids, Ids_term in *. injections. omega. }
-    { omega. }
+    { unfold ids, Ids_term in *. injections. lia. }
+    { lia. }
   }
   (* Step. *)
   { destruct x; asimpl.
-    { split; intros. { omega. } { reflexivity. } }
-    rewrite lift_inj_Var. rewrite IHk. omega. }
+    { split; intros. { lia. } { reflexivity. } }
+    rewrite lift_inj_Var. rewrite IHk. lia. }
 Qed.
 
 Lemma fv_Lam_eq:
@@ -71,7 +71,7 @@ Lemma closed_Var:
   forall x,
   ~ closed (Var x).
 Proof.
-  unfold closed; intros; fv. omega.
+  unfold closed; intros; fv. lia.
 Qed.
 
 Lemma closed_AppL:

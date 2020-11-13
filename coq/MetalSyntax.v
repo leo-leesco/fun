@@ -95,14 +95,14 @@ Proof.
   induction ts; intros; simpl; eauto.
   f_equal.
   { asimpl. congruence. }
-  { erewrite IHts. eauto. omega. }
+  { erewrite IHts. eauto. lia. }
 Qed.
 
 Lemma MMultiLet_i0:
   forall i ts u,
   MMultiLet i ts u = MMultiLet 0 (map (fun t => lift i t) ts) u.
 Proof.
-  eauto using MMultiLet_ij with omega.
+  eauto using MMultiLet_ij with lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -206,7 +206,7 @@ Proof.
   { erewrite plus_upn by tc. eauto. }
   { rewrite IHts.
     repeat erewrite upn_upn by tc.
-    do 3 f_equal. omega. }
+    do 3 f_equal. lia. }
 Qed.
 
 Lemma subst_MMultiLet_0:
@@ -299,7 +299,7 @@ Lemma fv_MTuple:
 Proof.
   induction ts; simpl; intros; fv; split; intros; unpack.
   { econstructor. }
-  { omega. }
+  { lia. }
   { rewrite IHts in *. econstructor; eauto. }
   { rewrite IHts in *. pick Forall invert. eauto. }
 Qed.
@@ -316,7 +316,7 @@ Lemma fv_MLetPair:
   fv k (MLetPair t u) <-> fv k t /\ fv (k + 2) u.
 Proof.
   intros. unfold MLetPair. fv; tc.
-  replace (k + 1 + 1) with (k + 2) by omega.
+  replace (k + 1 + 1) with (k + 2) by lia.
   tauto.
 Qed.
 
@@ -342,11 +342,11 @@ Local Lemma MMultiLet_inj:
   ts1 = ts2 /\ u1 = u2.
 Proof.
   induction ts1; destruct ts2; intros; simpl;
-  try solve [ false; simpl in *; omega ].
+  try solve [ false; simpl in *; lia ].
   { tauto. }
   { rewrite MLet_inj.
-    rewrite lift_injn_eq.
-    rewrite IHts1 by (simpl in *; omega).
+    rewrite lift_injn_eq by tc.
+    rewrite IHts1 by (simpl in *; lia).
     rewrite cons_cons_eq.
     tauto. }
 Qed.
@@ -384,7 +384,7 @@ Proof.
   unfold MVars, nats.
   eapply Forall_map.
   eapply Forall_seq; intros.
-  fv. omega.
+  fv. lia.
 Qed.
 
 Lemma fv_MProjs:

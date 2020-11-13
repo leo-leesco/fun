@@ -1,6 +1,9 @@
 *.vo
 *.glob
+*.vos
+*.vok
 *.v.d
+.lia.cache
 .*.aux
 .coq-native
 _CoqProject

@@ -45,7 +45,7 @@ Inductive is_cps_continuation : continuation -> Prop :=
     is_cps K ->
     is_cps_continuation (M K).
 
-Local Hint Constructors is_cps is_cps_continuation.
+Local Hint Constructors is_cps is_cps_continuation : core.
 
 (* [is_cps] is preserved by renamings. *)
 
@@ -62,7 +62,7 @@ Proof.
   { destruct Hsigma as [ xi ? ]. subst sigma. asimpl. econstructor. }
 Qed.
 
-Local Hint Resolve is_cps_renaming.
+Local Hint Resolve is_cps_renaming : core.
 
 Lemma is_cps_continuation_renaming:
   forall c i,
@@ -72,7 +72,7 @@ Proof.
   induction 1; simpl; econstructor; obvious.
 Qed.
 
-Local Hint Resolve is_cps_continuation_renaming.
+Local Hint Resolve is_cps_continuation_renaming : core.
 
 (* [is_cps] is preserved by substitution. *)
 
@@ -212,7 +212,7 @@ Proof.
   inversion 1; simpl; eauto.
 Qed.
 
-Local Hint Resolve is_cps_apply is_cps_reify is_value_reify.
+Local Hint Resolve is_cps_apply is_cps_reify is_value_reify : core.
 
 (* The main lemma. *)
 

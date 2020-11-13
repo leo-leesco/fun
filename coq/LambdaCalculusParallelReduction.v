@@ -151,7 +151,7 @@ Proof.
   { inv stuck.
     { assert (forall t, t2 <> Lam t).
       { do 2 intro. subst.
-        inv red; (* invert [pcbv _ (Lam _)] *)
+        match goal with h: pcbv _ (Lam _) |- _ => invert h end;
         try solve [ false; eauto 2 with obvious | false; congruence ]. }
       eauto with stuck obvious. }
     { eauto with stuck. }

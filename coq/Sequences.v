@@ -2,6 +2,7 @@
     and useful properties about them. Originally by Xavier Leroy, with
     some improvements and additions by François Pottier. *)
 
+Require Import Classical.
 Set Implicit Arguments.
 
 Section SEQUENCES.
@@ -21,25 +22,25 @@ Inductive star R : A -> A -> Prop :=
     forall a b c,
     R a b -> star R b c -> star R a c.
 
-Hint Constructors star.
+Hint Constructors star : star.
 
 Lemma star_refl_eq:
   forall R a b, a = b -> star R a b.
 Proof.
-  intros. subst. eauto.
+  intros. subst. eauto with star.
 Qed.
 
 Lemma star_one:
   forall R a b, R a b -> star R a b.
 Proof.
-  eauto.
+  eauto with star.
 Qed.
 
 Lemma star_trans:
   forall R a b, star R a b ->
   forall c, star R b c -> star R a c.
 Proof.
-  induction 1; eauto.
+  induction 1; eauto with star.
 Qed.
 
 Lemma star_covariant:
@@ -47,7 +48,7 @@ Lemma star_covariant:
   (forall a b, R a b -> S a b) ->
   (forall a b, star R a b -> star S a b).
 Proof.
-  induction 2; eauto.
+  induction 2; eauto with star.
 Qed.
 
 (* If [R] preserves some property [P], then [star R] preserves [P]. *)
@@ -77,18 +78,18 @@ Inductive plus R: A -> A -> Prop :=
     forall a b c,
     R a b -> star R b c -> plus R a c.
 
-Hint Constructors plus.
+Hint Constructors plus : plus.
 
 Lemma plus_one:
   forall R a b, R a b -> plus R a b.
 Proof.
-  eauto.
+  eauto with star plus.
 Qed.
 
 Lemma plus_star:
   forall R a b, plus R a b -> star R a b.
 Proof.
-  inversion 1; eauto.
+  inversion 1; eauto with star.
 Qed.
 
 Lemma plus_covariant:
@@ -96,7 +97,7 @@ Lemma plus_covariant:
   (forall a b, R a b -> S a b) ->
   (forall a b, plus R a b -> plus S a b).
 Proof.
-  induction 2; eauto using star_covariant.
+  induction 2; eauto using star_covariant with plus.
 Qed.
 
 (* A direct induction principle for [plus]: when [plus R a b] holds,
@@ -111,19 +112,19 @@ Proof.
   intros ? ? Hone Hmore a c Hplus. destruct Hplus as [ ? b ? hR hRStar ].
   generalize b c hRStar a hR.
   clear b c hRStar a hR.
-  induction 1; eauto.
+  induction 1; eauto with plus.
 Qed.
 
 Lemma plus_star_trans:
   forall R a b c, plus R a b -> star R b c -> plus R a c.
 Proof.
-  inversion 1; eauto using star_trans.
+  inversion 1; eauto using star_trans with plus.
 Qed.
 
 Lemma star_plus_trans:
   forall R a b c, star R a b -> plus R b c -> plus R a c.
 Proof.
-  inversion 1; inversion 1; eauto using star_trans.
+  inversion 1; inversion 1; eauto using star_trans with star plus.
 Qed.
 
 Lemma plus_trans:
@@ -135,7 +136,7 @@ Qed.
 Lemma plus_right:
   forall R a b c, star R a b -> R b c -> plus R a c.
 Proof.
-  eauto using star_plus_trans.
+  eauto using star_plus_trans with star plus.
 Qed.
 
 (** Absence of transitions. *)
@@ -202,7 +203,7 @@ Proof.
     { eauto. }
   }
   (* Proof that the invariant initially holds. *)
-  { eauto. }
+  { eauto with star. }
 Qed.
 
 Lemma infseq_plus:
@@ -225,7 +226,7 @@ Lemma infseq_alternate_characterization:
   infseq R a.
 Proof.
   intros R. apply infseq_coinduction_principle.
-  intros a Hinv. destruct (Hinv a); eauto.
+  intros a Hinv. destruct (Hinv a); eauto with star.
 Qed.
 
 Lemma infseq_covariant:
@@ -241,8 +242,6 @@ Qed.
 
 (** A sequence either is infinite or stops on an irreducible term.
     This property needs excluded middle from classical logic. *)
-
-Require Import Classical.
 
 Lemma infseq_or_finseq:
   forall R a,
@@ -275,7 +274,7 @@ Ltac R_determ :=
 Lemma star_star_inv:
   forall a b, star R a b -> forall c, star R a c -> star R b c \/ star R c b.
 Proof.
-  induction 1; inversion 1; intros; subst; try R_determ; eauto.
+  induction 1; inversion 1; intros; subst; try R_determ; eauto with star.
 Qed.
 
 Lemma finseq_unique:

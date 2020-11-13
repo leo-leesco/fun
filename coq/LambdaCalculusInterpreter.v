@@ -138,7 +138,7 @@ Proof.
   (* [less_defined None _] is always true. *)
   eauto with less_defined;
   (* If [S n1 <= n2], then [n2] must be a successor. *)
-  (destruct n2; [ omega |]); simpl;
+  (destruct n2; [ lia |]); simpl;
   (* [less_defined] is reflexive. *)
   eauto with less_defined.
 
@@ -191,12 +191,12 @@ Proof.
     destruct IHebigcbv2 as [ n2 ? ].
     destruct IHebigcbv3 as [ n3 ? ].
     eexists (S (max (max n1 n2) n3)). simpl.
-    eauto 6 using prove_bind_Some, interpret_monotonic_corollary with omega. }
+    eauto 6 using prove_bind_Some, interpret_monotonic_corollary with lia. }
   (* EBigcbvLet *)
   { destruct IHebigcbv1 as [ n1 ? ].
     destruct IHebigcbv2 as [ n2 ? ].
     eexists (S (max n1 n2)). simpl.
-    eauto using prove_bind_Some, interpret_monotonic_corollary with omega. }
+    eauto using prove_bind_Some, interpret_monotonic_corollary with lia. }
 Qed.
 
 (* The interpreter is complete with respect to the big-step semantics

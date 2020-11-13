@@ -1,7 +1,8 @@
-Require Import Omega.
+Require Import Arith.
+Require Import Psatz.
 Require Import Autosubst.Autosubst.
 Require Import AutosubstExtra. (* just for [upn_ren] *)
-Require Import MyTactics. (* TEMPORARY *)
+Require Import MyTactics. (* TEMPORARY remove this dependency *)
 
 (* This file defines the construction [eos x t], which can be understood as
    an end-of-scope mark for [x] in the term [t]. *)
@@ -35,7 +36,9 @@ Lemma eos_eq:
   forall x t,
   t.[upn x (ren (+1))] = eos x t.
 Proof.
-  intros. unfold eos, eos_var. erewrite upn_ren by tc. reflexivity.
+  intros. unfold eos, eos_var.
+  erewrite upn_ren by eauto with typeclass_instances.
+  reflexivity.
 Qed.
 
 (* Another way is to define directly as a function of type [var -> var]. *)
@@ -51,7 +54,7 @@ Lemma upren_lift_var:
 Proof.
   intros. f_ext; intros [|y].
   { reflexivity. }
-  { simpl. unfold lift_var, var. dblib_by_cases; omega. }
+  { simpl. unfold lift_var, var. dblib_by_cases; lia. }
 Qed.
 
 Lemma eos_var_eq_lift_var:
@@ -84,7 +87,7 @@ Lemma lift_var_lift_var:
 Proof.
   (* By case analysis. *)
   intros. f_ext; intros x. asimpl.
-  unfold lift_var, var. dblib_by_cases; omega.
+  unfold lift_var, var. dblib_by_cases; lia.
 Qed.
 
 Lemma eos_eos:
@@ -107,9 +110,9 @@ Lemma eos_eos_reversed:
   eos k (eos s t) = eos s (eos (k - 1) t).
 Proof.
   intros.
-  replace k with (1 + (k - 1)) by omega.
-  rewrite <- eos_eos by omega.
-  replace (1 + (k - 1) - 1) with (k - 1) by omega.
+  replace k with (1 + (k - 1)) by lia.
+  rewrite <- eos_eos by lia.
+  replace (1 + (k - 1) - 1) with (k - 1) by lia.
   reflexivity.
 Qed.
 
@@ -172,7 +175,7 @@ Proof.
   intros. f_equal. clear t.
   f_ext. intros [|x].
   { reflexivity. }
-  { unfold subst_var. simpl. f_equal. omega. }
+  { unfold subst_var. simpl. f_equal. lia. }
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -207,7 +210,7 @@ Proof.
   f_ext. intro y.
   (* The proof is easy if we replace [eos_var] with [lift_var]. *)
   rewrite eos_var_eq_lift_var. simpl.
-  unfold subst_var, lift_var. dblib_by_cases; f_equal; omega.
+  unfold subst_var, lift_var. dblib_by_cases; f_equal; lia.
 Qed.
 
 (* The above property allows us to prove that [eos x _] is injective.
@@ -239,7 +242,7 @@ Proof.
   f_ext. intros y.
   asimpl.
   unfold subst_var, lift_var.
-  dblib_by_cases; asimpl; dblib_by_cases; solve [ eauto | f_equal; omega ].
+  dblib_by_cases; asimpl; dblib_by_cases; solve [ eauto | f_equal; lia ].
 Qed.
 
 Lemma eos_subst_2:
@@ -252,7 +255,7 @@ Proof.
   f_ext. intros y.
   asimpl.
   unfold subst_var, lift_var.
-  dblib_by_cases; asimpl; dblib_by_cases; solve [ eauto | f_equal; omega ].
+  dblib_by_cases; asimpl; dblib_by_cases; solve [ eauto | f_equal; lia ].
 Qed.
 
 Lemma subst_subst:
@@ -277,7 +280,7 @@ Proof.
   replace v with v.[ids] at 1 by autosubst.
   f_equal. f_ext. intros z. simpl.
   (* Again, use brute force. *)
-  unfold lift_var. dblib_by_cases; f_equal. unfold var. omega.
+  unfold lift_var. dblib_by_cases; f_equal. unfold var. lia.
   (* Not really proud of this proof. *)
 Qed.
 
@@ -293,7 +296,7 @@ Proof.
   (* Replace [eos_var] with [lift_var], whose definition is more direct. *)
   rewrite eos_var_eq_lift_var.
   (* Then, use brute force (case analysis) to prove that the goal holds. *)
-  simpl. unfold subst_var, lift_var. dblib_by_cases; f_equal; unfold var; omega.
+  simpl. unfold subst_var, lift_var. dblib_by_cases; f_equal; unfold var; lia.
 Qed.
 
 Lemma pun_2:
@@ -308,7 +311,7 @@ Proof.
   (* Replace [eos_var] with [lift_var], whose definition is more direct. *)
   rewrite eos_var_eq_lift_var.
   (* Then, use brute force (case analysis) to prove that the goal holds. *)
-  simpl. unfold subst_var, lift_var. dblib_by_cases; f_equal; unfold var; omega.
+  simpl. unfold subst_var, lift_var. dblib_by_cases; f_equal; unfold var; lia.
 Qed.
 
 End EOS.
@@ -323,7 +326,7 @@ Notation "t .[ u // x ]" := (subst (subst_var u x) t)
 
 Ltac subst_var :=
   first [
-    rewrite subst_var_miss_1 by omega
-  | rewrite subst_var_match by omega
-  | rewrite subst_var_miss_2 by omega
+    rewrite subst_var_miss_1 by lia
+  | rewrite subst_var_match by lia
+  | rewrite subst_var_miss_2 by lia
   ].

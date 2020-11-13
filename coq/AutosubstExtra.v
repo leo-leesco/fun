@@ -1,6 +1,17 @@
-Require Import Omega.
 Require Import Autosubst.Autosubst.
 Require Import MyTactics. (* TEMPORARY *)
+
+(* -------------------------------------------------------------------------- *)
+
+(* Basic lemmas. *)
+
+Lemma iterate_iterate {A} (f : A -> A) i j x :
+  iterate f i (iterate f j x) = iterate f (i + j) x.
+Proof.
+  induction i; intros.
+  { now rewrite iterate_0. }
+  { now rewrite plusSn, iterate_S, IHi. }
+Qed.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -14,11 +25,33 @@ Section Extras.
 
 Context A `{Ids A, Rename A, Subst A, SubstLemmas A}.
 
+Lemma upn_upn:
+  forall i j sigma,
+  upn i (upn j sigma) = upn (i + j) sigma.
+Proof using .
+  eauto using iterate_iterate.
+Qed.
+
+Lemma lift_injn_eq:
+  forall (a b : A),
+  forall n,
+  a.[ren(+n)] = b.[ren(+n)] <-> a = b.
+Proof.
+  split; intros; subst; eauto using lift_injn.
+Qed.
+
 Lemma up_ren:
   forall xi,
   ren (upren xi) = up (ren xi).
 Proof.
   intros. autosubst.
+Qed.
+
+Lemma scompA:
+  forall f g h,
+  f >> (g >> h) = f >> g >> h.
+Proof.
+  intros. unfold scomp. now rewrite <- subst_compX, compA.
 Qed.
 
 Lemma upn_ren:
@@ -52,10 +85,10 @@ Lemma upn_k_sigma_x:
   upn k sigma x = ids x.
 Proof.
   induction k; intros; asimpl.
-  { omega. }
+  { lia. }
   { destruct x; asimpl.
     { eauto. }
-    { rewrite IHk by omega. autosubst. }
+    { rewrite IHk by lia. autosubst. }
   }
 Qed.
 

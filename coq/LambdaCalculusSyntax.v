@@ -126,7 +126,7 @@ Proof.
   eauto.
 Defined.
 
-Ltac size_induction :=
+Ltac size_induction t :=
   (* We assume the goal is of the form [forall t, P t]. *)
   intro t; pattern t;
   match goal with |- ?P t =>
@@ -145,7 +145,7 @@ Hint Extern 1 (size ?t.[?sigma] < ?n) =>
   : size obvious.
 
 Hint Extern 1 (size ?t < ?n) =>
-  simpl in *; omega
+  simpl in *; lia
   : size obvious.
 
 Ltac size :=
@@ -154,13 +154,13 @@ Ltac size :=
 (* The following is a direct proof of [smaller_wf]. We do not use any
    preexisting lemmas, and end the proof with [Defined] instead of [Qed],
    so as to make the proof term transparent. Also, we avoid the tactic
-   [omega], which produces huge proof terms. This allows Coq to compute
+   [lia], which produces huge proof terms. This allows Coq to compute
    with functions that are defined by well-founded recursion. *)
 
 Lemma smaller_wf_transparent:
   well_founded (fun t1 t2 => size t1 < size t2).
 Proof.
-  unfold well_founded. size_induction.
+  unfold well_founded. size_induction t.
   constructor; intros u Hu.
   eapply IH. eapply lt_S_n. eapply le_lt_trans; eauto.
 Defined.

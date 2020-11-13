@@ -1,4 +1,5 @@
-Require Import Omega.
+Require Import Arith.
+Require Import Psatz.
 Require Import Autosubst.Autosubst.
 Require Import AutosubstExtra.
 Require Import Autosubst_EOS.
@@ -38,7 +39,7 @@ Proof.
   intros.
   assert (x = y). { eauto using ids_inj. }
   unfold var in *.
-  omega.
+  lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -82,14 +83,14 @@ Proof.
   (* Base case. *)
   { asimpl. split; intros; elimtype False.
     { eauto using ids_inj_False. }
-    { omega. }
+    { lia. }
   }
   (* Step. *)
   { destruct x; asimpl.
-    { split; intros. { omega. } { reflexivity. } }
+    { split; intros. { lia. } { reflexivity. } }
     { rewrite lift_inj_ids.
       rewrite <- id_subst.
-      rewrite IHk. omega. }
+      rewrite IHk. lia. }
   }
 Qed.
 
@@ -127,7 +128,7 @@ Proof.
   unfold fv. intros x n t ? ht.
   rewrite eos_eq in ht.
   rewrite eos_eq.
-  rewrite eos_eos_reversed by omega. (* nice! *)
+  rewrite eos_eos_reversed by lia. (* nice! *)
   rewrite ht.
   reflexivity.
 Qed.
@@ -141,7 +142,7 @@ Proof.
   unfold fv. intros x n t ?.
   rewrite eos_eq.
   rewrite eos_eq.
-  rewrite eos_eos_reversed by omega. (* nice! *)
+  rewrite eos_eos_reversed by lia. (* nice! *)
   split; intros h.
   { eauto using eos_injective. }
   { rewrite h. reflexivity. }
@@ -177,9 +178,9 @@ Proof.
   intros ? ? (i&j&hsigma).
   exists (n + i). eexists (n + j).
   replace (ren (+(n + i))) with (ren (+i) >> ren (+n)) by autosubst.
-  rewrite <- scompA.
+  rewrite <- (@scompA A Ids_A Rename_A Subst_A SubstLemmas_A).
   rewrite up_liftn.
-  rewrite scompA.
+  rewrite (@scompA A Ids_A Rename_A Subst_A SubstLemmas_A).
   rewrite hsigma.
   autosubst.
 Qed.
@@ -267,7 +268,7 @@ Lemma fv_monotonic:
   fv k t.
 Proof.
   intros. unfold fv.
-  replace k with (j + (k - j)) by omega.
+  replace k with (j + (k - j)) by lia.
   rewrite <- upn_upn.
   eauto using fv_unaffected_regular, regular_upn, regular_plus.
 Qed.
@@ -283,7 +284,7 @@ Lemma use_fv_length_cons:
   fv (n + 1) t.
 Proof.
   intros. subst.
-  replace (length xs + 1) with (length (x :: xs)) by (simpl; omega).
+  replace (length xs + 1) with (length (x :: xs)) by (simpl; lia).
   eauto.
 Qed.
 
@@ -294,7 +295,7 @@ Lemma prove_fv_length_cons:
   fv (length (x :: xs)) t.
 Proof.
   intros. subst.
-  replace (length (x :: xs)) with  (length xs + 1) by (simpl; omega).
+  replace (length (x :: xs)) with  (length xs + 1) by (simpl; lia).
   eauto.
 Qed.
 
