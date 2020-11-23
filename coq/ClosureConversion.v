@@ -172,10 +172,10 @@ Qed.
 
 Hint Rewrite length_cc_env : length.
 
-(* In this file, we allow [eauto with omega] to use the tactic [length]. *)
+(* In this file, we allow [eauto with lia] to use the tactic [length]. *)
 
-Local Hint Extern 1 (_ = _ :> nat) => length : omega.
-Local Hint Extern 1 (lt _ _) => length : omega.
+Local Hint Extern 1 (_ = _ :> nat) => length : lia.
+Local Hint Extern 1 (lt _ _) => length : lia.
 
 (* -------------------------------------------------------------------------- *)
 (* -------------------------------------------------------------------------- *)
@@ -196,8 +196,8 @@ Lemma fv_cc_lam:
   fv m (cc_lam n t).
 Proof.
   intros. unfold cc_lam. fv; length. repeat split;
-  eauto using fv_monotonic with omega.
-  { eapply fv_MProjs. fv. omega. }
+  eauto using fv_monotonic with lia.
+  { eapply fv_MProjs. fv. lia. }
 Qed.
 
 Lemma fv_cc:
@@ -208,7 +208,7 @@ Lemma fv_cc:
 Proof.
   induction t; intros; subst; simpl; fv; unpack;
   repeat rewrite Nat.add_1_r in *;
-  repeat split; eauto using fv_monotonic, fv_cc_lam with omega.
+  repeat split; eauto using fv_monotonic, fv_cc_lam with lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -287,7 +287,7 @@ Proof.
     { econstructor.
       assert (fv (length e + 1) t).
       { eapply (use_fv_length_cons _ dummy_cvalue); eauto. }
-      unfold closed. fv. eauto using fv_cc_lam, fv_cc with omega. }
+      unfold closed. fv. eauto using fv_cc_lam, fv_cc with lia. }
     (* The remaining components. *)
     { eapply MBigcbvTuple.
       rewrite <- length_cc_env. eauto using MBigcbvVars. }
@@ -303,15 +303,15 @@ Proof.
        and binds the variable [code]. *)
     econstructor.
     { econstructor; [| eauto ].
-      econstructor; simpl; eauto with omega. }
+      econstructor; simpl; eauto with lia. }
     (* We are now looking at a function application. Evaluate in turn the function,
        its actual argument, and the call itself. *)
     econstructor.
     (* The function. *)
-    { econstructor; simpl; eauto with omega. }
+    { econstructor; simpl; eauto with lia. }
     (* Its argument. *)
     { econstructor.
-      { econstructor; simpl; eauto with omega. }
+      { econstructor; simpl; eauto with lia. }
       { (* Skip two [eos] constructs. *)
         rewrite access_1. eapply mbigcbv_eos; [ simpl | length ].
         eapply mbigcbv_eos with (e1 := nil); [ simpl | length ].
@@ -322,12 +322,12 @@ Proof.
     unfold cc_lam at 2.
     (* Evaluate [MLetPair], which binds [clo] and [x]. *)
     eapply MBigcbvLetPair.
-    { econstructor; simpl; eauto with omega. }
+    { econstructor; simpl; eauto with lia. }
     (* Skip [eos]. *)
     rewrite access_2. eapply mbigcbv_eos; [ simpl | eauto ].
     (* Evaluate [MMultiLet]. *)
     eapply MBigcbvMultiLetProjs.
-    { econstructor; simpl; eauto with omega. }
+    { econstructor; simpl; eauto with lia. }
     { length. }
     (* Skip [eos]. *)
     rewrite access_n_plus_1. eapply mbigcbv_eos; [| length ].
@@ -336,14 +336,14 @@ Proof.
     econstructor.
     { econstructor.
       { length. }
-      { rewrite app_nth by (rewrite map_length; omega). simpl. eauto. }
+      { rewrite app_nth by (rewrite map_length; lia). simpl. eauto. }
     }
     (* Skip [eos]. *)
     rewrite app_comm_cons. eapply mbigcbv_eos; [ rewrite app_nil_r | length ].
     (* Evaluate the function body. *)
-    eauto with omega. }
+    eauto with lia. }
 
   (* Case: [Let]. Immediate. *)
-  { econstructor; eauto with omega. }
+  { econstructor; eauto with lia. }
 
 Qed.

@@ -98,7 +98,7 @@ Lemma pcbv_cps:
   pcbv (cps t c1) (cps t c2).
 Proof.
   (* The proof is by induction on the size of [t]. *)
-  size_induction. intros c1 c2 Hsimilar.
+  size_induction t. intros c1 c2 Hsimilar.
   value_or_app_or_let t; cps.
   (* Case: [t] is a value. *)
   { eauto using pcbv_apply. }

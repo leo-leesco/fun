@@ -420,7 +420,7 @@ Proof.
     (forall t k, size t < n -> Pcps t k)
   ).
   { induction n; intros; split; intros;
-    try solve [ elimtype False; omega ];
+    try solve [ false; lia ];
     destruct IHn as (?&?); eauto. }
   split; intros; eapply fact; eauto.
 Qed.

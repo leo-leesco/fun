@@ -1,4 +1,5 @@
-Require Export Omega.
+Require Export Arith.
+Require Export Psatz.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -135,23 +136,12 @@ Ltac injections :=
 
 (* -------------------------------------------------------------------------- *)
 
-(* The following incantation means that [eauto with omega] can solve a goal
-   of the form [_ < _]. The tactic [zify] is a preprocessor which increases
-   the number of goals that [omega] can accept; e.g., it expands away [min]
-   and [max]. *)
+(* The following incantations are suppose to allow [eauto with lia] to solve
+   goals of the form [_ < _] or [_ <= _]. *)
 
-Hint Extern 1 (le _ _) => (zify; omega) : omega.
-
-(* -------------------------------------------------------------------------- *)
-
-(* A little extra help for [eauto with omega]. *)
-
-Lemma arith_le_SS: forall x y, x < y -> S x < S y.
-Proof. intros. omega. Qed.
-Lemma arith_SS_le: forall x y, S x < S y -> x < y.
-Proof. intros. omega. Qed.
-
-Hint Resolve arith_le_SS arith_SS_le : omega.
+Hint Extern 1 (_ <  _) => lia : lia.
+Hint Extern 1 (_ <= _) => lia : lia.
+Hint Resolve lt_n_S : lia.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -179,4 +169,4 @@ Ltac dblib_inspect_cases :=
   end.
 
 Ltac dblib_by_cases :=
-  repeat dblib_inspect_cases; try solve [ intros; elimtype False; omega ]; intros.
+  repeat dblib_inspect_cases; try solve [ intros; false; lia ]; intros.

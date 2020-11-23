@@ -160,7 +160,7 @@ or to visit us at our offices.
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (16/12/2020)
   To be determined.
-* (08/01/2021)
+* (06/01/2021)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
@@ -252,7 +252,10 @@ Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
 A recent version is recommended (at the time of writing, 2.0.7).
 If you have installed it already, skip this step.
 
-Then, install OCaml 4.0x, Coq **8.5.3** and AutoSubst by executing
+Then, install OCaml 4.11.1,
+[Coq 8.12](https://coq.inria.fr),
+and
+[AutoSubst](https://github.com/RalfJung/autosubst) by executing
 [this script](coq/installation.sh).
 This script **does not destroy** your existing installation of
 OCaml and Coq. It creates a new "switch" named `mpri24` and installs
@@ -260,14 +263,16 @@ appropriate versions of OCaml, Coq, and AutoSubst in it. You can activate
 these versions with the following commands:
 
 ```bash
+  ORIGINAL=$(opam switch show)
   opam switch mpri24
   eval "$(opam config env)"
 ```
 
-and return to your usual version of OCaml (say, 4.11.1) with the following commands:
+and return to your original working environment with the following
+command:
 
 ```bash
-  opam switch 4.11.1
+  opam switch "$ORIGINAL"
   eval "$(opam config env)"
 ```
 

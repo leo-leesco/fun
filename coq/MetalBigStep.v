@@ -164,7 +164,7 @@ Lemma MBigcbvProj:
   mbigcbv e (MProj i t) mv.
 Proof.
   (* By induction on [i]. In either case, [mvs] cannot be an empty list. *)
-  induction i; intros; (destruct mvs as [| mv0 mvs ]; [ false; simpl in *; omega |]).
+  induction i; intros; (destruct mvs as [| mv0 mvs ]; [ false; simpl in *; lia |]).
   (* Base case. *)
   { econstructor; eauto. }
   (* Step case. *)
@@ -265,11 +265,11 @@ Proof.
   (* This result is "obvious" but requires some low-level work. *)
   unfold MProjs. induction n; intros.
   (* Case: [n] is zero. Then, [mvs1] must be [nil]. The result follows. *)
-  { destruct mvs1; [| false; simpl in *; omega ].
+  { destruct mvs1; [| false; simpl in *; lia ].
     econstructor. }
   (* Case: [n] is nonzero. Then, the list [mvs1] must be nonempty. *)
   assert (hmvs1: mvs1 <> nil).
-  { intro. subst. simpl in *. omega. }
+  { intro. subst. simpl in *. lia. }
   (* So, this list has one element at the end. Let us write this list in the
      form [mvs1 ++ mv1]. *)
   destruct (exists_last hmvs1) as (hd&mv1&?). subst mvs1. clear hmvs1.
@@ -284,8 +284,8 @@ Proof.
   (* The list heads. *)
   { eapply MBigcbvProj; eauto.
     { length. }
-    { replace (n + 1) with (S n) by omega. simpl.
-      rewrite app_nth by omega.
+    { replace (n + 1) with (S n) by lia. simpl.
+      rewrite app_nth by lia.
       reflexivity. }
   }
   (* The list tails. *)

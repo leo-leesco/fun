@@ -90,7 +90,7 @@ Proof.
   induction t; eauto using red_refl with obvious.
 Qed.
 
-Local Hint Resolve ipcbv_refl.
+Local Hint Resolve ipcbv_refl : core.
 
 (* [ipcbv] preserves values, both ways. *)
 
@@ -112,8 +112,9 @@ Proof.
   induction 1; is_value.
 Qed.
 
-Local Hint Resolve ipcbv_preserves_values ipcbv_preserves_values_reversed
-                           ipcbv_preserves_values_reversed_contrapositive.
+Local Hint Resolve
+  ipcbv_preserves_values ipcbv_preserves_values_reversed
+  ipcbv_preserves_values_reversed_contrapositive : core.
 
 Lemma star_ipcbv_preserves_values_reversed:
   forall v1 v2, star ipcbv v1 v2 -> is_value v2 -> is_value v1.
@@ -121,7 +122,7 @@ Proof.
   induction 1; eauto.
 Qed.
 
-Local Hint Resolve star_ipcbv_preserves_values_reversed.
+Local Hint Resolve star_ipcbv_preserves_values_reversed : core.
 
 (* Reverse internal parallel reduction preserves the property of being stuck
    and (therefore) the property of being irreducible. *)
@@ -136,7 +137,9 @@ Proof.
   { false. obvious. }
   { false. obvious. }
   { eapply StuckApp; eauto.
-    do 2 intro; subst. inv ipcbv. congruence. }
+    do 2 intro; subst.
+    match goal with h: ipcbv (Lam _) _ |- _ => invert h end.
+    congruence. }
 Qed.
 
 Lemma reverse_star_ipcbv_preserves_stuck:
@@ -158,11 +161,17 @@ Proof.
   intuition eauto 2 using reverse_ipcbv_preserves_stuck.
 Qed.
 
+Definition star_implication_irred_cbv :=
+  star_implication (irred cbv).
+
+Definition star_implication_reversed_irred_cbv :=
+  star_implication_reversed (irred cbv).
+
 Local Hint Resolve
   pcbv_preserves_irred
   reverse_ipcbv_preserves_irred
-  (star_implication (irred cbv))
-  (star_implication_reversed (irred cbv))
+  star_implication_irred_cbv
+  star_implication_reversed_irred_cbv
 : irred.
 
 (* -------------------------------------------------------------------------- *)
@@ -181,7 +190,7 @@ Inductive spcbv : term -> term -> Prop :=
     ipcbv u t2 ->
     spcbv t1 t2.
 
-Local Hint Constructors spcbv.
+Local Hint Constructors spcbv : core.
 
 (* By definition, [spcbv] is a subset of [pcbv]. *)
 
@@ -193,7 +202,7 @@ Proof.
   inversion 1; eauto.
 Qed.
 
-Local Hint Resolve spcbv_subset_pcbv.
+Local Hint Resolve spcbv_subset_pcbv : core.
 
 (* [spcbv] is reflexive. *)
 
@@ -204,7 +213,7 @@ Proof.
   econstructor; eauto using red_refl with sequences obvious.
 Qed.
 
-Local Hint Resolve spcbv_refl.
+Local Hint Resolve spcbv_refl : core.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -355,7 +364,7 @@ Proof.
     invert_cbv.
     (* Case: [u1] and [u2] are values. (Case 5 in Crary's proof.) *)
     { assert (is_value u1). { obvious. }
-      inv ipcbv.
+      match goal with h: ipcbv _ (Lam _) |- _ => invert h end.
       eexists; split.
       { eapply RedBetaV; obvious. }
       { eauto 7 with obvious. }

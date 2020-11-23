@@ -32,7 +32,7 @@ Hint Rewrite length_nil length_cons app_length map_length : length.
 
 Ltac length :=
   autorewrite with length in *;
-  try omega.
+  try lia.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -45,8 +45,8 @@ Lemma app_nth:
   nth n (xs ++ ys) x = nth 0 ys x.
 Proof.
   intros.
-  rewrite app_nth2 by omega.
-  replace (n - length xs) with 0 by omega.
+  rewrite app_nth2 by lia.
+  replace (n - length xs) with 0 by lia.
   reflexivity.
 Qed.
 
@@ -121,5 +121,5 @@ Lemma Forall_seq:
   (forall i, start <= i < start + len -> P i) ->
   Forall P (seq start len).
 Proof.
-  induction len; intros; simpl; econstructor; eauto with omega.
+  induction len; intros; simpl; econstructor; eauto with lia.
 Qed.

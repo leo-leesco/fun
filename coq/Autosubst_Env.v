@@ -68,7 +68,7 @@ Lemma env_ren_comp_up:
   env_ren_comp (v :: e) (upren xi) (v :: e').
 Proof.
   inversion 1; intros; subst; econstructor;
-  intros [|x]; intros; simpl in *; eauto with omega.
+  intros [|x]; intros; simpl in *; eauto with lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -81,7 +81,7 @@ Lemma env_ren_comp_prepend:
   env_ren_comp e (xi >>> (+1)) (v :: e').
 Proof.
   inversion 1; intros; subst.
-  econstructor; intros; simpl; eauto with omega.
+  econstructor; intros; simpl; eauto with lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -93,7 +93,7 @@ Lemma env_ren_comp_plus1:
   forall e v,
   env_ren_comp e (+1) (v :: e).
 Proof.
-  econstructor; intros; simpl; eauto with omega.
+  econstructor; intros; simpl; eauto with lia.
 Qed.
 
 (* -------------------------------------------------------------------------- *)
@@ -108,12 +108,12 @@ Lemma env_ren_comp_eos_var:
 Proof.
   rewrite eos_var_eq_lift_var. unfold lift_var.
   econstructor; intros y; dblib_by_cases.
-  { rewrite app_length in *. simpl. omega. }
-  { rewrite app_length in *. simpl. omega. }
-  { do 2 (rewrite app_nth2 by omega).
-    replace (1 + y - length e1) with (1 + (y - length e1)) by omega.
+  { rewrite app_length in *. simpl. lia. }
+  { rewrite app_length in *. simpl. lia. }
+  { do 2 (rewrite app_nth2 by lia).
+    replace (1 + y - length e1) with (1 + (y - length e1)) by lia.
     reflexivity. }
-  { do 2 (rewrite app_nth1 by omega).
+  { do 2 (rewrite app_nth1 by lia).
     reflexivity. }
 Qed.
 
