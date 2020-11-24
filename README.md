@@ -154,6 +154,14 @@ or to visit us at our offices.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier.
+  * Simply-typed lambda-calculus:
+    [definitions](coq/html/STLCDefinitions.html),
+    [lemmas](coq/html/STLCLemmas.html),
+    [type soundness](coq/html/STLCTypeSoundness.html).
+  * The polymorphic lambda-calculus, also known as System F:
+    [definitions](coq/html/SystemFDefinitions.html),
+    [lemmas](coq/html/SystemFLemmas.html),
+    [type soundness](coq/html/SystemFTypeSoundness.html).
 * The **mid-term exam** takes place on 02/12/2020.
 * (09/12/2020)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
