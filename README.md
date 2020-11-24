@@ -18,7 +18,7 @@ with slides and live audio.
 
 On November 25, please [follow this link](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n).
 
-## Examen partiel.
+## Examen partiel
 
 L'examen partiel se déroulera **le mercredi 2 décembre**
 pendant notre créneau habituel **de 12h45 à 15h45**.
