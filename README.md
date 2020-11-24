@@ -153,7 +153,7 @@ or to visit us at our offices.
   in the previous 3 lectures.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
-  In Coq, by François Pottier ([coq](coq/), [html](html/)).
+  In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
   To view the proofs online, please use the following links:
   * Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
