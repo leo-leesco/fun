@@ -16,13 +16,15 @@ From November 4th, the course will only be
 accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
 with slides and live audio.
 
-## Partiel, mecredi 2 décembre.
+On November 25, please [follow this link](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n).
 
-L'examen se déroulera pendant notre créneau habituel de 12h45 à 15h45. 
+## Examen partiel.
 
-Les consignes quand au déroulement de l'examen sont décrites dans
+L'examen partiel se déroulera **le mercredi 2 décembre**
+pendant notre créneau habituel **de 12h45 à 15h45**.
+
+Les consignes quant au déroulement de l'examen sont décrites dans
 [partiel.md](partiel.md).
-
 
 ## Teachers
 
