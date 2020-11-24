@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="alectryon-standalone" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<title>SystemFDefinition.v</title>
+<link rel="stylesheet" href="alectryon.css" type="text/css" />
+<link rel="stylesheet" href="docutils_basic.css" type="text/css" />
+<link rel="stylesheet" href="tango_subtle.css" type="text/css" />
+<link rel="stylesheet" href="tango_subtle.min.css" type="text/css" />
+<script type="text/javascript" src="alectryon.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css" integrity="sha512-sky5cf9Ts6FY1kstGOBHSybfKqdHR41M0Ldb0BjNiv3ifltoQIsg0zIaQ+wwdwgQ0w9vKFW7Js50lxH9vqNSSw==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.min.css" integrity="sha512-MbysAYimH1hH2xYzkkMHB6MqxBqfP0megxsCLknbYqHVwXTCg9IqHbk+ZP/vnhO8UEW6PaXAkKe2vQ+SWACxxA==" crossorigin="anonymous" />
+</head>
+<body>
+<div class="alectryon-root alectryon-windowed"><div class="alectryon-header">Built with <a href="https://github.com/cpitclaudel/alectryon/">Alectryon</a>, running <a href="https://coq.inria.fr/">Coq</a>+<a href="https://github.com/ejgallego/coq-serapi">SerAPI</a> v8.10.0+0.7.0. Coq sources are in this panel; goals and messages will appear in the other. Bubbles (<span class="alectryon-bubble"></span>) indicate interactive fragments: hover for details, tap to reveal contents. Use <kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> to navigate, <kbd>Ctrl+🖱️</kbd> to focus.</div><div class="document">
+
+
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> MyTactics.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> Sequences.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusSyntax.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusValues.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusReduction.</span></span></span></pre><div class="section" id="syntax-of-system-f-types">
+<h1>Syntax of System F types</h1>
+<p>Here is the syntax of System F types:</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Inductive</span> <span class="nf">ty</span> :=
+| TyVar (x : var)
+| TyFun (A B : ty)
+| TyAll (A : {bind ty}).</span></span><span class="coq-wsp">
+</span></span><span class="coq-wsp"><span class="highlight">
+</span></span><span class="coq-sentence"><input class="coq-toggle" id="systemfdefinition-v-chk0" style="display: none" type="checkbox"><label class="coq-input" for="systemfdefinition-v-chk0"><span class="highlight"><span class="kn">Instance</span> <span class="nf">Ids_ty</span> : Ids ty.</span></label><small class="coq-output"><div class="coq-output-sticky-wrapper"><div class="coq-goals"><blockquote class="coq-goal"><span class="goal-separator"><hr></span><div class="goal-conclusion"><span class="highlight">Ids ty</span></div></blockquote></div></div></small><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight">derive.</span></span><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Defined</span>.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><input class="coq-toggle" id="systemfdefinition-v-chk1" style="display: none" type="checkbox"><label class="coq-input" for="systemfdefinition-v-chk1"><span class="highlight"><span class="kn">Instance</span> <span class="nf">Rename_ty</span> : Rename ty.</span></label><small class="coq-output"><div class="coq-output-sticky-wrapper"><div class="coq-goals"><blockquote class="coq-goal"><span class="goal-separator"><hr></span><div class="goal-conclusion"><span class="highlight">Rename ty</span></div></blockquote></div></div></small><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight">derive.</span></span><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Defined</span>.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><input class="coq-toggle" id="systemfdefinition-v-chk2" style="display: none" type="checkbox"><label class="coq-input" for="systemfdefinition-v-chk2"><span class="highlight"><span class="kn">Instance</span> <span class="nf">Subst_ty</span> : Subst ty.</span></label><small class="coq-output"><div class="coq-output-sticky-wrapper"><div class="coq-goals"><blockquote class="coq-goal"><span class="goal-separator"><hr></span><div class="goal-conclusion"><span class="highlight">Subst ty</span></div></blockquote></div></div></small><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight">derive.</span></span><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Defined</span>.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><input class="coq-toggle" id="systemfdefinition-v-chk3" style="display: none" type="checkbox"><label class="coq-input" for="systemfdefinition-v-chk3"><span class="highlight"><span class="kn">Instance</span> <span class="nf">SubstLemmas_ty</span> : SubstLemmas ty.</span></label><small class="coq-output"><div class="coq-output-sticky-wrapper"><div class="coq-goals"><blockquote class="coq-goal"><span class="goal-separator"><hr></span><div class="goal-conclusion"><span class="highlight">SubstLemmas ty</span></div></blockquote></div></div></small><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight">derive.</span></span><span class="coq-wsp"> </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Qed</span>.</span></span></span></pre><p>A type environment is a total function of variables to types.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Definition</span> <span class="nf">tyenv</span> := var -&gt; ty.</span></span></span></pre></div>
+<div class="section" id="the-typing-judgement">
+<h1>The typing judgement</h1>
+<p>Our terms are pure lambda-terms, without any type annotations and without
+indication of the presence of type abstractions and type applications. We make
+this choice for several reasons:</p>
+<ul>
+<li><p class="first">It is nice to work directly with the syntax and operational semantics of the
+untyped lambda-calculus. This shows that the type system can be defined
+after the untyped calculus.</p>
+</li>
+<li><p class="first">This means that terms do not contain any type variables. Thus, we never need
+to substitute a type for a type variable in a term. Terms contain just term
+variables, and types contain just type variables. This makes life easier.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Inductive</span> <span class="nf">jf</span> : tyenv -&gt; term -&gt; ty -&gt; <span class="kt">Prop</span> :=
+| JFVar:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">x</span> <span class="nv">T</span>,
+    Gamma x = T -&gt;
+    jf Gamma (Var x) T
+| JFLam:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t</span> <span class="nv">T</span> <span class="nv">U</span>,
+    jf (T .: Gamma) t U -&gt;
+    jf Gamma (Lam t) (TyFun T U)
+| JFApp:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t1</span> <span class="nv">t2</span> <span class="nv">T</span> <span class="nv">U</span>,
+    jf Gamma t1 (TyFun T U) -&gt;
+    jf Gamma t2 T -&gt;
+    jf Gamma (App t1 t2) U
+| JFTyAbs:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">Gamma&#39;</span> <span class="nv">t</span> <span class="nv">T</span>,
+    jf Gamma&#39; t T -&gt;
+    Gamma&#39; = Gamma &gt;&gt; ren (+<span class="mi">1</span>) -&gt;
+    jf Gamma t (TyAll T)
+| JFTyApp:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t</span> <span class="nv">T</span> <span class="nv">U</span> <span class="nv">T&#39;</span>,
+    jf Gamma t (TyAll T) -&gt;
+    T&#39; = T.[U/] -&gt;
+    jf Gamma t T&#39;
+.</span></span></span></pre></li>
+</ul>
+<p>The following hint allows <code class="highlight coq"><span class="name builtin">eauto with</span> <span class="name">jf</span></code> to apply the above typing rules.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Hint Constructors</span> jf : jf.</span></span></span></pre></div>
+</div>
+</div></body>
+</html>
