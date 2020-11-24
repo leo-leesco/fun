@@ -153,18 +153,16 @@ or to visit us at our offices.
   in the previous 3 lectures.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
-  In Coq, by François Pottier.
-  The Coq files can be found in the directory [coq/](coq/)
-  and their HTML renderings in the directory [html/](html/).
-  These HTML renderings can also be viewed online:
+  In Coq, by François Pottier ([coq](coq/), [html](html/)).
+  To view the proofs online, please use the following links:
   * Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
-    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundness.html).
+    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
   * The polymorphic lambda-calculus, also known as System F:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
-    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundness.html).
+    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * The **mid-term exam** takes place on 02/12/2020.
 * (09/12/2020)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
