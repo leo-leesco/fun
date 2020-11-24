@@ -619,60 +619,37 @@ Qed.
 
 Hint Resolve star_cbv_subset_stdred StdConsStar : stdred.
 
-(* The following four lemmas analyze a reduction sequence of the form [star
-   ipcbv t1 t2], where the head constructor of the term [t2] is known. In
-   every case, it can be concluded that the term [t1] exhibits the same head
-   constructor. *)
+(* The following lemma analyzes a reduction sequence of the form [star ipcbv
+   t1 t2], where the head constructor of the term [t2] is known. In every
+   case, it can be concluded that the term [t1] exhibits the same head
+   constructor as [t2]. *)
 
-Lemma star_ipcbv_into_Var:
-  forall {t1 t2}, star ipcbv t1 t2 ->
-  forall {x}, t2 = Var x -> t1 = Var x.
+Lemma star_ipcbv_into:
+  forall t1 t2,
+  star ipcbv t1 t2 ->
+  match t2 with
+  | Var x =>
+      t1 = Var x
+  | Lam u2 =>
+      exists u1, t1 = Lam u1 /\ star pcbv u1 u2
+  |  App t21 t22 =>
+      exists t11 t12,
+      t1 = App t11 t12 /\ star pcbv t11 t21 /\ star pcbv t12 t22
+  | Let t21 t22 =>
+      exists t11 t12,
+      t1 = Let t11 t12 /\ star ipcbv t11 t21 /\ star pcbv t12 t22
+  end.
 Proof.
+  (* By induction on the reduction sequence. *)
   induction 1; intros; subst.
-  { eauto. }
-  { forward (IHstar _ eq_refl). inv ipcbv. eauto. }
-Qed.
-
-Lemma star_ipcbv_into_Lam:
-  forall {t1 t2}, star ipcbv t1 t2 ->
-  forall {u2}, t2 = Lam u2 ->
-  exists u1, t1 = Lam u1 /\ star pcbv u1 u2.
-Proof.
-  induction 1; intros; subst.
-  { eauto with sequences. }
-  { forward (IHstar _ eq_refl). inv ipcbv. eauto with sequences. }
-Qed.
-
-Lemma star_ipcbv_into_App:
-  forall {t1 t2}, star ipcbv t1 t2 ->
-  forall {t21 t22}, t2 = App t21 t22 ->
-  exists t11 t12,
-  t1 = App t11 t12 /\ star pcbv t11 t21 /\ star pcbv t12 t22.
-Proof.
-  induction 1; intros; subst.
-  { eauto with sequences. }
-  { forward (IHstar _ _ eq_refl). inv ipcbv;
+  (* Case: [star_refl]. By cases on [t2]. *)
+  { match goal with t: term |- _ => destruct t end;
+    eauto with sequences. }
+  (* Case: [star_step]. By cases on [t2], then by examination of
+     the [ipcbv] step. *)
+  { match goal with t: term |- _ => destruct t end; unpack; inv ipcbv;
     eauto 9 using ipcbv_subset_pcbv with sequences. }
 Qed.
-
-Lemma star_ipcbv_into_Let:
-  forall {t1 t2}, star ipcbv t1 t2 ->
-  forall {t21 t22}, t2 = Let t21 t22 ->
-  exists t11 t12,
-  t1 = Let t11 t12 /\ star ipcbv t11 t21 /\ star pcbv t12 t22.
-Proof.
-  induction 1; intros; subst.
-  { eauto with sequences. }
-  { forward (IHstar _ _ eq_refl). inv ipcbv. eauto 9 with sequences. }
-Qed.
-
-Ltac star_ipcbv_into :=
-  pick (star ipcbv) ltac:(fun h => first [
-    forward (star_ipcbv_into_Var h eq_refl)
-  | forward (star_ipcbv_into_Lam h eq_refl)
-  | forward (star_ipcbv_into_App h eq_refl)
-  | forward (star_ipcbv_into_Let h eq_refl)
-  ]).
 
 (* The standardization theorem. (Crary's lemma 12.) *)
 
@@ -683,6 +660,6 @@ Theorem cbv_standardization:
 Proof.
   induction t2; intros;
   forward1 crarys_lemma9;
-  star_ipcbv_into;
+  forward star_ipcbv_into;
   eauto 8 using ipcbv_subset_pcbv, star_covariant with stdred.
 Qed.

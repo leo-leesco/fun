@@ -23,7 +23,9 @@ Proof.
   unfold fv. asimpl. induction k; intros.
   (* Base case. *)
   { asimpl. split; intros; false.
-    { unfold ids, Ids_term in *. injections. lia. }
+    { unfold ids, Ids_term in *. injections.
+      (* In Coq 8.12, this goal is solved by [lia], but not in Coq 8.10. *)
+      eapply Nat.neq_succ_diag_l. eauto. }
     { lia. }
   }
   (* Step. *)
@@ -69,7 +71,8 @@ Hint Rewrite fv_Var_eq fv_Lam_eq fv_App_eq fv_Let_eq : fv.
 
 Lemma closed_Var:
   forall x,
-  ~ closed (Var x).
+  closed (Var x) ->
+  False.
 Proof.
   unfold closed; intros; fv. lia.
 Qed.
