@@ -4,6 +4,8 @@ Ce fichier est susceptible d'être modifié.  Relisez-le avant l'examen.
 
 L'examen se déroulera pendant notre créneau habituel de 12h45 à 15h45. 
 
+L'examen doit être composé sur feuille en écriture manuscrite.
+
 Le sujet de l'examen sera déposé sur ce site à 12h45. 
 L'examen proprement dit durera **2h45** et se terminera à 15h30.
 Vous aurez alors **15 minutes** pour nous envoyer votre copie scannée ou
