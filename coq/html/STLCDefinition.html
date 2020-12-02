@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="alectryon-standalone" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<title>STLCDefinition.v</title>
+<link rel="stylesheet" href="alectryon.css" type="text/css" />
+<link rel="stylesheet" href="docutils_basic.css" type="text/css" />
+<link rel="stylesheet" href="tango_subtle.css" type="text/css" />
+<link rel="stylesheet" href="tango_subtle.min.css" type="text/css" />
+<script type="text/javascript" src="alectryon.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css" integrity="sha512-sky5cf9Ts6FY1kstGOBHSybfKqdHR41M0Ldb0BjNiv3ifltoQIsg0zIaQ+wwdwgQ0w9vKFW7Js50lxH9vqNSSw==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.min.css" integrity="sha512-MbysAYimH1hH2xYzkkMHB6MqxBqfP0megxsCLknbYqHVwXTCg9IqHbk+ZP/vnhO8UEW6PaXAkKe2vQ+SWACxxA==" crossorigin="anonymous" />
+</head>
+<body>
+<div class="alectryon-root alectryon-windowed"><div class="alectryon-header">Built with <a href="https://github.com/cpitclaudel/alectryon/">Alectryon</a>, running <a href="https://coq.inria.fr/">Coq</a>+<a href="https://github.com/ejgallego/coq-serapi">SerAPI</a> v8.10.0+0.7.0. Coq sources are in this panel; goals and messages will appear in the other. Bubbles (<span class="alectryon-bubble"></span>) indicate interactive fragments: hover for details, tap to reveal contents. Use <kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> to navigate, <kbd>Ctrl+🖱️</kbd> to focus.</div><div class="document">
+
+
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> MyTactics.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusSyntax.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusValues.</span></span><span class="coq-wsp">
+</span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> LambdaCalculusReduction.</span></span></span></pre><div class="section" id="types">
+<h1>Types</h1>
+<p>Here is the syntax of simple types:</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Inductive</span> <span class="nf">ty</span> :=
+| TyVar (x : var)
+| TyFun (A B : ty).</span></span></span></pre><p>A type environment is viewed as a total function of variables to types.</p>
+<p>In principle, an environment should be modeled as a list of types, which
+represents a partial function of variables to types. This introduces a few
+complications, and is left as an exercise for the reader.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Definition</span> <span class="nf">tyenv</span> := var -&gt; ty.</span></span></span></pre></div>
+<div class="section" id="the-typing-judgement">
+<h1>The typing judgement</h1>
+<p>The simply-typed lambda-calculus is defined by the following three
+typing rules.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Inductive</span> <span class="nf">jt</span> : tyenv -&gt; term -&gt; ty -&gt; <span class="kt">Prop</span> :=
+| JTVar:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">x</span> <span class="nv">T</span>,
+    Gamma x = T -&gt;
+    jt Gamma (Var x) T
+| JTLam:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t</span> <span class="nv">T</span> <span class="nv">U</span>,
+    jt (T .: Gamma) t U -&gt;
+    jt Gamma (Lam t) (TyFun T U)
+| JTApp:
+    <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t1</span> <span class="nv">t2</span> <span class="nv">T</span> <span class="nv">U</span>,
+    jt Gamma t1 (TyFun T U) -&gt;
+    jt Gamma t2 T -&gt;
+    jt Gamma (App t1 t2) U
+.</span></span></span></pre><p>The tactic [pick_jt t] picks a hypothesis [h] whose statement is a typing
+judgement about the term [t], and passes [h] to the Ltac continuation [k].</p>
+<p>Thus, for instance, [pick_jt t invert] selects a typing judgement that is
+at hand for the term [t] and inverts it.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Ltac</span> <span class="nf">pick_jt</span> t k :=
+  <span class="kr">match goal with</span> h: jt _ t _ |- _ =&gt; k h <span class="kr">end</span>.</span></span></span></pre><p>The following hint allows <code class="highlight coq"><span class="name builtin">eauto with</span> <span class="name">jt</span></code> to apply the above typing rules.</p>
+<pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Hint Constructors</span> jt : jt.</span></span></span></pre></div>
+</div>
+</div></body>
+</html>

@@ -16,13 +16,15 @@ From November 4th, the course will only be
 accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
 with slides and live audio.
 
-## Partiel, mecredi 2 décembre.
+On November 25, please [follow this link](https://bbb-front.math.univ-paris-diderot.fr/ext/fra-l9b-qap-t1n).
 
-L'examen se déroulera pendant notre créneau habituel de 12h45 à 15h45. 
+## Examen partiel
 
-Les consignes quand au déroulement de l'examen sont décrites dans
+L'examen partiel se déroulera **le mercredi 2 décembre**
+pendant notre créneau habituel **de 12h45 à 15h45**.
+
+Les consignes quant au déroulement de l'examen sont décrites dans
 [partiel.md](partiel.md).
-
 
 ## Teachers
 
@@ -151,7 +153,16 @@ or to visit us at our offices.
   in the previous 3 lectures.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
-  In Coq, by François Pottier.
+  In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
+  To view the proofs online, please use the following links:
+  * Simply-typed lambda-calculus:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
+    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
+  * The polymorphic lambda-calculus, also known as System F:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
+    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * The **mid-term exam** takes place on 02/12/2020.
 * (09/12/2020)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)

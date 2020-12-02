@@ -76,11 +76,21 @@ Ltac unpack :=
 
 (* -------------------------------------------------------------------------- *)
 
-(* The tactic [forward H] introduces the term [H] as a new hypothesis, and
-   unpacks it (if necessary). *)
+(* The tactic [forward lemma] applies [lemma] in a forward way. That is,
+   it asserts that a certain fact holds, and that this fact follows from
+   an application of [lemma]. If the lemma has hypotheses, it attempts
+   to prove them via the tactic [obvious]. If the lemma has a complex
+   conclusion, involving existential quantifiers and conjunction, it
+   deconstructs it using [unpack]. *)
 
-Ltac forward H :=
-  generalize H; intro; unpack.
+Ltac forward lemma :=
+  let fact := fresh "fact" in
+  evar (fact : Prop);
+  assert fact; [
+    (* Attempt to prove the lemma's hypotheses using [obvious]. *)
+    eapply lemma; obvious
+  | (* Deconstruct the lemma's conclusion using [unpack]. *)
+    unfold fact in *; clear fact; unpack ].
 
 (* -------------------------------------------------------------------------- *)
 
