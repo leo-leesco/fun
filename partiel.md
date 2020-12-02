@@ -12,7 +12,13 @@ Vous aurez alors **15 minutes** pour nous envoyer votre copie scannée ou
 photographiée par mail à l'adresse
 [Didier.Remy@inria.fr](mailto:Didier.Remy@inria.fr). 
 
-Attention!
+
+## Sujet (disponible à 12h45 à cette url):
+
+[https://gitlab.inria.fr/fpottier/mpri-2.4-public/-/blob/master/exams/partiel-2020-2021.pdf](https://gitlab.inria.fr/fpottier/mpri-2.4-public/-/blob/master/exams/partiel-2020-2021.pdf)
+
+
+## Attention!
 
 - Avant d'être scannée ou photocopiée, chaque page doit mentionner votre nom
   et prénom et chaque page doit être numérotée en rappelant à chaque fois le
