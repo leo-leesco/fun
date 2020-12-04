@@ -1,0 +1,25 @@
+def Identity (x) {
+  val y = x;
+  y
+}
+
+def Nothing () { true }
+
+def Waoh () {
+  Print("About to execute a [handle] construct.\n");
+  handle (Yield) {
+    Print("This is the body.\n");
+    Yield(false);
+    Yield(true)
+  } (x, Resume) {
+    Print("The handler received ");
+    Print(x);
+    Print(".\n");
+    Resume(x)
+  };
+  Print("Done executing a [handle] construct.\n")
+}
+
+Identity(true);
+Nothing();
+Waoh()

@@ -1,0 +1,359 @@
+;; This file has been auto-generated. Please do not edit it.
+;; Instead, edit ../Test.ml (if needed),
+;; then run [make depend] at the top level.
+
+(rule (targets ./flip.execute.out ./flip.execute.err) (deps ./flip.th)
+  (action
+    (with-stdout-to ./flip.execute.out
+      (with-stderr-to ./flip.execute.err
+        (run ../../src/Main.exe ./flip.th --execute)))))
+
+(rule (alias flip.execute.target)
+  (action (diff ./flip.execute.exp ./flip.execute.out)))
+
+(rule (targets ./flip.typecheck.out ./flip.typecheck.err) (deps ./flip.th)
+  (action
+    (with-stdout-to ./flip.typecheck.out
+      (with-stderr-to ./flip.typecheck.err
+        (run ../../src/Main.exe ./flip.th --typecheck)))))
+
+(rule (alias flip.typecheck.target)
+  (action (diff ./flip.typecheck.exp ./flip.typecheck.out)))
+
+(rule (targets ./hello.execute.out ./hello.execute.err) (deps ./hello.th)
+  (action
+    (with-stdout-to ./hello.execute.out
+      (with-stderr-to ./hello.execute.err
+        (run ../../src/Main.exe ./hello.th --execute)))))
+
+(rule (alias hello.execute.target)
+  (action (diff ./hello.execute.exp ./hello.execute.out)))
+
+(rule (targets ./hello.typecheck.out ./hello.typecheck.err) (deps ./hello.th)
+  (action
+    (with-stdout-to ./hello.typecheck.out
+      (with-stderr-to ./hello.typecheck.err
+        (run ../../src/Main.exe ./hello.th --typecheck)))))
+
+(rule (alias hello.typecheck.target)
+  (action (diff ./hello.typecheck.exp ./hello.typecheck.out)))
+
+(rule (targets ./if.execute.out ./if.execute.err) (deps ./if.th)
+  (action
+    (with-stdout-to ./if.execute.out
+      (with-stderr-to ./if.execute.err
+        (run ../../src/Main.exe ./if.th --execute)))))
+
+(rule (alias if.execute.target)
+  (action (diff ./if.execute.exp ./if.execute.out)))
+
+(rule (targets ./if.typecheck.out ./if.typecheck.err) (deps ./if.th)
+  (action
+    (with-stdout-to ./if.typecheck.out
+      (with-stderr-to ./if.typecheck.err
+        (run ../../src/Main.exe ./if.th --typecheck)))))
+
+(rule (alias if.typecheck.target)
+  (action (diff ./if.typecheck.exp ./if.typecheck.out)))
+
+(rule (targets ./ifunit.execute.out ./ifunit.execute.err) (deps ./ifunit.th)
+  (action
+    (with-stdout-to ./ifunit.execute.out
+      (with-stderr-to ./ifunit.execute.err
+        (run ../../src/Main.exe ./ifunit.th --execute)))))
+
+(rule (alias ifunit.execute.target)
+  (action (diff ./ifunit.execute.exp ./ifunit.execute.out)))
+
+(rule (targets ./ifunit.typecheck.out ./ifunit.typecheck.err)
+  (deps ./ifunit.th)
+  (action
+    (with-stdout-to ./ifunit.typecheck.out
+      (with-stderr-to ./ifunit.typecheck.err
+        (run ../../src/Main.exe ./ifunit.th --typecheck)))))
+
+(rule (alias ifunit.typecheck.target)
+  (action (diff ./ifunit.typecheck.exp ./ifunit.typecheck.out)))
+
+(rule (targets ./illformed_resume.execute.out ./illformed_resume.execute.err)
+  (deps ./illformed_resume.th)
+  (action
+    (with-stdout-to ./illformed_resume.execute.out
+      (with-stderr-to ./illformed_resume.execute.err
+        (run ../../src/Main.exe ./illformed_resume.th --execute)))))
+
+(rule (alias illformed_resume.execute.target)
+  (action
+    (diff ./illformed_resume.execute.exp ./illformed_resume.execute.out)))
+
+(rule
+  (targets ./illformed_resume.typecheck.out ./illformed_resume.typecheck.err)
+  (deps ./illformed_resume.th)
+  (action
+    (with-stdout-to ./illformed_resume.typecheck.out
+      (with-stderr-to ./illformed_resume.typecheck.err
+        (run ../../src/Main.exe ./illformed_resume.th --typecheck)))))
+
+(rule (alias illformed_resume.typecheck.target)
+  (action
+    (diff ./illformed_resume.typecheck.exp ./illformed_resume.typecheck.out)))
+
+(rule (targets ./illtyped_cyclic.execute.out ./illtyped_cyclic.execute.err)
+  (deps ./illtyped_cyclic.th)
+  (action
+    (with-stdout-to ./illtyped_cyclic.execute.out
+      (with-stderr-to ./illtyped_cyclic.execute.err
+        (run ../../src/Main.exe ./illtyped_cyclic.th --execute)))))
+
+(rule (alias illtyped_cyclic.execute.target)
+  (action (diff ./illtyped_cyclic.execute.exp ./illtyped_cyclic.execute.out)))
+
+(rule
+  (targets ./illtyped_cyclic.typecheck.out ./illtyped_cyclic.typecheck.err)
+  (deps ./illtyped_cyclic.th)
+  (action
+    (with-stdout-to ./illtyped_cyclic.typecheck.out
+      (with-stderr-to ./illtyped_cyclic.typecheck.err
+        (run ../../src/Main.exe ./illtyped_cyclic.th --typecheck)))))
+
+(rule (alias illtyped_cyclic.typecheck.target)
+  (action
+    (diff ./illtyped_cyclic.typecheck.exp ./illtyped_cyclic.typecheck.out)))
+
+(rule (targets ./illtyped_effect.execute.out ./illtyped_effect.execute.err)
+  (deps ./illtyped_effect.th)
+  (action
+    (with-stdout-to ./illtyped_effect.execute.out
+      (with-stderr-to ./illtyped_effect.execute.err
+        (run ../../src/Main.exe ./illtyped_effect.th --execute)))))
+
+(rule (alias illtyped_effect.execute.target)
+  (action (diff ./illtyped_effect.execute.exp ./illtyped_effect.execute.out)))
+
+(rule
+  (targets ./illtyped_effect.typecheck.out ./illtyped_effect.typecheck.err)
+  (deps ./illtyped_effect.th)
+  (action
+    (with-stdout-to ./illtyped_effect.typecheck.out
+      (with-stderr-to ./illtyped_effect.typecheck.err
+        (run ../../src/Main.exe ./illtyped_effect.th --typecheck)))))
+
+(rule (alias illtyped_effect.typecheck.target)
+  (action
+    (diff ./illtyped_effect.typecheck.exp ./illtyped_effect.typecheck.out)))
+
+(rule (targets ./illtyped_handler.execute.out ./illtyped_handler.execute.err)
+  (deps ./illtyped_handler.th)
+  (action
+    (with-stdout-to ./illtyped_handler.execute.out
+      (with-stderr-to ./illtyped_handler.execute.err
+        (run ../../src/Main.exe ./illtyped_handler.th --execute)))))
+
+(rule (alias illtyped_handler.execute.target)
+  (action
+    (diff ./illtyped_handler.execute.exp ./illtyped_handler.execute.out)))
+
+(rule
+  (targets ./illtyped_handler.typecheck.out ./illtyped_handler.typecheck.err)
+  (deps ./illtyped_handler.th)
+  (action
+    (with-stdout-to ./illtyped_handler.typecheck.out
+      (with-stderr-to ./illtyped_handler.typecheck.err
+        (run ../../src/Main.exe ./illtyped_handler.th --typecheck)))))
+
+(rule (alias illtyped_handler.typecheck.target)
+  (action
+    (diff ./illtyped_handler.typecheck.exp ./illtyped_handler.typecheck.out)))
+
+(rule (targets ./illtyped_perform.execute.out ./illtyped_perform.execute.err)
+  (deps ./illtyped_perform.th)
+  (action
+    (with-stdout-to ./illtyped_perform.execute.out
+      (with-stderr-to ./illtyped_perform.execute.err
+        (run ../../src/Main.exe ./illtyped_perform.th --execute)))))
+
+(rule (alias illtyped_perform.execute.target)
+  (action
+    (diff ./illtyped_perform.execute.exp ./illtyped_perform.execute.out)))
+
+(rule
+  (targets ./illtyped_perform.typecheck.out ./illtyped_perform.typecheck.err)
+  (deps ./illtyped_perform.th)
+  (action
+    (with-stdout-to ./illtyped_perform.typecheck.out
+      (with-stderr-to ./illtyped_perform.typecheck.err
+        (run ../../src/Main.exe ./illtyped_perform.th --typecheck)))))
+
+(rule (alias illtyped_perform.typecheck.target)
+  (action
+    (diff ./illtyped_perform.typecheck.exp ./illtyped_perform.typecheck.out)))
+
+(rule (targets ./nesting1.execute.out ./nesting1.execute.err)
+  (deps ./nesting1.th)
+  (action
+    (with-stdout-to ./nesting1.execute.out
+      (with-stderr-to ./nesting1.execute.err
+        (run ../../src/Main.exe ./nesting1.th --execute)))))
+
+(rule (alias nesting1.execute.target)
+  (action (diff ./nesting1.execute.exp ./nesting1.execute.out)))
+
+(rule (targets ./nesting1.typecheck.out ./nesting1.typecheck.err)
+  (deps ./nesting1.th)
+  (action
+    (with-stdout-to ./nesting1.typecheck.out
+      (with-stderr-to ./nesting1.typecheck.err
+        (run ../../src/Main.exe ./nesting1.th --typecheck)))))
+
+(rule (alias nesting1.typecheck.target)
+  (action (diff ./nesting1.typecheck.exp ./nesting1.typecheck.out)))
+
+(rule (targets ./printprint.execute.out ./printprint.execute.err)
+  (deps ./printprint.th)
+  (action
+    (with-stdout-to ./printprint.execute.out
+      (with-stderr-to ./printprint.execute.err
+        (run ../../src/Main.exe ./printprint.th --execute)))))
+
+(rule (alias printprint.execute.target)
+  (action (diff ./printprint.execute.exp ./printprint.execute.out)))
+
+(rule (targets ./printprint.typecheck.out ./printprint.typecheck.err)
+  (deps ./printprint.th)
+  (action
+    (with-stdout-to ./printprint.typecheck.out
+      (with-stderr-to ./printprint.typecheck.err
+        (run ../../src/Main.exe ./printprint.th --typecheck)))))
+
+(rule (alias printprint.typecheck.target)
+  (action (diff ./printprint.typecheck.exp ./printprint.typecheck.out)))
+
+(rule (targets ./simple.execute.out ./simple.execute.err) (deps ./simple.th)
+  (action
+    (with-stdout-to ./simple.execute.out
+      (with-stderr-to ./simple.execute.err
+        (run ../../src/Main.exe ./simple.th --execute)))))
+
+(rule (alias simple.execute.target)
+  (action (diff ./simple.execute.exp ./simple.execute.out)))
+
+(rule (targets ./simple.typecheck.out ./simple.typecheck.err)
+  (deps ./simple.th)
+  (action
+    (with-stdout-to ./simple.typecheck.out
+      (with-stderr-to ./simple.typecheck.err
+        (run ../../src/Main.exe ./simple.th --typecheck)))))
+
+(rule (alias simple.typecheck.target)
+  (action (diff ./simple.typecheck.exp ./simple.typecheck.out)))
+
+(rule (targets ./string.execute.out ./string.execute.err) (deps ./string.th)
+  (action
+    (with-stdout-to ./string.execute.out
+      (with-stderr-to ./string.execute.err
+        (run ../../src/Main.exe ./string.th --execute)))))
+
+(rule (alias string.execute.target)
+  (action (diff ./string.execute.exp ./string.execute.out)))
+
+(rule (targets ./string.typecheck.out ./string.typecheck.err)
+  (deps ./string.th)
+  (action
+    (with-stdout-to ./string.typecheck.out
+      (with-stderr-to ./string.typecheck.err
+        (run ../../src/Main.exe ./string.th --typecheck)))))
+
+(rule (alias string.typecheck.target)
+  (action (diff ./string.typecheck.exp ./string.typecheck.out)))
+
+(rule (targets ./tiny.execute.out ./tiny.execute.err) (deps ./tiny.th)
+  (action
+    (with-stdout-to ./tiny.execute.out
+      (with-stderr-to ./tiny.execute.err
+        (run ../../src/Main.exe ./tiny.th --execute)))))
+
+(rule (alias tiny.execute.target)
+  (action (diff ./tiny.execute.exp ./tiny.execute.out)))
+
+(rule (targets ./tiny.typecheck.out ./tiny.typecheck.err) (deps ./tiny.th)
+  (action
+    (with-stdout-to ./tiny.typecheck.out
+      (with-stderr-to ./tiny.typecheck.err
+        (run ../../src/Main.exe ./tiny.th --typecheck)))))
+
+(rule (alias tiny.typecheck.target)
+  (action (diff ./tiny.typecheck.exp ./tiny.typecheck.out)))
+
+(rule (targets ./twice.execute.out ./twice.execute.err) (deps ./twice.th)
+  (action
+    (with-stdout-to ./twice.execute.out
+      (with-stderr-to ./twice.execute.err
+        (run ../../src/Main.exe ./twice.th --execute)))))
+
+(rule (alias twice.execute.target)
+  (action (diff ./twice.execute.exp ./twice.execute.out)))
+
+(rule (targets ./twice.typecheck.out ./twice.typecheck.err) (deps ./twice.th)
+  (action
+    (with-stdout-to ./twice.typecheck.out
+      (with-stderr-to ./twice.typecheck.err
+        (run ../../src/Main.exe ./twice.th --typecheck)))))
+
+(rule (alias twice.typecheck.target)
+  (action (diff ./twice.typecheck.exp ./twice.typecheck.out)))
+
+(rule (targets ./unbound.execute.out ./unbound.execute.err)
+  (deps ./unbound.th)
+  (action
+    (with-stdout-to ./unbound.execute.out
+      (with-stderr-to ./unbound.execute.err
+        (run ../../src/Main.exe ./unbound.th --execute)))))
+
+(rule (alias unbound.execute.target)
+  (action (diff ./unbound.execute.exp ./unbound.execute.out)))
+
+(rule (targets ./unbound.typecheck.out ./unbound.typecheck.err)
+  (deps ./unbound.th)
+  (action
+    (with-stdout-to ./unbound.typecheck.out
+      (with-stderr-to ./unbound.typecheck.err
+        (run ../../src/Main.exe ./unbound.th --typecheck)))))
+
+(rule (alias unbound.typecheck.target)
+  (action (diff ./unbound.typecheck.exp ./unbound.typecheck.out)))
+
+(alias (name runtest)
+  (deps
+    (alias flip.execute.target)
+    (alias flip.typecheck.target)
+    (alias hello.execute.target)
+    (alias hello.typecheck.target)
+    (alias if.execute.target)
+    (alias if.typecheck.target)
+    (alias ifunit.execute.target)
+    (alias ifunit.typecheck.target)
+    (alias illformed_resume.execute.target)
+    (alias illformed_resume.typecheck.target)
+    (alias illtyped_cyclic.execute.target)
+    (alias illtyped_cyclic.typecheck.target)
+    (alias illtyped_effect.execute.target)
+    (alias illtyped_effect.typecheck.target)
+    (alias illtyped_handler.execute.target)
+    (alias illtyped_handler.typecheck.target)
+    (alias illtyped_perform.execute.target)
+    (alias illtyped_perform.typecheck.target)
+    (alias nesting1.execute.target)
+    (alias nesting1.typecheck.target)
+    (alias printprint.execute.target)
+    (alias printprint.typecheck.target)
+    (alias simple.execute.target)
+    (alias simple.typecheck.target)
+    (alias string.execute.target)
+    (alias string.typecheck.target)
+    (alias tiny.execute.target)
+    (alias tiny.typecheck.target)
+    (alias twice.execute.target)
+    (alias twice.typecheck.target)
+    (alias unbound.execute.target)
+    (alias unbound.typecheck.target)))
+

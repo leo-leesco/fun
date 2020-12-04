@@ -1,0 +1,16 @@
+def Main () {
+  handle (Twice) {
+    Print("This is the body.\n");
+    Twice(false);
+    Print("Who am I?.\n");
+    Twice(false);
+    Print("I am finished.\n")
+  } (x, Resume) {
+    Print("Resuming once.\n");
+    Resume(false);
+    Print("Resuming twice.\n");
+    Resume(true)
+  }
+}
+
+Main()

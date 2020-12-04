@@ -1,0 +1,21 @@
+def Main () {
+  handle (Outer) {
+    handle (Inner) {
+      val y = Inner("Hello");
+      val z = Inner(" there!\n");
+      Print("The replies were ");
+      Print(y);
+      Print(" and ");
+      Print(z);
+      Print("\n")
+    } (x, Resume) {
+      val y = Outer(x);
+      Resume(y)
+    }
+  } (x, Resume) {
+    Print(x);
+    Resume(x)
+  }
+}
+
+Main()

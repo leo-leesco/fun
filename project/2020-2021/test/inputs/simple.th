@@ -1,0 +1,11 @@
+def Main () {
+  handle (Inner) {
+    Inner("Hello");
+    Inner(" there!\n")
+  } (x, Resume) {
+    Print(x);
+    Resume(true)
+  }
+}
+
+Main()

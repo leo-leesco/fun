@@ -1,0 +1,5 @@
+handle (Perform) {
+  Perform("hello")
+} (x, Resume, y) {
+  Resume(y)
+}

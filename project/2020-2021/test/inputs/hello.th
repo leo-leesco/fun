@@ -1,0 +1,6 @@
+def Hello () {
+  Print("Hello world!\n")
+}
+
+Hello();
+Hello()

@@ -1,0 +1,7 @@
+handle (Perform) {
+  Perform("hello", "world")
+  (* Type error: we pass two arguments to Perform,
+     whereas only one is expected. *)
+} (x, Resume) {
+  Resume(x)
+}
