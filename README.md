@@ -73,8 +73,14 @@ We also show the limits of dependently-typed functional programming.
 
 ## Programming Project
 
-A programming project will be made available somewhere near the middle
-of the course.
+The [programming project](projects/2020-2021/) is now available;
+read the [assignment](projects/2020-2021/sujet.pdf).
+
+The deadline for submitting your project is **January 27, 2021**.
+
+Please do not hesitate to ask questions about the project,
+of an administrative or technical nature,
+to [François Pottier](francois.pottier@inria.fr).
 
 ## Research internship proposals
 
