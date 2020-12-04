@@ -73,8 +73,8 @@ We also show the limits of dependently-typed functional programming.
 
 ## Programming Project
 
-The [programming project](projects/2020-2021/) is now available;
-read the [assignment](projects/2020-2021/sujet.pdf).
+The [programming project](project/2020-2021/) is now available;
+read the [assignment](project/2020-2021/sujet.pdf).
 
 The deadline for submitting your project is **January 27, 2021**.
 
