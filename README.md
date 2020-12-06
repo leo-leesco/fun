@@ -219,6 +219,8 @@ Only course notes and hand-written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* mid-term exam 2020-2021:
+  [Delimited control in System F](exams/partiel-2020-2021.pdf).
 * final exam 2019-2020:
   [Gradually-typed functional languages](exams/final-2019-2020.pdf).
 * mid-term exam 2019-2020:
