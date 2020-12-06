@@ -1,0 +1,6 @@
+handle (Perform) {
+  Perform(Perform)
+  (* Type error: we pass Perform to itself. *)
+} (x, Resume) {
+  Resume(x)
+}

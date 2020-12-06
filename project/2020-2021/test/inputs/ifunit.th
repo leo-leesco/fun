@@ -1,0 +1,4 @@
+(* A conditional whose scrutinee is not a Boolean: *)
+if "marsupilami" {
+  Print("Houba.\n")
+}

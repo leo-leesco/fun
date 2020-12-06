@@ -1,0 +1,9 @@
+handle (Perform) {
+  Perform("hello")
+} (Resume, x) {
+  (* Type error: we take Resume and x instead of x and Resume.
+     Even though we do not use either of them, this is still
+     an error, as these two variables do not belong in the same
+     category: one is a value, the other is a block. *)
+  true
+}

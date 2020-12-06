@@ -1,0 +1,20 @@
+def NonDeterministically (Action) {
+  handle (Flip) {
+    def Flip0 () { Flip(true) } (* Redefine Flip at arity 0. *)
+    Action(Flip0)
+  } (x, Resume) {
+    Resume(false); Resume(true)
+  }
+}
+
+def SomeTask (Flip) {
+  val x = Flip();
+  val y = Flip();
+  Print("I flipped two coins: ");
+  Print(x);
+  Print(", ");
+  Print(y);
+  Print("\n")
+}
+
+NonDeterministically(SomeTask)

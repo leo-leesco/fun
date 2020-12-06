@@ -1,0 +1,10 @@
+handle (Perform) {
+  Perform("hello")
+} (x, Resume) {
+  (* Type error: [Perform] is passed a string, yet we use [x] as a Boolean. *)
+  if (x) {
+    Print("yes")
+  } else {
+    Print("no")
+  }
+}

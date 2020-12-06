@@ -1,0 +1,11 @@
+def Main (x) {
+  if x {
+    Print("Hello\n")
+  }
+  else {
+    Print("World\n")
+  }
+}
+
+Main(true);
+Main(false)

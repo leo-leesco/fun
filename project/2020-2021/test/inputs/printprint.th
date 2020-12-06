@@ -1,0 +1,6 @@
+def PrintFstReturnSnd (x, y) {
+  Print(x);
+  y
+}
+
+Print(PrintFstReturnSnd("Hello ", "world!\n"))
