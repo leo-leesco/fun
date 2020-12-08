@@ -151,28 +151,30 @@ or to visit us at our offices.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
-  To view the proofs online, please use the following links:
-  * Simply-typed lambda-calculus:
+  To view the proofs online, please use the following links: 
+  - Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
-    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
-  * The polymorphic lambda-calculus, also known as System F:
+    [type
+    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html). 
+  - The polymorphic lambda-calculus, also known as System F:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
     [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-* The **mid-term exam** takes place on 02/12/2020.
+* The **mid-term exam** takes place on 02/12/2020. (The correction is now
+  avaliable below)
 * (09/12/2020)
-  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
-  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
-* (16/12/2020)
-  To be determined.
-* (06/01/2021)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
   (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* (16/12/2020)
+  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
+  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+* (06/01/2021)
+  To be determined.
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
 ### Dependently-typed Functional Programming
