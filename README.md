@@ -73,6 +73,14 @@ Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
 to [François Pottier](francois.pottier@inria.fr).
 
+Here are answers to some of the questions that have been asked:
+
+* *Q*: What is the dynamic semantics of the primitive operation `print`?
+  *A*: My convention is that `print` can be applied to a value of an arbitrary type.
+       It prints this value on the standard output channel and returns this value.
+       (So, it is an identity function with a side effect.)
+       In the file `Interpret.ml`, the function `print_value false` can be used.
+
 ## Research internship proposals
 
 We have posted the following internship proposals (more to come):
@@ -151,12 +159,12 @@ or to visit us at our offices.
 * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
-  To view the proofs online, please use the following links: 
+  To view the proofs online, please use the following links:
   - Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
     [type
-    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html). 
+    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
   - The polymorphic lambda-calculus, also known as System F:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
