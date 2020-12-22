@@ -18,7 +18,7 @@ minutes** pour envoyer votre copie scannée ou photographiée par mail à
 l'adresse [Didier.Remy@inria.fr](mailto:Didier.Remy@inria.fr).  Voir les
 détails ci-dessous.
 
-## Le sujet sera disponible sur ce page en début d'épreuve: 
+## Le sujet sera disponible sur cette page en début d'épreuve: 
 
 [sujet pas encore disponible]
 
