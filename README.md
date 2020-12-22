@@ -16,6 +16,8 @@ From November 4th, the course will only be
 accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
 with slides and live audio.
 
+An exam of 1h30 is scheduled during the course of January 6th, 2021. 
+[See details here](partiel.md).
 
 ## Teachers
 
@@ -174,7 +176,9 @@ or to visit us at our offices.
   ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
 * (06/01/2021)
-  To be determined.
+  - Logical relations (Uses and extensions)---see [chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf) of
+   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
+  - Written exam---[see details here](partiel.md)
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
 ### Dependently-typed Functional Programming
