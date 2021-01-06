@@ -20,8 +20,7 @@ détails ci-dessous.
 
 ## Le sujet sera disponible sur cette page en début d'épreuve: 
 
-[sujet pas encore disponible]
-
+[sujet](http://gallium.inria.fr/~remy/mpri/exams/intermediaire-2020-2021.pdf)
 
 ## Attention!
 
