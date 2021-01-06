@@ -34,9 +34,9 @@ détails ci-dessous.
 
 - Conservez vos copies. 
 
-Envoyez (sauf cas particulier) toutes dans un seul
-mail directement  dans un fichier en attechement, sans passer par un
-site extérieur de dépôt (sauf raison particulière). 
+Envoyez (sauf cas particulier) toutes dans un seul mail directement dans un
+fichier en attachement, sans passer par un site extérieur de dépôt (sauf
+raison particulière).
 
 En début d'examen, envoyez ce
 [mail](mailto:Didier.Remy@inria.fr?subject=MPRI-2.4,je_fais_l_examen) pour
@@ -50,7 +50,7 @@ votre caméra).  Cela me permettra de donner si besoin des précisions en
 cours d'examen, suite à des questions éventuelles sur l'énoncé.  Ne posez
 pas les questions dans le Chat public, mais envoyez-les par mail à
 [Didier.Remy@inria.fr](mailto:Didier.Remy@inria.fr?subject=MPRI-2.4,Question)
-avec comme sujet: `MPRI-2.4,Question`.  Vous pouvez aussi m'adressé un
+avec comme sujet: `MPRI-2.4,Question`.  Vous pouvez aussi m'adresser un
 message privé par le site de visioconférence.
 
 Tous les documents sont autorisés, mais toute communication avec une autre
