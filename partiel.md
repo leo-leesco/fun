@@ -18,7 +18,7 @@ minutes** pour envoyer votre copie scannée ou photographiée par mail à
 l'adresse [Didier.Remy@inria.fr](mailto:Didier.Remy@inria.fr).  Voir les
 détails ci-dessous.
 
-## Le sujet sera disponible sur cette page en début d'épreuve: 
+## Le sujet sera disponible à cette URL en début d'épreuve: 
 
 [sujet](http://gallium.inria.fr/~remy/mpri/exams/intermediaire-2020-2021.pdf)
 
