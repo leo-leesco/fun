@@ -230,6 +230,8 @@ Only course notes and hand-written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* intermediate exam 2020-2021:
+  [Calcul d'objets](exams/intermediaire-2020-2021.pdf).
 * mid-term exam 2020-2021:
   [Delimited control in System F](exams/partiel-2020-2021.pdf).
 * final exam 2019-2020:
