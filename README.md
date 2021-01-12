@@ -11,10 +11,7 @@ Bâtiment Sophie Germain, in room **1013**.
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-From November 4th, the course will only be
-[remotely
-accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
-with slides and live audio.
+From November 4th, the course will only be remotely accessible.
 
 An exam of 1h30 is scheduled during the course of January 6th, 2021. 
 [See details here](partiel.md).
@@ -191,30 +188,35 @@ or to visit us at our offices.
 
 ### Dependently-typed Functional Programming
 
-These lectures will involve some hands-on experience. To this end, it is
-necessary to bring a laptop on which Agda (version 2.6.0.1 or higher)
-is installed. A quick installation guide as well as further pointers
-can be found [here](agda/00-agda/Warmup.lagda.rst).
+These lectures will involve some hands-on experience and a fair bit of
+improvisation. Perhaps not even in that order. To this end, it is
+necessary to join the lecture with OCaml installed (say, at least
+version 4.11.1) and a modern web browser (no, EWW does not cut it,
+sorry). In principle, you have been invited to join the Mattermost
+channel: if not, drop me an email.
 
-* [Guidelines](agda/Index.lagda.rst)
-* (13/01/2021) Introduction & Setup
-  ([Source](agda/00-agda/Warmup.lagda.rst),
-   [categorical cheatsheet](slides/pedagand-00.pdf),
-   [McCompiler.v](coq/McCompiler.v))
-* (date to be determined)
+* (13/01/2021)
+  [Introduction to Monads](https://gitlab.com/pedagand/mpri-2.4-monads).
+* (20/01/2021)
   [Effectful functional programming](slides/pedagand-01.pdf)
+  [categorical cheatsheet](slides/pedagand-00.pdf)
   ([Source](agda/01-effectful/Monad.lagda.rst)).
-* (date to be determined)
+* (27/01/2021)
   [Dependent functional programming](slides/pedagand-02.pdf)
-  ([Source](agda/02-dependent/Indexed.lagda.rst)).
-* (date to be determined)
+  ([Source](agda/02-dependent/Indexed.lagda.rst),
+   [McCompiler.v](coq/McCompiler.v)).
+* (03/02/2021)
   [Total functional programming](slides/pedagand-03.pdf)
   ([Source](agda/03-total/Recursion.lagda.rst)).
-* (date to be determined)
+* (10/02/2021)
   [Generic functional programming](slides/pedagand-04.pdf)
-  ([Source](agda/04-generic/Desc.lagda.rst)) &
+  ([Source](agda/04-generic/Desc.lagda.rst)).
+* (17/02/2021)
+  Who knows? How about some realizability?
+* (24/02/2021)
   [Open problems in dependent functional programming](slides/pedagand-05.pdf)
   ([Source](agda/05-open/Problems.lagda.rst)).
+
 
 ## Evaluation of the course
 
@@ -310,9 +312,6 @@ Here is a suggested
 
 If desired, ProofGeneral can be further
 [customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
-
-To install and familiarize yourself with Agda, please follow the
-[instructions](agda/00-agda/Warmup.lagda.rst).
 
 ## Bibliography
 
