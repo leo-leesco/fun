@@ -198,8 +198,9 @@ channel: if not, drop me an email.
 * (13/01/2021)
   [Introduction to Monads](https://gitlab.com/pedagand/mpri-2.4-monads).
 * (20/01/2021)
-  [Effectful functional programming](slides/pedagand-01.pdf)
+  [Effectful functional programming](https://gitlab.com/pedagand/mpri-2.4-equations)
   ([Source](agda/01-effectful/Monad.lagda.rst),
+   [Online](https://nextjournal.com/pedagand/effectful-functional-programming),
    [categorical cheatsheet](slides/pedagand-00.pdf)).
 * (27/01/2021)
   [Dependent functional programming](slides/pedagand-02.pdf)
