@@ -196,19 +196,23 @@ sorry). In principle, you have been invited to join the Mattermost
 channel: if not, drop me an email.
 
 * (13/01/2021)
-  [Introduction to Monads](https://gitlab.com/pedagand/mpri-2.4-monads).
+  Introduction to Monads
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads)).
 * (20/01/2021)
-  [Effectful functional programming](https://gitlab.com/pedagand/mpri-2.4-equations)
-  ([Source](agda/01-effectful/Monad.lagda.rst),
-   [Online](https://nextjournal.com/pedagand/effectful-functional-programming),
-   [categorical cheatsheet](slides/pedagand-00.pdf)).
+  Effectful functional programming
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-equations),
+   [Agda source](agda/01-effectful/Monad.lagda.rst),
+   [Agda online](https://nextjournal.com/pedagand/effectful-functional-programming),
+   [Categorical cheatsheet](slides/pedagand-00.pdf)).
 * (27/01/2021)
-  [Dependent functional programming](slides/pedagand-02.pdf)
-  ([Source](agda/02-dependent/Indexed.lagda.rst),
-   [McCompiler.v](coq/McCompiler.v)).
+  Dependent functional programming
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe),
+   [Agda source](agda/02-dependent/Indexed.lagda.rst)
+   [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
 * (03/02/2021)
-  [Total functional programming](slides/pedagand-03.pdf)
-  ([Source](agda/03-total/Recursion.lagda.rst)).
+  Total functional programming
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
+   [Agda source](agda/03-total/Recursion.lagda.rst)).
 * (10/02/2021)
   [Generic functional programming](slides/pedagand-04.pdf)
   ([Source](agda/04-generic/Desc.lagda.rst)).
