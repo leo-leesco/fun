@@ -67,15 +67,16 @@ The [programming project](project/2020-2021/) is now closed.
 
 ## Research internship proposals
 
-We have posted the following internship proposals (more to come):
+The following internship proposals are outstanding:
 
-* [Specification and Verification of a Transient Data Structure](http://cambium.inria.fr/~fpottier/stages/sujet2021-m2.pdf),
-  advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier (Inria, Paris).
-  **Offer already tentatively taken.**
+* [A formal proof of correctness of Tail-Recursion Modulo Constructor
+   in Iris](https://www.stefanesco.com/documents/internship-trmc.pdf),
+  advised by Léo Stefanesco (Inria Paris), Gabriel Scherer (Inria Saclay),
+  and François Pottier (Inria Paris).
 
-Please do not hesitate to talk to us (during the break or at the end of each lecture),
-to contact us by email,
-or to visit us at our offices.
+Please do not hesitate to talk to us
+  (during the break or at the end of each lecture),
+or to contact us by email.
 
 ## Approximate syllabus
 
