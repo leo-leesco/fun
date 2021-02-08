@@ -13,7 +13,7 @@ There is a 15-minute break in the middle of each lecture.
 
 From November 4th, the course will only be remotely accessible.
 
-An exam of 1h30 is scheduled during the course of January 6th, 2021. 
+An exam of 1h30 is scheduled during the course of January 6th, 2021.
 [See details here](partiel.md).
 
 ## Teachers
@@ -63,22 +63,7 @@ We also show the limits of dependently-typed functional programming.
 
 ## Programming Project
 
-The [programming project](project/2020-2021/) is now available;
-read the [assignment](project/2020-2021/sujet.pdf).
-
-The deadline for submitting your project is **January 27, 2021**.
-
-Please do not hesitate to ask questions about the project,
-of an administrative or technical nature,
-to [François Pottier](francois.pottier@inria.fr).
-
-Here are answers to some of the questions that have been asked:
-
-* *Q*: What is the dynamic semantics of the primitive operation `print`?
-  *A*: My convention is that `print` can be applied to a value of an arbitrary type.
-       It prints this value on the standard output channel and returns this value.
-       (So, it is an identity function with a side effect.)
-       In the file `Interpret.ml`, the function `print_value false` can be used.
+The [programming project](project/2020-2021/) is now closed.
 
 ## Research internship proposals
 
