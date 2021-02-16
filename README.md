@@ -218,7 +218,7 @@ students who follow the full course. Only the mid-term exam is used to
 grade students who choose to split the course.
 
 The mid-term exam will take place on **02/12/2020**.
-The final exam will take place on (to be determined).
+The final exam will take place on **10/03/2020**.
 
 Only course notes and hand-written notes are allowed for the exams.
 
