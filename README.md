@@ -200,13 +200,15 @@ channel: if not, drop me an email.
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
    [Agda source](agda/03-total/Recursion.lagda.rst)).
 * (10/02/2021)
+  Total functional programming (contd.)
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
+   [Coinduction](slides/pedagand-coinduction.pdf),
+   [Agda source](agda/03-total/Recursion.lagda.rst)).
+* (17/02/2021)
   [Generic functional programming](slides/pedagand-04.pdf)
   ([Source](agda/04-generic/Desc.lagda.rst)).
-* (17/02/2021)
-  Who knows? How about some realizability?
 * (24/02/2021)
-  [Open problems in dependent functional programming](slides/pedagand-05.pdf)
-  ([Source](agda/05-open/Problems.lagda.rst)).
+  Who knows? How about some realizability?
 
 
 ## Evaluation of the course
