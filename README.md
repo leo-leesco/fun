@@ -1,40 +1,39 @@
-# Functional programming and type systems (2020-2021)
+# Functional programming and type systems (2021-2022)
 
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
-## Location and duration
+## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **1013**.
+Bâtiment Sophie Germain, in room **1013** (to be confirmed)
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
 
-From November 4th, the course will only be
-[remotely
-accessible](https://bbb-front.math.univ-paris-diderot.fr/ext/did-eay-8us-pnq)
-with slides and live audio.
-
-An exam of 1h30 is scheduled during the course of January 6th, 2021. 
-[See details here](partiel.md).
-
 ## Teachers
 
-* Functional Programming: Under the Hood
-  (5 installments, [François Pottier](http://cambium.inria.fr/~fpottier))
 * Metatheory of Typed Programming Languages
-  (7 installments, [Didier Rémy](http://cambium.inria.fr/~remy/), *head*; 1 installment, François Pottier)
-* Dependently-typed Functional Programming
-  (7 installments, [Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
+  ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
+* Interpretation, compilation, and program transformations
+  ([François Pottier](http://cambium.inria.fr/~fpottier))
+* Effects
+  ([Gabriel Scherer](http://gallium.inria.fr/~scherer/))
+* Typed-directed Programming
+  ([Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
+* Rust: programming with ressources
+  (Jacques-Henri Jourdan)
 
 ## Aims
 
 This course presents the principles and formalisms that underlie many of
-today's typed functional programming languages.
+today's typed programming languages.
 (Here are some [introductory slides](slides/fpottier-00.pdf).)
 
-This year, the course is made up of three parts and cannot be split.
+This year, the course has been reorganized with new material and new teachers.
+It is composed of five parts and cannot be split.
+
+### Interpretation, compilation, and program transformations
 
 In the first part, we discuss the *operational semantics* of functional
 programming languages, and we present several classic *program
@@ -50,23 +49,68 @@ these definitions and theorems can be expressed in a form that a machine can
 check. That is, although Coq is not a prerequisite of the course, we will at
 least try to *read and understand Coq definitions and statements*.
 
-In the second part, we focus on the meta-theoretical properties of type
-systems.  We study parametric polymorphism (as in System F and ML), data
-types and type abstraction. We show syntactic type soundness (via progress
-and subject reduction) by reasoning by induction on typing derivations.  We
-also show how to obtain semantic properties via logical relations by
-reasoning by induction on the structure of types.  Finally, we introduce
-subtyping, row polymorphism, and illustrate the problems induced by
-side effects (references) and the need for the value restriction.
+### Metatheory of Typed Programming Languages
+
+ 
+<!-- We focus on the meta-theoretical properties of type systems.  We study
+parametric polymorphism (as in System F and ML), data types and type
+abstraction. We show syntactic type soundness (via progress and subject
+reduction) by reasoning by induction on typing derivations.  We also show
+how to obtain semantic properties via logical relations by reasoning by
+induction on the structure of types.  Finally, we introduce subtyping, row
+polymorphism, and illustrate the problems induced by side effects
+(references) and the need for the value restriction.  -->
+
+This part of the course is split in four lectures.  We first introduce the
+_explicitly typed_ version of System F.  We prove its type type soundness by
+_subject reduction_ and _progress_.  We discuss _type erasing_ versus _type
+passing_ semantics_ and derive the _implicitly typed_ version of System
+F. We present _ML_ as a restriction of _System F_ to prenex polymorphism.
+The definition and main properties of System F will also be mechanized in
+the Coq proof assistant.
+
+We then extend _System F_ with primitive datatypes, including variants and
+records, and show their Church encodings.  We discuss both _iso-recursive_
+and _equi-recursive_ types.  We present _existential types_.  _Generalized
+Abstract Datatypes (GADTs)_ will just be introduced.
+
+We also extend System-F with higher-order kinds and higher-order types and
+requires computation at the level of types, leading to system _F-omega_.
+<!-- We may present _modules_ by elaboration into Fomega. -->
+
+Finally, we introduce logical relations to show parametricity properties of
+System F.  Unary relations are used to proof termination as an introduction
+to logicial elations.  We cover binary relations in details. They allow to
+prove _observational equivalence_ results or study the inhabitants at
+certain polymorphic types.  We just introduce _step-indexed_ logical
+relations which are needed when the programming language is extended with
+constructs that enable unstructured forms of recursion, such as recursive
+types at negative occurrences, or references.
+
+
+### Effects
+
+###  Typed-directed Programming
+
 
 The last part focuses on the use of dependent types for programming:
 effectful programming with monads and algebraic effects; tagless
 interpreters; programming with total functions; generic programming.
 We also show the limits of dependently-typed functional programming.
 
+
+### Rust
+
+
 ## Programming Project
 
-The [programming project](project/2020-2021/) is now available;
+Since we are studying programming languages and their formalization,
+programming is also an important part of the course.  We give a mandatory
+programming project (around the end of october) which need to be return
+around the end of January. The programming project count for about a third
+of the final grade.
+
+<!-- The [programming project](project/2020-2021/) is now available; 
 read the [assignment](project/2020-2021/sujet.pdf).
 
 The deadline for submitting your project is **January 27, 2021**.
@@ -76,28 +120,18 @@ of an administrative or technical nature,
 to [François Pottier](francois.pottier@inria.fr).
 
 Here are answers to some of the questions that have been asked:
-
-* *Q*: What is the dynamic semantics of the primitive operation `print`?
-  *A*: My convention is that `print` can be applied to a value of an arbitrary type.
-       It prints this value on the standard output channel and returns this value.
-       (So, it is an identity function with a side effect.)
-       In the file `Interpret.ml`, the function `print_value false` can be used.
+-->
 
 ## Research internship proposals
 
-We have posted the following internship proposals (more to come):
+<!-- We have posted the following internship proposals (more to come): -->
 
-* [Specification and Verification of a Transient Data Structure](http://cambium.inria.fr/~fpottier/stages/sujet2021-m2.pdf),
-  advised by Arthur Charguéraud (Inria, Strasbourg) and François Pottier (Inria, Paris).
-  **Offer already tentatively taken.**
-
-Please do not hesitate to talk to us (during the break or at the end of each lecture),
-to contact us by email,
-or to visit us at our offices.
+Please do not hesitate to talk to us (during the break or at the end of each
+lecture), to contact us by email, or to visit us at our offices.
 
 ## Approximate syllabus
 
-### Functional Programming: Under the Hood
+### Interpretation, compilation, and program transformations (to be updated)
 
 * (16/09/2020)
   * Introduction
@@ -133,6 +167,8 @@ or to visit us at our offices.
 
 ### Metatheory of Typed Programming Languages
 
+Previous-year course notes can be found
+
 * (21/10/2020)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
@@ -158,7 +194,7 @@ or to visit us at our offices.
 * (18/11/2020)
   This slot will (most likely) be used to finish and/or revised the material
   in the previous 3 lectures.
-* (25/11/2020)
+<!-- * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
   To view the proofs online, please use the following links:
@@ -170,9 +206,9 @@ or to visit us at our offices.
   - The polymorphic lambda-calculus, also known as System F:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
-    [type soundness](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-* The **mid-term exam** takes place on 02/12/2020. (The correction is now
-  avaliable below)
+    [type soundness
+    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
+ -->
 * (09/12/2020)
   [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
@@ -189,7 +225,7 @@ or to visit us at our offices.
   - Written exam---[see details here](partiel.md)
 * See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
 
-### Dependently-typed Functional Programming
+### Typed-Directed Programming (To be updated)
 
 These lectures will involve some hands-on experience. To this end, it is
 necessary to bring a laptop on which Agda (version 2.6.0.1 or higher)
@@ -215,6 +251,10 @@ can be found [here](agda/00-agda/Warmup.lagda.rst).
   ([Source](agda/04-generic/Desc.lagda.rst)) &
   [Open problems in dependent functional programming](slides/pedagand-05.pdf)
   ([Source](agda/05-open/Problems.lagda.rst)).
+
+### Effects
+### Rust: programming with ressources
+
 
 ## Evaluation of the course
 
