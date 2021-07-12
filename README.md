@@ -167,7 +167,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### Metatheory of Typed Programming Languages
 
-You may consult [Previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
+You may consult [previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
 
 * (21/10/2020)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/2020/slides1.pdf)
@@ -190,10 +190,6 @@ You may consult [Previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
   (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
    and [4.5](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-* **No lecture on 11/11/2020**.
-* (18/11/2020)
-  This slot will (most likely) be used to finish and/or revised the material
-  in the previous 3 lectures.
 <!-- * (25/11/2020)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
@@ -219,11 +215,6 @@ You may consult [Previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
   [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-* (06/01/2021)
-  - Logical relations (Uses and extensions)---see [chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf) of
-   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf)
-  - Written exam---[see details here](partiel.md)
-* See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf)
 
 ### Typed-Directed Programming (To be updated)
 
