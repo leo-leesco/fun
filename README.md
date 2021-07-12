@@ -104,7 +104,6 @@ We also show the limits of dependently-typed functional programming.
 
 ## Programming Project
 
-<<<<<<< HEAD
 Since we are studying programming languages and their formalization,
 programming is also an important part of the course.  We give a mandatory
 programming project (around the end of october) which need to be return
@@ -168,29 +167,29 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### Metatheory of Typed Programming Languages
 
-Previous-year course notes can be found
+You may consult [Previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
 
 * (21/10/2020)
-  [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/slides1.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/handout1.pdf)
-  (see also [intro](http://gallium.inria.fr/~remy/mpri/slides8.pdf),
-  and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
-  and [4](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/2020/slides1.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout1.pdf)
+  (see also [intro](http://gallium.inria.fr/~remy/mpri/2020/slides8.pdf),
+  and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
+  and [4](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
+  of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 * (28/10/2020)
-  [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/slides2.pdf)
-  ([handout](http://gallium.inria.fr/~remy/mpri/handout2.pdf)
-   [without](http://gallium.inria.fr/~remy/mpri/handout2a.pdf) or
-   [only](http://gallium.inria.fr/~remy/mpri/handout2b.pdf)
+  [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/2020/slides2.pdf)
+  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout2.pdf)
+   [without](http://gallium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
+   [only](http://gallium.inria.fr/~remy/mpri/2020/handout2b.pdf)
    the extra material)
-  (see also [chap 6](http://gallium.inria.fr/~remy/mpri/cours4.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  (see also [chap 6](http://gallium.inria.fr/~remy/mpri/2020/cours4.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 * (04/11/2020)
-  [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/slides5.pdf)
-  ([handout](http://gallium.inria.fr/~remy/mpri/handout5.pdf))
-  (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/cours1.pdf)
-   and [4.5](http://gallium.inria.fr/~remy/mpri/cours2.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/2020/slides5.pdf)
+  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout5.pdf))
+  (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
+   and [4.5](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 * **No lecture on 11/11/2020**.
 * (18/11/2020)
   This slot will (most likely) be used to finish and/or revised the material
@@ -211,20 +210,20 @@ Previous-year course notes can be found
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
  -->
 * (09/12/2020)
-  [Overloading](http://gallium.inria.fr/~remy/mpri/slides4.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/handout4.pdf)
-  (see also [chap 7](http://gallium.inria.fr/~remy/mpri/cours5.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  [Overloading](http://gallium.inria.fr/~remy/mpri/2020/slides4.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout4.pdf)
+  (see also [chap 7](http://gallium.inria.fr/~remy/mpri/2020/cours5.pdf)
+  of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 * (16/12/2020)
-  [Logical relations](http://gallium.inria.fr/~remy/mpri/slides3.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/handout3.pdf)
-  ([chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf))
+  [Logical relations](http://gallium.inria.fr/~remy/mpri/2020/slides3.pdf)
+  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout3.pdf)
+  ([chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 * (06/01/2021)
-  - Logical relations (Uses and extensions)---see [chap 8](http://gallium.inria.fr/~remy/mpri/cours6.pdf) of
-   of [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
+  - Logical relations (Uses and extensions)---see [chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf) of
+   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf)
   - Written exam---[see details here](partiel.md)
-* See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/cours.pdf)
+* See exercises in [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf)
 
 ### Typed-Directed Programming (To be updated)
 
@@ -328,10 +327,10 @@ available with solutions:
 ## Recommended software
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
-A recent version is recommended (at the time of writing, 2.0.7).
+A recent version is recommended (at the time of writing, 2.0.8).
 If you have installed it already, skip this step.
 
-Then, install OCaml 4.11.1,
+Then, install OCaml 4.12.0,
 [Coq 8.12](https://coq.inria.fr),
 and
 [AutoSubst](https://github.com/RalfJung/autosubst) by executing
