@@ -21,8 +21,8 @@ There is a 15-minute break in the middle of each lecture.
   ([Gabriel Scherer](http://gallium.inria.fr/~scherer/))
 * Typed-directed Programming
   ([Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
-* Rust: programming with ressources
-  (Jacques-Henri Jourdan)
+* Rust: programming safely with ressources in a modern low-level programming
+  language ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
 ## Aims
 

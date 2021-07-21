@@ -2,7 +2,7 @@
 
 Ceci concerne l'examen qui aura lieu le mercredi de la rentrée, le 06
 janvier 2021. L'examen aura lieu pendant une partie du cours et devrait
-durée 1h30 environ.  Le protocole est le même que pour le partiel. 
+durer 1h30 environ.  Le protocole est le même que pour le partiel. 
 et rappelé ci dessous
 
 Ce fichier est susceptible d'être modifié.  Relisez-le avant l'examen.
