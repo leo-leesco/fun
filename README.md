@@ -6,7 +6,7 @@ This page supplements
 ## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **1013** (to be confirmed)
+Bâtiment Sophie Germain, in room **2035** 
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
@@ -158,14 +158,18 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### Interpretation, compilation, and program transformations (to be updated)
 
-* (16/09/2020)
+* (15/09/2021) Semantics and interpreters
   * Introduction
       ([slides 00](slides/fpottier-00.pdf)).
   * Syntax and operational semantics, on paper
       ([slides 01a](slides/fpottier-01a.pdf)).
   * Syntax, on a machine
       ([slides 01b](slides/fpottier-01b.pdf)).
-* (23/09/2020)
+* (20/10/2021) From arbitrary functions down to closed functions
+* (27/10/2021) From arbitrary calls to tail calls 
+* (03/11/2021) Optimization
+
+* Previous year courses
   * Operational semantics, on a machine
       ([Coq demo](coq/DemoSyntaxReduction.v)).
   * From a small-step semantics down to an efficient verified interpreter,
@@ -173,7 +177,7 @@ lecture), to contact us by email, or to visit us at our offices.
       ([slides 02](slides/fpottier-02.pdf))
       ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
-* (30/09/2020) Compiling away first-class functions:
+* (27/10/2020) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
@@ -194,28 +198,15 @@ lecture), to contact us by email, or to visit us at our offices.
 
 You may consult [previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
 
-* (21/10/2020)
+* (22/09/2021)
   [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/2020/slides1.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout1.pdf)
   (see also [intro](http://gallium.inria.fr/~remy/mpri/2020/slides8.pdf),
   and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
   and [4](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-* (28/10/2020)
-  [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/2020/slides2.pdf)
-  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout2.pdf)
-   [without](http://gallium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
-   [only](http://gallium.inria.fr/~remy/mpri/2020/handout2b.pdf)
-   the extra material)
-  (see also [chap 6](http://gallium.inria.fr/~remy/mpri/2020/cours4.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-* (04/11/2020)
-  [References, Value restriction, Side effects](http://gallium.inria.fr/~remy/mpri/2020/slides5.pdf)
-  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout5.pdf))
-  (see also sections [3.6, 3.7](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
-   and [4.5](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-<!-- * (25/11/2020)
+
+* (06/10/2021)
   A (slow) walk through the garden of type soundness proofs.
   In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
   To view the proofs online, please use the following links:
@@ -229,13 +220,18 @@ You may consult [previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
- -->
-* (09/12/2020)
-  [Overloading](http://gallium.inria.fr/~remy/mpri/2020/slides4.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout4.pdf)
-  (see also [chap 7](http://gallium.inria.fr/~remy/mpri/2020/cours5.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-* (16/12/2020)
+* (29/09/2021)
+** [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/2020/slides2.pdf)
+  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout2.pdf)
+   [without](http://gallium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
+   [only](http://gallium.inria.fr/~remy/mpri/2020/handout2b.pdf)
+   the extra material)
+  (see also [chap 6](http://gallium.inria.fr/~remy/mpri/2020/cours4.pdf)
+   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
+   
+** Higher-Order Types: F-omega.
+  
+* (13/10/2021)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/2020/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout3.pdf)
   ([chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf)
