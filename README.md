@@ -6,7 +6,7 @@ This page supplements
 ## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **2035** 
+Bâtiment Sophie Germain, in room **2035**
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture.
@@ -135,7 +135,7 @@ programming project (around the end of october) which need to be return
 around the end of January. The programming project count for about a third
 of the final grade.
 
-<!-- The [programming project](project/2020-2021/) is now available; 
+<!-- The [programming project](project/2020-2021/) is now available;
 read the [assignment](project/2020-2021/sujet.pdf).
 
 The deadline for submitting your project is **January 27, 2021**.
@@ -166,7 +166,7 @@ lecture), to contact us by email, or to visit us at our offices.
   * Syntax, on a machine
       ([slides 01b](slides/fpottier-01b.pdf)).
 * (20/10/2021) From arbitrary functions down to closed functions
-* (27/10/2021) From arbitrary calls to tail calls 
+* (27/10/2021) From arbitrary calls to tail calls
 * (03/11/2021) Optimization
 
 * Previous year courses
@@ -228,9 +228,9 @@ You may consult [previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
    the extra material)
   (see also [chap 6](http://gallium.inria.fr/~remy/mpri/2020/cours4.pdf)
    of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-   
+
 ** Higher-Order Types: F-omega.
-  
+
 * (13/10/2021)
   [Logical relations](http://gallium.inria.fr/~remy/mpri/2020/slides3.pdf)
   [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout3.pdf)
@@ -283,7 +283,7 @@ channel: if not, drop me an email.
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
-students who follow the full course. 
+students who follow the full course.
 
 <!--
 The mid-term exam will take place on **02/12/2020**.
