@@ -12,11 +12,11 @@ echo "Creating a new opam switch..."
 if opam switch create mpri24 ocaml-base-compiler.4.12.0
 then :
 else
-echo "Checking if the switch mpri24 already exists 4.12.0..."
+echo "Checking if the switch mpri24 already exists..."
 if [ "$(opam exec --switch=mpri24 ocamlc -- --version)" = 4.12.0 ]
 then echo "Fine!"
 else
-    echo "The switch is not verion 4.12.0 of the ocaml compiler; "
+    echo "The switch mpri24 is not version 4.12.0 of the ocaml compiler; "
     echo "you probably wish to remove it (check first):"
     echo; echo "    opam switch remove mpri24"; echo
     echo "and restart the script."
@@ -37,7 +37,6 @@ opam update
 
 # Configure EMACS (used during Tuareg's installation).
 
-
 case $OSTYPE in
     darwin*)
         DARWINEMACS=/Applications/Aquamacs*.app/Contents/MacOS/Aquamacs
@@ -49,22 +48,11 @@ case $OSTYPE in
   ;;
 esac
 
-# Install Tuareg, Merlin, Coq.
+# Install Tuareg, Merlin, Coq, AutoSubst.
 
-echo "Installing Tuareg, Merlin, Coq 8.13.2..."
-opam install -j4 \
+echo "Installing Tuareg, Merlin, Coq 8.13.2, AutoSubst..."
+opam install \
   tuareg \
   merlin \
   coq.8.13.2 \
-
-# Install AutoSubst.
-# The exact commit I have used is e5bf249d7912a185c7f9f69af1a065daa4284f34.
-
-echo "Installing AutoSubst..."
-opam install coq-autosubst
-
-# cd /tmp && \
-#   rm -rf autosubst && \
-#   git clone https://github.com/RalfJung/autosubst.git && \
-#   make -C autosubst lib install && \
-#   rm -rf autosubst
+  coq-autosubst.1.7 \
