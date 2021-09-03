@@ -6,22 +6,23 @@ This page supplements
 ## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **2035**
+Bâtiment Sophie Germain, in room **2035**.
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
-There is a 15-minute break in the middle of each lecture.
+There is a 15-minute break in the middle of each lecture,
+so each lecture lasts 1h15 + 1h15.
 
 ## Teachers
 
-* Metatheory of Typed Programming Languages
+* Metatheory of typed programming languages
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
 * Interpretation, compilation, and program transformations
   ([François Pottier](http://cambium.inria.fr/~fpottier))
 * Effects
-  ([Gabriel Scherer](http://gallium.inria.fr/~scherer/))
-* Typed-directed Programming
+  ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
+* Typed-directed programming
   ([Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
-* Rust: programming safely with ressources in a modern low-level programming
+* Rust: programming safely with resources in a modern low-level programming
   language ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
 ## Aims
@@ -30,24 +31,8 @@ This course presents the principles and formalisms that underlie many of
 today's typed programming languages.
 (Here are some [introductory slides](slides/fpottier-00.pdf).)
 
-This year, the course has been reorganized with new material and new teachers.
+This year, the course is reorganized with new material and new teachers.
 It is composed of five parts and cannot be split.
-
-### Interpretation, compilation, and program transformations
-
-In the first part, we discuss the *operational semantics* of functional
-programming languages, and we present several classic *program
-transformations*, including closure conversion, defunctionalization, and the
-transformation into continuation-passing style (CPS). These program
-transformations are interesting from two points of view. First, they are
-*useful programming techniques*, which can help write or understand
-programs. Second, they are used in the *compilation* of functional
-programming languages, so they help understand what happens when the machine
-executes a program. We use operational semantics to *prove* that the meaning
-of programs is preserved by these transformations. Finally, we suggest how
-these definitions and theorems can be expressed in a form that a machine can
-check. That is, although Coq is not a prerequisite of the course, we will at
-least try to *read and understand Coq definitions and statements*.
 
 ### Metatheory of Typed Programming Languages
 
@@ -86,10 +71,38 @@ relations which are needed when the programming language is extended with
 constructs that enable unstructured forms of recursion, such as recursive
 types at negative occurrences, or references.
 
+### Interpretation, Compilation, and Program Transformations
+
+In the first lecture, we discuss several presentations of the *operational
+semantics* of a (call-by-value) functional programming language. We explain
+why each of these presentations exists and in what sense these presentations
+are equivalent. One of these presentations is in fact executable: it is an
+interpreter. This interpreter can be implemented in Coq and can be *verified*,
+that is, can be proved correct with respect to the other presentations of the
+operational semantics. As far as time permits, we will review how lambda-terms
+and their operational semantics can be defined in Coq, using a representation
+of names as de Bruijn indices. Although Coq is not a prerequisite of the
+course, we will at least try to *read and understand Coq definitions and
+statements*.
+
+In the next three lectures, we present several classic *program
+transformations*, including closure conversion, defunctionalization, the
+transformation into continuation-passing style (CPS), and stream fusion. These
+program transformations are interesting from two points of view. First, they
+are *useful programming techniques*, which can help write or understand
+programs. Second, they are used in the *compilation* of functional programming
+languages, so they help understand what happens when the machine executes a
+program. We discuss how to *prove* that the meaning of programs is preserved
+by these transformations, based on an operational semantics. We suggest how
+these definitions and theorems can be expressed in a form that a machine can
+check (that is, in Coq).
+
 
 ### Effects
 
-###  Typed-directed Programming
+(To be completed.)
+
+###  Typed-Directed Programming
 
 
 This part focuses on the use of dependent types for programming:
@@ -118,7 +131,7 @@ escaping from the safe fragment and encapsulating these uses of unsafe
 features behind safe interfaces. We will study the important example
 of interior mutability.
 
-Next, we will focus on two recent research subject on Rust. First, it
+Next, we will focus on two recent research subjects on Rust. First, it
 is possible to translate programs written in the safe fragment of Rust
 into a functional language, thus completely erasing state. This makes
 it possible to ease verification of Rust programs. Second, we will
@@ -130,10 +143,10 @@ are, in fact, safe.
 ## Programming Project
 
 Since we are studying programming languages and their formalization,
-programming is also an important part of the course.  We give a mandatory
-programming project (around the end of october) which need to be return
-around the end of January. The programming project count for about a third
-of the final grade.
+programming is also an important part of the course. We give a mandatory
+programming project (around the end of October) which must be completed
+roughly by the end of January. The programming project counts for about a
+third of the final grade.
 
 <!-- The [programming project](project/2020-2021/) is now available;
 read the [assignment](project/2020-2021/sujet.pdf).
@@ -147,37 +160,38 @@ to [François Pottier](francois.pottier@inria.fr).
 Here are answers to some of the questions that have been asked:
 -->
 
-## Research internship proposals
+## Research Internship Proposals
 
 <!-- We have posted the following internship proposals (more to come): -->
 
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
 
-## Approximate syllabus
+## Approximate Syllabus
 
-### Interpretation, compilation, and program transformations (to be updated)
+### Interpretation, Compilation, and Program Transformations
+
+This year's schedule, to be made more precise soon:
 
 * (15/09/2021) Semantics and interpreters
-  * Introduction
-      ([slides 00](slides/fpottier-00.pdf)).
-  * Syntax and operational semantics, on paper
-      ([slides 01a](slides/fpottier-01a.pdf)).
-  * Syntax, on a machine
-      ([slides 01b](slides/fpottier-01b.pdf)).
-* (20/10/2021) From arbitrary functions down to closed functions
-* (27/10/2021) From arbitrary calls to tail calls
-* (03/11/2021) Optimization
+* (20/10/2021) Closure conversion, defunctionalization
+* (27/10/2021) The CPS transformation
+* (03/11/2021) Constructor specialisation; stream fusion
 
-* Previous year courses
+Last year's schedule:
+
+* (16/09/2020) Semantics and interpreters
+  * Introduction ([slides 00](slides/fpottier-00.pdf)).
+  * Syntax and operational semantics, on paper ([slides 01a](slides/fpottier-01a.pdf)).
+  * Syntax, on a machine ([slides 01b](slides/fpottier-01b.pdf)).
   * Operational semantics, on a machine
       ([Coq demo](coq/DemoSyntaxReduction.v)).
-  * From a small-step semantics down to an efficient verified interpreter,
+* (23/09/2020) From a small-step semantics down to an efficient verified interpreter,
     in several stages
       ([slides 02](slides/fpottier-02.pdf))
       ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
-* (27/10/2020) Compiling away first-class functions:
+* (30/09/2020) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
