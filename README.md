@@ -344,9 +344,9 @@ A recent version is recommended (at the time of writing, 2.0.8).
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.12.0,
-[Coq 8.12](https://coq.inria.fr),
+[Coq 8.13.2](https://coq.inria.fr),
 and
-[AutoSubst](https://github.com/RalfJung/autosubst) by executing
+[AutoSubst](https://github.com/coq-community/autosubst) by executing
 [this script](coq/installation.sh).
 This script **does not destroy** your existing installation of
 OCaml and Coq. It creates a new "switch" named `mpri24` and installs
