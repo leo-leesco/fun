@@ -11,7 +11,7 @@ export OPAMYES=true
 echo "Creating a new opam switch..."
 if opam switch create mpri24 ocaml-base-compiler.4.12.0
 then :
-else      
+else
 echo "Checking if the switch mpri24 already exists 4.12.0..."
 if [ "$(opam exec --switch=mpri24 ocamlc -- --version)" = 4.12.0 ]
 then echo "Fine!"
@@ -43,7 +43,7 @@ case $OSTYPE in
         DARWINEMACS=/Applications/Aquamacs*.app/Contents/MacOS/Aquamacs
         if [ -x ${DARWINEMACS} ]
         then
-            EMACS="$(ls ${DAWINEMACS})"
+            EMACS="$(ls ${DARWINEMACS})"
             export EMACS
         fi
   ;;
