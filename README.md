@@ -169,11 +169,57 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ## Approximate Syllabus
 
-### Interpretation, Compilation, and Program Transformations
+### Interpretation, Compilation, and Program Transformations (intro)
+
+* (15/09/2021) Semantics and interpreters
+
+### Metatheory of Typed Programming Languages
+
+* (22/09/2021)
+  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/2020/slides1.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/2020/handout1.pdf);
+  see also [intro](http://cambium.inria.fr/~remy/mpri/2020/slides8.pdf),
+  and chap [1,2,3](http://cambium.inria.fr/~remy/mpri/2020/cours1.pdf)
+  and [4](http://cambium.inria.fr/~remy/mpri/2020/cours2.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
+  See also _a (slow) walk through the garden of type soundness proofs_
+  in Coq, by François Pottier ([coq](coq/), [html](coq/html/));
+  to view the proofs online, please use the following links:
+  - Lambda Calculus: 
+    [Syntax](LambdaCalculusSyntax.html),
+    [Values](LambdaCalculusValues.html), 
+    [Reduction](LambdaCalculusReduction.html)
+  - Simply-typed lambda-calculus:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
+    [type
+    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
+  - The polymorphic lambda-calculus, also known as System F:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
+    [type soundness
+    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
+* (29/09/2021)
+  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/2020/slides2.pdf)
+  ([handout](http://cambium.inria.fr/~remy/mpri/2020/handout2.pdf)
+   [without](http://cambium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
+   [only](http://cambium.inria.fr/~remy/mpri/2020/handout2b.pdf)
+   the extra material);
+  see also [chap 6](http://cambium.inria.fr/~remy/mpri/2020/cours4.pdf)
+   of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf).
+* (06/10/21) Higher-Order Types: F-omega.
+* (13/10/2021)
+  [Logical relations](http://cambium.inria.fr/~remy/mpri/2020/slides3.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/2020/handout3.pdf);
+  see also [chap 8](http://cambium.inria.fr/~remy/mpri/2020/cours6.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
+   
+You may also see [last year schedule](http://cristal.inria.fr/~remy/mpri/2020/)
+
+### Interpretation, Compilation, and Program Transformations (cont.)
 
 This year's schedule, to be made more precise soon:
 
-* (15/09/2021) Semantics and interpreters
 * (20/10/2021) Closure conversion, defunctionalization
 * (27/10/2021) The CPS transformation
 * (03/11/2021) Constructor specialisation; stream fusion
@@ -207,49 +253,6 @@ Last year's schedule:
 * (14/10/2020) Equational reasoning and program optimizations
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
-
-### Metatheory of Typed Programming Languages
-
-You may consult [previous-year course](http://cristal.inria.fr/~remy/mpri/2020/)
-
-* (22/09/2021)
-  [Metatheory of System F](http://gallium.inria.fr/~remy/mpri/2020/slides1.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout1.pdf)
-  (see also [intro](http://gallium.inria.fr/~remy/mpri/2020/slides8.pdf),
-  and chap [1,2,3](http://gallium.inria.fr/~remy/mpri/2020/cours1.pdf)
-  and [4](http://gallium.inria.fr/~remy/mpri/2020/cours2.pdf)
-  of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-
-* (06/10/2021)
-  A (slow) walk through the garden of type soundness proofs.
-  In Coq, by François Pottier ([coq](coq/), [html](coq/html/)).
-  To view the proofs online, please use the following links:
-  - Simply-typed lambda-calculus:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
-    [type
-    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
-  - The polymorphic lambda-calculus, also known as System F:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
-    [type soundness
-    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-* (29/09/2021)
-** [ADTs, existential types, GADTs](http://gallium.inria.fr/~remy/mpri/2020/slides2.pdf)
-  ([handout](http://gallium.inria.fr/~remy/mpri/2020/handout2.pdf)
-   [without](http://gallium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
-   [only](http://gallium.inria.fr/~remy/mpri/2020/handout2b.pdf)
-   the extra material)
-  (see also [chap 6](http://gallium.inria.fr/~remy/mpri/2020/cours4.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
-
-** Higher-Order Types: F-omega.
-
-* (13/10/2021)
-  [Logical relations](http://gallium.inria.fr/~remy/mpri/2020/slides3.pdf)
-  [(handout)](http://gallium.inria.fr/~remy/mpri/2020/handout3.pdf)
-  ([chap 8](http://gallium.inria.fr/~remy/mpri/2020/cours6.pdf)
-   of [course notes](http://gallium.inria.fr/~remy/mpri/2020/cours.pdf))
 
 ### Typed-Directed Programming (To be updated)
 
