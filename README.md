@@ -285,43 +285,30 @@ Last year's schedule:
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
-### Typed-Directed Programming (To be updated)
+### Type-Directed Programming
 
 These lectures will involve some hands-on experience and a fair bit of
 improvisation. Perhaps not even in that order. To this end, it is
 necessary to join the lecture with OCaml installed (say, at least
-version 4.11.1) and a modern web browser (no, EWW does not cut it,
-sorry). In principle, you have been invited to join the Mattermost
-channel: if not, drop me an email.
+version 4.11.1).
 
-* (13/01/2021)
-  Introduction to Monads
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads)).
-* (20/01/2021)
-  Effectful functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-equations),
-   [Agda source](agda/01-effectful/Monad.lagda.rst),
-   [Agda online](https://nextjournal.com/pedagand/effectful-functional-programming),
+* (22/12/2021)
+  Algebraic programming
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
    [Categorical cheatsheet](slides/pedagand-00.pdf)).
-* (27/01/2021)
+* (12/01/2022)
+  Algebraic programming (contd.)
+  ([Coinduction](slides/pedagand-coinduction.pdf),
+   [Agda source](agda/03-total/Recursion.lagda.rst)).
+* (19/01/2022)
+  Generic programming
+  ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
+   [Source](agda/04-generic/Desc.lagda.rst)).
+* (26/01/2022)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
-* (03/02/2021)
-  Total functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
-   [Agda source](agda/03-total/Recursion.lagda.rst)).
-* (10/02/2021)
-  Total functional programming (contd.)
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
-   [Coinduction](slides/pedagand-coinduction.pdf),
-   [Agda source](agda/03-total/Recursion.lagda.rst)).
-* (17/02/2021)
-  [Generic functional programming](slides/pedagand-04.pdf)
-  ([Source](agda/04-generic/Desc.lagda.rst)).
-* (24/02/2021)
-  Who knows? How about some realizability?
 
 
 ### Effects
