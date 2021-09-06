@@ -217,6 +217,16 @@ to [François Pottier](francois.pottier@inria.fr).
 Here are answers to some of the questions that have been asked:
 -->
 
+## Paper discussions (NEW!)
+
+This course will include in-course discussion of research
+articles/papers. We will read three papers during the semester. You
+will be told about each one several weeks in advance; you have to read
+it before the corresponding class, and we will discuss it together
+during class. This should give you a glimpse of current topics in the
+area, and more generally train you to read research papers and engage
+with them.
+
 ## Research Internship Proposals
 
 <!-- We have posted the following internship proposals (more to come): -->
