@@ -321,6 +321,25 @@ Last year's schedule:
   ([slides 05](slides/fpottier-05.pdf))
   ([Coq mini-demo](coq/DemoEqReasoning.v)).
 
+### Effects
+
+* (10/11/2021)
+  Paper discussion (1/3).
+  Primitive effects vs. user-defined effects.
+  Direct-style vs. indirect style.
+
+* (17/11/2021)
+  Monads in theory and practice.
+  A continuum of algebraic structures: functors, monads, applicative functors.
+
+* (8/12/2021)
+  Effect handlers.
+  Effects in proofs and logic.
+
+* (15/12/2021)
+  Paper discussion (2/3).
+  Type systems for effects.
+
 ### Type-Directed Programming
 
 These lectures will involve some hands-on experience and a fair bit of
@@ -333,6 +352,7 @@ version 4.11.1).
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
    [Categorical cheatsheet](slides/pedagand-00.pdf)).
 * (12/01/2022)
+  Paper discussion (3/3).
   Algebraic programming (contd.)
   ([Coinduction](slides/pedagand-coinduction.pdf),
    [Agda source](agda/03-total/Recursion.lagda.rst)).
@@ -347,7 +367,6 @@ version 4.11.1).
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
 
 
-### Effects
 ### Rust: programming with ressources
 
 
