@@ -349,11 +349,11 @@ version 4.11.1).
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
    [Categorical cheatsheet](slides/pedagand-00.pdf)).
 * (12/01/2022)
-  Paper discussion (3/3).
   Algebraic programming (contd.)
   ([Coinduction](slides/pedagand-coinduction.pdf),
    [Agda source](agda/03-total/Recursion.lagda.rst)).
 * (19/01/2022)
+  Paper discussion (3/3).
   Generic programming
   ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
    [Source](agda/04-generic/Desc.lagda.rst)).
