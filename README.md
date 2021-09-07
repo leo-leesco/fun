@@ -6,7 +6,7 @@ This page supplements
 ## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **2035**.
+Bâtiment Sophie Germain, in room **1004**. 
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture,
@@ -327,15 +327,12 @@ Last year's schedule:
   Paper discussion (1/3).
   Primitive effects vs. user-defined effects.
   Direct-style vs. indirect style.
-
 * (17/11/2021)
   Monads in theory and practice.
   A continuum of algebraic structures: functors, monads, applicative functors.
-
 * (8/12/2021)
   Effect handlers.
   Effects in proofs and logic.
-
 * (15/12/2021)
   Paper discussion (2/3).
   Type systems for effects.
@@ -369,18 +366,18 @@ version 4.11.1).
 
 ### Rust: programming with ressources
 
+* (02/02/2022)
+* (09/02/2022)
+* (16/02/2022)
+* (23/02/2022)
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
-students who follow the full course.
-
-<!--
-The mid-term exam will take place on **02/12/2020**.
-The final exam will take place on **10/03/2020**.
-
+students.  
+By default, the mid-term and final exams will take place on
+**01/12/2020** and **09/03/2020**, respectively.
 Only course notes and hand-written notes are allowed for the exams.
--->
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
@@ -402,30 +399,6 @@ available with solutions:
 * mid-term exam 2017-2018:
   [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
-* mid-term exam 2016-2017:
-  [Record concatenation](http://gallium.inria.fr/~remy/mpri/exams/partiel-2016-2017.pdf).
-* mid-term exam 2015-2016:
-  [Type containment](http://gallium.inria.fr/~remy/mpri/exams/partiel-2015-2016.pdf).
-* final exam 2014-2015:
-  [Copatterns](http://gallium.inria.fr/~remy/mpri/exams/final-2014-2015.pdf).
-* mid-term exam 2014-2015:
-  [Information flow](http://gallium.inria.fr/~remy/mpri/exams/partiel-2014-2015.pdf).
-* final exam 2013-2014:
-  [Operations on records](http://gallium.inria.fr/~remy/mpri/exams/final-2013-2014.pdf).
-* mid-term exam 2013-2014:
-  [Typechecking effects](http://gallium.inria.fr/~remy/mpri/exams/partiel-2013-2014.pdf).
-* final exam 2012-2013:
-  [Refinement types](http://gallium.inria.fr/~remy/mpri/exams/final-2012-2013.pdf).
-* mid-term exam 2012-2013:
-  [Variations on ML](http://gallium.inria.fr/~remy/mpri/exams/partiel-2012-2013.pdf).
-* final exam  2011-2012:
-  [Intersection types](http://gallium.inria.fr/~remy/mpri/exams/final-2011-2012.pdf).
-* mid-term exam  2011-2012:
-  [Parametricity](http://gallium.inria.fr/~remy/mpri/exams/partiel-2011-2012.pdf).
-* final exam 2010-2011:
-  [Compiling a language with subtyping](http://gallium.inria.fr/~xleroy/mpri/2-4/exam-2010-2011.pdf).
-* mid-term exam 2010-2011:
-  [Compilation of polymorphic records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2010-2011.pdf).
 
 ## Recommended software
 
