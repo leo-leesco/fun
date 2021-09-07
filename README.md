@@ -253,9 +253,9 @@ lecture), to contact us by email, or to visit us at our offices.
   in Coq, by François Pottier ([coq](coq/), [html](coq/html/));
   to view the proofs online, please use the following links:
   - Lambda Calculus: 
-    [Syntax](LambdaCalculusSyntax.html),
-    [Values](LambdaCalculusValues.html), 
-    [Reduction](LambdaCalculusReduction.html)
+    [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
+    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html), 
+    [Reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html)
   - Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
