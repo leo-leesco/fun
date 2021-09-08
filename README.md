@@ -236,7 +236,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ## Approximate Syllabus
 
-### Interpretation, Compilation, and Program Transformations (intro)
+### Interpretation, Compilation, and Program Transformations (introduction)
 
 * (15/09/2021) From a small-step semantics
                down to an efficient verified interpreter, in several stages.
@@ -293,7 +293,7 @@ lecture), to contact us by email, or to visit us at our offices.
   see also [chap 8](http://cambium.inria.fr/~remy/mpri/2020/cours6.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
 
-You may also see [last year schedule](http://cristal.inria.fr/~remy/mpri/2020/)
+You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/).
 
 ### Interpretation, Compilation, and Program Transformations (continued)
 
