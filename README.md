@@ -240,9 +240,9 @@ lecture), to contact us by email, or to visit us at our offices.
 
 * (15/09/2021) From a small-step semantics
                down to an efficient verified interpreter, in several stages.
-  * Introduction ([slides 00](slides/fpottier-00.pdf)).
+  * Introduction to this course ([slides 00](slides/fpottier-00.pdf)).
+  * Operational semantics and reduction strategies ([slides 01a](slides/fpottier-01a.pdf)).
 <!--
-  * Syntax and operational semantics, on paper ([slides 01a](slides/fpottier-01a.pdf)).
   * Syntax, on a machine ([slides 01b](slides/fpottier-01b.pdf)).
   * Operational semantics, on a machine
       ([Coq demo](coq/DemoSyntaxReduction.v)).
