@@ -238,22 +238,20 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### Interpretation, Compilation, and Program Transformations (introduction)
 
-* (15/09/2021) From a small-step semantics
-               down to an efficient verified interpreter, in several stages.
+* (15/09/2021) Syntax, semantics, and interpreters.
   * Introduction to this course
       ([slides 00](slides/fpottier-00.pdf)).
   * Operational semantics and reduction strategies
       ([slides 01a](slides/fpottier-01a.pdf)).
   * Towards machine-checked definitions and proofs
-      ([slides 01b](slides/fpottier-01b.pdf)).
-      ([lambda-calculus in Coq](coq/DemoSyntaxReduction.v))
-      ([lambda-calculus in OCaml](ocaml/pottier/Lambda.ml)).
-<!--
-  * Operational semantics, on a machine
-*
+      ([slides 01b](slides/fpottier-01b.pdf))
+      ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
+      ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
+  * From a small-step semantics
+    down to an efficient verified interpreter,
+    in several stages
       ([slides 02](slides/fpottier-02.pdf))
       ([Coq repo](coq/)).
--->
 
 ### Metatheory of Typed Programming Languages
 

@@ -59,11 +59,8 @@ let singleton (u : term) : var -> term =
 (* Recognizing a value. *)
 
 let is_value = function
-  | Var _
-  | Lam _ ->
-      true
-  | App _ ->
-     false
+  | Var _ | Lam _ -> true
+  | App _         -> false
   | Let _ ->
      false
 
