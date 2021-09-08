@@ -6,7 +6,7 @@ This page supplements
 ## Location and duration (to be confirmed)
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **1004**. 
+Bâtiment Sophie Germain, in room **1004**.
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture,
@@ -238,7 +238,19 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### Interpretation, Compilation, and Program Transformations (intro)
 
-* (15/09/2021) Semantics and interpreters
+* (15/09/2021) From a small-step semantics
+               down to an efficient verified interpreter, in several stages.
+  * Introduction ([slides 00](slides/fpottier-00.pdf)).
+<!--
+  * Syntax and operational semantics, on paper ([slides 01a](slides/fpottier-01a.pdf)).
+  * Syntax, on a machine ([slides 01b](slides/fpottier-01b.pdf)).
+  * Operational semantics, on a machine
+      ([Coq demo](coq/DemoSyntaxReduction.v)).
+*
+      ([slides 02](slides/fpottier-02.pdf))
+      ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
+      ([Coq repo](coq/)).
+-->
 
 ### Metatheory of Typed Programming Languages
 
@@ -252,9 +264,9 @@ lecture), to contact us by email, or to visit us at our offices.
   See also _a (slow) walk through the garden of type soundness proofs_
   in Coq, by François Pottier ([coq](coq/), [html](coq/html/));
   to view the proofs online, please use the following links:
-  - Lambda Calculus: 
+  - Lambda Calculus:
     [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
-    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html), 
+    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
     [Reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html)
   - Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
@@ -280,35 +292,17 @@ lecture), to contact us by email, or to visit us at our offices.
   [(handout)](http://cambium.inria.fr/~remy/mpri/2020/handout3.pdf);
   see also [chap 8](http://cambium.inria.fr/~remy/mpri/2020/cours6.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
-   
+
 You may also see [last year schedule](http://cristal.inria.fr/~remy/mpri/2020/)
 
-### Interpretation, Compilation, and Program Transformations (cont.)
+### Interpretation, Compilation, and Program Transformations (continued)
 
-This year's schedule, to be made more precise soon:
-
-* (20/10/2021) Closure conversion, defunctionalization
-* (27/10/2021) The CPS transformation
-* (03/11/2021) Constructor specialisation; stream fusion
-
-Last year's schedule:
-
-* (16/09/2020) Semantics and interpreters
-  * Introduction ([slides 00](slides/fpottier-00.pdf)).
-  * Syntax and operational semantics, on paper ([slides 01a](slides/fpottier-01a.pdf)).
-  * Syntax, on a machine ([slides 01b](slides/fpottier-01b.pdf)).
-  * Operational semantics, on a machine
-      ([Coq demo](coq/DemoSyntaxReduction.v)).
-* (23/09/2020) From a small-step semantics down to an efficient verified interpreter,
-    in several stages
-      ([slides 02](slides/fpottier-02.pdf))
-      ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
-      ([Coq repo](coq/)).
-* (30/09/2020) Compiling away first-class functions:
+* (20/10/2021) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/)).
-* (07/10/2020) Making the stack explicit: the CPS transformation
+
+* (27/10/2021) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
@@ -317,9 +311,8 @@ Last year's schedule:
     ([solution](ocaml/pottier/EvalCBNCPS.ml)).
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
-* (14/10/2020) Equational reasoning and program optimizations
-  ([slides 05](slides/fpottier-05.pdf))
-  ([Coq mini-demo](coq/DemoEqReasoning.v)).
+
+* (03/11/2021) Some optimisations: constructor specialisation; stream fusion.
 
 ### Effects
 
@@ -374,7 +367,7 @@ version 4.11.1).
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
-students.  
+students.
 By default, the mid-term and final exams will take place on
 **01/12/2020** and **09/03/2020**, respectively.
 Only course notes and hand-written notes are allowed for the exams.
