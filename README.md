@@ -240,15 +240,18 @@ lecture), to contact us by email, or to visit us at our offices.
 
 * (15/09/2021) From a small-step semantics
                down to an efficient verified interpreter, in several stages.
-  * Introduction to this course ([slides 00](slides/fpottier-00.pdf)).
-  * Operational semantics and reduction strategies ([slides 01a](slides/fpottier-01a.pdf)).
+  * Introduction to this course
+      ([slides 00](slides/fpottier-00.pdf)).
+  * Operational semantics and reduction strategies
+      ([slides 01a](slides/fpottier-01a.pdf)).
+  * Towards machine-checked definitions and proofs
+      ([slides 01b](slides/fpottier-01b.pdf)).
+      ([lambda-calculus in Coq](coq/DemoSyntaxReduction.v))
+      ([lambda-calculus in OCaml](ocaml/pottier/Lambda.ml)).
 <!--
-  * Syntax, on a machine ([slides 01b](slides/fpottier-01b.pdf)).
   * Operational semantics, on a machine
-      ([Coq demo](coq/DemoSyntaxReduction.v)).
 *
       ([slides 02](slides/fpottier-02.pdf))
-      ([the lambda-calculus in OCaml](ocaml/pottier/Lambda.ml))
       ([Coq repo](coq/)).
 -->
 
