@@ -3,14 +3,14 @@
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
-## Location and duration (to be confirmed)
+## Location and schedule
 
 The lectures take place at University of Paris,
 Bâtiment Sophie Germain, in room **1002**.
 
 They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture,
-so each lecture lasts 1h15 + 1h15.
+so each lecture lasts 2h30.
 
 ## Teachers
 
