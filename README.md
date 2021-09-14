@@ -17,10 +17,10 @@ so each lecture lasts 2h30.
 * Metatheory of typed programming languages
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
 * Interpretation, compilation, and program transformations
-  ([François Pottier](http://cambium.inria.fr/~fpottier))
+  ([François Pottier](http://cambium.inria.fr/~fpottier/))
 * Effects
   ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
-* Typed-directed programming
+* Type-directed programming
   ([Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
 * Rust: programming safely with resources in a modern low-level programming
   language ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
@@ -122,7 +122,7 @@ and to understand -- with more complex effects on the side.
 
 In this section of the course we will study:
 
-- Algebraic structures that capture notions of effect in
+- Algebraic structures that capture notions of effects in
   theory and in practice: monads and applicative functors.
 
 - Effect handlers, a new programming construct that provides another,
@@ -159,7 +159,7 @@ type. It is a step toward "correct-by-construction" programming while
 allowing the programmer to dispense with dynamic checks (run-time
 assertions) in favor of static checks (delegated to the
 type-checker). We provide a formal treatment of generalized algebraic
-data-types (GADTs) in an ML-like language. This restricted form of
+data types (GADTs) in an ML-like language. This restricted form of
 type-level programming strikes a balance between expressiveness and
 decidability. Besides, it is readily available in OCaml, allowing
 further experimentation in class. We will develop several examples of
