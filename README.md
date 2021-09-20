@@ -58,8 +58,8 @@ records, and show their Church encodings.  We discuss both _iso-recursive_
 and _equi-recursive_ types.  We present _existential types_.  _Generalized
 Abstract Datatypes (GADTs)_ will just be introduced.
 
-We also extend System-F with higher-order kinds and higher-order types and
-requires computation at the level of types, leading to system _F-omega_.
+We also extend System-F with higher-order kinds and higher-order types, 
+which requires computation at the level of types, leading to system _F-omega_.
 <!-- We may present _modules_ by elaboration into Fomega. -->
 
 Finally, we introduce logical relations to show parametricity properties of
@@ -243,14 +243,13 @@ lecture), to contact us by email, or to visit us at our offices.
 ### Metatheory of Typed Programming Languages
 
 * (22/09/2021)
-  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/2020/slides1.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/2020/handout1.pdf);
-  see also [intro](http://cambium.inria.fr/~remy/mpri/2020/slides8.pdf),
-  and chap [1,2,3](http://cambium.inria.fr/~remy/mpri/2020/cours1.pdf)
-  and [4](http://cambium.inria.fr/~remy/mpri/2020/cours2.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
+  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides1.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/handout1.pdf);
+  see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/cours1.pdf)
+  and [4](http://cambium.inria.fr/~remy/mpri/cours2.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
   See also _a (slow) walk through the garden of type soundness proofs_
-  in Coq, by François Pottier ([coq](coq/), [html](coq/html/));
+  in Coq, by François Pottier ([Coq repo](coq/), [html](coq/html/));
   to view the proofs online, please use the following links:
   - Lambda Calculus: 
     [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
@@ -267,19 +266,19 @@ lecture), to contact us by email, or to visit us at our offices.
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * (29/09/2021)
-  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/2020/slides2.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/2020/handout2.pdf)
-   [without](http://cambium.inria.fr/~remy/mpri/2020/handout2a.pdf) or
-   [only](http://cambium.inria.fr/~remy/mpri/2020/handout2b.pdf)
+  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2.pdf)
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout2.pdf)
+   [without](http://cambium.inria.fr/~remy/mpri/handout2a.pdf) or
+   [only](http://cambium.inria.fr/~remy/mpri/handout2b.pdf)
    the extra material);
-  see also [chap 6](http://cambium.inria.fr/~remy/mpri/2020/cours4.pdf)
-   of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf).
+  see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
+   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
 * (06/10/21) Higher-Order Types: F-omega.
 * (13/10/2021)
-  [Logical relations](http://cambium.inria.fr/~remy/mpri/2020/slides3.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/2020/handout3.pdf);
-  see also [chap 8](http://cambium.inria.fr/~remy/mpri/2020/cours6.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/2020/cours.pdf)).
+  [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
+  see also [chap 8](http://cambium.inria.fr/~remy/mpri/cours6.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
    
 You may also see [last year schedule](http://cristal.inria.fr/~remy/mpri/2020/)
 
@@ -376,7 +375,7 @@ version 4.11.1).
 Two written exams and one programming project are used to evaluate the
 students.  
 By default, the mid-term and final exams will take place on
-**01/12/2020** and **09/03/2020**, respectively.
+**01/12/2021** and **09/03/2022**, respectively.
 Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
