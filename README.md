@@ -288,7 +288,6 @@ lecture), to contact us by email, or to visit us at our offices.
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
 * (06/10/21) Higher-Order Types: F-omega.
 * (13/10/2021)
-<<<<<<< HEAD
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
   see also [chap 8](http://cambium.inria.fr/~remy/mpri/cours6.pdf)
