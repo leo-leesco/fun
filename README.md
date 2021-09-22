@@ -278,6 +278,8 @@ lecture), to contact us by email, or to visit us at our offices.
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
+    
+  _(Lesson 1 ended at slide 90 (excluded); it will be continued next week.)_
 * (29/09/2021)
   [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout2.pdf)
