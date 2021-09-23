@@ -339,7 +339,7 @@ improvisation. Perhaps not even in that order. To this end, it is
 necessary to join the lecture with OCaml installed (say, at least
 version 4.11.1).
 
-* (22/12/2021)
+* (05/01/2022)
   Algebraic programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
    [Categorical cheatsheet](slides/pedagand-00.pdf)).
