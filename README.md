@@ -21,7 +21,7 @@ so each lecture lasts 2h30.
 * Effects
   ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
 * Type-directed programming
-  ([Pierre-Evariste Dagand](https://pages.lip6.fr/Pierre-Evariste.Dagand/))
+  ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
 * Rust: programming safely with resources in a modern low-level programming
   language ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
