@@ -278,7 +278,6 @@ lecture), to contact us by email, or to visit us at our offices.
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-  _(Lesson 1 ended at slide 89; it will be continued next week.)_
 * (29/09/2021)
   [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout2.pdf)
@@ -287,6 +286,8 @@ lecture), to contact us by email, or to visit us at our offices.
    the extra material);
   see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
+  _(Lesson 2 ended at slide 57; it will be continued next week up to slides
+   76, the last part on the typing on closure conversion is extra matreial)_
 * (06/10/21) Higher-Order Types: F-omega.
 * (13/10/2021)
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
