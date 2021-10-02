@@ -279,7 +279,7 @@ lecture), to contact us by email, or to visit us at our offices.
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * (29/09/2021)
-  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2.pdf)
+  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2a.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout2.pdf)
    [without](http://cambium.inria.fr/~remy/mpri/handout2a.pdf) or
    [only](http://cambium.inria.fr/~remy/mpri/handout2b.pdf)
