@@ -286,9 +286,10 @@ lecture), to contact us by email, or to visit us at our offices.
    the extra material);
   see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
-  _(Lesson 2 ended at slide 57; it will be continued next week up to slides
-   76, the last part on the typing on closure conversion is extra matreial)_
-* (06/10/21) Higher-Order Types: F-omega.
+  _(Lesson 2 ended at slide 57; slides 14 and 16 added)_
+* (06/10/21) 
+  [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf).
 * (13/10/2021)
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
