@@ -229,7 +229,9 @@ with them.
 
 ## Research Internship Proposals
 
-<!-- We have posted the following internship proposals (more to come): -->
+We have posted the following internship proposals (possibly more to come):
+
+* [Verifying Tail-Call Optimization Modulo Constructor in Iris](https://cambium.inria.fr/~fpottier/stages/sujet2022-m2.pdf)
 
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
