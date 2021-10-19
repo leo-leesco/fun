@@ -58,7 +58,7 @@ records, and show their Church encodings.  We discuss both _iso-recursive_
 and _equi-recursive_ types.  We present _existential types_.  _Generalized
 Abstract Datatypes (GADTs)_ will just be introduced.
 
-We also extend System-F with higher-order kinds and higher-order types, 
+We also extend System-F with higher-order kinds and higher-order types,
 which requires computation at the level of types, leading to system _F-omega_.
 <!-- We may present _modules_ by elaboration into Fomega. -->
 
@@ -287,7 +287,7 @@ lecture), to contact us by email, or to visit us at our offices.
   see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
   _(Lesson 2 ended at slide 57; slides 14 and 16 added)_
-* (06/10/21) 
+* (06/10/21)
   [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf).
 * (13/10/2021)
@@ -295,7 +295,7 @@ lecture), to contact us by email, or to visit us at our offices.
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
   see also [chap 8](http://cambium.inria.fr/~remy/mpri/cours6.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
-   
+
 You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/).
 
 ### Interpretation, Compilation, and Program Transformations (continued)
