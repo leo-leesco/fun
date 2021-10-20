@@ -305,7 +305,8 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
 * (20/10/2021) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
-  ([Coq repo](coq/)).
+  ([Coq repo](coq/))
+  (typed defunctionalization: [exercise](ocaml/pottier/foo.ml), [solution](ocaml/pottier/foo_defunctionalized.ml)).
 
 * (27/10/2021) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
