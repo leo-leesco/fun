@@ -318,7 +318,9 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
 
-* (03/11/2021) Some optimisations: constructor specialisation; stream fusion.
+* (03/11/2021) Some optimisations: constructor specialisation; stream fusion; staging
+  ([staging the power function](metaocaml/pottier/Power.ml))
+  ([staging stream fusion](metaocaml/pottier/StreamFusion.ml)).
 
 ### Effects
 
