@@ -363,7 +363,7 @@ version 4.11.1).
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
 
 
-### Rust: programming with ressources
+### Rust: programming with resources
 
 * (02/02/2022)
 * (09/02/2022)
