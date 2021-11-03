@@ -322,6 +322,9 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
   ([staging the power function](metaocaml/pottier/Power.ml))
   ([staging stream fusion](metaocaml/pottier/StreamFusion.ml)).
 
+  Running these examples requires MetaOCaml. Type `opam install 4.11.1+BER`.
+  Then go down into `metaocaml/pottier` and type `make` and `make test`.
+
 ### Effects
 
 * (10/11/2021)
