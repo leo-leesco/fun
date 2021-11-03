@@ -318,7 +318,8 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
 
-* (03/11/2021) Some optimisations: constructor specialisation; stream fusion; staging.
+* (03/11/2021) Some optimisations: constructor specialisation; stream fusion; staging
+  ([slides 05](slides/fpottier-05.pdf)).
   * [Staging the power function](metaocaml/pottier/Power.ml).
   * [Staging stream fusion](metaocaml/pottier/StreamFusion.ml).
   * Running these examples requires MetaOCaml. Type `opam install 4.11.1+BER`.
