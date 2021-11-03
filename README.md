@@ -12,6 +12,9 @@ They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
+**News**: the partial exam is scheduled to take place on **Wednesday,
+December 1st** from 12:45 to 15:30.
+
 ## Teachers
 
 * Metatheory of typed programming languages
