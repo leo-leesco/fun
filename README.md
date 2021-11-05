@@ -330,12 +330,12 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
 
 ### Effects
 
-* (10/11/2021)
-  Paper discussion (1/3).
+* (10/11/2021).
   Primitive effects vs. user-defined effects.
   Direct-style vs. indirect style.
-* (17/11/2021)
   Monads in theory and practice.
+* (17/11/2021)
+  Paper discussion (1/3)
   A continuum of algebraic structures: functors, monads, applicative functors.
 * (8/12/2021)
   Effect handlers.
