@@ -230,6 +230,24 @@ during class. This should give you a glimpse of current topics in the
 area, and more generally train you to read research papers and engage
 with them.
 
+### Some questions of interest
+
+In class we are going to discuss the following questions:
+- what are the authors presenting?
+- what is the contribution of the paper?
+- how did the authors evaluate their work?
+- what did you think of the paper (content and presentation)?
+
+### Papers to read:
+
+- for 17/10/2021:  
+  “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016  
+    TODO:
+      1. find the paper (mini course on why open access matters)
+      2. read the paper
+      3. write a short summary (a couple paragraphs) and send it by email to "gabriel.scherer at gmail dot com"
+
+
 ## Research Internship Proposals
 
 We have posted the following internship proposals (possibly more to come):
