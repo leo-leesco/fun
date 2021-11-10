@@ -241,11 +241,12 @@ In class we are going to discuss the following questions:
 ### Papers to read:
 
 - for 17/10/2021:  
-  “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016  
+    “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016  
     TODO:
-      1. find the paper (mini course on why open access matters)
-      2. read the paper
-      3. write a short summary (a couple paragraphs) and send it by email to "gabriel.scherer at gmail dot com"
+
+    1. find the paper (mini course on why open access matters)
+    2. read the paper
+    3. write a short summary (a couple paragraphs) and send it by email to "gabriel.scherer at gmail dot com"
 
 
 ## Research Internship Proposals
