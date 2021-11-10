@@ -333,9 +333,10 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
 * (10/11/2021).
   Primitive effects vs. user-defined effects.
   Direct-style vs. indirect style.
-  Monads in theory and practice.
-* (17/11/2021)
-  Paper discussion (1/3)
+  Monads in theory and practice.  
+  [slides.pdf](slides/scherer-2021-00.pdf), [live code](ocaml/scherer/cours-2021-00.ml), [exercises](ocaml/scherer/exercises-2021-00.ml)
+* (17/11/2021)  
+  Paper discussion (1/3): “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016  
   A continuum of algebraic structures: functors, monads, applicative functors.
 * (8/12/2021)
   Effect handlers.
