@@ -256,6 +256,9 @@ We have posted the following internship proposals (possibly more to come):
 * [Verifying Tail-Call Optimization Modulo Constructor in Iris](https://cambium.inria.fr/~fpottier/stages/sujet2022-m2.pdf)
   (**no longer looking for candidates**, sorry).
 
+The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/)
+at Inria Paris are also relevant.
+
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
 
