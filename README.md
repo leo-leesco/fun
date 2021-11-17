@@ -240,7 +240,7 @@ In class we are going to discuss the following questions:
 
 ### Papers to read:
 
-- for 17/10/2021:
+- for November 17th, 2021:
     “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016
     TODO:
 
@@ -248,6 +248,8 @@ In class we are going to discuss the following questions:
     2. read the paper
     3. write a short summary (a couple paragraphs) and send it by email to "gabriel.scherer at gmail dot com"
 
+- for December 15th, 2021
+    "Structuring the Synthesis of Heap-Manipulating Programs", Nadia POlikarpova and Ilya Sergey, 2019
 
 ## Research Internship Proposals
 
