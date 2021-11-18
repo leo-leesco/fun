@@ -316,7 +316,6 @@ lecture), to contact us by email, or to visit us at our offices.
    the extra material);
   see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
-  _(Lesson 2 ended at slide 57; slides 14 and 16 added)_
 * (06/10/21)
   [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf).
