@@ -414,6 +414,8 @@ Only course notes and hand-written notes are allowed for the exams.
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* mid-term exam 2021-2022:
+  [Gradual typing](exams/partiel-2021-2022.pdf).
 * intermediate exam 2020-2021:
   [Calcul d'objets](exams/intermediaire-2020-2021.pdf).
 * mid-term exam 2020-2021:
