@@ -365,6 +365,17 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
 * (8/12/2021)
   Effect handlers.
   Effects in proofs and logic.
+
+  *Note*: due to the COVID situation, the December 8th lecture will be
+  in *hybrid* format, available both on-premises and online (live) at
+  the following URL:
+  <https://greenlight.virtualdata.cloud.math.cnrs.fr/b/gab-2qz-ph2>
+
+  You are completely free to choose either attendance format; in particular,
+  please feel free to stay at home if you are at risk of COVID, or if
+  you are in any way stressed by the idea of attending the lecture in
+  person.
+
 * (15/12/2021)
   Paper discussion (2/3).
   Type systems for effects.
