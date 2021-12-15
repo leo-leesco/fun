@@ -380,6 +380,8 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
   Paper discussion (2/3).
   Type systems for effects.
 
+  *Note*: the course is (of course?) also in hybrid format, same modalities and URL as above.
+
 ### Type-Directed Programming
 
 These lectures will involve some hands-on experience and a fair bit of
