@@ -1,0 +1,45 @@
+FOMEGA = ../src/fomega
+
+SUBDIRS = syntax type
+
+last:
+	for D in $(SUBDIRS); do make -C $$D last; done
+
+all: 
+	for D in $(SUBDIRS); do make -C $$D all; done
+
+parse: $(PARSE)
+
+print: $(patsubst %.fs, %.fp, $(PARSE))
+
+check :$(CHECK) 
+
+type: $(patsubst %.ft, %.fi, $(CHECK))
+
+
+others:
+	ls $(OTHERS)
+
+
+$(FOMEGA):
+	make -c ../src fomega
+
+%.fo: %.f  ../src/fomega 
+	$(FOMEGA) $< > $@ || (cat $@ && rm $@ && false)
+
+%.fs: %.f  ../src/fomega 
+	$(FOMEGA) --reparse --reprint $< > $@ || (rm $@ && false)
+
+%.ft: %.f  ../src/fomega 
+	$(FOMEGA) --typecheck $<  > $@ || (rm $@ && false)
+
+%.fi: %.ft
+	@echo & echo "### $@ ###"
+	@cat $<
+
+%.fp: %.fs
+	@echo & echo "### $@ ###"
+	@cat $<
+
+clean:
+	rm -f *.f{o,s,t,i,p}

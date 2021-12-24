@@ -1,0 +1,10 @@
+type forall :: (Type -> Type) -> Type = lam F :: Type -> Type. all A. F A
+type exists :: (Type -> Type) -> Type = lam F :: Type -> Type. exi A. F A
+type Exi :: (Type -> Type) -> Type =
+  lam F :: Type -> Type. all A. (all B. F B -> A) -> A
+val pack :
+  all F :: Type -> Type. all A. F A -> (all C. (all B. F B -> C) -> C)
+val unpack :
+  all F :: Type -> Type.
+    (lam F1 :: Type -> Type. all A. (all B. F1 B -> A) -> A) F ->
+    (all B. (all A. F A -> B) -> B)

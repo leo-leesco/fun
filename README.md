@@ -208,17 +208,18 @@ programming project (around the end of October) which must be completed
 roughly by the end of January. The programming project counts for about a
 third of the final grade.
 
-<!-- The [programming project](project/2020-2021/) is now available;
-read the [assignment](project/2020-2021/sujet.pdf).
+The [programming project](project/2021-2022/) is now available;
+read the [assignment](project/2021-2022/sujet.pdf).
 
-The deadline for submitting your project is **January 27, 2021**.
+The deadline for submitting your project is **Sunday, February 06, 2022**.
 
 Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
-to [François Pottier](francois.pottier@inria.fr).
+to [Didier Rémy](Didier.Remy@inria.fr).
 
 Here are answers to some of the questions that have been asked:
--->
+
+- \emph{(None for the moment)}
 
 ## Paper discussions (NEW!)
 

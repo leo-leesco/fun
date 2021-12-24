@@ -1,0 +1,165 @@
+type nat0 :: (Type -> Type) -> Type -> Type =
+  lam S :: Type -> Type. lam Z. Z
+type nat1 :: (Type -> Type) -> Type -> Type =
+  lam S :: Type -> Type. lam Z. S Z
+type add ::
+  ((Type -> Type) -> Type -> Type) ->
+  ((Type -> Type) -> Type -> Type) -> (Type -> Type) -> Type -> Type =
+  lam P :: (Type -> Type) -> Type -> Type.
+    lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+    lam Z.
+    P S (Q S Z)
+type times ::
+  ((Type -> Type) -> Type -> Type) ->
+  ((Type -> Type) -> Type -> Type) -> (Type -> Type) -> Type -> Type =
+  lam P :: (Type -> Type) -> Type -> Type.
+    lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+    lam Z.
+    P (Q S) Z
+type square ::
+  ((Type -> Type) -> Type -> Type) -> (Type -> Type) -> Type -> Type =
+  lam P :: (Type -> Type) -> Type -> Type.
+  (lam P :: (Type -> Type) -> Type -> Type.
+     lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+     lam Z.
+     P (Q S) Z) P P
+type nat2 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+     lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+     lam Z.
+     P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+    (lam S :: Type -> Type. lam Z. S Z)
+type nat4 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+   (lam P :: (Type -> Type) -> Type -> Type.
+      lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+      lam Z.
+      P (Q S) Z) P P)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+        lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+        lam Z.
+        P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+       (lam S :: Type -> Type. lam Z. S Z))
+type nat6 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+     lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+     lam Z.
+     P (Q S) Z)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+           lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+           lam Z.
+           P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+          (lam S :: Type -> Type. lam Z. S Z)))
+    ((lam P :: (Type -> Type) -> Type -> Type.
+        lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+        lam Z.
+        P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+       (lam S :: Type -> Type. lam Z. S Z))
+type nat8 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+   (lam P :: (Type -> Type) -> Type -> Type.
+      lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+      lam Z.
+      P (Q S) Z) P P)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+           lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+           lam Z.
+           P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+          (lam S :: Type -> Type. lam Z. S Z)))
+type nat16 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+   (lam P :: (Type -> Type) -> Type -> Type.
+      lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+      lam Z.
+      P (Q S) Z) P P)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+         (lam P :: (Type -> Type) -> Type -> Type.
+            lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+            lam Z.
+            P (Q S) Z) P P)
+          ((lam P :: (Type -> Type) -> Type -> Type.
+              lam Q :: (Type -> Type) -> Type -> Type.
+              lam S :: Type -> Type. lam Z. P S (Q S Z))
+             (lam S :: Type -> Type. lam Z. S Z)
+             (lam S :: Type -> Type. lam Z. S Z))))
+type nat2_5 :: (Type -> Type) -> Type -> Type =
+  (lam P :: (Type -> Type) -> Type -> Type.
+   (lam P :: (Type -> Type) -> Type -> Type.
+      lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+      lam Z.
+      P (Q S) Z) P P)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+         (lam P :: (Type -> Type) -> Type -> Type.
+            lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+            lam Z.
+            P (Q S) Z) P P)
+          ((lam P :: (Type -> Type) -> Type -> Type.
+            (lam P :: (Type -> Type) -> Type -> Type.
+               lam Q :: (Type -> Type) -> Type -> Type.
+               lam S :: Type -> Type. lam Z. P (Q S) Z) P P)
+             ((lam P :: (Type -> Type) -> Type -> Type.
+                 lam Q :: (Type -> Type) -> Type -> Type.
+                 lam S :: Type -> Type. lam Z. P S (Q S Z))
+                (lam S :: Type -> Type. lam Z. S Z)
+                (lam S :: Type -> Type. lam Z. S Z)))))
+type z = int
+type s :: Type -> Type = lam a. a * a
+val check :
+  (lam P :: (Type -> Type) -> Type -> Type.
+     lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+     lam Z.
+     P (Q S) Z)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+        lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+        lam Z.
+        P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+       (lam S :: Type -> Type. lam Z. S Z))
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P1 :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P1 (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+           lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+           lam Z.
+           P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+          (lam S :: Type -> Type. lam Z. S Z))) (lam a. a * a) int ->
+  (lam P :: (Type -> Type) -> Type -> Type.
+     lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+     lam Z.
+     P (Q S) Z)
+    ((lam P :: (Type -> Type) -> Type -> Type.
+      (lam P1 :: (Type -> Type) -> Type -> Type.
+         lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+         lam Z.
+         P1 (Q S) Z) P P)
+       ((lam P :: (Type -> Type) -> Type -> Type.
+           lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+           lam Z.
+           P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+          (lam S :: Type -> Type. lam Z. S Z)))
+    ((lam P :: (Type -> Type) -> Type -> Type.
+        lam Q :: (Type -> Type) -> Type -> Type. lam S :: Type -> Type.
+        lam Z.
+        P S (Q S Z)) (lam S :: Type -> Type. lam Z. S Z)
+       (lam S :: Type -> Type. lam Z. S Z)) (lam a. a * a) int

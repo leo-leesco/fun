@@ -1,0 +1,26 @@
+type foo
+
+let f1 (x : foo) = x
+
+type foo = int
+
+let f2 (x : foo) = x
+
+type foo = foo
+
+let f2 (x :foo) [foo :: Type] (y : foo) = x
+      
+let if [A] (b : bool) (x:A) (y:A) = x
+
+type bar
+
+let bar1 = fun (x : bar) => x
+
+type bar
+
+let bar2 = fun (x : bar) => x
+
+let bar12 = bar1
+    
+
+      

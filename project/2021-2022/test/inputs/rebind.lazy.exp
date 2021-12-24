@@ -1,0 +1,12 @@
+type foo
+val f1 : foo -> foo
+type foo1 = int
+val f2 : foo1 -> foo1
+type foo2 = foo1
+val f2 : foo2 -> (all foo3. foo3 -> foo2)
+val if : all A. bool -> A -> A -> A
+type bar
+val bar1 : bar -> bar
+type bar1
+val bar2 : bar1 -> bar1
+val bar12 : bar -> bar
