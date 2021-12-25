@@ -219,7 +219,11 @@ to [Didier Rémy](Didier.Remy@inria.fr).
 
 Here are answers to some of the questions that have been asked:
 
-- \emph{(None for the moment)}
+- Can the programming project be done in pairs (en binôme) ?
+
+  No, the programming project and its evaluation are individual.  You may
+  discuss it together or help one another if you are stuck, but the code
+  should be yours. 
 
 ## Paper discussions (NEW!)
 
