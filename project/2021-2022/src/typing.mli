@@ -2,23 +2,25 @@ open Syntax
 
 type env
 
-(*         
+(* 
+
+(** We keep these for documentation, but they should not be exported *)
 val empty_env : env
   
+(** functions to modify the environment accordingly. Same semantics as maps,
+   except for the order of arguments. *)
 val add_evar : env -> evar -> ctyp -> env
 val add_svar : env -> svar -> cvar -> env
 val add_cvar : env -> cvar -> kind -> env
-(** functions to modify the environment accordingly. Same semantics as maps,
-   except for the order of arguments. *)
 
-val find_evar : env -> evar -> ctyp
-val find_svar : env -> svar -> cvar
-val find_cvar : env -> cvar -> kind
 (** functions to query the environment accordingly. Same semantics as maps,
    except for the order of arguments. In particular all `find_xvar`
    functions raise the exception [Not_found] when their argument is not in
    the environment. *)
- *)
+val find_evar : env -> evar -> ctyp
+val find_svar : env -> svar -> cvar
+val find_cvar : env -> cvar -> kind
+*)
 
 
 

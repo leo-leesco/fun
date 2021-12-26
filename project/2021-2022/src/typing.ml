@@ -11,15 +11,15 @@ open Error
 
 (** We represent environment using maps.  (For short programs, we could use
    list, but large programs with modules, may have quite large contexts.)
-   We separate the name spaces of program variables from type variables,
-   hence using a separate map.
+   We separate the name spaces of program variables [evar] from type
+   variables, hence using a separate map.
 
-   For type variables, we actually need two maps: one to map source
-   variables to internal variables and one that map internal variables,
-   which are then never shadowed, to their kind or definition.  
+   For type variables, we actually need two maps: [svar] maps source type
+   variables (which may be shadowed) to internal type variables and [cvar]
+   maps internal type variables (whih are never shadowed) to their
+   kind or definition. 
 
-   You may need to add another map in type [env] for Task 4.
-*)
+   You may need to add another map in type [env] for Task 4.  *)
                     
 type env = {
     evar : ctyp Senv.t;
