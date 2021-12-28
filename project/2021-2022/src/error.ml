@@ -36,14 +36,16 @@ let report_parsing ppf = function
      fprintf ppf "%aThis '%s' might be unmatched\n"
        print_loc opening_loc opening
 
-(* let report_parser_error lexbuf msg =
- *   print_loc Format.err_formatter (curr_loc lexbuf);
- *   fprintf Format.err_formatter "%s\n%!" msg;; *)
+(* diff *)
+let report_parser_error lexbuf msg =
+  print_loc Format.err_formatter (curr_loc lexbuf);
+  fprintf Format.err_formatter "%s\n%!" msg;;
+(* /diff *)
 
 let handle_parsing parser lexbuf =
   let ppf = Format.err_formatter in
   try parser lexbuf with
-  (* | Parser.Error -> report_parser_error lexbuf "Parsing error"; exit 1 *)
+  (* | Parser.Error -> report_parser_error lexbuf "Parsing error"; exit 2  *)
   | Parsing err -> report_parsing ppf err; exit 1
   | Lexing err -> report_lexing ppf err; exit 1
                 

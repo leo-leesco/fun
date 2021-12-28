@@ -9,15 +9,15 @@ open Error
 (** 1. Environments *)
 
 
-(** We represent environment using maps.  (For short programs, we could use
-   list, but large programs with modules, may have quite large contexts.)
-   We separate the name spaces of program variables [evar] from type
-   variables, hence using a separate map.
+(** We represent the environment using maps.  (For short programs, we could
+   use lists, but large programs with modules, may have quite large
+   contexts.)  We separate the name spaces of expression variables [evar]
+   from type variables, hence using a separate map.
 
    For type variables, we actually need two maps: [svar] maps source type
-   variables (which may be shadowed) to internal type variables and [cvar]
-   maps internal type variables (whih are never shadowed) to their
-   kind or definition. 
+   variables (which may be shadowed) to internal type variables while [cvar]
+   maps internal type variables (whih are never shadowed) to their kind or
+   definition.
 
    You may need to add another map in type [env] for Task 4.  *)
                     
@@ -33,15 +33,14 @@ let empty_env = {
     cvar = Tenv.empty;
 }
 
-(** functions to query the environment accordingly. Same semantics as maps,
-   except for the order of arguments. In particular all `find_`
-   functions raise the exception [Not_found] when their argument is not in
-   the environment. *)
+(** Functions to query the environment accordingly. Same semantics as maps,
+   except for the order of arguments. All `find_` functions raise the
+   exception [Not_found] when their argument is not in the environment. *)
 let find_cvar env a =  Tenv.find a env.cvar
 let find_evar env x = Senv.find x env.evar
 let find_svar env s = Senv.find s env.svar
 
-(** functions to modify the environment accordingly. Same semantics as maps,
+(** Functions to modify the environment accordingly. Same semantics as maps,
    except for the order of arguments. *)
 let add_evar env x t = { env with evar = Senv.add x t env.evar }
 let add_cvar env a k = { env with cvar = Tenv.add a k env.cvar }

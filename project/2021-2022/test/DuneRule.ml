@@ -70,16 +70,14 @@ let (/) =
   Filename.concat
 
 let run_and_compare
-    target command args sourcedir filename stdout stderr expected =
+    target command args sourcedir filename stdout _stderr expected =
   let _experror = expected ^ "err" in
   print (rule
-    [sourcedir/stdout; sourcedir/stderr]
+    [sourcedir/stdout]
     [sourcedir/filename]
     (redirect_stdout (sourcedir/stdout) (
-
-    (redirect_stderr (sourcedir/stderr) (
       L(A"run" :: A command :: A (sourcedir/filename) :: args)
-  )))));
+  )));
   print (phony target (
     diff (sourcedir/expected) (sourcedir/stdout)
   ))

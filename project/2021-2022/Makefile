@@ -30,7 +30,7 @@ clean:
 .PHONY: test
 test:
 	@ for f in test/inputs/*.fw ; do \
-	    for mode in lazy strict; do \
+	    for mode in lazy eager; do \
 	      touch "$${f%.fw}.$${mode}.exp" ; \
 	    done \
 	  done

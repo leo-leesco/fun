@@ -15,6 +15,7 @@ let keywords = [
       "type", TYPE;
       "Type", TTYPE;
       "let", LET;
+      "val", VAL;
       "in", IN;
       "rec", REC;
        "as", AS; 

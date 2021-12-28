@@ -12,7 +12,9 @@ type parsing_error =
 exception Lexing of lexing_error
 exception Parsing of parsing_error
 
-(* val  report_parser_error Lexing.lexbuf -> string -> unit *)
+(* diff *)
+val  report_parser_error : Lexing.lexbuf -> string -> unit
+(* /diff *)
 
 val handle_parsing : ('a -> 'b) -> 'a -> 'b
 

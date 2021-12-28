@@ -76,7 +76,6 @@ let add_file name = arg_files := name :: !arg_files
 
 let usage_msg = "./fomega [ options ] file_1 .. file_n"
 
-
 let process_program verbose env p = 
   let env = 
     if !do_typing then
