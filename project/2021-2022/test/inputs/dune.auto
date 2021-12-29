@@ -417,20 +417,6 @@
   (action
     (diff ./fail_unbound_tvar_T3.eager.exp ./fail_unbound_tvar_T3.eager.out)))
 
-(rule (target ./foo.lazy.out) (deps ./foo.fw)
-  (action
-    (with-stdout-to ./foo.lazy.out (run ../../src/main.exe ./foo.fw --lazy))))
-
-(rule (alias foo.lazy.target) (action (diff ./foo.lazy.exp ./foo.lazy.out)))
-
-(rule (target ./foo.eager.out) (deps ./foo.fw)
-  (action
-    (with-stdout-to ./foo.eager.out
-      (run ../../src/main.exe ./foo.fw --eager))))
-
-(rule (alias foo.eager.target)
-  (action (diff ./foo.eager.exp ./foo.eager.out)))
-
 (rule (target ./hello.lazy.out) (deps ./hello.fw)
   (action
     (with-stdout-to ./hello.lazy.out
@@ -559,22 +545,6 @@
 
 (rule (alias prim_sum_T3.eager.target)
   (action (diff ./prim_sum_T3.eager.exp ./prim_sum_T3.eager.out)))
-
-(rule (target ./rebind.lazy.out) (deps ./rebind.fw)
-  (action
-    (with-stdout-to ./rebind.lazy.out
-      (run ../../src/main.exe ./rebind.fw --lazy))))
-
-(rule (alias rebind.lazy.target)
-  (action (diff ./rebind.lazy.exp ./rebind.lazy.out)))
-
-(rule (target ./rebind.eager.out) (deps ./rebind.fw)
-  (action
-    (with-stdout-to ./rebind.eager.out
-      (run ../../src/main.exe ./rebind.fw --eager))))
-
-(rule (alias rebind.eager.target)
-  (action (diff ./rebind.eager.exp ./rebind.eager.out)))
 
 (rule (target ./records_T1.lazy.out) (deps ./records_T1.fw)
   (action
@@ -794,8 +764,6 @@
     (alias fail_unbound_tvar_T1.eager.target)
     (alias fail_unbound_tvar_T3.lazy.target)
     (alias fail_unbound_tvar_T3.eager.target)
-    (alias foo.lazy.target)
-    (alias foo.eager.target)
     (alias hello.lazy.target)
     (alias hello.eager.target)
     (alias identity1.lazy.target)
@@ -812,8 +780,6 @@
     (alias prelude.eager.target)
     (alias prim_sum_T3.lazy.target)
     (alias prim_sum_T3.eager.target)
-    (alias rebind.lazy.target)
-    (alias rebind.eager.target)
     (alias records_T1.lazy.target)
     (alias records_T1.eager.target)
     (alias rectypes_T3.lazy.target)

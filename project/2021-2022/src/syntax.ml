@@ -78,19 +78,19 @@ and decl_ =
 
 type program = decl list
 
-type typed_decl =
-  | Gtyp of cvar * (kind, kind * ctyp) typorexp
-  | Glet of evar * ctyp
-  | Gopen of cvar * evar * ctyp
+type 'a typed_decl_ =
+  | Gtyp of 'a * (kind, kind * 'a typ) typorexp
+  | Glet of evar * 'a typ
+  | Gopen of 'a * evar * 'a typ
+type typed_decl = cvar typed_decl_
 
 type directive = Include of string | Flag of string           
 
-type 'a idecl =
-  | Ival of evar * 'a typ
-  | Ityp of 'a * (kind, kind * 'a typ) typorexp
+(* type 'a idecl = 
+ *   | Ival of evar * 'a typ
+ *   | Ityp of 'a * (kind, kind * 'a typ) typorexp *)
 
-type interface = svar idecl list
-
+type interface = svar typed_decl_ list
 
 (* fresh variables *)
 let svar n = n

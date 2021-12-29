@@ -155,21 +155,24 @@ and def = { scope : int; typ : ctyp}
 and ctyp = cvar typ
 
 
-(** Syntax for interface files *)
-type 'a idecl =
-  | Ival of evar * 'a typ
-  | Ityp of 'a * (kind, kind * 'a typ) typorexp
-
-type interface = svar idecl list
-
 (** We also introduce a type [typed_decl] for typed declarations, where type
    variables are now of type [ctyp] and expressions definition are replaced
    by their types. *)
 
-type typed_decl =
-  | Gtyp of cvar * (kind, kind * ctyp) typorexp
-  | Glet of evar * ctyp
-  | Gopen of cvar * evar * ctyp
+type 'a typed_decl_ =
+  | Gtyp of 'a * (kind, kind * 'a typ) typorexp
+  | Glet of evar * 'a typ
+  | Gopen of 'a * evar * 'a typ
+type typed_decl = cvar typed_decl_
+
+(** Syntax for interface files *)
+(* type 'a idecl =
+ *   | Ival of evar * 'a typ
+ *   | Ityp of 'a * (kind, kind * 'a typ) typorexp *)
+
+type interface = svar typed_decl_ list
+
+
 
 val cmp_def : def -> def -> int
 val make_def : ctyp -> def

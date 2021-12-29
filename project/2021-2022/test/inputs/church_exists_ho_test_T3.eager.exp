@@ -1,6 +1,5 @@
 val nat_as_church :
   all C.
     (all B.
-       (lam t.
-          {zero : t; succ : t -> t;
-           fold : t -> (all B1. B1 -> (B1 -> B1) -> B1)}) B -> C) -> C
+       {zero : B; succ : B -> B;
+        fold : B -> (all B1. B1 -> (B1 -> B1) -> B1)} -> C) -> C

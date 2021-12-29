@@ -108,13 +108,13 @@ let handle_typing_with ctyp f x =
     match info with
     | Matching s ->
        print_lines
-         [[ !^ ("Expected" ^ str ^ "shape:  "); !^(string_of_shape s) ]]
+         [[ !^ ("Expected " ^ str ^ " shape:  "); !^(string_of_shape s) ]]
     | Nonequal t ->
        print_lines
          [[ !^  ("Expected " ^ str ^ ":  "); print t ]];
     | Showdiff (t, t1, t2) ->
        print_lines
-         [[ !^("Expected " ^ str ^":  "); print t ];
+         [[ !^("Expected " ^ str ^ ":  "); print t ];
           [ !^"-- in actual:   "; print t1 ]; 
           [ !^"-- in expected: "; print t2; ]] in
   

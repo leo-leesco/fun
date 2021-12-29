@@ -17,11 +17,10 @@ val case_list :
 val map :
   all A. all B.
     ((A -> B) ->
-       (lam A1. fix ((lam A2. lam list1. sum (unit) (A2 * list1)) A1)) A ->
-       (lam A1. fix ((lam A2. lam list1. sum (unit) (A2 * list1)) A1)) B) ->
-    (A -> B) ->
-    (lam A1. fix ((lam A2. lam list1. sum (unit) (A2 * list1)) A1)) A ->
-    (lam A1. fix ((lam A2. lam list1. sum (unit) (A2 * list1)) A1)) B
+       fix (lam list1. sum (unit) (A * list1)) ->
+       fix (lam list1. sum (unit) (B * list1))) -> (A -> B) ->
+    fix (lam list1. sum (unit) (A * list1)) ->
+    fix (lam list1. sum (unit) (B * list1))
 val map :
   all A. all B. (A -> B) ->
     (lam A1. fix ((lam A2. lam list1. sum (unit) (A2 * list1)) A1)) A ->

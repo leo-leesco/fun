@@ -44,7 +44,7 @@
 %start <Syntax.exp> exp_
 %start <Syntax.decl> decl_
 %start <directive list * Syntax.program> program
-%start <svar Syntax.idecl list> interface
+%start <svar typed_decl_ list> interface
 
 %%
 
@@ -246,10 +246,12 @@ directives:
 | OPTION  s = STRING l = directives {  Flag s :: l } 
 |  { [] } 
 
-typeddecl:
-| VAL x = evar COLON t = typ { Ival (evar x, t) }
-| TYPE a = tvar k = kind_option { Ityp (svar a, Typ k) }
-| TYPE a = tvar k = kind_option EQUAL t = typ { Ityp (svar a, Exp (k, t)) }
+typed_decl:
+| VAL x = evar COLON t = typ { Glet (evar x, t) }
+| VAL LANGLE a = tvar COMMA x = evar RANGLE EQUAL t = typ
+    { Gopen (svar a, evar x, t) }
+| TYPE a = tvar k = kind_option { Gtyp (svar a, Typ k) }
+| TYPE a = tvar k = kind_option EQUAL t = typ { Gtyp (svar a, Exp (k, t)) }
 
 
 (* Entry points *)
@@ -258,7 +260,7 @@ program:
 | dirs = directives p = list(l(decl)) EOF { dirs, p }
 
 interface:
-| p = list(typeddecl) EOF { p }
+| p = list(typed_decl) EOF { p }
 
 
 typ_:  t = l(typ) EOF { t }
