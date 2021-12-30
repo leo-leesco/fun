@@ -395,23 +395,19 @@ necessary to join the lecture with OCaml installed (say, at least
 version 4.11.1).
 
 * (05/01/2022)
-  Algebraic programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-goto),
-   [Categorical cheatsheet](slides/pedagand-00.pdf)).
+  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours5.pdf))
 * (12/01/2022)
-  Algebraic programming (contd.)
-  ([Coinduction](slides/pedagand-coinduction.pdf),
-   [Agda source](agda/03-total/Recursion.lagda.rst)).
+  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours3.pdf))
 * (19/01/2022)
-  Paper discussion (3/3).
-  Generic programming
-  ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
-   [Source](agda/04-generic/Desc.lagda.rst)).
-* (26/01/2022)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
+* (26/01/2022)
+  Paper discussion (3/3).
+  Generic programming
+  ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
+   [Source](agda/04-generic/Desc.lagda.rst)).
 
 
 ### Rust: programming with resources
