@@ -23,7 +23,8 @@ val handle_parsing : ('a -> 'b) -> 'a -> 'b
 open Locations
 open Syntax
 
-(** type [shape] is used to report mismatching, when some type is not of the expected shape *)
+(** type [shape] is used to report mismatching, when some type is not of the
+   expected shape *)
 type shape =
   | Sarr  
   | Srcd  of lab option
@@ -33,8 +34,10 @@ type shape =
 
 (** ['a expected] is used to report the expected ['a], which may be a [kind]
    or a semantic type. [Matching s] describes the expected shape [s];
-   [Nonequal t] describes the expected (kind or type) [t], which [Diff (t,
-   u, v)] also reports a finer difference between [u] and [v] *)
+   [Nonequal t] describes the expected (kind or type) [t], while [Showdiff
+   (t, u, v)] also reports a finer difference between [u] and [v]: that is
+   [u] and [v] are subterms of the actual and expected types, respectively,
+   that witness the disequality between the actual and expected types.  *)
 type 'a expected =
   | Matching of shape
   | Nonequal of 'a 
