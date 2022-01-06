@@ -217,13 +217,19 @@ Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
 to [Didier Rémy](Didier.Remy@inria.fr).
 
-Here are answers to some of the questions that have been asked:
+Here are some precisions and answers to some of the questions that have been
+asked: 
 
 - Can the programming project be done in pairs (en binôme) ?
 
   No, the programming project and its evaluation are individual.  You may
   discuss it together or help one another if you are stuck, but the code
   should be yours. 
+
+- The behavior of eager mode has been changed (and described accordingly in
+  the document) to always force normalization of types of toplevel
+  declarations.  This allows for a simpler, more robust specification of the
+  expected output of the eager mode.
 
 ## Paper discussions (NEW!)
 
