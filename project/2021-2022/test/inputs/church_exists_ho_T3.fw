@@ -18,4 +18,3 @@ let pack [F :: type -> type] [A] (v : F A)  =
 let unpack [F :: type -> type] =
   fun (v : Exi F) [B] (body : all A. F A -> B) => v [B] body
 
-

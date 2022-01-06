@@ -141,13 +141,15 @@ let (!@-) = Locations.dummy_located
 let rec type_exp env exp : ctyp =
   match exp.obj with 
   | Evar x -> get_evar exp env x
-
   | Eprim (Int _) -> Tprim Tint
   | Eprim (Bool _) -> Tprim Tbool
   | Eprim (String _) -> Tprim Tstring
 
   | _ -> failwith "not implemented"
 
+
+let norm_when_eager =
+  spec_true "--loose"  "Do not force toplevel normaliization in eager mode"
 
 let type_decl env d =
      failwith "Not implemented"
@@ -180,8 +182,9 @@ let initial_env, initial_program =
   let p : program =
     let pair (s, t) : decl = !@- (Dtyp (svar s, Exp !@- t)) in
     List.map pair primitive_types @
-      [ !@- (Dlet (true, !@- (Ptyp (!@- (Pvar magic), !@- bot)), !@- (Evar magic))) ]
+    [ !@- (Dlet (true, !@- (Ptyp (!@- (Pvar magic), !@- bot)),
+                 !@- (Evar magic))) ]
   in
-  
+
   type_program empty_env p 
-    
+

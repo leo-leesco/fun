@@ -1,25 +1,14 @@
 type sum :: Type -> Type -> Type =
   lam A. lam B. all C. (A -> C) -> (B -> C) -> C
-val Left :
-  all A. all B.
-    A ->
-    (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B
-val Right :
-  all A. all B.
-    B ->
-    (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B
+val Left : all A. all B. A -> (all C. (A -> C) -> (B -> C) -> C)
+val Right : all A. all B. B -> (all C. (A -> C) -> (B -> C) -> C)
 val case :
-  all A. all B. (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B ->
+  all A. all B. (all C. (A -> C) -> (B -> C) -> C) ->
     (all C. (A -> C) -> (B -> C) -> C)
 val sum :
-  {Left : all A. all B.
-            A ->
-            (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B;
-   Right : all A. all B.
-             B ->
-             (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B;
-   case : all A. all B.
-            (lam A1. lam B1. all C. (A1 -> C) -> (B1 -> C) -> C) A B ->
+  {Left : all A. all B. A -> (all C. (A -> C) -> (B -> C) -> C);
+   Right : all A. all B. B -> (all C. (A -> C) -> (B -> C) -> C);
+   case : all A. all B. (all C. (A -> C) -> (B -> C) -> C) ->
             (all C. (A -> C) -> (B -> C) -> C)}
 type Sum =
   exi sum1 :: Type -> Type -> Type.

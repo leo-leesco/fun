@@ -21,10 +21,6 @@ type square ::
   lam P :: (Type -> Type) -> Type -> Type. times P P
 type nat2 :: (Type -> Type) -> Type -> Type = add nat1 nat1
 type nat4 :: (Type -> Type) -> Type -> Type = square nat2
-type nat6 :: (Type -> Type) -> Type -> Type = times nat4 nat2
-type nat8 :: (Type -> Type) -> Type -> Type = square nat4
-type nat16 :: (Type -> Type) -> Type -> Type = square nat8
-type nat2_5 :: (Type -> Type) -> Type -> Type = square nat16
 type z = int
 type s :: Type -> Type = lam a. a * a
 val check : times nat2 nat4 s z -> times nat4 nat2 s z
