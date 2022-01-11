@@ -400,6 +400,8 @@ improvisation. Perhaps not even in that order. To this end, it is
 necessary to join the lecture with OCaml installed (say, at least
 version 4.11.1).
 
+Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
+
 * (05/01/2022)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours5.pdf))
 * (12/01/2022)
