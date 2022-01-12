@@ -7,5 +7,4 @@ val bool_church :
    if_ : all A. Bool -> A -> A -> A}
 type boolean =
   exi bool1. {tt : bool1; ff : bool1; if_ : all A. bool1 -> A -> A -> A}
-val boolean :
-  exi bool1. {tt : bool1; ff : bool1; if_ : all A. bool1 -> A -> A -> A}
+val boolean : boolean

@@ -116,7 +116,7 @@ let rec type_typ env (t : styp) : kind * ctyp =
      Ktyp, Tprim c
   | _ -> failwith "not implemented" 
 
-(** Checking that lovcal variable do not escape.  Typechecking of
+(** Checking that local variables do not escape.  Typechecking of
    existential types requires that locally abstract variables do not escape
    from their scope.  This amounts to verifying that the returned type is
    well-formed.  It suffices to check that all variables are bound in the

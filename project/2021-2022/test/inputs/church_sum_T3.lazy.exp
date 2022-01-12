@@ -10,10 +10,7 @@ type Sum =
   exi sum1 :: Type -> Type -> Type.
     {Left : all A. all B. A -> sum1 A B; Right : all A. all B. B -> sum1 A B;
      case : all A. all B. sum1 A B -> (all C. (A -> C) -> (B -> C) -> C)}
-val Sum :
-  exi sum1 :: Type -> Type -> Type.
-    {Left : all A. all B. A -> sum1 A B; Right : all A. all B. B -> sum1 A B;
-     case : all A. all B. sum1 A B -> (all C. (A -> C) -> (B -> C) -> C)}
+val Sum : Sum
 val <sum1,sum> =
   {Left : all A. all B. A -> sum1 A B; Right : all A. all B. B -> sum1 A B;
    case : all A. all B. sum1 A B -> (all C. (A -> C) -> (B -> C) -> C)}
@@ -25,10 +22,7 @@ type Sum1 :: Type -> Type -> Type =
   lam A. lam B. exi sum2.
     {Left : A -> sum2; Right : B -> sum2;
      case : sum2 -> (all C. (A -> C) -> (B -> C) -> C)}
-val Sum :
-  all A. all B. exi sum2.
-    {Left : A -> sum2; Right : B -> sum2;
-     case : sum2 -> (all C. (A -> C) -> (B -> C) -> C)}
+val Sum : all A. all B. Sum1 A B
 val <bi1,bi> =
   {Left : bool -> bi1; Right : int -> bi1;
    case : bi1 -> (all C. (bool -> C) -> (int -> C) -> C)}
