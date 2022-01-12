@@ -231,6 +231,10 @@ asked:
   declarations.  This allows for a simpler, more robust specification of the
   expected output of the eager mode.
 
+- The behavior of lazy mode has been changed in the case of Pack to return
+  the source explicitly given rather than the inferred type, changing the
+  output of examples church_bool_T2, chur_sum_T3, and nat_pack_unpack_T3.
+
 ## Paper discussions (NEW!)
 
 This course will include in-course discussion of research
