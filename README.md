@@ -408,7 +408,7 @@ Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
   GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours3.pdf))
 * (19/01/2022)
   Dependent functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe),
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
 * (26/01/2022)
