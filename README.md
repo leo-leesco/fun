@@ -12,21 +12,22 @@ They are scheduled on **Wednesdays** from 12:45 to 15:30.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
-**News**: the partial exam is scheduled to take place on **Wednesday,
-December 1st** from 12:45 to 15:30.
+**News**: The [programming project](#project) is expected by Sunday,
+February 06. _(A few examples have been [updated](#ppupdated).)_
+
 
 ## Teachers
 
-* Metatheory of typed programming languages
+* [Metatheory of typed programming languages](#metatheory)
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
-* Interpretation, compilation, and program transformations
+* [Interpretation, compilation, and program transformations](#transformation)
   ([François Pottier](http://cambium.inria.fr/~fpottier/))
-* Effects
+* [Effects](#effects)
   ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
-* Type-directed programming
+* [Type-directed programming](#type)
   ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
-* Rust: programming safely with resources in a modern low-level programming
-  language ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
+* [Rust: programming safely with resources in a modern low-level programming
+  language](#rust) ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/)) 
 
 ## Aims
 
@@ -200,7 +201,7 @@ which also proves that many libraries written in the unsafe fragment
 are, in fact, safe.
 
 
-## Programming Project
+## <a name="project">Programming Project</a>
 
 Since we are studying programming languages and their formalization,
 programming is also an important part of the course. We give a mandatory
@@ -218,7 +219,12 @@ of an administrative or technical nature,
 to [Didier Rémy](Didier.Remy@inria.fr).
 
 Here are some precisions and answers to some of the questions that have been
-asked: 
+asked:
+
+- <a name="ppupdated">A few modifications have been pushed (more details in
+  the assignment and some changes in the output of examples); these are
+  minor and should not require any change in your own code. Do `git pull` to
+  be sure to be up to date.  (Last modification on `Jan 13`).
 
 - Can the programming project be done in pairs (en binôme) ?
 
@@ -281,7 +287,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ## Approximate Syllabus
 
-### Interpretation, Compilation, and Program Transformations (introduction)
+### <a name="interpretation">Interpretation, Compilation, and Program Transformations (introduction)
 
 * (15/09/2021) Syntax, semantics, and interpreters.
   * Introduction to this course
@@ -298,7 +304,7 @@ lecture), to contact us by email, or to visit us at our offices.
       ([slides 02](slides/fpottier-02.pdf))
       ([Coq repo](coq/)).
 
-### Metatheory of Typed Programming Languages
+### <a name="metatheory">Metatheory of Typed Programming Languages
 
 * (22/09/2021)
   [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides1.pdf)
@@ -342,7 +348,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/).
 
-### Interpretation, Compilation, and Program Transformations (continued)
+### <a name="transformation">Interpretation, Compilation, and Program Transformations ([continued](#interpretation))
 
 * (20/10/2021) Compiling away first-class functions:
   closure conversion, defunctionalization
@@ -367,7 +373,7 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
   * Running these examples requires MetaOCaml. Type `opam switch create 4.11.1+BER --no-switch`.
     Then go down into `metaocaml/pottier` and type `make` and `make test`.
 
-### Effects
+### <a name="effects">Effects
 
 * (10/11/2021).
   Primitive effects vs. user-defined effects.
@@ -397,7 +403,7 @@ You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/
 
   *Note*: the course is (of course?) also in hybrid format, same modalities and URL as above.
 
-### Type-Directed Programming
+### <a name="type">Type-Directed Programming
 
 These lectures will involve some hands-on experience and a fair bit of
 improvisation. Perhaps not even in that order. To this end, it is
@@ -422,7 +428,7 @@ Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
    [Source](agda/04-generic/Desc.lagda.rst)).
 
 
-### Rust: programming with resources
+### <a name="rust">Rust: programming with resources
 
 * (02/02/2022)
 * (09/02/2022)
