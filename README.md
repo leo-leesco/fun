@@ -404,13 +404,15 @@ improvisation. Perhaps not even in that order. To this end, it is
 necessary to join the lecture with OCaml installed (say, at least
 version 4.11.1).
 
+Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
+
 * (05/01/2022)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours5.pdf))
 * (12/01/2022)
   GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours3.pdf))
 * (19/01/2022)
   Dependent functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe),
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
 * (26/01/2022)
