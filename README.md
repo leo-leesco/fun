@@ -430,7 +430,23 @@ Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
 ### <a name="rust">Rust: programming with resources
 
-* (02/02/2022)
+In order to practical to the practical exercises of these lectures, the students should install on their computer the following tools:
+* The Rust compiler, version at least 1.41 
+* The Cargo package manager, any compatible version
+Installing these tools should be easy on any recent Linux distribution using the system's package manager. Alternatively, students can follow the instructions at the following URL: https://rustup.rs/
+
+In order to test the installation, the students are asked to use the Rust compiler on the following program:
+```
+fn main() {
+  let mut f = |x : i32| x;
+  let _r : &mut dyn Fn(i32) -> i32 = &mut f;
+  println!("{}", f(42))
+}
+```
+If the compiler is correctly installed, then the command `rustc test.rs` should produce an executable.
+
+Lectures:
+* (02/02/2022) Introduction to Rust programming
 * (09/02/2022)
 * (16/02/2022)
 * (23/02/2022)
