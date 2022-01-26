@@ -430,7 +430,7 @@ Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
 ### <a name="rust">Rust: programming with resources
 
-In order to practical to the practical exercises of these lectures, the students should install on their computer the following tools:
+In order to participate to the hands-on exercises of these lectures, the students should install on their computer the following tools:
 * The Rust compiler, version at least 1.41 
 * The Cargo package manager, any compatible version
 Installing these tools should be easy on any recent Linux distribution using the system's package manager. Alternatively, students can follow the instructions at the following URL: https://rustup.rs/
