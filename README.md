@@ -445,8 +445,10 @@ fn main() {
 ```
 If the compiler is correctly installed, then the command `rustc test.rs` should produce an executable.
 
+Physical presence at the lectures is required, when possible. If the COVID situation makes this impossible, students can follow the course using the following URL: https://webconf.math.cnrs.fr/b/jou-gaq-9gr
+
 Lectures:
-* (02/02/2022) Introduction to Rust programming
+* (02/02/2022) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf), [exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs))
 * (09/02/2022)
 * (16/02/2022)
 * (23/02/2022)
