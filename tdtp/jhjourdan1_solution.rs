@@ -107,7 +107,7 @@ impl<K: Ord, V> BST<K, V> {
         }
     }
 
-    fn insert<'a>(&'a mut self, k: K, v: V) -> Option<V> {
+    fn insert(&mut self, k: K, v: V) -> Option<V> {
         let mut tree = self;
         loop {
             match tree {
