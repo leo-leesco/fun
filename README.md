@@ -449,7 +449,7 @@ Physical presence at the lectures is required, when possible. If the COVID situa
 
 Lectures:
 * (02/02/2022) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
-* (09/02/2022) Hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)), and introduction to unsafe Rust and interrior mutability.
+* (09/02/2022) Hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)), and introduction to unsafe Rust and interrior mutability ([slides](slides/jhjourdan-02.pdf)).
 * (16/02/2022)
 * (23/02/2022)
 
