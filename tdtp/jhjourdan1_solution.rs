@@ -24,7 +24,7 @@ impl<K, V> BST<K, V> {
 
 impl<K: Ord, V: Copy> BST<K, V> {
     // Question 2
-    fn find_copy_rec(&self, k: K) -> Option<V> {
+    fn find_copy_rec(&self, k: &K) -> Option<V> {
         match self {
             Leaf => None,
             Node(b) => {
@@ -38,7 +38,7 @@ impl<K: Ord, V: Copy> BST<K, V> {
     }
 
     // Question 3
-    fn find_copy(&self, k: K) -> Option<V> {
+    fn find_copy(&self, k: &K) -> Option<V> {
         let mut tree = self;
         loop {
             match tree {
@@ -57,7 +57,7 @@ impl<K: Ord, V: Copy> BST<K, V> {
 
 impl<K: Ord, V> BST<K, V> {
     // Not required by the statement
-    fn find_rec<'a>(&'a self, k: K) -> Option<&'a V> {
+    fn find_rec<'a, 'b>(&'a self, k: &'b K) -> Option<&'a V> {
         match self {
             Leaf => None,
             Node(b) =>
@@ -70,7 +70,13 @@ impl<K: Ord, V> BST<K, V> {
     }
 
     // Question 4
-    fn find<'a>(&'a self, k: K) -> Option<&'a V> {
+    // The lifetime of `self` and `k` need to be different. Otherwise, the
+    // borrowed variable by k cannot be used until the return value of `find`
+    // is still live.
+    // In particular, if we do not put lifetimes annotations here, then Rust
+    // will use the same lifetime everywhere which enforces unecessary
+    // constraints to the caller.
+    fn find<'a, 'b>(&'a self, k: &'b K) -> Option<&'a V> {
         let mut tree = self;
         loop {
             match tree {
@@ -86,7 +92,7 @@ impl<K: Ord, V> BST<K, V> {
     }
 
     // Not required by the statement
-    fn find_mut_rec<'a>(&'a mut self, k: K) -> Option<&'a mut V> {
+    fn find_mut_rec<'a, 'b>(&'a mut self, k: &'b K) -> Option<&'a mut V> {
         match self {
             Leaf => None,
             Node(b) =>
@@ -99,7 +105,7 @@ impl<K: Ord, V> BST<K, V> {
     }
 
     // Not required by the statement
-    fn find_mut<'a>(&'a mut self, k: K) -> Option<&'a mut V> {
+    fn find_mut<'a, 'b>(&'a mut self, k: &'b K) -> Option<&'a mut V> {
         let mut tree = self;
         loop {
             match tree {
