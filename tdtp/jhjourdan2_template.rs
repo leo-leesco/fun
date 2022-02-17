@@ -9,6 +9,20 @@ mod parray {
     }
     use self::PAState::*;
 
+    impl<T> PAState<T> {
+        fn get_arr(&self) -> &Vec<T> {
+            if let Arr(v) = self { v } else { panic!() }
+        }
+
+        fn get_arr_mut(&mut self) -> &mut Vec<T> {
+            if let Arr(v) = self { v } else { panic!() }
+        }
+
+        fn from_diff(self) -> (usize, T, PArray<T>) {
+            if let Diff(i, x, a) = self { (i, x, a) } else { panic!() }
+        }
+    }
+
     pub struct PArray<T>(Rc<RefCell<PAState<T>>>);
 
     // impl<T> Clone for PArray<T> {
@@ -64,7 +78,73 @@ use parray::*;
 //     println!("Time: {}", dt)
 // }
 
+// mod nqueens {
+//     use PArray;
+
+//     #[derive(Clone)]
+//     struct Board {
+//         n: usize,
+//         tab: PArray<bool>
+//     }
+
+//     impl Board {
+//         fn pos(&self, r: usize, c: usize) -> usize {
+//             r * self.n + c
+//         }
+
+//         fn get(&self, r: usize, c: usize) -> bool {
+//             self.tab.get(self.pos(r, c))
+//         }
+
+//         fn print(&self) {
+//             for r in 0..self.n {
+//                 for c in 0..self.n {
+//                     if self.get(r, c) { print!("X") }
+//                     else { print!("_") }
+//                 }
+//                 println!();
+//             }
+//         }
+
+//         fn is_consistent(&self, r: usize, c: usize) -> bool {
+//             for i in 0..self.n {
+//                 if self.get(r, i) { return false }
+//             }
+//             for i in 0..self.n {
+//                 if self.get(i, c) { return false }
+//             }
+//             for i in 0..self.n {
+//                 if r >= i && c >= i && self.get(r-i, c-i) { return false }
+//                 if r >= i && c+i < self.n && self.get(r-i, c+i) { return false }
+//                 if r+i < self.n && c >= i && self.get(r+i, c-i) { return false }
+//                 if r+i < self.n && c+i < self.n && self.get(r+i, c+i) { return false }
+//             }
+//             true
+//         }
+
+//         fn nqueens_inner(&self, col: usize) -> Option<Board> {
+//             if col == self.n { return Some(self.clone()) }
+//             for row in 0..self.n {
+//                 if self.is_consistent(row, col) {
+//                     let b = Board{ tab: self.tab.set(self.pos(row, col), true), ..*self };
+//                     let r = b.nqueens_inner(col+1);
+//                     match r { Some(_) => return r, _ => () }
+//                 }
+//             }
+//             None
+//         }
+//     }
+
+//     pub fn go(n: usize) {
+//         let b = Board{ n, tab: PArray::new(vec![false; n*n])};
+//         if let Some(b) = b.nqueens_inner(0) {
+//             b.print()
+//         }
+//     }
+// }
+
 fn main() {
     // test_0();
     // bench_0();
+    // nqueens::go(20);
 }
