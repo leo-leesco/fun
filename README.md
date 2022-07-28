@@ -8,7 +8,7 @@ This page supplements
 The lectures take place at University of Paris,
 Bâtiment Sophie Germain, in room **1002**.
 
-They are scheduled on **Wednesdays** from 12:45 to 15:30.
+They are scheduled on **Wednesdays** from 9:00 to 11:45.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
@@ -339,7 +339,7 @@ lecture), to contact us by email, or to visit us at our offices.
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
 * (06/10/21)
   [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf).
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf)).
 * (13/10/2021)
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
