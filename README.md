@@ -309,8 +309,8 @@ lecture), to contact us by email, or to visit us at our offices.
 * (22/09/2021)
   [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides1.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout1.pdf);
-  see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/cours1.pdf)
-  and [4](http://cambium.inria.fr/~remy/mpri/cours2.pdf)
+  see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/stlc.pdf)
+  and [4](http://cambium.inria.fr/~remy/mpri/sf.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
   See also _a (slow) walk through the garden of type soundness proofs_
   in Coq, by François Pottier ([Coq repo](coq/), [html](coq/html/));
@@ -335,18 +335,25 @@ lecture), to contact us by email, or to visit us at our offices.
    [without](http://cambium.inria.fr/~remy/mpri/handout2a.pdf) or
    [only](http://cambium.inria.fr/~remy/mpri/handout2b.pdf)
    the extra material);
-  see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours4.pdf)
+  see also [chap 5](http://cambium.inria.fr/~remy/mpri/exists.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
 * (06/10/21)
   [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf)).
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf));
+  see also [chap 6](http://cambium.inria.fr/~remy/mpri/fomega.pdf)
+   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
 * (13/10/2021)
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
-  see also [chap 8](http://cambium.inria.fr/~remy/mpri/cours6.pdf)
+  see also [chap 7](http://cambium.inria.fr/~remy/mpri/logical.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
 
-You may also see [last year's schedule](http://cristal.inria.fr/~remy/mpri/2020/).
+You may also see [last year's
+schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on 
+[type reconstruction](http://cambium.inria.fr/~remy/mpri/inference.pdf)
+[overloading](http://cambium.inria.fr/~remy/mpri/overloading.pdf).
+
+
 
 ### <a name="transformation">Interpretation, Compilation, and Program Transformations ([continued](#interpretation))
 
@@ -416,9 +423,9 @@ version 4.11.1).
 Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
 * (05/01/2022)
-  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours5.pdf))
+  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/overloading.pdf))
 * (12/01/2022)
-  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours3.pdf))
+  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/inference.pdf))
 * (19/01/2022)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
