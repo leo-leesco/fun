@@ -209,8 +209,11 @@ programming project (around the end of October) which must be completed
 roughly by the end of January. The programming project counts for about a
 third of the final grade.
 
-The [programming project](project/2021-2022/) is now available;
-read the [assignment](project/2021-2022/sujet.pdf).
+The programming assignment will be given after mi-term exams.
+<!--
+The [programming project](project/2022-2023/) is now available. 
+Read the [assignment](project/2022-2023/sujet.pdf).
+-->
 
 The deadline for submitting your project is **Sunday, February 06, 2022**.
 
@@ -468,7 +471,7 @@ Lectures:
 Two written exams and one programming project are used to evaluate the
 students.
 By default, the mid-term and final exams will take place on
-**30/11/2021** and **08/03/2022**, respectively.
+**30/11/2022** and **08/03/2022**, respectively.
 Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
