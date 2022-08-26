@@ -307,11 +307,11 @@ lecture), to contact us by email, or to visit us at our offices.
 ### <a name="metatheory">Metatheory of Typed Programming Languages
 
 * (22/09/2021)
-  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides1.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/handout1.pdf);
+  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides-metasf.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-metasf.pdf);
   see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/stlc.pdf)
   and [4](http://cambium.inria.fr/~remy/mpri/sf.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf)).
   See also _a (slow) walk through the garden of type soundness proofs_
   in Coq, by François Pottier ([Coq repo](coq/), [html](coq/html/));
   to view the proofs online, please use the following links:
@@ -330,28 +330,28 @@ lecture), to contact us by email, or to visit us at our offices.
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * (29/09/2021)
-  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides2a.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout2.pdf)
-   [without](http://cambium.inria.fr/~remy/mpri/handout2a.pdf) or
-   [only](http://cambium.inria.fr/~remy/mpri/handout2b.pdf)
+  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides-exgadtA.pdf)
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout-exgadt.pdf)
+   [without](http://cambium.inria.fr/~remy/mpri/handout-exgadtA.pdf) or
+   [only](http://cambium.inria.fr/~remy/mpri/handout-exgadtB.pdf)
    the extra material);
-  see also [chap 5](http://cambium.inria.fr/~remy/mpri/exists.pdf)
-   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
+  see also [chap 5](http://cambium.inria.fr/~remy/mpri/cours-exists.pdf)
+   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
 * (06/10/21)
-  [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides3.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout3.pdf));
-  see also [chap 6](http://cambium.inria.fr/~remy/mpri/fomega.pdf)
-   of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf).
+  [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides-fomega.pdf)
+  ([handout](http://cambium.inria.fr/~remy/mpri/handout-fomega.pdf));
+  see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours-fomega.pdf)
+   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
 * (13/10/2021)
-  [Logical relations](http://cambium.inria.fr/~remy/mpri/slides4.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/handout4.pdf);
-  see also [chap 7](http://cambium.inria.fr/~remy/mpri/logical.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours.pdf)).
+  [Logical relations](http://cambium.inria.fr/~remy/mpri/slides-logrel.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-logrel.pdf);
+  see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mprii.pdf)).
 
 You may also see [last year's
 schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on 
-[type reconstruction](http://cambium.inria.fr/~remy/mpri/inference.pdf)
-[overloading](http://cambium.inria.fr/~remy/mpri/overloading.pdf).
+[type reconstruction](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf)
+[overloading](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf).
 
 
 
@@ -423,9 +423,9 @@ version 4.11.1).
 Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
 * (05/01/2022)
-  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/overloading.pdf))
+  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 * (12/01/2022)
-  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/inference.pdf))
+  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf))
 * (19/01/2022)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
