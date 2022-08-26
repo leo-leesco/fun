@@ -6,14 +6,14 @@ This page supplements
 ## Location and schedule
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **1002**.
+Bâtiment Sophie Germain, in room **to be given**.
 
 They are scheduled on **Wednesdays** from 9:00 to 11:45.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
 **News**: The [programming project](#project) is expected by Sunday,
-February 06. _(A few examples have been [updated](#ppupdated).)_
+February 05, 2022. _(A few examples have been [updated](#ppupdated).)_
 
 
 ## Teachers
@@ -289,7 +289,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### <a name="interpretation">Interpretation, Compilation, and Program Transformations (introduction)
 
-* (15/09/2021) Syntax, semantics, and interpreters.
+* (14/09/2022) Syntax, semantics, and interpreters.
   * Introduction to this course
       ([slides 00](slides/fpottier-00.pdf)).
   * Operational semantics and reduction strategies
@@ -306,7 +306,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 ### <a name="metatheory">Metatheory of Typed Programming Languages
 
-* (22/09/2021)
+* (21/09/2022)
   [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides-metasf.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout-metasf.pdf);
   see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/stlc.pdf)
@@ -329,7 +329,7 @@ lecture), to contact us by email, or to visit us at our offices.
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
     [type soundness
     ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-* (29/09/2021)
+* (28/09/2022)
   [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides-exgadtA.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout-exgadt.pdf)
    [without](http://cambium.inria.fr/~remy/mpri/handout-exgadtA.pdf) or
@@ -337,12 +337,12 @@ lecture), to contact us by email, or to visit us at our offices.
    the extra material);
   see also [chap 5](http://cambium.inria.fr/~remy/mpri/cours-exists.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-* (06/10/21)
+* (05/10/22)
   [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides-fomega.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout-fomega.pdf));
   see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours-fomega.pdf)
    of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-* (13/10/2021)
+* (12/10/2022)
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides-logrel.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout-logrel.pdf);
   see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
@@ -357,13 +357,13 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 
 ### <a name="transformation">Interpretation, Compilation, and Program Transformations ([continued](#interpretation))
 
-* (20/10/2021) Compiling away first-class functions:
+* (19/10/2022) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/))
   (typed defunctionalization: [exercise](ocaml/pottier/foo.ml), [solution](ocaml/pottier/foo_defunctionalized.ml)).
 
-* (27/10/2021) Making the stack explicit: the CPS transformation
+* (26/10/2022) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
@@ -373,7 +373,7 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
 
-* (03/11/2021) Some optimisations: constructor specialisation; stream fusion; staging
+* (02/11/2022) Some optimisations: constructor specialisation; stream fusion; staging
   ([slides 05](slides/fpottier-05.pdf)).
   * [Staging the power function](metaocaml/pottier/Power.ml).
   * [Staging stream fusion](metaocaml/pottier/StreamFusion.ml).
@@ -384,16 +384,16 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 
 Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
 
-* (10/11/2021).
+* (09/11/2022).
   Primitive effects vs. user-defined effects.
   Direct-style vs. indirect style.
   Monads in theory and practice.
   [live code](ocaml/scherer/cours-2021-00.ml), [exercises](ocaml/scherer/exercises-2021-00.ml)
-* (17/11/2021)
+* (16/11/2022)
   Paper discussion (1/3): “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016
   A continuum of algebraic structures: functors, monads, applicative functors.  
   [applicative-functors.md(slides/scherer-2021-applicative-functors.md)
-* (8/12/2021)
+* (7/12/2022)
   Effect handlers.
   Effects in proofs and logic.
 
@@ -407,7 +407,7 @@ Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
   you are in any way stressed by the idea of attending the lecture in
   person.
 
-* (15/12/2021)
+* (14/12/2022)
   Paper discussion (2/3).
   Type systems for effects.
 
@@ -422,16 +422,16 @@ version 4.11.1).
 
 Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
-* (05/01/2022)
+* (04/01/2022)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
-* (12/01/2022)
+* (11/01/2022)
   GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf))
-* (19/01/2022)
+* (18/01/2022)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
-* (26/01/2022)
+* (25/01/2022)
   Paper discussion (3/3).
   Generic programming
   ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
@@ -458,17 +458,17 @@ If the compiler is correctly installed, then the command `rustc test.rs` should 
 Physical presence at the lectures is required, when possible. If the COVID situation makes this impossible, students can follow the course using the following URL: https://webconf.math.cnrs.fr/b/jou-gaq-9gr
 
 Lectures:
-* (02/02/2022) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
-* (09/02/2022) Introduction to unsafe Rust and interrior mutability ([slides](slides/jhjourdan-02.pdf)), and hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (16/02/2022) Rust and multithreading ([slides](slides/jhjourdan-03.pdf)), and hands-on session ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
-* (23/02/2022) Formalizing Rust's type system ([slides](slides/jhjourdan-04.pdf)).
+* (01/02/2022) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
+* (08/02/2022) Introduction to unsafe Rust and interrior mutability ([slides](slides/jhjourdan-02.pdf)), and hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
+* (15/02/2022) Rust and multithreading ([slides](slides/jhjourdan-03.pdf)), and hands-on session ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
+* (22/02/2022) Formalizing Rust's type system ([slides](slides/jhjourdan-04.pdf)).
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
 students.
 By default, the mid-term and final exams will take place on
-**01/12/2021** and **09/03/2022**, respectively.
+**30/11/2021** and **08/03/2022**, respectively.
 Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
