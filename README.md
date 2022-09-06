@@ -1,4 +1,4 @@
-# Functional programming and type systems (2021-2022)
+# Functional programming and type systems (2022-2023)
 
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
@@ -12,10 +12,6 @@ They are scheduled on **Wednesdays** from 9:00 to 11:45.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
-**News**: The [programming project](#project) is expected by Sunday,
-February 05, 2022. _(A few examples have been [updated](#ppupdated).)_
-
-
 ## Teachers
 
 * [Metatheory of typed programming languages](#metatheory)
@@ -27,7 +23,7 @@ February 05, 2022. _(A few examples have been [updated](#ppupdated).)_
 * [Type-directed programming](#type)
   ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
 * [Rust: programming safely with resources in a modern low-level programming
-  language](#rust) ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/)) 
+  language](#rust) ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
 ## Aims
 
@@ -35,8 +31,10 @@ This course presents the principles and formalisms that underlie many of
 today's typed programming languages.
 (Here are some [introductory slides](slides/fpottier-00.pdf).)
 
-This year, the course is reorganized with new material and new teachers.
-It is composed of five parts and cannot be split.
+<!--
+In 2021-2022, the course has been reorganized with new material and new
+teachers. It is composed of five parts and cannot be split.
+-->
 
 ### Metatheory of Typed Programming Languages
 
@@ -200,7 +198,6 @@ give an overview of one proof of soundness of the type system of Rust,
 which also proves that many libraries written in the unsafe fragment
 are, in fact, safe.
 
-
 ## <a name="project">Programming Project</a>
 
 Since we are studying programming languages and their formalization,
@@ -209,42 +206,18 @@ programming project (around the end of October) which must be completed
 roughly by the end of January. The programming project counts for about a
 third of the final grade.
 
-The programming assignment will be given after mi-term exams.
 <!--
-The [programming project](project/2022-2023/) is now available. 
+The [programming project](project/2022-2023/) is now available.
 Read the [assignment](project/2022-2023/sujet.pdf).
--->
 
-The deadline for submitting your project is **Sunday, February 06, 2022**.
+The deadline for submitting your project is **XXX**.
 
 Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
 to [Didier Rémy](Didier.Remy@inria.fr).
+-->
 
-Here are some precisions and answers to some of the questions that have been
-asked:
-
-- <a name="ppupdated">A few modifications have been pushed (more details in
-  the assignment and some changes in the output of examples); these are
-  minor and should not require any change in your own code. Do `git pull` to
-  be sure to be up to date.  (Last modification on `Jan 13`).
-
-- Can the programming project be done in pairs (en binôme) ?
-
-  No, the programming project and its evaluation are individual.  You may
-  discuss it together or help one another if you are stuck, but the code
-  should be yours. 
-
-- The behavior of eager mode has been changed (and described accordingly in
-  the document) to always force normalization of types of toplevel
-  declarations.  This allows for a simpler, more robust specification of the
-  expected output of the eager mode.
-
-- The behavior of lazy mode has been changed in the case of Pack to return
-  the source explicitly given rather than the inferred type, changing the
-  output of examples church_bool_T2, chur_sum_T3, and nat_pack_unpack_T3.
-
-## Paper discussions (NEW!)
+## Paper discussions
 
 This course will include in-course discussion of research
 articles/papers. We will read three papers during the semester. You
@@ -261,32 +234,6 @@ In class we are going to discuss the following questions:
 - what is the contribution of the paper?
 - how did the authors evaluate their work?
 - what did you think of the paper (content and presentation)?
-
-### Papers to read:
-
-- for November 17th, 2021:
-    “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016
-    TODO:
-
-    1. find the paper (mini course on why open access matters)
-    2. read the paper
-    3. write a short summary (a couple paragraphs) and send it by email to "gabriel.scherer at gmail dot com"
-
-- for December 15th, 2021
-    "Structuring the Synthesis of Heap-Manipulating Programs", Nadia POlikarpova and Ilya Sergey, 2019
-
-## Research Internship Proposals
-
-We have posted the following internship proposals (possibly more to come):
-
-* [Verifying Tail-Call Optimization Modulo Constructor in Iris](https://cambium.inria.fr/~fpottier/stages/sujet2022-m2.pdf)
-  (**no longer looking for candidates**, sorry).
-
-The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/)
-at Inria Paris are also relevant.
-
-Please do not hesitate to talk to us (during the break or at the end of each
-lecture), to contact us by email, or to visit us at our offices.
 
 ## Approximate Syllabus
 
@@ -352,7 +299,7 @@ lecture), to contact us by email, or to visit us at our offices.
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mprii.pdf)).
 
 You may also see [last year's
-schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on 
+schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 [type reconstruction](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf)
 [overloading](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf).
 
@@ -394,7 +341,7 @@ Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
   [live code](ocaml/scherer/cours-2021-00.ml), [exercises](ocaml/scherer/exercises-2021-00.ml)
 * (16/11/2022)
   Paper discussion (1/3): “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016
-  A continuum of algebraic structures: functors, monads, applicative functors.  
+  A continuum of algebraic structures: functors, monads, applicative functors.
   [applicative-functors.md(slides/scherer-2021-applicative-functors.md)
 * (7/12/2022)
   Effect handlers.
@@ -444,7 +391,7 @@ Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 ### <a name="rust">Rust: programming with resources
 
 In order to participate to the hands-on exercises of these lectures, the students should install on their computer the following tools:
-* The Rust compiler, version at least 1.41 
+* The Rust compiler, version at least 1.41
 * The Cargo package manager, any compatible version
 Installing these tools should be easy on any recent Linux distribution using the system's package manager. Alternatively, students can follow the instructions at the following URL: https://rustup.rs/
 
