@@ -6,9 +6,9 @@ This page supplements
 ## Location and schedule
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **to be given**.
+Bâtiment Sophie Germain, in room **1002**.
 
-They are scheduled on **Wednesdays** from 9:00 to 11:45.
+They are scheduled on **Wednesdays** from **9:00 to 11:45**.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
