@@ -27,3 +27,19 @@ In this section of the course we will study:
 
 - Effect handlers, a new programming construct that provides another,
   flexible approach to user-defined effects.
+
+### Paper discussions
+
+This course will include in-course discussion of research
+articles/papers. We will read three papers during the semester. You
+will be told about each one several weeks in advance; you have to read
+it before the corresponding class, and we will discuss it together
+during class. This should give you a glimpse of current topics in the
+area, and more generally train you to read research papers and engage
+with them.
+
+In class, we will discuss the following questions:
+- what are the authors presenting?
+- what is the contribution of the paper?
+- how did the authors evaluate their work?
+- what did you think of the paper (content and presentation)?

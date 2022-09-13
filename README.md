@@ -3,6 +3,10 @@
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
+This course presents the principles, formalisms, and mathematical techniques
+that underlie many of today's typed programming languages. Here are some
+[introductory slides](slides/fpottier-00.pdf).
+
 ## Location and schedule
 
 The lectures take place at University of Paris,
@@ -12,7 +16,7 @@ They are scheduled on **Wednesdays** from **9:00 to 11:45**.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
-## Teachers
+## Content and teachers
 
 * [Metatheory of typed programming languages](overview/remy.md)
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
@@ -26,50 +30,7 @@ so each lecture lasts 2h30.
   language](overview/jourdan.md)
   ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
-## Aims
-
-This course presents the principles and formalisms that underlie many of
-today's typed programming languages.
-(Here are some [introductory slides](slides/fpottier-00.pdf).)
-
-## <a name="project">Programming Project</a>
-
-Since we are studying programming languages and their formalization,
-programming is also an important part of the course. We give a mandatory
-programming project (around the end of October) which must be completed
-roughly by the end of January. The programming project counts for about a
-third of the final grade.
-
-<!--
-The [programming project](project/2022-2023/) is now available.
-Read the [assignment](project/2022-2023/sujet.pdf).
-
-The deadline for submitting your project is **XXX**.
-
-Please do not hesitate to ask questions about the project,
-of an administrative or technical nature,
-to [Didier Rémy](Didier.Remy@inria.fr).
--->
-
-## Paper discussions
-
-This course will include in-course discussion of research
-articles/papers. We will read three papers during the semester. You
-will be told about each one several weeks in advance; you have to read
-it before the corresponding class, and we will discuss it together
-during class. This should give you a glimpse of current topics in the
-area, and more generally train you to read research papers and engage
-with them.
-
-### Some questions of interest
-
-In class we are going to discuss the following questions:
-- what are the authors presenting?
-- what is the contribution of the paper?
-- how did the authors evaluate their work?
-- what did you think of the paper (content and presentation)?
-
-## Approximate Syllabus
+## Time table
 
 ### <a name="interpretation">Interpretation, Compilation, and Program Transformations (introduction)
 
@@ -139,7 +100,7 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 
 
 
-### <a name="transformation">Interpretation, Compilation, and Program Transformations ([continued](#interpretation))
+### <a name="transformation">Interpretation, Compilation, and Program Transformations (continuation)
 
 * (19/10/2022) Compiling away first-class functions:
   closure conversion, defunctionalization
@@ -251,32 +212,53 @@ Lectures:
 
 Two written exams and one programming project are used to evaluate the
 students.
-By default, the mid-term and final exams will take place on
-**30/11/2022** and **08/03/2022**, respectively.
+
+The mid-term and final exams are expected to take place on
+**30/11/2022** and **08/03/2022**.
 Only course notes and hand-written notes are allowed for the exams.
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* final exam 2021-2022:
+  [type class elaboration](exams/final-2021-2022.pdf).
 * mid-term exam 2021-2022:
-  [Gradual typing](exams/partiel-2021-2022.pdf).
+  [gradual typing](exams/partiel-2021-2022.pdf).
 * intermediate exam 2020-2021:
-  [Calcul d'objets](exams/intermediaire-2020-2021.pdf).
+  [calcul d'objets](exams/intermediaire-2020-2021.pdf).
 * mid-term exam 2020-2021:
-  [Delimited control in System F](exams/partiel-2020-2021.pdf).
+  [delimited control in System F](exams/partiel-2020-2021.pdf).
 * final exam 2019-2020:
-  [Gradually-typed functional languages](exams/final-2019-2020.pdf).
+  [gradually-typed functional languages](exams/final-2019-2020.pdf).
 * mid-term exam 2019-2020:
-  [A type system for information flow control](exams/partiel-2019-2020.pdf).
+  [a type system for information flow control](exams/partiel-2019-2020.pdf).
 * final exam 2018-2019:
   (not available)
 * mid-term exam 2018-2019:
-  [A simple object encoding](exams/partiel-2018-2019.pdf).
+  [a simple object encoding](exams/partiel-2018-2019.pdf).
 * final exam 2017-2018:
-  [Static differentiation](exams/final-2017-2018.pdf).
+  [static differentiation](exams/final-2017-2018.pdf).
 * mid-term exam 2017-2018:
-  [Encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
+  [encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
+
+## <a name="project">Programming Project</a>
+
+Programming is an important part of the course. We give a mandatory
+programming project (around the end of October) which must be completed
+roughly by the end of January. The programming project counts for about a
+third of the final grade.
+
+<!--
+The [programming project](project/2022-2023/) is now available.
+Read the [assignment](project/2022-2023/sujet.pdf).
+
+The deadline for submitting your project is **XXX**.
+
+Please do not hesitate to ask questions about the project,
+of an administrative or technical nature,
+to [François Pottier](francois.pottier@inria.fr).
+-->
 
 ## Recommended software
 
