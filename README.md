@@ -14,189 +14,23 @@ so each lecture lasts 2h30.
 
 ## Teachers
 
-* [Metatheory of typed programming languages](#metatheory)
+* [Metatheory of typed programming languages](overview/remy.md)
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
-* [Interpretation, compilation, and program transformations](#transformation)
+* [Interpretation, compilation, and program transformations](overview/pottier.md)
   ([François Pottier](http://cambium.inria.fr/~fpottier/))
-* [Effects](#effects)
+* [Effects](overview/scherer.md)
   ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
-* [Type-directed programming](#type)
+* [Type-directed programming](overview/dagand.md)
   ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
 * [Rust: programming safely with resources in a modern low-level programming
-  language](#rust) ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
+  language](overview/jourdan.md)
+  ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
 ## Aims
 
 This course presents the principles and formalisms that underlie many of
 today's typed programming languages.
 (Here are some [introductory slides](slides/fpottier-00.pdf).)
-
-<!--
-In 2021-2022, the course has been reorganized with new material and new
-teachers. It is composed of five parts and cannot be split.
--->
-
-### Metatheory of Typed Programming Languages
-
-<!-- We focus on the meta-theoretical properties of type systems.  We study
-parametric polymorphism (as in System F and ML), data types and type
-abstraction. We show syntactic type soundness (via progress and subject
-reduction) by reasoning by induction on typing derivations.  We also show
-how to obtain semantic properties via logical relations by reasoning by
-induction on the structure of types.  Finally, we introduce subtyping, row
-polymorphism, and illustrate the problems induced by side effects
-(references) and the need for the value restriction.  -->
-
-This part of the course is split in four lectures.  We first introduce the
-_explicitly typed_ version of System F.  We prove its type soundness by
-_subject reduction_ and _progress_.  We discuss _type erasing_ versus _type
-passing_ semantics and derive the _implicitly typed_ version of System
-F. We present _ML_ as a restriction of _System F_ to prenex polymorphism.
-The definition and main properties of System F will also be mechanized in
-the Coq proof assistant.
-
-We then extend _System F_ with primitive datatypes, including variants and
-records, and show their Church encodings.  We discuss both _iso-recursive_
-and _equi-recursive_ types.  We present _existential types_.  _Generalized
-Abstract Datatypes (GADTs)_ will just be introduced.
-
-We also extend System-F with higher-order kinds and higher-order types,
-which requires computation at the level of types, leading to system _F-omega_.
-<!-- We may present _modules_ by elaboration into Fomega. -->
-
-Finally, we introduce logical relations to show parametricity properties of
-System F.  Unary relations are used to proof termination as an introduction
-to logicial elations.  We cover binary relations in details. They allow to
-prove _observational equivalence_ results or study the inhabitants at
-certain polymorphic types.  We just introduce _step-indexed_ logical
-relations which are needed when the programming language is extended with
-constructs that enable unstructured forms of recursion, such as recursive
-types at negative occurrences, or references.
-
-### Interpretation, Compilation, and Program Transformations
-
-In the first lecture, we discuss several presentations of the *operational
-semantics* of a (call-by-value) functional programming language. We explain
-why each of these presentations exists and in what sense these presentations
-are equivalent. One of these presentations is in fact executable: it is an
-interpreter. This interpreter can be implemented in Coq and can be *verified*,
-that is, can be proved correct with respect to the other presentations of the
-operational semantics. As far as time permits, we will review how lambda-terms
-and their operational semantics can be defined in Coq, using a representation
-of names as de Bruijn indices. Although Coq is not a prerequisite of the
-course, we will at least try to *read and understand Coq definitions and
-statements*.
-
-In the next three lectures, we present several classic *program
-transformations*, including closure conversion, defunctionalization, the
-transformation into continuation-passing style (CPS), and stream fusion. These
-program transformations are interesting from two points of view. First, they
-are *useful programming techniques*, which can help write or understand
-programs. Second, they are used in the *compilation* of functional programming
-languages, so they help understand what happens when the machine executes a
-program. We discuss how to *prove* that the meaning of programs is preserved
-by these transformations, based on an operational semantics. We suggest how
-these definitions and theorems can be expressed in a form that a machine can
-check (that is, in Coq).
-
-
-### Effects
-
-In the theory of programming languages, "effects" describe
-computational phenomenons that happen "on the side" during the
-computation of a program. "While this function runs, it prints
-messages / sends emails / displays images / accesses a database / asks
-questions to the user, in addition to returning a result." Effects are
-of course very important in programs, they are often the main
-reason why humans execute programs in the first place!
-
-There is an active research area studying effects: how to model them
-mathematically, how to reason about programs containing effects, how
-to implement them. Over time researchers realized that we can reuse
-the theoretical analysis of effects to provide general mechanisms
-letting programmers *implement* effects as libraries, instead of
-having only a fixed set of effects supported by the programming
-language definition. It is sometimes possible, through careful
-refactoring, to take a complex program that computes various things
-"directly", turn some of these things into "effects done on the side",
-to obtain an equivalent program that looks simpler, is easier to write
-and to understand -- with more complex effects on the side.
-
-In this section of the course we will study:
-
-- Algebraic structures that capture notions of effects in
-  theory and in practice: monads and applicative functors.
-
-- Effect handlers, a new programming construct that provides another,
-  flexible approach to user-defined effects.
-
-###  Type-Directed Programming
-
-We revisit the notion of algebraic datatypes through their categorical
-semantics as initial algebras (inductive types) and final coalgebras
-(coinductive types). We show how recursive program definitions can be
-distilled to a handful of recursion/corecursion schemes, thus enabling
-general and systematic reasoning about such definitions. We
-demonstrate how, in practice, these principles can be used to reason
-about pure functional programs as well as derive efficient
-implementations from high-level specifications.
-
-We then study type classes, a mechanism that enables the concise
-description of programs parameterized over an ad-hoc collection of
-types. We provide a formal treatment of ad-hoc polymorphism in a
-Haskell-like language. Aside from the foundational aspect, this first
-step shall provide some operational intuitions for type classes. We
-then explore the benefits of ad-hoc polymorphism from a programming
-standpoint. We show how the usual hierarchy of algebraic structures
-fits into this framework. We will cover functors (to abstract over
-data containers), applicatives and monads (to abstract over effects),
-foldable and traversable functors (to abstract over iterators) as well
-as Neperian functors and lenses (to abstract over data accessors).
-
-We conclude this journey by entering the realm of type-level
-programming, first in a restricted, ML setting and then in a
-full-spectrum, dependent type setting. Type-level programming enable
-the precise transcription of the invariants of a program into its
-type. It is a step toward "correct-by-construction" programming while
-allowing the programmer to dispense with dynamic checks (run-time
-assertions) in favor of static checks (delegated to the
-type-checker). We provide a formal treatment of generalized algebraic
-data types (GADTs) in an ML-like language. This restricted form of
-type-level programming strikes a balance between expressiveness and
-decidability. Besides, it is readily available in OCaml, allowing
-further experimentation in class. We will develop several examples of
-type-level programming, starting with tagless interpreters using GADTs
-and gradually moving toward examples involving full-spectrum
-dependent-types, as available in Agda or Coq.
-
-
-### Rust
-
-In this part, we propose to give both a practical and a theoretical
-view of the Rust programming language. This new language, developed
-during the last decade, aims at modernizing systems programming by
-providing a new balance between performance and control on the one
-hand, and safety and ease of use on the other hand.
-
-We will first give an overview of the language, from a user's
-perspective. Rust got inspiration from many other programming
-languages and adapted many well-known mechanisms to its contexts. We
-will hence discuss features such as algebraic data types,
-polymorphism, type traits (i.e., Rusts' type classes), closures and
-subtyping. But Rust also introduced concepts which were only used in
-experimental languages, such as ownership and aliasing
-control. Finally, we will show how the type system of Rust allows
-escaping from the safe fragment and encapsulating these uses of unsafe
-features behind safe interfaces. We will study the important example
-of interior mutability.
-
-Next, we will focus on two recent research subjects on Rust. First, it
-is possible to translate programs written in the safe fragment of Rust
-into a functional language, thus completely erasing state. This makes
-it possible to ease verification of Rust programs. Second, we will
-give an overview of one proof of soundness of the type system of Rust,
-which also proves that many libraries written in the unsafe fragment
-are, in fact, safe.
 
 ## <a name="project">Programming Project</a>
 
