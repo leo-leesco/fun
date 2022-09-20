@@ -22,8 +22,10 @@ so each lecture lasts 2h30.
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
 * [Interpretation, compilation, and program transformations](overview/pottier.md)
   ([François Pottier](http://cambium.inria.fr/~fpottier/))
+<!--
 * [Effects](overview/scherer.md)
   ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
+  -->
 * [Type-directed programming](overview/dagand.md)
   ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
 * [Rust: programming safely with resources in a modern low-level programming
@@ -92,6 +94,8 @@ so each lecture lasts 2h30.
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout-logrel.pdf);
   see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mprii.pdf)).
+* (19/10/2022)
+  Effects (TODO).
 
 You may also see [last year's
 schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
@@ -102,13 +106,13 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 
 ### <a name="transformation">Interpretation, Compilation, and Program Transformations (continuation)
 
-* (19/10/2022) Compiling away first-class functions:
+* (26/10/2022) Compiling away first-class functions:
   closure conversion, defunctionalization
   ([slides 03](slides/fpottier-03.pdf))
   ([Coq repo](coq/))
   (typed defunctionalization: [exercise](ocaml/pottier/foo.ml), [solution](ocaml/pottier/foo_defunctionalized.ml)).
 
-* (26/10/2022) Making the stack explicit: the CPS transformation
+* (02/11/2022) Making the stack explicit: the CPS transformation
   ([slides 04](slides/fpottier-04.pdf))
   ([Coq repo](coq/)).
   * Transforming a call-by-value interpreter
@@ -118,13 +122,16 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
   * Transforming a graph traversal
     ([solution](ocaml/pottier/Graph.ml)).
 
-* (02/11/2022) Some optimisations: constructor specialisation; stream fusion; staging
+* (09/11/2022) Some optimisations: constructor specialisation; stream fusion; staging
   ([slides 05](slides/fpottier-05.pdf)).
   * [Staging the power function](metaocaml/pottier/Power.ml).
   * [Staging stream fusion](metaocaml/pottier/StreamFusion.ml).
   * Running these examples requires MetaOCaml. Type `opam switch create 4.11.1+BER --no-switch`.
     Then go down into `metaocaml/pottier` and type `make` and `make test`.
 
+* (16/11/2022) System F in Coq (TODO).
+
+<!--
 ### <a name="effects">Effects
 
 Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
@@ -156,7 +163,7 @@ Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
   Paper discussion (2/3).
   Type systems for effects.
 
-  *Note*: the course is (of course?) also in hybrid format, same modalities and URL as above.
+-->
 
 ### <a name="type">Type-Directed Programming
 
@@ -167,16 +174,17 @@ version 4.11.1).
 
 Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
-* (04/01/2022)
+* (07/12/2022)
+* (14/12/2023)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
-* (11/01/2022)
+* (04/01/2023)
   GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf))
-* (18/01/2022)
+* (11/01/2023)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)
    [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
-* (25/01/2022)
+* (18/01/2023)
   Paper discussion (3/3).
   Generic programming
   ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
@@ -203,10 +211,11 @@ If the compiler is correctly installed, then the command `rustc test.rs` should 
 Physical presence at the lectures is required, when possible. If the COVID situation makes this impossible, students can follow the course using the following URL: https://webconf.math.cnrs.fr/b/jou-gaq-9gr
 
 Lectures:
-* (01/02/2022) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
-* (08/02/2022) Introduction to unsafe Rust and interrior mutability ([slides](slides/jhjourdan-02.pdf)), and hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (15/02/2022) Rust and multithreading ([slides](slides/jhjourdan-03.pdf)), and hands-on session ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
-* (22/02/2022) Formalizing Rust's type system ([slides](slides/jhjourdan-04.pdf)).
+* (25/01/2023) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
+* (01/02/2023) Introduction to unsafe Rust and interrior mutability ([slides](slides/jhjourdan-02.pdf)), and hands-on session ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
+* (08/02/2023) Rust and multithreading ([slides](slides/jhjourdan-03.pdf)), and hands-on session ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
+* (15/02/2023) Formalizing Rust's type system ([slides](slides/jhjourdan-04.pdf)).
+* (22/02/2023) TODO.
 
 ## Evaluation of the course
 
