@@ -95,7 +95,7 @@ so each lecture lasts 2h30.
   see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mprii.pdf)).
 * (19/10/2022)
-  Effects (TODO).
+  Side Effects, References, Value restriction (to be confirmed).
 
 You may also see [last year's
 schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
