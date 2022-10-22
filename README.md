@@ -32,6 +32,18 @@ so each lecture lasts 2h30.
   language](overview/jourdan.md)
   ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
 
+## Research Internship Proposals
+
+We have posted the following internship proposals (possibly more to come):
+
+* [Screaming fast symmetric cryptography](https://www.irif.fr/~dagand/stuffs/internship-2022-MPRI-usuba/usuba.pdf)
+
+The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
+
+Please do not hesitate to talk to us (during the break or at the end of each lecture), to contact us by email, or to visit us at our offices.
+
+
+
 ## Time table
 
 ### <a name="interpretation">Interpretation, Compilation, and Program Transformations (introduction)
