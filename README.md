@@ -105,9 +105,13 @@ Please do not hesitate to talk to us (during the break or at the end of each lec
   [Logical relations](http://cambium.inria.fr/~remy/mpri/slides-logrel.pdf)
   [(handout)](http://cambium.inria.fr/~remy/mpri/handout-logrel.pdf);
   see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mprii.pdf)).
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
 * (19/10/2022)
-  Side Effects, References, Value restriction (to be confirmed).
+  [Side Effects, References, Value restriction](http://cambium.inria.fr/~remy/mpri/slides-refval.pdf)
+  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-refval.pdf);
+  see also [chap 3](http://cambium.inria.fr/~remy/mpri/cours-stlc)
+  and [chap 4](http://cambium.inria.fr/~remy/mpri/cours-sf.pdf)
+  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
 
 You may also see [last year's
 schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
