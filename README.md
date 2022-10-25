@@ -22,15 +22,15 @@ so each lecture lasts 2h30.
   ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
 * [Interpretation, compilation, and program transformations](overview/pottier.md)
   ([François Pottier](http://cambium.inria.fr/~fpottier/))
-<!--
-* [Effects](overview/scherer.md)
-  ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
-  -->
 * [Type-directed programming](overview/dagand.md)
   ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
 * [Rust: programming safely with resources in a modern low-level programming
   language](overview/jourdan.md)
   ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
+<!--
+* [Effects](overview/scherer.md)
+  ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
+  -->
 
 ## Research Internship Proposals
 
