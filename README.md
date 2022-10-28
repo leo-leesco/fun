@@ -37,11 +37,15 @@ so each lecture lasts 2h30.
 We have posted the following internship proposals (possibly more to come):
 
 * [Screaming fast symmetric cryptography](https://www.irif.fr/~dagand/stuffs/internship-2022-MPRI-usuba/usuba.pdf)
+  (Pierre-Évariste Dagand);
+* [Interopérabilité vérifiée entre OCaml et C](http://gallium.inria.fr/~agueneau/stages/camlffi.pdf)
+  (Armaël Guéneau).
 
 The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
 
 Please do not hesitate to talk to us (during the break or at the end of each lecture), to contact us by email, or to visit us at our offices.
 
+See also [the official list of internship offers](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=internships) at MPRI.
 
 
 ## Time table
