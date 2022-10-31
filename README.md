@@ -40,6 +40,8 @@ We have posted the following internship proposals (possibly more to come):
   (Pierre-Évariste Dagand);
 * [Interopérabilité vérifiée entre OCaml et C](http://gallium.inria.fr/~agueneau/stages/camlffi.pdf)
   (Armaël Guéneau).
+* [Type invariants and ghost code for deductive verification of Rust code](https://jhjourdan.mketjh.fr/pdf/StageGhostInvCreusot2023.pdf)
+  (Jacques-Henri Jourdan)
 
 The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
 
