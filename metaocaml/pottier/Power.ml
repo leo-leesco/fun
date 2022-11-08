@@ -57,12 +57,14 @@ let rec cpower_aux (n : int) (e : int code) : int code =
   if n = 0 then .<1>.
   else if n mod 2 = 0 then .<square .~(cpower_aux (n/2) e)>.
   else .<.~e * .~(cpower_aux (n-1) e)>.
+;;
 
 (* To use [cpower_aux], we need to create a fresh variable [x] and apply
    [cpower_aux] to this variable. This is done as follows. *)
 
 let cpower (n : int) : (int -> int) code =
   .< fun x -> .~(cpower_aux n .<x>.) >.
+;;
 
 (* [cpower n] has type [(int -> int) code]. It returns an expression
    that represents the function that maps [x] to its [n]-th power.
@@ -70,6 +72,7 @@ let cpower (n : int) : (int -> int) code =
 
 let cpower7 : (int -> int) code =
   cpower 7
+;;
 
 (* We can "run" this code to obtain an actual function of type [int -> int].
    Here, "running" the code does essentially nothing, since this code is a
@@ -80,6 +83,7 @@ let cpower7 : (int -> int) code =
 
 let power7 : int -> int =
   run cpower7
+;;
 
 let () =
   let candidate = power7 2 in

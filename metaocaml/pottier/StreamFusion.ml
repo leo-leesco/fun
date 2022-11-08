@@ -34,8 +34,8 @@ type ('a, 'stream) shape =
 
  *)
 
+(* in the REPL: #load "Shape.cmo";; *)
 open Shape
-  (* in the REPL: #load "Shape.cmo";; *)
 
 (* The type of a [fold] function on a sequence,
 
@@ -308,6 +308,15 @@ let square x =
   .< .~(x) * .~(x) >.
 ;;
 
+  (* Remark: the following definition of [square] is in general safer,
+     as it avoids duplicating the code fragment [x], which could be
+     large. In the following, this precaution is not needed.
+
+    let square x =
+      .< let y = .~(x) in y * y >.
+
+   *)
+
 let example n : int code =
   ints (n+1) |> map square |> sum
 ;;
@@ -536,10 +545,10 @@ let () =
    What we have done here, in a way, is that we used staging annotations to
    program a "case-of-case" transformation. The approach that we have followed
    may seem somewhat heavy, but is actually quite robust; it does not rely on
-   compiler heuristics; instead, the MetaOCaml has a well-defined semantics
+   compiler heuristics; instead, MetaOCaml has a well-defined semantics
    and produces a predictable result. Just by looking at the definition of
    the type [_ stream2], one can tell that the type [shape] is not involved
-   in stage 2, so we can be assured that no construction or deconstruction
+   in stage 2, so one can be assured that no construction or deconstruction
    of shapes appears in the generated code. *)
 
 (* -------------------------------------------------------------------------- *)
