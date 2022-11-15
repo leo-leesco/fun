@@ -44,6 +44,8 @@ We have posted the following internship proposals (possibly more to come):
   (Jacques-Henri Jourdan);
 * [Developing an Iris-Based Program Verification Framework for OCaml](http://cambium.inria.fr/~fpottier/stages/sujet2023-m2.pdf)
   (Armaël Guéneau and François Pottier).
+* [Towards a formalization of Modular Implicits](http://cambium.inria.fr/~remy/mpri/modular-implicits.pdf)
+  (Didier Rémy and Gabriel Scherer).
 
 The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
 
