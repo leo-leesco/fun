@@ -81,23 +81,6 @@ See also [the official list of internship offers](https://wikimpri.dptinfo.ens-c
   see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/stlc.pdf)
   and [4](http://cambium.inria.fr/~remy/mpri/sf.pdf)
   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf)).
-  See also _a (slow) walk through the garden of type soundness proofs_
-  in Coq, by François Pottier ([Coq repo](coq/), [html](coq/html/));
-  to view the proofs online, please use the following links:
-  - Lambda Calculus:
-    [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
-    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
-    [Reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html)
-  - Simply-typed lambda-calculus:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
-    [type
-    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
-  - The polymorphic lambda-calculus, also known as System F:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
-    [type soundness
-    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
 * (28/09/2022)
   [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides-exgadtA.pdf)
   ([handout](http://cambium.inria.fr/~remy/mpri/handout-exgadt.pdf)
@@ -155,7 +138,25 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
   * Running these examples requires MetaOCaml. Type `opam switch create 4.11.1+BER --no-switch`.
     Then go down into `metaocaml/pottier` and type `make` and `make test`.
 
-* (16/11/2022) System F in Coq (TODO).
+* (16/11/2022) A (slow) walk through the garden of type soundness proofs,
+  in Coq ([Coq repo](coq/), [html](coq/html/)).
+
+  To view the solutions online, please use the following links:
+  - Lambda Calculus:
+    [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
+    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
+    [Reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html)
+  - Simply-typed lambda-calculus:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
+    [type
+    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
+  - The polymorphic lambda-calculus, also known as System F:
+    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
+    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
+    [type soundness
+    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
+
 
 <!--
 ### <a name="effects">Effects
