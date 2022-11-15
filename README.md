@@ -146,11 +146,11 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
   Curry style means that type abstractions and type applications are implicit;
   this is in contrast with Church style, where they are explicit in the syntax of terms.
 
-  To view the solutions online, please use the following links:
-  - Lambda Calculus:
-    [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
-    [Values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
-    [Reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html)
+  To view the definitions, lemmas, and solutions online, please use the following links:
+  - Lambda-calculus:
+    [syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
+    [values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
+    [reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html).
   - Simply-typed lambda-calculus:
     [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
     [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
