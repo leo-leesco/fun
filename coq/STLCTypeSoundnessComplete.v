@@ -23,7 +23,7 @@ Goal (* jt_te_substitution_0 *)
 Proof.
   (* Let us attempt to naively prove this statement by induction. *)
   induction 1; intros; subst; asimpl.
-  all: swap 2 3.
+  all: swap 2 3. (* deal with JTApp before JTLam *)
   (* JTVar. *)
   { (* By cases on the variable `x`. Either it is zero, or nonzero. *)
     destruct x as [|x].

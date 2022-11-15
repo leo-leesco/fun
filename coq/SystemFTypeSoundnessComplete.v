@@ -394,9 +394,7 @@ Proof.
   { obvious. }
   (* Case: JFApp. *)
   { use_ih IHjf1.
-    (* Reason in the same way about `t2`. *)
     use_ih IHjf2.
-    (* We wish to prove that `App t1 t2` is a beta-redex. *)
     left.
     (* Because `t1` is a closed value and has a function type,
        it must be a lambda-abstraction. *)
@@ -404,7 +402,7 @@ Proof.
     (* Therefore, we have a beta-redex. *)
     obvious. }
   (* Case: JFTyAbs. *)
-  { use_ih IHjf. eauto. }
+  { eauto. }
   (* Case: JFTyApp. *)
-  { use_ih IHjf. eauto. }
+  { eauto. }
 Qed.
