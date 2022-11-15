@@ -42,7 +42,7 @@ We have posted the following internship proposals (possibly more to come):
   (Armaël Guéneau);
 * [Type invariants and ghost code for deductive verification of Rust code](https://jhjourdan.mketjh.fr/pdf/StageGhostInvCreusot2023.pdf)
   (Jacques-Henri Jourdan);
-* [Developing an Iris-Based Program Verification Framework for OCam](http://cambium.inria.fr/~fpottier/stages/sujet2023-m2.pdf)
+* [Developing an Iris-Based Program Verification Framework for OCaml](http://cambium.inria.fr/~fpottier/stages/sujet2023-m2.pdf)
   (Armaël Guéneau and François Pottier).
 
 The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
