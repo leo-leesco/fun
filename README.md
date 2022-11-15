@@ -141,6 +141,11 @@ schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
 * (16/11/2022) A (slow) walk through the garden of type soundness proofs,
   in Coq ([Coq repo](coq/), [html](coq/html/)).
 
+  We will work first on simply-typed lambda-calculus ([blank file](coq/STLCTypeSoundnessBlank.v)),
+  then on System F in Curry style ([blank file](coq/SystemFTypeSoundnessBlank.v)).
+  Curry style means that type abstractions and type applications are implicit;
+  this is in contrast with Church style, where they are explicit in the syntax of terms.
+
   To view the solutions online, please use the following links:
   - Lambda Calculus:
     [Syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
