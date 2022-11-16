@@ -13,8 +13,13 @@ Renamings of term variables
 (*|
 
 The typing judgement is preserved by a renaming `xi` that maps
-term variables to term variables. Note that `xi` need not be
-injective.
+term variables to term variables.
+
+Note that `xi` need not be injective or surjective.
+
+When `xi` is not surjective, we get a weakening lemma (see the next
+lemma, below). When `xi` is not injective, we obtain a contraction
+lemma (not shown here).
 
 |*)
 
