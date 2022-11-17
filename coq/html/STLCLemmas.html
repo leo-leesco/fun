@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.min.css" integrity="sha512-MbysAYimH1hH2xYzkkMHB6MqxBqfP0megxsCLknbYqHVwXTCg9IqHbk+ZP/vnhO8UEW6PaXAkKe2vQ+SWACxxA==" crossorigin="anonymous" />
 </head>
 <body>
-<div class="alectryon-root alectryon-windowed"><div class="alectryon-header">Built with <a href="https://github.com/cpitclaudel/alectryon/">Alectryon</a>, running <a href="https://coq.inria.fr/">Coq</a>+<a href="https://github.com/ejgallego/coq-serapi">SerAPI</a> v8.10.0+0.7.0. Coq sources are in this panel; goals and messages will appear in the other. Bubbles (<span class="alectryon-bubble"></span>) indicate interactive fragments: hover for details, tap to reveal contents. Use <kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> to navigate, <kbd>Ctrl+🖱️</kbd> to focus.</div><div class="document">
+<div class="alectryon-root alectryon-windowed"><div class="alectryon-header">Built with <a href="https://github.com/cpitclaudel/alectryon/">Alectryon</a>, running <a href="https://coq.inria.fr/">Coq</a>+<a href="https://github.com/ejgallego/coq-serapi">SerAPI</a> v8.13.0+0.13.0. Coq sources are in this panel; goals and messages will appear in the other. Bubbles (<span class="alectryon-bubble"></span>) indicate interactive fragments: hover for details, tap to reveal contents. Use <kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> to navigate, <kbd>Ctrl+🖱️</kbd> to focus.</div><div class="document">
 
 
 <pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> MyTactics.</span></span><span class="coq-wsp">
@@ -24,8 +24,11 @@
 </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Require Import</span> STLCDefinition.</span></span></span></pre><div class="section" id="renamings-of-term-variables">
 <h1>Renamings of term variables</h1>
 <p>The typing judgement is preserved by a renaming <code class="highlight coq"><span class="name">xi</span></code> that maps
-term variables to term variables. Note that <code class="highlight coq"><span class="name">xi</span></code> need not be
-injective.</p>
+term variables to term variables.</p>
+<p>Note that <code class="highlight coq"><span class="name">xi</span></code> need not be injective or surjective.</p>
+<p>When <code class="highlight coq"><span class="name">xi</span></code> is not surjective, we get a weakening lemma (see the next
+lemma, below). When <code class="highlight coq"><span class="name">xi</span></code> is not injective, we obtain a contraction
+lemma (not shown here).</p>
 <pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><input class="coq-toggle" id="stlclemmas-v-chk0" style="display: none" type="checkbox"><label class="coq-input" for="stlclemmas-v-chk0"><span class="highlight"><span class="kn">Lemma</span> <span class="nf">jt_te_renaming</span>:
   <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t</span> <span class="nv">U</span>,
   jt Gamma t U -&gt;
@@ -115,6 +118,13 @@ Gamma = xi &gt;&gt;&gt; Gamma&#39; -&gt; jt Gamma&#39; t.[ren xi] U</span></div>
 </span></span><span class="coq-wsp">  </span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="nb">induction</span> <span class="mi">1</span>; <span class="nb">intros</span>; <span class="nb">subst</span>; asimpl;
   <span class="nb">econstructor</span>; <span class="nb">eauto with</span> autosubst.</span></span><span class="coq-wsp">
 </span></span><span class="coq-sentence"><span class="coq-input"><span class="highlight"><span class="kn">Qed</span>.</span></span></span></pre><p>As a corollary, <code class="highlight coq"><span class="name">jt</span></code> is preserved by the renaming <code class="highlight coq"><span class="operator">(+</span><span class="literal number integer">1</span><span class="operator">)</span></code>.</p>
+<p>This lemma is usually known as a weakening lemma, where the word
+&quot;weakening&quot; is used in the sense of linear logic. On paper, in
+nominal style (as opposed to de Bruijn style), one would write:
+if the typing judgement Γ ⊢ t : U holds,
+and if the variable x does not occur in t,
+then the typing judgement Γ; x : T ⊢ t : U holds.</p>
+<p>Here, the variable x is represented by the de Bruijn index 0.</p>
 <pre class="alectryon-io"><!-- Generator: Alectryon v1.0 --><span class="coq-sentence"><input class="coq-toggle" id="stlclemmas-v-chk15" style="display: none" type="checkbox"><label class="coq-input" for="stlclemmas-v-chk15"><span class="highlight"><span class="kn">Lemma</span> <span class="nf">jt_te_renaming_0</span>:
   <span class="kr">forall</span> <span class="nv">Gamma</span> <span class="nv">t</span> <span class="nv">T</span> <span class="nv">U</span>,
   jt Gamma t U -&gt;

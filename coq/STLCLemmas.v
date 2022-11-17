@@ -13,8 +13,13 @@ Renamings of term variables
 (*|
 
 The typing judgement is preserved by a renaming `xi` that maps
-term variables to term variables. Note that `xi` need not be
-injective.
+term variables to term variables.
+
+Note that `xi` need not be injective or surjective.
+
+When `xi` is not surjective, we get a weakening lemma (see the next
+lemma, below). When `xi` is not injective, we obtain a contraction
+lemma (not shown here).
 
 |*)
 
@@ -42,6 +47,15 @@ Qed.
 (*|
 
 As a corollary, `jt` is preserved by the renaming `(+1)`.
+
+This lemma is usually known as a weakening lemma, where the word
+"weakening" is used in the sense of linear logic. On paper, in
+nominal style (as opposed to de Bruijn style), one would write:
+if the typing judgement Γ ⊢ t : U holds,
+and if the variable x does not occur in t,
+then the typing judgement Γ; x : T ⊢ t : U holds.
+
+Here, the variable x is represented by the de Bruijn index 0.
 
 |*)
 
