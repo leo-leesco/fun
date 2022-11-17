@@ -248,9 +248,10 @@ Physical presence at the lectures is required, when possible. If the COVID situa
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term and final exams are expected to take place on
+The mid-term and final exams will take place on
 **30/11/2022** and **08/03/2023**.
-Only course notes and hand-written notes are allowed for the exams.
+Only **course notes** and **hand-written notes** are **allowed** for the
+exams. 
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
