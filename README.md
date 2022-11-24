@@ -257,7 +257,7 @@ students.
 The mid-term and final exams will take place on
 **30/11/2022** and **08/03/2023**.
 Only **course notes** and **hand-written notes** are **allowed** for the
-exams. 
+exams.  Electronic devices are **not allowed.**
 
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
