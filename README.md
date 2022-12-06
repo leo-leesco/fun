@@ -206,18 +206,18 @@ version 4.11.1).
 
 Online presence: https://webconf.math.cnrs.fr/b/dag-ddd-p4n
 
-* (07/12/2022)
-* (14/12/2023)
+* (07/12/2023)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+* (14/12/2022)
+  Monads ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads-2022),
+          [Agda source](agda/01-effectful/Monad.lagda.rst))
 * (04/01/2023)
-  GADTs & type inference ([handout](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf))
+  Bidirectional type-checking
 * (11/01/2023)
   Dependent functional programming
   ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
-   [Agda source](agda/02-dependent/Indexed.lagda.rst)
-   [Agda online](https://nextjournal.com/pedagand/indexed-functional-programming)).
+   [Agda source](agda/02-dependent/Indexed.lagda.rst)).
 * (18/01/2023)
-  Paper discussion (3/3).
   Generic programming
   ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
    [Source](agda/04-generic/Desc.lagda.rst)).
