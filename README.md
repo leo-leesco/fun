@@ -209,7 +209,7 @@ version 4.11.1).
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 * **[{ Bring Your Own Laptop }]** (14/12/2022)
   Monads ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads-2022),
-          [Agda source](agda/01-effectful/Monad.lagda.rst))  
+          [Agda source](agda/01-effectful/Monad.lagda.rst))
 * (04/01/2023)
   Bidirectional type-checking
 *  **[{ Bring Your Own Laptop }]** (11/01/2023)
@@ -286,8 +286,8 @@ available with solutions:
 ## <a name="project">Programming Project</a>
 
 Programming is an important part of the course. We give a mandatory
-programming project (around the end of October) which must be completed
-roughly by the end of January. The programming project counts for about a
+programming project (**expected mid-December**) which must be completed
+roughly by mid-February. The programming project counts for about a
 third of the final grade.
 
 <!--
