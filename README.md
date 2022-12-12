@@ -36,8 +36,6 @@ so each lecture lasts 2h30.
 
 We have posted the following internship proposals (possibly more to come):
 
-* [Screaming fast symmetric cryptography](https://www.irif.fr/~dagand/stuffs/internship-2022-MPRI-usuba/usuba.pdf)
-  (Pierre-Évariste Dagand);
 * [Interopérabilité vérifiée entre OCaml et C](http://gallium.inria.fr/~agueneau/stages/camlffi.pdf)
   (Armaël Guéneau);
 * [Type invariants and ghost code for deductive verification of Rust code](https://jhjourdan.mketjh.fr/pdf/StageGhostInvCreusot2023.pdf)
