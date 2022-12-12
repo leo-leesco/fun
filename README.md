@@ -208,13 +208,13 @@ version 4.11.1).
 * (07/12/2023)
   Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 * **[{ Bring Your Own Laptop }]** (14/12/2022)
-  Monads ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads-2022),
+  Monads ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads-2023),
           [Agda source](agda/01-effectful/Monad.lagda.rst))
 * (04/01/2023)
   Bidirectional type-checking
 *  **[{ Bring Your Own Laptop }]** (11/01/2023)
   Dependent functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2022),
+  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2023),
    [Agda source](agda/02-dependent/Indexed.lagda.rst)).
 * (18/01/2023)
   Generic programming
