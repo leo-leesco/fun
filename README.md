@@ -284,20 +284,20 @@ available with solutions:
 ## <a name="project">Programming Project</a>
 
 Programming is an important part of the course. We give a mandatory
-programming project (**expected mid-December**) which must be completed
-roughly by mid-February. The programming project counts for about a
+programming project, which counts for about a
 third of the final grade.
 
-<!--
-The [programming project](project/2022-2023/) is now available.
-Read the [assignment](project/2022-2023/sujet.pdf).
+**The project is now available!**
+It inhabits a [separate repository](https://github.com/fpottier/mpri-2.4-projet-2022-2023).
+This may be helpful in case we need to make changes (clarifications or additions) to it.
+We suggest that you fork this repository
+and work on your fork.
 
-The deadline for submitting your project is **XXX**.
+The deadline for submitting your project is **February 13, 2023**.
 
 Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
 to [François Pottier](francois.pottier@inria.fr).
--->
 
 ## Recommended software
 
