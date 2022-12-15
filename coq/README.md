@@ -6,3 +6,6 @@ You can then check the proofs as follows:
   make _CoqProject
   make -j4
 ```
+
+The author of these proofs is [François Pottier](francois.pottier@inria.fr).
+The files in this directory are covered by the [MIT License](LICENSE).
