@@ -259,6 +259,8 @@ exams.  Electronic devices are **not allowed.**
 Although the course has changed, you may still have a look at previous exams
 available with solutions:
 
+* mid-term exam 2022-2023:
+  [Extensible records](exams/partiel-2022-2023.pdf).
 * final exam 2021-2022:
   [type class elaboration](exams/final-2021-2022.pdf).
 * mid-term exam 2021-2022:
