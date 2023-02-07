@@ -225,9 +225,11 @@ version 4.11.1).
 Lectures:
 * (25/01/2023) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
 * (01/02/2023) Rust: When the Aliasing Discipline Is Too Strong ([slides](slides/jhjourdan-02.pdf)).
+* (08/02/2023) Rust and Multithreading ([slides](slides/jhjourdan-03.pdf)).
 
 Hands-on:
 * (01/02/2023) Introduction to Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
+* (15/02/2023) Interior Mutability and Concurrency ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
 
 In order to participate to the hands-on exercises of these lectures, the students should install on their computer the following tools:
 * The Rust compiler, version at least 1.41
