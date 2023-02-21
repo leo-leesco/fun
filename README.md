@@ -227,11 +227,12 @@ Lectures:
 * (01/02/2023) Rust: When the Aliasing Discipline Is Too Strong ([slides](slides/jhjourdan-02.pdf)).
 * (08/02/2023) Rust and Multithreading ([slides](slides/jhjourdan-03.pdf)).
 * (15/02/2023) Formalizing Rust's Type System ([slides](slides/jhjourdan-04.pdf)).
-* (21/02/2023) Formalizing Rust's Type System (part 2) ([slides](slides/jhjourdan-04.pdf)).
+* (22/02/2023) Formalizing Rust's Type System (part 2) ([slides](slides/jhjourdan-04.pdf)).
 
 Hands-on:
 * (01/02/2023) Introduction to Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
 * (15/02/2023) Interior Mutability and Concurrency ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
+* (22/02/2023) Logical Relations for Type Systems Safety ([exercises](tdtp/jhjourdan3.pdf)).
 
 In order to participate to the hands-on exercises of these lectures, the students should install on their computer the following tools:
 * The Rust compiler, version at least 1.41
