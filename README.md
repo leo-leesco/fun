@@ -73,7 +73,7 @@ students.
 <!-- TODO
 The mid-term and final exams will take place on
 **30/11/2022** and **08/03/2023**. -->
-Only **course notes** and **hand-written notes** are **allowed**
+Only **printed course notes** and **hand-written notes** are **allowed**
 during the mid-term and final exams.
 Electronic devices are **not allowed.**
 
@@ -209,7 +209,7 @@ should produce an executable.
 
 ## Recommended Reading
 
-[Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
+[Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/),
 Benjamin C. Pierce, MIT Press, 2002.
 
 [Advanced Topics in Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/attapl/),
