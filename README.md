@@ -1,267 +1,88 @@
-# Functional programming and type systems (2022-2023)
+# Functional programming and type systems (2023-2024)
 
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
 
 This course presents the principles, formalisms, and mathematical techniques
-that underlie many of today's typed programming languages. Here are some
-[introductory slides](slides/fpottier-00.pdf).
+that underlie many of today's typed programming languages, including OCaml,
+Haskell, and Rust.
+Here are some [introductory slides](slides/fpottier-00.pdf).
 
-## Location and schedule
+The course is taught by
+[Pierre-Evariste Dagand](https://www.irif.fr/~dagand/) (PED),
+[Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/) (JHJ),
+[François Pottier](http://cambium.inria.fr/~fpottier/) (FP)
+(*head*),
+and
+[Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/) (GS).
+
+The content of the course is partly renewed in 2023-2024. In particular, we
+will teach both **syntactic and semantic proofs of type soundness**, place
+more emphasis on **logical relations**, including **logical relations in
+Iris**, and present **two distinct algorithmic approaches to type inference**.
+
+## Location and Schedule
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain, in room **1002**.
+Bâtiment Sophie Germain.
+<!-- in room **1002**. TODO -->
 
-They are scheduled on **Wednesdays** from **9:00 to 11:45**.
+<!-- They are scheduled on **Wednesdays** from **9:00 to 11:45**. TODO -->
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
-## Content and teachers
+## Syllabus and Time Table
 
-* [Metatheory of typed programming languages](overview/remy.md)
-  ([Didier Rémy](http://cambium.inria.fr/~remy/), *head*)
-* [Interpretation, compilation, and program transformations](overview/pottier.md)
-  ([François Pottier](http://cambium.inria.fr/~fpottier/))
-* [Type-directed programming](overview/dagand.md)
-  ([Pierre-Evariste Dagand](https://www.irif.fr/~dagand/))
-* [Rust: programming safely with resources in a modern low-level programming
-  language](overview/jourdan.md)
-  ([Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/))
-<!--
-* [Effects](overview/scherer.md)
-  ([Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/))
-  -->
+### Operational Semantics, Type Systems, and Program Transformations
 
-## Research Internship Proposals
+* (13/09/2023?) Syntax, semantics, and interpreters (FP).
+* System F (FP).
+* Algebraic data types, existential types, and GADTs (FP).
+* Closure conversion and defunctionalization (FP).
+* The CPS transformation (FP).
 
-We have posted the following internship proposals (possibly more to come):
+### Semantic Proofs of Type Soundness and Logical Relations
 
-* [Interopérabilité vérifiée entre OCaml et C](http://gallium.inria.fr/~agueneau/stages/camlffi.pdf)
-  (Armaël Guéneau);
-* [Type invariants and ghost code for deductive verification of Rust code](https://jhjourdan.mketjh.fr/pdf/StageGhostInvCreusot2023.pdf)
-  (Jacques-Henri Jourdan);
-* [Developing an Iris-Based Program Verification Framework for OCaml](http://cambium.inria.fr/~fpottier/stages/sujet2023-m2.pdf)
-  (Armaël Guéneau and François Pottier).
-* [Towards a formalization of Modular Implicits](http://cambium.inria.fr/~remy/mpri/modular-implicits.pdf)
-  (Didier Rémy and Gabriel Scherer).
+* Semantic interpretation of types: unary logical relations (GS).
+* Mutable state and the value restriction (GS).
+* Binary logical relations and parametricity (GS).
+* Syntactic type soundness for System F in Coq (GS).
+* Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
 
-The internship offers posted by [the Prosecco team](https://team.inria.fr/prosecco/job-offers/) at Inria Paris are also relevant.
+### Typed Programming
 
-Please do not hesitate to talk to us (during the break or at the end of each lecture), to contact us by email, or to visit us at our offices.
+* Ad-hoc polymorphism and overloading (PED).
+* Applicative functors and monads (PED).
+* Hindley-Milner type inference and elaboration (GS).
+* Bidirectional type inference and elaboration (PED).
+* System Fω and modules (PED).
 
-See also [the official list of internship offers](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=internships) at MPRI.
+### Programming with Resources in Rust
 
-
-## Time table
-
-### <a name="interpretation">Interpretation, Compilation, and Program Transformations (introduction)
-
-* (14/09/2022) Syntax, semantics, and interpreters.
-  * Introduction to this course
-      ([slides 00](slides/fpottier-00.pdf)).
-  * Operational semantics and reduction strategies
-      ([slides 01a](slides/fpottier-01a.pdf)).
-  * Towards machine-checked definitions and proofs
-      ([slides 01b](slides/fpottier-01b.pdf))
-      ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
-      ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
-  * From a small-step semantics
-    down to an efficient verified interpreter,
-    in several stages
-      ([slides 02](slides/fpottier-02.pdf))
-      ([Coq repo](coq/)).
-
-### <a name="metatheory">Metatheory of Typed Programming Languages
-
-* (21/09/2022)
-  [Metatheory of System F](http://cambium.inria.fr/~remy/mpri/slides-metasf.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-metasf.pdf);
-  see chap [1,2,3](http://cambium.inria.fr/~remy/mpri/stlc.pdf)
-  and [4](http://cambium.inria.fr/~remy/mpri/sf.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf)).
-* (28/09/2022)
-  [ADTs, existential types, GADTs](http://cambium.inria.fr/~remy/mpri/slides-exgadtA.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout-exgadt.pdf)
-   [without](http://cambium.inria.fr/~remy/mpri/handout-exgadtA.pdf) or
-   [only](http://cambium.inria.fr/~remy/mpri/handout-exgadtB.pdf)
-   the extra material);
-  see also [chap 5](http://cambium.inria.fr/~remy/mpri/cours-exists.pdf)
-   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-* (05/10/22)
-  [Higher-Order Types: F-omega](http://cambium.inria.fr/~remy/mpri/slides-fomega.pdf)
-  ([handout](http://cambium.inria.fr/~remy/mpri/handout-fomega.pdf));
-  see also [chap 6](http://cambium.inria.fr/~remy/mpri/cours-fomega.pdf)
-   of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-* (12/10/2022)
-  [Logical relations](http://cambium.inria.fr/~remy/mpri/slides-logrel.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-logrel.pdf);
-  see also [chap 7](http://cambium.inria.fr/~remy/mpri/cours-logical.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-* (19/10/2022)
-  [Side Effects, References, Value restriction](http://cambium.inria.fr/~remy/mpri/slides-refval.pdf)
-  [(handout)](http://cambium.inria.fr/~remy/mpri/handout-refval.pdf);
-  see also [chap 3](http://cambium.inria.fr/~remy/mpri/cours-stlc)
-  and [chap 4](http://cambium.inria.fr/~remy/mpri/cours-sf.pdf)
-  of [course notes](http://cambium.inria.fr/~remy/mpri/cours-mpri.pdf).
-
-You may also see [last year's
-schedule](http://cristal.inria.fr/~remy/mpri/2021/) and lessons on
-[type reconstruction](http://cambium.inria.fr/~remy/mpri/cours-inference.pdf)
-[overloading](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf).
-
-
-
-### <a name="transformation">Interpretation, Compilation, and Program Transformations (continuation)
-
-* (26/10/2022) Compiling away first-class functions:
-  closure conversion, defunctionalization
-  ([slides 03](slides/fpottier-03.pdf))
-  ([Coq repo](coq/))
-  (typed defunctionalization: [exercise](ocaml/pottier/foo.ml), [solution](ocaml/pottier/foo_defunctionalized.ml)).
-
-* (02/11/2022) Making the stack explicit: the CPS transformation
-  ([slides 04](slides/fpottier-04.pdf))
-  ([Coq repo](coq/)).
-  * Transforming a call-by-value interpreter
-    ([exercise](ocaml/pottier/EvalCBVExercise.ml), [solution](ocaml/pottier/EvalCBVCPS.ml)).
-  * Transforming a call-by-name interpreter
-    ([solution](ocaml/pottier/EvalCBNCPS.ml)).
-  * Transforming a graph traversal
-    ([solution](ocaml/pottier/Graph.ml)).
-
-* (09/11/2022) Some optimisations: constructor specialisation; stream fusion; staging
-  ([slides 05](slides/fpottier-05.pdf)).
-  * [Staging the power function](metaocaml/pottier/Power.ml).
-  * [Staging stream fusion](metaocaml/pottier/StreamFusion.ml).
-  * Running these examples requires MetaOCaml. Type `opam switch create 4.11.1+BER --no-switch`.
-    Then go down into `metaocaml/pottier` and type `make` and `make test`.
-
-* (16/11/2022) A (slow) walk through the garden of type soundness proofs,
-  in Coq ([Coq repo](coq/), [html](coq/html/)).
-
-  We will work first on simply-typed lambda-calculus ([blank file](coq/STLCTypeSoundnessBlank.v)),
-  then on System F in Curry style ([blank file](coq/SystemFTypeSoundnessBlank.v)).
-  Curry style means that type abstractions and type applications are implicit;
-  this is in contrast with Church style, where they are explicit in the syntax of terms.
-
-  To view the definitions, lemmas, and solutions online, please use the following links:
-  - Lambda-calculus:
-    [syntax](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusSyntax.html),
-    [values](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusValues.html),
-    [reduction](http://cambium.inria.fr/~fpottier/mpri/html/LambdaCalculusReduction.html).
-  - Simply-typed lambda-calculus:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/STLCDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/STLCLemmas.html),
-    [type
-    soundness](http://cambium.inria.fr/~fpottier/mpri/html/STLCTypeSoundnessComplete.html).
-  - The polymorphic lambda-calculus, also known as System F:
-    [definitions](http://cambium.inria.fr/~fpottier/mpri/html/SystemFDefinition.html),
-    [lemmas](http://cambium.inria.fr/~fpottier/mpri/html/SystemFLemmas.html),
-    [type soundness
-    ](http://cambium.inria.fr/~fpottier/mpri/html/SystemFTypeSoundnessComplete.html).
-
-
-<!--
-### <a name="effects">Effects
-
-Slides for the course: [slides.pdf](slides/scherer-2021.pdf).
-
-* (09/11/2022).
-  Primitive effects vs. user-defined effects.
-  Direct-style vs. indirect style.
-  Monads in theory and practice.
-  [live code](ocaml/scherer/cours-2021-00.ml), [exercises](ocaml/scherer/exercises-2021-00.ml)
-* (16/11/2022)
-  Paper discussion (1/3): “Coordinated Concurrent Programming in Syndicate”, Tony Garnock-Jones and Matthias Felleisen, 2016
-  A continuum of algebraic structures: functors, monads, applicative functors.
-  [applicative-functors.md(slides/scherer-2021-applicative-functors.md)
-* (7/12/2022)
-  Effect handlers.
-  Effects in proofs and logic.
-
-  *Note*: due to the COVID situation, the December 8th lecture will be
-  in *hybrid* format, available both on-premises and online (live) at
-  the following URL:
-  <https://greenlight.virtualdata.cloud.math.cnrs.fr/b/gab-2qz-ph2>
-
-  You are completely free to choose either attendance format; in particular,
-  please feel free to stay at home if you are at risk of COVID, or if
-  you are in any way stressed by the idea of attending the lecture in
-  person.
-
-* (14/12/2022)
-  Paper discussion (2/3).
-  Type systems for effects.
-
--->
-
-### <a name="type">Type-Directed Programming
-
-These lectures will involve some hands-on experience and a fair bit of
-improvisation. Perhaps not even in that order. To this end, it is
-necessary to join the lecture with OCaml installed (say, at least
-version 4.11.1).
-
-
-* (07/12/2023)
-  Overloading ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
-* **[{ Bring Your Own Laptop }]** (14/12/2022)
-  Monads ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-monads-2023),
-          [Agda source](agda/01-effectful/Monad.lagda.rst))
-* (04/01/2023)
-  Bidirectional type-checking
-*  **[{ Bring Your Own Laptop }]** (11/01/2023)
-  Dependent functional programming
-  ([OCaml warm-up](https://gitlab.com/pedagand/mpri-2.4-nbe-2023),
-   [Agda source](agda/02-dependent/Indexed.lagda.rst)).
-* (18/01/2023)
-  Generic programming
-  ([Reading material](https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/aplicative.pdf),
-   [Source](agda/04-generic/Desc.lagda.rst)).
-
-
-### <a name="rust">Rust: programming with resources
-
-Lectures:
-* (25/01/2023) Introduction to Rust programming ([slides](slides/jhjourdan-01.pdf)).
-* (01/02/2023) Rust: When the Aliasing Discipline Is Too Strong ([slides](slides/jhjourdan-02.pdf)).
-* (08/02/2023) Rust and Multithreading ([slides](slides/jhjourdan-03.pdf)).
-* (15/02/2023) Formalizing Rust's Type System ([slides](slides/jhjourdan-04.pdf)).
-* (22/02/2023) Formalizing Rust's Type System (part 2) ([slides](slides/jhjourdan-04.pdf)).
-
-Hands-on:
-* (01/02/2023) Introduction to Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (15/02/2023) Interior Mutability and Concurrency ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
-* (22/02/2023) Logical Relations for Type Systems Safety ([exercises](tdtp/jhjourdan3.pdf)).
-
-In order to participate to the hands-on exercises of these lectures, the students should install on their computer the following tools:
-* The Rust compiler, version at least 1.41
-* The Cargo package manager, any compatible version
-Installing these tools should be easy on any recent Linux distribution using the system's package manager. Alternatively, students can follow the instructions at the following URL: https://rustup.rs/
-
-In order to test the installation, the students are asked to use the Rust compiler on the following program:
-```
-fn main() {
-  let mut f = |x : i32| x;
-  let _r : &mut dyn Fn(i32) -> i32 = &mut f;
-  println!("{}", f(42))
-}
-```
-If the compiler is correctly installed, then the command `rustc test.rs` should produce an executable.
+* Introduction to Rust programming (JHJ).
+* When the aliasing discipline is too strong (JHJ).
+* Multi-threading (JHJ).
+* Metatheory of Rust's type system (JHJ).
+* Exercise session (PED).
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
 students.
 
+<!-- TODO
 The mid-term and final exams will take place on
-**30/11/2022** and **08/03/2023**.
-Only **course notes** and **hand-written notes** are **allowed** for the
-exams.  Electronic devices are **not allowed.**
+**30/11/2022** and **08/03/2023**. -->
+Only **course notes** and **hand-written notes** are **allowed**
+during the mid-term and final exams.
+Electronic devices are **not allowed.**
 
-Although the course has changed, you may still have a look at previous exams
-available with solutions:
+Although the course evolves over time,
+you are encouraged to have a look at the previous exams
+and their solutions:
 
+* final exam 2022-2023:
+  [Safe unchecked arrays; branded types in Rust](exams/final-2022-2023.pdf).
 * mid-term exam 2022-2023:
   [Extensible records](exams/partiel-2022-2023.pdf).
 * final exam 2021-2022:
@@ -286,12 +107,13 @@ available with solutions:
   [encoding call-by-name into call-by-value; extensible records](http://gallium.inria.fr/~remy/mpri/exams/partiel-2017-2018.pdf)
   ([Coq solution of part 1](coq/LambdaCalculusEncodingCBNIntoCBV.v)).
 
-## <a name="project">Programming Project</a>
+## Programming Project
 
 Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
+<!-- TODO
 **The project is now available!**
 It inhabits a [separate repository](https://github.com/fpottier/mpri-2.4-projet-2022-2023).
 This may be helpful in case we need to make changes (clarifications or additions) to it.
@@ -299,15 +121,34 @@ We suggest that you fork this repository
 and work on your fork.
 
 The deadline for submitting your project is **February 13, 2023**.
+-->
 
 Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
 to [François Pottier](francois.pottier@inria.fr).
 
+## Research Internship Proposals
+
+We are planning to post a few internship proposals
+at some point during the fall or winter.
+
+The internship offers posted by
+[the Prosecco team](https://team.inria.fr/prosecco/job-offers/)
+at Inria Paris are also relevant.
+
+Please do not hesitate to talk to us (during the break or at the end of each
+lecture), to contact us by email, or to visit us at our offices.
+
+See also
+[the official list of internship offers](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=internships)
+at MPRI.
+
 ## Recommended software
 
+### Coq
+
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
-A recent version is recommended (at the time of writing, 2.0.8).
+A recent version is recommended (at the time of writing, 2.1.5).
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.12.0,
@@ -343,7 +184,30 @@ Here is a suggested
 If desired, ProofGeneral can be further
 [customized](https://proofgeneral.github.io/doc/userman/ProofGeneral_9/).
 
-## Bibliography
+### Rust
+
+In order to participate to the hands-on exercises on Rust,
+please install the following tools:
+* The Rust compiler (version 1.41 or newer)
+* The Cargo package manager (any compatible version)
+
+Installation should be easy on any recent Linux distribution using
+the system's package manager. An alternative is to follow
+[these instructions](https://rustup.rs/).
+
+In order to test the installation, the students are asked to use the Rust
+compiler on the following program:
+```rust
+fn main() {
+  let mut f = |x : i32| x;
+  let _r : &mut dyn Fn(i32) -> i32 = &mut f;
+  println!("{}", f(42))
+}
+```
+If the compiler is correctly installed, then the command `rustc test.rs`
+should produce an executable.
+
+## Recommended Reading
 
 [Types and Programming Languages](https://mitpress.mit.edu/books/types-and-programming-languages),
 Benjamin C. Pierce, MIT Press, 2002.
