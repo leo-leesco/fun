@@ -24,7 +24,8 @@ Iris**, and present **two distinct algorithmic approaches to type inference**.
 ## Location and Schedule
 
 The lectures take place at University of Paris,
-Bâtiment Sophie Germain in room **1002**.
+Bâtiment Sophie Germain,
+in room **1002**.
 
 They are scheduled on **Wednesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
