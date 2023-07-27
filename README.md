@@ -35,44 +35,47 @@ so each lecture lasts 2h30.
 
 ### Operational Semantics, Type Systems, and Program Transformations
 
-* (13/09/2023?) Syntax, semantics, and interpreters (FP).
-* System F (FP).
-* Algebraic data types, existential types, and GADTs (FP).
-* Closure conversion and defunctionalization (FP).
-* The CPS transformation (FP).
+* (13/09/2023) Syntax, semantics, and interpreters (FP).
+* (20/09/2023) System F (FP).
+* (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
+* (04/10/2023) Closure conversion and defunctionalization (FP).
+* (11/10/2023) The CPS transformation (FP).
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* Semantic interpretation of types: unary logical relations (GS).
-* Mutable state and the value restriction (GS).
-* Binary logical relations and parametricity (GS).
-* Syntactic type soundness for System F in Coq (GS).
-* Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
+* (18/10/2023) Semantic interpretation of types: unary logical relations (GS).
+* (25/10/2023) Mutable state and the value restriction (GS).
+* (01/11/2023) *holiday*
+* (08/11/2023) Binary logical relations and parametricity (GS).
+* (15/11/2023) Syntactic type soundness for System F in Coq (GS).
+* (22/11/2023) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
+* (29/11/2023) **mid-term exam**
 
 ### Typed Programming
 
-* Ad-hoc polymorphism and overloading (PED).
-* Applicative functors and monads (PED).
-* Hindley-Milner type inference and elaboration (GS).
-* Bidirectional type inference and elaboration (PED).
-* System Fω and modules (PED).
+* (06/12/2023) Ad-hoc polymorphism and overloading (PED).
+* (13/12/2023) Applicative functors and monads (PED).
+* (03/01/2024) Hindley-Milner type inference and elaboration (GS).
+* (10/01/2024) Bidirectional type inference and elaboration (PED).
+* (17/01/2024) System Fω and modules (PED).
 
 ### Programming with Resources in Rust
 
-* Introduction to Rust programming (JHJ).
-* When the aliasing discipline is too strong (JHJ).
-* Multi-threading (JHJ).
-* Metatheory of Rust's type system (JHJ).
-* Exercise session (PED).
+* (24/01/2024) Introduction to Rust programming (JHJ).
+* (31/01/2024) When the aliasing discipline is too strong (JHJ).
+* (07/02/2024) Multi-threading (JHJ).
+* (14/02/2024) Metatheory of Rust's type system (JHJ).
+* (21/02/2024) Exercise session (PED).
+* (28/02/2024) *break*
+* (06/03/2024) **final exam**
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
 students.
 
-<!-- TODO
 The mid-term and final exams will take place on
-**30/11/2022** and **08/03/2023**. -->
+**29/11/2023** and **06/03/2024**.
 Only **printed course notes** and **hand-written notes** are **allowed**
 during the mid-term and final exams.
 Electronic devices are **not allowed.**
@@ -120,7 +123,7 @@ This may be helpful in case we need to make changes (clarifications or additions
 We suggest that you fork this repository
 and work on your fork.
 
-The deadline for submitting your project is **February 13, 2023**.
+The deadline for submitting your project is **February 14, 2024**.
 -->
 
 Please do not hesitate to ask questions about the project,
