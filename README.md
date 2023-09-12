@@ -35,10 +35,12 @@ so each lecture lasts 2h30.
 
 ## Syllabus and Time Table
 
-### Operational Semantics, Type Systems, and Program Transformations
+The syllabus is organized in four main segments of five lectures each.
+
+### [Operational Semantics, Type Systems, and Program Transformations](overview/pottier.md)
 
 * (13/09/2023) Syntax, semantics, and interpreters (FP).
-* (20/09/2023) System F (FP).
+* (20/09/2023) System F and a syntactic proof of its type soundness (FP).
 * (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
 * (04/10/2023) Closure conversion and defunctionalization (FP).
 * (11/10/2023) The CPS transformation (FP).
