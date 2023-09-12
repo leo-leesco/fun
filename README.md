@@ -43,6 +43,14 @@ The syllabus is organized in four main segments of five lectures each.
 ### [Operational Semantics, Type Systems, and Program Transformations](overview/pottier.md)
 
 * (13/09/2023) Syntax, semantics, and interpreters (FP).
+  * Introduction to this course
+      ([slides 00](slides/fpottier-00.pdf)).
+  * From operational semantics to interpreters
+      ([slides 01](slides/fpottier-01.pdf)).
+  * *Optional additional material*: towards machine-checked proofs
+      ([slides 01b](slides/fpottier-01b.pdf))
+      ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
+      ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
 * (20/09/2023) System F and a syntactic proof of its type soundness (FP).
 * (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
 * (04/10/2023) Closure conversion and defunctionalization (FP).
