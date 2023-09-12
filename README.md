@@ -26,8 +26,11 @@ Iris**, and present **two distinct algorithmic approaches to type inference**.
 The lectures take place at University of Paris,
 Bâtiment Sophie Germain,
 in room **1002**.
+<!-- TODO -->
 However **on September 13 the course takes place in
-[Halle aux Farines, third floor, room 381F](https://www.google.com/maps/d/viewer?msa=0&ll=48.82752059170539%2C2.3814316357122634&spn=0.008334%2C0.014312&mid=1nL6yvbpyq4nTdy2JkHcnbG2rZYI&z=17).**
+Halle aux Farines, third floor, room 381F.**
+Here is a [map of the neighborhood](https://www.google.com/maps/d/viewer?msa=0&ll=48.82752059170539%2C2.3814316357122634&spn=0.008334%2C0.014312&mid=1nL6yvbpyq4nTdy2JkHcnbG2rZYI&z=17),
+and here is a [map of the building](https://www.epog.eu/wp-content/uploads/sites/33/2021/09/plan_halle_aux_farines_scan.jpg).
 
 They are scheduled on **Wednesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
