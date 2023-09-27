@@ -51,6 +51,8 @@ The syllabus is organized in four main segments of five lectures each.
   *   ([slides 02](slides/fpottier-02.pdf),
        [slides without animations 02](slides/fpottier-printing-02.pdf)).
 * (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
+  *   ([slides 03](slides/fpottier-03.pdf),
+       [slides without animations 03](slides/fpottier-printing-03.pdf)).
 * (04/10/2023) Closure conversion and defunctionalization (FP).
 * (11/10/2023) The CPS transformation (FP).
 
