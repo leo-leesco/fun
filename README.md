@@ -54,6 +54,8 @@ The syllabus is organized in four main segments of five lectures each.
   *   ([slides 03](slides/fpottier-03.pdf),
        [slides without animations 03](slides/fpottier-printing-03.pdf)).
 * (04/10/2023) Closure conversion and defunctionalization (FP).
+  *   ([slides 04](slides/fpottier-04.pdf),
+       [slides without animations 04](slides/fpottier-printing-04.pdf)).
 * (11/10/2023) The CPS transformation (FP).
 
 ### Semantic Proofs of Type Soundness and Logical Relations
