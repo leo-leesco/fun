@@ -53,10 +53,16 @@ The syllabus is organized in four main segments of five lectures each.
 * (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
   *   ([slides 03](slides/fpottier-03.pdf),
        [slides without animations 03](slides/fpottier-printing-03.pdf)).
-* (04/10/2023) Closure conversion and defunctionalization (FP).
+* (04/10/2023) GADTs, continued (FP).
+  *   (see slides of previous week).
+* (11/10/2023) Closure conversion and defunctionalization (FP).
   *   ([slides 04](slides/fpottier-04.pdf),
        [slides without animations 04](slides/fpottier-printing-04.pdf)).
-* (11/10/2023) The CPS transformation (FP).
+<!--
+* (read at home) The CPS transformation (FP).
+  *   ([slides 05](slides/fpottier-05.pdf),
+       [slides without animations 05](slides/fpottier-printing-05.pdf)).
+-->
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
