@@ -44,7 +44,8 @@ The syllabus is organized in four main segments of five lectures each.
       ([slides 01](slides/fpottier-01.pdf),
        [slides without animations 01](slides/fpottier-printing-01.pdf)).
   * *Optional additional material*: towards machine-checked proofs
-      ([slides 01b](slides/fpottier-01b.pdf))
+      ([slides 01b](slides/fpottier-01b.pdf),
+       [slides without animations 01b](slides/fpottier-printing-01b.pdf))
       ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
       ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
 * (20/09/2023) System F and a syntactic proof of its type soundness (FP).
@@ -58,11 +59,9 @@ The syllabus is organized in four main segments of five lectures each.
 * (11/10/2023) Closure conversion and defunctionalization (FP).
   *   ([slides 04](slides/fpottier-04.pdf),
        [slides without animations 04](slides/fpottier-printing-04.pdf)).
-<!--
-* (read at home) The CPS transformation (FP).
+* (read at home) (optional) The CPS transformation (FP).
   *   ([slides 05](slides/fpottier-05.pdf),
        [slides without animations 05](slides/fpottier-printing-05.pdf)).
--->
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
