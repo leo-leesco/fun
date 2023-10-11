@@ -1,4 +1,7 @@
-.PHONY: html clean
+.PHONY: check html clean
+
+check:
+	pymarkdown scan README.md
 
 html: README.html
 
