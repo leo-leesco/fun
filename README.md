@@ -49,19 +49,19 @@ The syllabus is organized in four main segments of five lectures each.
       ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
       ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
 * (20/09/2023) System F and a syntactic proof of its type soundness (FP).
-  *   ([slides 02](slides/fpottier-02.pdf),
-       [slides without animations 02](slides/fpottier-printing-02.pdf)).
+  * ([slides 02](slides/fpottier-02.pdf),
+     [slides without animations 02](slides/fpottier-printing-02.pdf)).
 * (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
-  *   ([slides 03](slides/fpottier-03.pdf),
-       [slides without animations 03](slides/fpottier-printing-03.pdf)).
+  * ([slides 03](slides/fpottier-03.pdf),
+     [slides without animations 03](slides/fpottier-printing-03.pdf)).
 * (04/10/2023) GADTs, continued (FP).
-  *   (see slides of previous week).
+  * (see slides of previous week).
 * (11/10/2023) Closure conversion and defunctionalization (FP).
-  *   ([slides 04](slides/fpottier-04.pdf),
-       [slides without animations 04](slides/fpottier-printing-04.pdf)).
+  * ([slides 04](slides/fpottier-04.pdf),
+     [slides without animations 04](slides/fpottier-printing-04.pdf)).
 * (read at home) (optional) The CPS transformation (FP).
-  *   ([slides 05](slides/fpottier-05.pdf),
-       [slides without animations 05](slides/fpottier-printing-05.pdf)).
+  * ([slides 05](slides/fpottier-05.pdf),
+     [slides without animations 05](slides/fpottier-printing-05.pdf)).
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
@@ -70,7 +70,8 @@ The syllabus is organized in four main segments of five lectures each.
 * (01/11/2023) *holiday*
 * (08/11/2023) Binary logical relations and parametricity (GS).
 * (15/11/2023) Syntactic type soundness for System F in Coq (GS).
-* (22/11/2023) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
+* (22/11/2023) Semantic type soundness for System F
+               with mutable state in Coq/Iris (JHJ).
 * (29/11/2023) **mid-term exam**
 
 ### Typed Programming
@@ -141,7 +142,8 @@ third of the final grade.
 <!-- TODO
 **The project is now available!**
 It inhabits a [separate repository](https://github.com/fpottier/mpri-2.4-projet-2022-2023).
-This may be helpful in case we need to make changes (clarifications or additions) to it.
+This may be helpful in case we need to make changes
+(clarifications or additions) to it.
 We suggest that you fork this repository
 and work on your fork.
 
@@ -222,6 +224,7 @@ the system's package manager. An alternative is to follow
 
 In order to test the installation, the students are asked to use the Rust
 compiler on the following program:
+
 ```rust
 fn main() {
   let mut f = |x : i32| x;
@@ -229,6 +232,7 @@ fn main() {
   println!("{}", f(42))
 }
 ```
+
 If the compiler is correctly installed, then the command `rustc test.rs`
 should produce an executable.
 
