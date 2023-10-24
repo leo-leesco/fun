@@ -66,9 +66,11 @@ The syllabus is organized in four main segments of five lectures each.
 ### Semantic Proofs of Type Soundness and Logical Relations
 
 * (18/10/2023) Semantic interpretation of types: unary logical relations (GS).
-* (25/10/2023) Mutable state and the value restriction (GS).
+  + ([slides](slides/scherer-01.pdf))
+* (25/10/2023) Binary logical relations and parametricity (GS).
+  + (same slides)
 * (01/11/2023) *holiday*
-* (08/11/2023) Binary logical relations and parametricity (GS).
+* (08/11/2023) Mutable state and the value restriction (GS).
 * (15/11/2023) Syntactic type soundness for System F in Coq (GS).
 * (22/11/2023) Semantic type soundness for System F
                with mutable state in Coq/Iris (JHJ).
