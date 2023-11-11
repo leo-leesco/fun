@@ -81,7 +81,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 * (06/12/2023) Ad-hoc polymorphism and overloading (PED).
 * (13/12/2023) Applicative functors and monads (PED).
-* (03/01/2024) Hindley-Milner type inference and elaboration (GS).
+* (20/12/2023) Hindley-Milner type inference and elaboration (GS).
 * (10/01/2024) Bidirectional type inference and elaboration (PED).
 * (17/01/2024) System Fω and modules (PED).
 
