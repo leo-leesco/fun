@@ -66,7 +66,8 @@ The syllabus is organized in four main segments of five lectures each.
 ### Semantic Proofs of Type Soundness and Logical Relations
 
 * (18/10/2023) Semantic interpretation of types: unary logical relations (GS).
-  + ([slides](slides/scherer-01.pdf))
+  + ([slides](slides/scherer-01.pdf),
+     [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf))
 * (25/10/2023) Binary logical relations and parametricity (GS).
   + (same slides)
 * (01/11/2023) *holiday*
