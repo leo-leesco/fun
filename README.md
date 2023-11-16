@@ -73,7 +73,9 @@ The syllabus is organized in four main segments of five lectures each.
 * (01/11/2023) *holiday*
 * (08/11/2023) Mutable state and the value restriction (GS).
   + ([slides](slides/scherer-02.pdf))
-* (15/11/2023) Syntactic type soundness for System F in Coq (GS).
+* (15/11/2023) Strong normalization for System F in Coq (GS).
+  + ([in CBV](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_CBV.v),
+     [full reduction](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_SN.v))
 * (22/11/2023) Semantic type soundness for System F
                with mutable state in Coq/Iris (JHJ).
 * (29/11/2023) **mid-term exam**
