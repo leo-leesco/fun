@@ -114,9 +114,9 @@ you are encouraged to have a look at the previous exams
 and their solutions:
 
 * final exam 2022-2023:
-  [Safe unchecked arrays; branded types in Rust](exams/final-2022-2023.pdf).
+  [safe unchecked arrays; branded types in Rust](exams/final-2022-2023.pdf).
 * mid-term exam 2022-2023:
-  [Extensible records](exams/partiel-2022-2023.pdf).
+  [extensible records](exams/partiel-2022-2023.pdf).
 * final exam 2021-2022:
   [type class elaboration](exams/final-2021-2022.pdf).
 * mid-term exam 2021-2022:
