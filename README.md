@@ -78,7 +78,9 @@ The syllabus is organized in four main segments of five lectures each.
      [full reduction](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_SN.v))
 * (22/11/2023) Semantic type soundness for System F
                with mutable state in Coq/Iris (JHJ).
-* (29/11/2023) **mid-term exam**
+* **(29/11/2023) mid-term exam**, in the usual room and at the usual time,
+  **from 12:45 to 15:30**, without a break.
+  The duration of the exam is 2h45.
 
 ### Typed Programming
 
@@ -105,6 +107,12 @@ students.
 
 The mid-term and final exams will take place on
 **29/11/2023** and **06/03/2024**.
+
+The exam takes place
+in the usual room and at the usual time,
+**from 12:45 to 15:30**, without a break.
+The duration of the exam is 2h45.
+
 Only **printed course notes** and **hand-written notes** are **allowed**
 during the mid-term and final exams.
 Electronic devices are **not allowed.**
