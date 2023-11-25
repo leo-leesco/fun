@@ -21,6 +21,10 @@ will teach both **syntactic and semantic proofs of type soundness**, place
 more emphasis on **logical relations**, including **logical relations in
 Iris**, and present **two distinct algorithmic approaches to type inference**.
 
+Didier Rémy's [slides and lecture notes](http://cristal.inria.fr/~remy/mpri/),
+from an earlier version of the course,
+are still available and can serve as a useful reference.
+
 ## Location and Schedule
 
 The lectures take place at University of Paris,
