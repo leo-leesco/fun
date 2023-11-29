@@ -110,8 +110,9 @@ The syllabus is organized in four main segments of five lectures each.
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term and final exams will take place on
-**29/11/2023** and **06/03/2024**.
+The mid-term has taken place on 29/11/2023.
+
+The final exam will take place on **06/03/2024**.
 
 The exam takes place
 in the usual room and at the usual time,
@@ -126,6 +127,8 @@ Although the course evolves over time,
 you are encouraged to have a look at the previous exams
 and their solutions:
 
+* mid-term exam 2023-2024:
+  [fixed point combinators and recursive types](exams/partiel-2023-2024.pdf).
 * final exam 2022-2023:
   [safe unchecked arrays; branded types in Rust](exams/final-2022-2023.pdf).
 * mid-term exam 2022-2023:
