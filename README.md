@@ -87,7 +87,7 @@ The syllabus is organized in four main segments of five lectures each.
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
-### Typed Programming
+### [Typed Programming](overview/dagand.md)
 
 * (06/12/2023) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
 * (13/12/2023) Applicative functors and monads (PED).
