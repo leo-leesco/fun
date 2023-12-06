@@ -89,7 +89,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### Typed Programming
 
-* (06/12/2023) Ad-hoc polymorphism and overloading (PED).
+* (06/12/2023) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
 * (13/12/2023) Applicative functors and monads (PED).
 * (20/12/2023) Hindley-Milner type inference and elaboration (GS).
 * (10/01/2024) Bidirectional type inference and elaboration (PED).
