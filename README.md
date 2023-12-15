@@ -94,6 +94,7 @@ The syllabus is organized in four main segments of five lectures each.
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
 * (20/12/2023) Hindley-Milner type inference and elaboration (GS).
+  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
 * (10/01/2024) Bidirectional type inference and elaboration (PED).
 * (17/01/2024) System Fω and modules (PED).
 
