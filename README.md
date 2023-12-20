@@ -164,20 +164,19 @@ Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
-<!-- TODO
 **The project is now available!**
-It inhabits a [separate repository](https://github.com/fpottier/mpri-2.4-projet-2022-2023).
+It inhabits a [separate repository](https://gitlab.com/gasche/mpri-2.4-project-2023-2024).
 This may be helpful in case we need to make changes
 (clarifications or additions) to it.
 We suggest that you fork this repository
 and work on your fork.
 
 The deadline for submitting your project is **February 14, 2024**.
--->
 
 Please do not hesitate to ask questions about the project,
 of an administrative or technical nature,
-to [François Pottier](francois.pottier@inria.fr).
+or provide feedback to improve the project for your fellow students,
+to [Gabriel Scherer](gabriel.scherer@inria.fr).
 
 ## Research Internship Proposals
 
