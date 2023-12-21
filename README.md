@@ -131,7 +131,8 @@ you are encouraged to have a look at the previous exams
 and their solutions:
 
 * mid-term exam 2023-2024:
-  [fixed point combinators and recursive types](exams/partiel-2023-2024.pdf).
+  [fixed point combinators and recursive types](exams/partiel-2023-2024.pdf)
+  **(the solution to Question 14 was wrong and has been fixed)**.
 * final exam 2022-2023:
   [safe unchecked arrays; branded types in Rust](exams/final-2022-2023.pdf).
 * mid-term exam 2022-2023:
