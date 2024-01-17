@@ -96,7 +96,9 @@ The syllabus is organized in four main segments of five lectures each.
 * (20/12/2023) Hindley-Milner type inference and elaboration (GS).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
 * (10/01/2024) Bidirectional type inference and elaboration (PED).
+  + [Bidirectional typing, Dunfield & Krishnaswamy](https://arxiv.org/abs/1908.05839)
 * (17/01/2024) System Fω and modules (PED).
+  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 ### Programming with Resources in Rust
 
