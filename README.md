@@ -102,7 +102,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### Programming with Resources in Rust
 
-* (24/01/2024) Introduction to Rust programming (JHJ).
+* (24/01/2024) Introduction to Rust programming (JHJ) ([slides](slides/jhjourdan-01.pdf)).
 * (31/01/2024) When the aliasing discipline is too strong (JHJ).
 * (07/02/2024) Multi-threading (JHJ).
 * (14/02/2024) Metatheory of Rust's type system (JHJ).
