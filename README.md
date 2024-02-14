@@ -107,7 +107,7 @@ The syllabus is organized in four main segments of five lectures each.
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
 * (07/02/2024) Multi-threading (JHJ) ([slides](slides/jhjourdan-03.pdf)).
   + Hands-on: persistent arrays ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
-* (14/02/2024) Metatheory of Rust's type system (JHJ).
+* (14/02/2024) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
 * (21/02/2024) Exercise session (PED).
 * (28/02/2024) *break*
 * (06/03/2024) **final exam**
