@@ -134,6 +134,8 @@ Although the course evolves over time,
 you are encouraged to have a look at the previous exams
 and their solutions:
 
+* final exam 2023-2024:
+  [circuits and functors](exams/final-2023-2024.pdf).
 * mid-term exam 2023-2024:
   [fixed point combinators and recursive types](exams/partiel-2023-2024.pdf)
   **(the solution to Question 14 was wrong and has been fixed)**.
