@@ -31,7 +31,7 @@ The lectures take place at University of Paris,
 Bâtiment Sophie Germain,
 in room **1002**.
 
-They are scheduled on **Wednesdays** from **12:45** to **15:30**.
+They are scheduled on **Tuesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
@@ -41,7 +41,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### [Operational Semantics, Type Systems, and Program Transformations](overview/pottier.md)
 
-* (13/09/2023) Syntax, semantics, and interpreters (FP).
+* (17/09/2024) Syntax, semantics, and interpreters (FP).
   * Introduction to this course
       ([slides 00](slides/fpottier-00.pdf)).
   * From operational semantics to interpreters
@@ -52,15 +52,15 @@ The syllabus is organized in four main segments of five lectures each.
        [slides without animations 01b](slides/fpottier-printing-01b.pdf))
       ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
       ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
-* (20/09/2023) System F and a syntactic proof of its type soundness (FP).
+* (24/09/2024) System F and a syntactic proof of its type soundness (FP).
   * ([slides 02](slides/fpottier-02.pdf),
      [slides without animations 02](slides/fpottier-printing-02.pdf)).
-* (27/09/2023) Algebraic data types, existential types, and GADTs (FP).
+* (01/10/2024) Algebraic data types, existential types, and GADTs (FP).
   * ([slides 03](slides/fpottier-03.pdf),
      [slides without animations 03](slides/fpottier-printing-03.pdf)).
-* (04/10/2023) GADTs, continued (FP).
+* (08/10/2024) GADTs, continued (FP).
   * (see slides of previous week).
-* (11/10/2023) Closure conversion and defunctionalization (FP).
+* (15/10/2024) Closure conversion and defunctionalization (FP).
   * ([slides 04](slides/fpottier-04.pdf),
      [slides without animations 04](slides/fpottier-printing-04.pdf)).
 * (read at home) (optional) The CPS transformation (FP).
@@ -69,57 +69,56 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* (18/10/2023) Semantic interpretation of types: unary logical relations (GS).
+* (22/10/2024) Semantic interpretation of types: unary logical relations (GS).
   + ([slides](slides/scherer-01.pdf),
      [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf))
-* (25/10/2023) Binary logical relations and parametricity (GS).
+* (29/10/2024) Binary logical relations and parametricity (GS).
   + (same slides)
-* (01/11/2023) *holiday*
-* (08/11/2023) Mutable state and the value restriction (GS).
+* (05/11/2024) Mutable state and the value restriction (GS).
   + ([slides](slides/scherer-02.pdf))
-* (15/11/2023) Strong normalization for System F in Coq (GS).
+* (12/11/2024) Strong normalization for System F in Coq (GS).
   + ([in CBV](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_CBV.v),
      [full reduction](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_SN.v))
-* (22/11/2023) Semantic type soundness for System F
+* (19/11/2024) Semantic type soundness for System F
                with mutable state in Coq/Iris (JHJ).
   + ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
-* **(29/11/2023) mid-term exam**, in the usual room and at the usual time,
+* **(26/11/2024) mid-term exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
 ### [Typed Programming](overview/dagand.md)
 
-* (06/12/2023) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
-* (13/12/2023) Applicative functors and monads (PED).
+* (10/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
+* (17/12/2024) Applicative functors and monads (PED).
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
-* (20/12/2023) Hindley-Milner type inference and elaboration (GS).
+* (07/01/2025) Hindley-Milner type inference and elaboration (PED).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
-* (10/01/2024) Bidirectional type inference and elaboration (PED).
+* (14/01/2025) Bidirectional type inference and elaboration (PED).
   + [Bidirectional typing, Dunfield & Krishnaswamy](https://arxiv.org/abs/1908.05839)
-* (17/01/2024) System Fω and modules (PED).
+* (21/01/2025) System Fω and modules (PED).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 ### Programming with Resources in Rust
 
-* (24/01/2024) Introduction to Rust programming (JHJ) ([slides](slides/jhjourdan-01.pdf)).
-* (31/01/2024) When the aliasing discipline is too strong (JHJ) ([slides](slides/jhjourdan-02.pdf)).
+* (28/01/2025) Introduction to Rust programming (JHJ) ([slides](slides/jhjourdan-01.pdf)).
+* (04/02/2025) When the aliasing discipline is too strong (JHJ) ([slides](slides/jhjourdan-02.pdf)).
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (07/02/2024) Multi-threading (JHJ) ([slides](slides/jhjourdan-03.pdf)).
+* (11/02/2025) Multi-threading (JHJ) ([slides](slides/jhjourdan-03.pdf)).
   + Hands-on: persistent arrays ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
-* (14/02/2024) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
-* (21/02/2024) Exercise session (PED).
-* (28/02/2024) *break*
-* (06/03/2024) **final exam**
+* (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
+* (25/02/2025) Exercise session (GS).
+* (04/03/2025) *break*
+* (11/03/2025) **final exam**
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term has taken place on 29/11/2023.
+The mid-term has taken place on 26/11/2024.
 
-The final exam will take place on **06/03/2024**.
+The final exam will take place on **11/03/2025**.
 
 The exam takes place
 in the usual room and at the usual time,
