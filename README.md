@@ -116,7 +116,7 @@ The syllabus is organized in four main segments of five lectures each.
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term has taken place on 26/11/2024.
+The mid-term exam will take place on **26/11/2024**.
 
 The final exam will take place on **11/03/2025**.
 
