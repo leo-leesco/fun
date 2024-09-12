@@ -1,4 +1,4 @@
-# Functional programming and type systems (2023-2024)
+# Functional programming and type systems (2024-2025)
 
 This page supplements
 [the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
@@ -16,7 +16,7 @@ The course is taught by
 and
 [Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/) (GS).
 
-The content of the course is partly renewed in 2023-2024. In particular, we
+The content of the course is partly renewed in 2024-2025. In particular, we
 will teach both **syntactic and semantic proofs of type soundness**, place
 more emphasis on **logical relations**, including **logical relations in
 Iris**, and present **two distinct algorithmic approaches to type inference**.
@@ -66,46 +66,46 @@ The syllabus is organized in four main segments of five lectures each.
 * (read at home) (optional) The CPS transformation (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
+* (22/10/2024) System F with mutable state; the value restriction; type soundness (GS)
+  * ([slides](slides/scherer-02.pdf))
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* (22/10/2024) Semantic interpretation of types: unary logical relations (GS).
-  + ([slides](slides/scherer-01.pdf),
-     [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf))
-* (29/10/2024) Binary logical relations and parametricity (GS).
-  + (same slides)
-* (05/11/2024) Mutable state and the value restriction (GS).
-  + ([slides](slides/scherer-02.pdf))
-* (12/11/2024) Strong normalization for System F in Coq (GS).
-  + ([in CBV](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_CBV.v),
-     [full reduction](https://github.com/coq-community/autosubst/blob/master/examples/ssr/SystemF_SN.v))
-* (19/11/2024) Semantic type soundness for System F
-               with mutable state in Coq/Iris (JHJ).
-  + ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
+* (22/10/2024) Unary logical relations for simple types; (weak) normalisation of simply-typed λ-calculus (GS).
+  * ([slides](slides/scherer-01.pdf),
+     [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf).
+* (29/10/2024) Unary logical relations for polymorphic types; (weak) normalisation of System F (GS).
+  * (Same slides).
+* (05/11/2024) Binary logical relations and parametricity (GS).
+  * (Same slides).
+* (12/11/2024) (Interlude.) Introduction to programming in Rust (JHJ)
+  * ([slides](slides/jhjourdan-01.pdf)).
+
 * **(26/11/2024) mid-term exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
+* (10/12/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
+  * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
+
 ### [Typed Programming](overview/dagand.md)
 
-* (10/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
-* (17/12/2024) Applicative functors and monads (PED).
+* (17/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
+* (07/01/2025) Applicative functors and monads (PED).
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
-* (07/01/2025) Hindley-Milner type inference and elaboration (PED).
-  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
-* (14/01/2025) Bidirectional type inference and elaboration (PED).
-  + [Bidirectional typing, Dunfield & Krishnaswamy](https://arxiv.org/abs/1908.05839)
-* (21/01/2025) System Fω and modules (PED).
+* (14/01/2025) System Fω and modules (PED).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
+* (21/01/2025) Hindley-Milner type inference and elaboration (PED).
+  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
+* (28/01/2025) Bidirectional type inference and elaboration (PED).
+  + [Bidirectional typing, Dunfield & Krishnaswamy](https://arxiv.org/abs/1908.05839)
 
 ### Programming with Resources in Rust
 
-* (28/01/2025) Introduction to Rust programming (JHJ) ([slides](slides/jhjourdan-01.pdf)).
 * (04/02/2025) When the aliasing discipline is too strong (JHJ) ([slides](slides/jhjourdan-02.pdf)).
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (11/02/2025) Multi-threading (JHJ) ([slides](slides/jhjourdan-03.pdf)).
-  + Hands-on: persistent arrays ([exercises](tdtp/jhjourdan2.pdf), [template](tdtp/jhjourdan2_template.rs), [solution](tdtp/jhjourdan2_solution.rs)).
+* (11/02/2025) Practicing Rust.
 * (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
 * (25/02/2025) Exercise session (GS).
 * (04/03/2025) *break*
