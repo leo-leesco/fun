@@ -59,22 +59,29 @@ let singleton (u : term) : var -> term =
 (* Recognizing a value. *)
 
 let is_value = function
-  | Var _ | Lam _ -> true
-  | App _         -> false
+  | Var _ -> assert false (* we work with closed terms only *)
+  | Lam _ -> true
+  | App _ -> false
   | Let _ ->
      false
 
 (* -------------------------------------------------------------------------- *)
 
-(* An auxiliary function: the [map] function for the type [_ option]. *)
+(* Auxiliary functions: [fail], [return] and [bind] are the three basic
+   operations of the [option] monad. *)
 
-(* We name this function [in_context] because we use it below to perform
-   reduction under an evaluation context. *)
+(* The last line allows writing [let* x = e1 in e2] as syntactic sugar
+   for [bind e1 (fun x -> e2)]. *)
 
-let in_context f ox =
+let fail : 'a option =
+  None
+let return (x : 'a) : 'a option =
+  Some x
+let bind (ox : 'a option) (f : 'a -> 'b option) : 'b option =
   match ox with
   | None ->   None
-  | Some x -> Some (f x)
+  | Some x -> f x
+let (let*) = bind
 
 (* -------------------------------------------------------------------------- *)
 
@@ -87,23 +94,22 @@ let in_context f ox =
 
 let rec step (t : term) : term option =
   match t with
-  | Lam _ | Var _ -> None
-  (* Plotkin's BetaV *)
-  | App (Lam t, v) when is_value v ->
-      Some (subst (singleton v) t)
-  (* Plotkin's AppL *)
-  | App (t, u) when not (is_value t) ->
-      in_context (fun t' -> App (t', u)) (step t)
-  (* Plotkin's AppVR *)
-  | App (v, u) when is_value v ->
-      in_context (fun u' -> App (v, u')) (step u)
-  (* All cases covered already, but OCaml cannot see it. *)
-  | App (_, _) ->
-      assert false
+  | Lam _ | Var _ -> fail
+  | App (Lam t, v) when is_value v ->   (* Plotkin's BetaV *)
+      return (subst (singleton v) t)
+  | App (t, u) when not (is_value t) -> (* Plotkin's AppL  *)
+      let* t' = step t in
+      return (App (t', u))
+  | App (v, u) when is_value v ->       (* Plotkin's AppVR *)
+      let* u' = step u in
+      return (App (v, u'))
+  | App (_, _) ->             (* All cases covered already *)
+      assert false            (*  but OCaml cannot see it. *)
   | Let (t, u) when not (is_value t) ->
-      in_context (fun t' -> Let (t', u)) (step t)
+      let* t' = step t in
+      return (Let (t', u))
   | Let (v, u) when is_value v ->
-      Some (subst (singleton v) u)
+      return (subst (singleton v) u)
   | Let (_, _) ->
       assert false
 
