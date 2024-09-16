@@ -43,15 +43,16 @@ The syllabus is organized in four main segments of five lectures each.
 
 * (17/09/2024) Syntax, semantics, and interpreters (FP).
   * Introduction to this course
-      ([slides 00](slides/fpottier-00.pdf)).
+      ([slides 00](slides/fpottier-00.pdf))
   * From operational semantics to interpreters
       ([slides 01](slides/fpottier-01.pdf),
-       [slides without animations 01](slides/fpottier-printing-01.pdf)).
-  * *Optional additional material*: towards machine-checked proofs
+       [slides without animations 01](slides/fpottier-printing-01.pdf))
+  * Machine-checked proofs and de Bruijn syntax in Coq
       ([slides 01b](slides/fpottier-01b.pdf),
        [slides without animations 01b](slides/fpottier-printing-01b.pdf))
-      ([λ-calculus in Coq](coq/DemoSyntaxReduction.v))
-      ([λ-calculus in OCaml](ocaml/pottier/Lambda.ml)).
+  * Source files:
+      + [λ-calculus in OCaml](ocaml/pottier/Lambda.ml)
+      + [λ-calculus in Coq](coq/DemoSyntaxReduction.v)
 * (24/09/2024) System F and a syntactic proof of its type soundness (FP).
   * ([slides 02](slides/fpottier-02.pdf),
      [slides without animations 02](slides/fpottier-printing-02.pdf)).
