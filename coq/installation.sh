@@ -9,14 +9,14 @@ export OPAMYES=true
 # Create a new opam switch. (We assume opam 2 is installed.)
 
 echo "Creating a new opam switch..."
-if opam switch create mpri24 ocaml-base-compiler.4.12.0
+if opam switch create mpri24 ocaml-base-compiler.4.14.1
 then :
 else
 echo "Checking if the switch mpri24 already exists..."
-if [ "$(opam exec --switch=mpri24 ocamlc -- --version)" = 4.12.0 ]
+if [ "$(opam exec --switch=mpri24 ocamlc -- --version)" = 4.14.1 ]
 then echo "Fine!"
 else
-    echo "The switch mpri24 is not version 4.12.0 of the ocaml compiler; "
+    echo "The switch mpri24 is not version 4.14.1 of the ocaml compiler; "
     echo "you probably wish to remove it (check first):"
     echo; echo "    opam switch remove mpri24"; echo
     echo "and restart the script."
