@@ -75,4 +75,4 @@ The following hint allows `eauto with jt` to apply the above typing rules.
 
 |*)
 
-Hint Constructors jt : jt.
+Global Hint Constructors jt : jt.

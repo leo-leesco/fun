@@ -29,7 +29,7 @@ Inductive bigcbv : term -> term -> Prop :=
     bigcbv (Let t1 t2) v
 .
 
-Hint Constructors bigcbv : bigcbv.
+Global Hint Constructors bigcbv : bigcbv.
 
 (* The tactic [invert_bigcbv] looks for a hypothesis of the form [bigcbv t v]
    and inverts it. *)
@@ -50,7 +50,7 @@ Proof.
   induction 1; eauto.
 Qed.
 
-Hint Resolve bigcbv_is_value : is_value obvious.
+Global Hint Resolve bigcbv_is_value : is_value obvious.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -189,7 +189,7 @@ Inductive ebigcbv : cenv -> term -> cvalue -> Prop :=
     ebigcbv e (Let t1 t2) cv
 .
 
-Hint Constructors ebigcbv : ebigcbv.
+Global Hint Constructors ebigcbv : ebigcbv.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -422,7 +422,7 @@ Proof.
   econstructor; eauto.
 Qed.
 
-Hint Resolve
+Global Hint Resolve
   use_wf_cvalue_1 use_wf_cvalue_2 prove_wf_cenv_nil prove_wf_cenv_cons
 : wf_cvalue.
 
@@ -447,7 +447,7 @@ Proof.
   { eauto 6 with wf_cvalue. }
 Qed.
 
-Hint Resolve ebigcbv_wf_cvalue : wf_cvalue.
+Global Hint Resolve ebigcbv_wf_cvalue : wf_cvalue.
 
 (* -------------------------------------------------------------------------- *)
 
@@ -565,7 +565,7 @@ Proof.
   unfold sim. eauto.
 Qed.
 
-Hint Resolve reflexive_sim transitive_sim : sim.
+Global Hint Resolve reflexive_sim transitive_sim : sim.
 
 (* This simulation relation includes the small-step relation [cbv]. *)
 

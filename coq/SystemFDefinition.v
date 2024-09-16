@@ -87,4 +87,4 @@ The following hint allows `eauto with jf` to apply the above typing rules.
 
 |*)
 
-Hint Constructors jf : jf.
+Global Hint Constructors jf : jf.

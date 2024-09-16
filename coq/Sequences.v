@@ -316,5 +316,5 @@ End DETERMINISM.
 
 End SEQUENCES.
 
-Hint Resolve star_refl star_step star_one star_trans plus_left plus_one
+Global Hint Resolve star_refl star_step star_one star_trans plus_left plus_one
              plus_star plus_star_trans star_plus_trans plus_right: sequences.

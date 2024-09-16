@@ -123,7 +123,7 @@ Inductive red : term -> term -> Prop :=
 (* The following means that [eauto with red] is allowed to apply the above
    three inference rules. *)
 
-Hint Constructors red : red.
+Local Hint Constructors red : red.
 
 (* No strategy is built into this reduction relation: it is not restricted to
    call-by-value or call-by-name. It is nondeterministic. Only weak reduction
@@ -136,7 +136,7 @@ Hint Constructors red : red.
    [autosubst] to prove an equality. It is used in the last "expert" proof
    of the lemma [red_subst] below.  *)
 
-Hint Extern 1 (_ = _) => autosubst : autosubst.
+Local Hint Extern 1 (_ = _) => autosubst : autosubst.
 
 (* -------------------------------------------------------------------------- *)
 

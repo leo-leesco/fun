@@ -33,7 +33,7 @@ Proof.
   intros ? ? ? ? ? ? [|x]; asimpl; eauto.
 Qed.
 
-Hint Resolve pcbv_subst_up pcbv_subst_cons : red obvious.
+Global Hint Resolve pcbv_subst_up pcbv_subst_cons : red obvious.
 
 Lemma pcbv_parallel_subst:
   forall t1 t2,
@@ -61,7 +61,7 @@ Proof.
   { rewrite !subst_let. eauto 7 with obvious. }
 Qed.
 
-Hint Resolve pcbv_parallel_subst : red obvious.
+Global Hint Resolve pcbv_parallel_subst : red obvious.
 
 (* -------------------------------------------------------------------------- *)
 

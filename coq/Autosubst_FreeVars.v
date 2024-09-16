@@ -339,8 +339,8 @@ Ltac fv :=
 
 (* A hint database to prove goals of the form [~ (closed _)] or [closed _]. *)
 
-Hint Resolve closed_ids : closed.
+Global Hint Resolve closed_ids : closed.
 
 (* -------------------------------------------------------------------------- *)
 
-Hint Resolve regular_ids regular_plus regular_upn : regular.
+Global Hint Resolve regular_ids regular_plus regular_upn : regular.

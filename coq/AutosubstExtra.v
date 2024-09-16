@@ -194,12 +194,12 @@ End Extras.
 (* This incantation means that [eauto with autosubst] can use the tactic
    [autosubst] to prove an equality. *)
 
-Hint Extern 1 (_ = _) => autosubst : autosubst.
+Global Hint Extern 1 (_ = _) => autosubst : autosubst.
 
 (* This incantation means that [eauto with autosubst] can use the lemmas
    whose names are listed here. This is useful when an equality involves
    metavariables, so the tactic [autosubst] fails. *)
 
-Hint Resolve scons_scomp : autosubst.
+Global Hint Resolve scons_scomp : autosubst.
 
 (* -------------------------------------------------------------------------- *)

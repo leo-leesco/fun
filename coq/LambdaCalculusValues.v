@@ -12,7 +12,7 @@ Definition if_value {A} (t : term) (a1 a2 : A) : A :=
 Definition is_value (t : term) :=
   if_value t True False.
 
-Hint Extern 1 (is_value _) => (simpl; tauto) : is_value obvious.
+Global Hint Extern 1 (is_value _) => (simpl; tauto) : is_value obvious.
 
 (* A term either is or is not a value. *)
 
@@ -59,7 +59,7 @@ Proof.
   destruct v; simpl; eauto.
 Qed.
 
-Hint Resolve is_value_renaming is_nonvalue_renaming : is_value obvious.
+Global Hint Resolve is_value_renaming is_nonvalue_renaming : is_value obvious.
 
 Ltac is_value :=
   eauto with is_value.
@@ -141,7 +141,7 @@ Proof.
   intros. intro x. asimpl. is_value.
 Qed.
 
-Hint Resolve is_value_subst_up is_value_subst_upn is_value_subst_renaming
+Global Hint Resolve is_value_subst_up is_value_subst_upn is_value_subst_renaming
   : is_value obvious.
 
 Lemma values_are_preserved_by_value_substitutions:
@@ -161,7 +161,7 @@ Proof.
   destruct t; simpl; tauto.
 Qed.
 
-Hint Resolve
+Global Hint Resolve
   is_value_subst_ids
   is_value_subst_cons
   values_are_preserved_by_value_substitutions
@@ -176,4 +176,4 @@ Proof.
   intros ? [ xi ? ]. subst. eauto with is_value.
 Qed.
 
-Hint Resolve is_ren_is_value_subst : is_value obvious.
+Global Hint Resolve is_ren_is_value_subst : is_value obvious.

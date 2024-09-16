@@ -64,7 +64,7 @@ Proof.
   { asimpl. erewrite plus_upn by tc. autosubst. }
 Qed.
 
-Hint Resolve substc_liftc_liftc : obvious.
+Global Hint Resolve substc_liftc_liftc : obvious.
 
 (* As is the case for terms, lifting [c] by 1, then applying a substitution
    of the form [v .: ids], yields [c] again. *)

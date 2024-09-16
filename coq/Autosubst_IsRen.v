@@ -82,6 +82,6 @@ Qed.
 
 End Lemmas.
 
-Hint Unfold is_ren : is_ren obvious.
+Global Hint Unfold is_ren : is_ren obvious.
 
-Hint Resolve up_is_ren upn_is_ren comp_is_ren is_ren_ids : is_ren obvious.
+Global Hint Resolve up_is_ren upn_is_ren comp_is_ren is_ren_ids : is_ren obvious.

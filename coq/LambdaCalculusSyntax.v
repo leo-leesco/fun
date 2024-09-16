@@ -59,7 +59,7 @@ Proof.
   rewrite <- Hid. reflexivity.
 Qed.
 
-Hint Resolve ids_implies_is_ren : is_ren obvious.
+Global Hint Resolve ids_implies_is_ren : is_ren obvious.
 
 (* The size of a term. *)
 
@@ -140,11 +140,11 @@ Ltac size_induction t :=
 (* The tactic [size] proves goals of the form [size t < n]. The tactic
    [obvious] is also extended to prove such goals. *)
 
-Hint Extern 1 (size ?t.[?sigma] < ?n) =>
+Global Hint Extern 1 (size ?t.[?sigma] < ?n) =>
   rewrite size_renaming by obvious
   : size obvious.
 
-Hint Extern 1 (size ?t < ?n) =>
+Global Hint Extern 1 (size ?t < ?n) =>
   simpl in *; lia
   : size obvious.
 

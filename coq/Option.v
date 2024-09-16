@@ -115,6 +115,6 @@ Proof.
   { eauto using prove_less_defined_None. }
 Qed.
 
-Hint Resolve
+Global Hint Resolve
   prove_less_defined_None reflexive_less_defined prove_less_defined_bind
 : less_defined.

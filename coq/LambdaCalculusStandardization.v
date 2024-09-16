@@ -596,7 +596,7 @@ Inductive stdred : term -> term -> Prop :=
     stdred (Let t1 t2) (Let u1 u2)
 .
 
-Hint Constructors stdred : stdred.
+Global Hint Constructors stdred : stdred.
 
 (* A couple of more flexible constructors for [stdred]. *)
 
@@ -617,7 +617,7 @@ Proof.
   induction 1; eauto with stdred.
 Qed.
 
-Hint Resolve star_cbv_subset_stdred StdConsStar : stdred.
+Global Hint Resolve star_cbv_subset_stdred StdConsStar : stdred.
 
 (* The following lemma analyzes a reduction sequence of the form [star ipcbv
    t1 t2], where the head constructor of the term [t2] is known. In every

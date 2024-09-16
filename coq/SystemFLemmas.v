@@ -58,7 +58,7 @@ The following hint allows `eauto with jtn` to apply the above typing rules.
 
 |*)
 
-Hint Constructors jtn : jtn.
+Global Hint Constructors jtn : jtn.
 
 (*|
 -----------------------------------------
@@ -84,7 +84,7 @@ The following hint allows `eauto with jt` to exploit the fact that
 
 |*)
 
-Hint Unfold jt : jt.
+Global Hint Unfold jt : jt.
 
 (*|
 
@@ -142,7 +142,7 @@ The following hint allows `eauto with jt` to use the above lemmas.
 
 |*)
 
-Hint Resolve JTVar JTLam JTApp JTTyAbs JTTyApp : jt.
+Global Hint Resolve JTVar JTLam JTApp JTTyAbs JTTyApp : jt.
 
 (*|
 

@@ -112,7 +112,7 @@ Inductive red (mask : mask) : term -> term -> Prop :=
     red mask (Let t1 u1) (Let t2 u2)
 .
 
-Hint Constructors red : red obvious.
+Global Hint Constructors red : red obvious.
 
 (* The following mask defines the call-by-value reduction semantics. *)
 
@@ -163,9 +163,9 @@ Notation pcbv := (red pcbv_mask).
 (* The tactic [obvious] should be able to prove goals of the form
    [red mask t1 t2], where [mask] is a known mask. *)
 
-Hint Extern 1 (cbv_mask _)  => (simpl; tauto) : red obvious.
-Hint Extern 1 (cbn_mask _)  => (simpl; tauto) : red obvious.
-Hint Extern 1 (pcbv_mask _) => (simpl; tauto) : red obvious.
+Global Hint Extern 1 (cbv_mask _)  => (simpl; tauto) : red obvious.
+Global Hint Extern 1 (cbn_mask _)  => (simpl; tauto) : red obvious.
+Global Hint Extern 1 (pcbv_mask _) => (simpl; tauto) : red obvious.
 
 Goal cbv (Let (App (Lam (Var 0)) (Var 0)) (Var 0)) (Let (Var 0) (Var 0)).
 Proof. obvious. Qed.
@@ -286,7 +286,7 @@ Proof.
   induction 2; eauto with sequences obvious.
 Qed.
 
-Hint Resolve star_cbv_AppL star_pcbv_AppL plus_pcbv_AppL star_cbv_AppR : red obvious.
+Global Hint Resolve star_cbv_AppL star_pcbv_AppL plus_pcbv_AppL star_cbv_AppR : red obvious.
 
 Lemma star_cbv_AppLR:
   forall t1 t2 u1 u2,
@@ -306,7 +306,7 @@ Proof.
   induction 1; eauto with sequences obvious.
 Qed.
 
-Hint Resolve star_cbv_AppLR star_cbv_LetL : red obvious.
+Global Hint Resolve star_cbv_AppLR star_cbv_LetL : red obvious.
 
 (* Reduction commutes with substitutions of values for variables. (This
    includes renamings.) This is true of every reduction strategy, with
@@ -363,9 +363,9 @@ Proof.
   inversion 1; is_value.
 Qed.
 
-Hint Resolve values_do_not_reduce : is_value obvious.
+Global Hint Resolve values_do_not_reduce : is_value obvious.
 
-Hint Extern 1 (False) => (eapply values_do_not_reduce) : is_value obvious.
+Global Hint Extern 1 (False) => (eapply values_do_not_reduce) : is_value obvious.
 
 Lemma is_value_irred:
   forall v,
@@ -375,7 +375,7 @@ Proof.
   intros. intro. obvious.
 Qed.
 
-Hint Resolve is_value_irred : irred obvious.
+Global Hint Resolve is_value_irred : irred obvious.
 
 (* Under every strategy, the property of being a value is preserved by
    reduction. *)
@@ -398,7 +398,7 @@ Proof.
   induction 1; is_value.
 Qed.
 
-Hint Resolve values_are_stable nonvalues_are_stable : is_value obvious.
+Global Hint Resolve values_are_stable nonvalues_are_stable : is_value obvious.
 
 (* [cbv] is deterministic. *)
 
@@ -464,7 +464,7 @@ Proof.
   intros ? ? Hirred ?. eapply Hirred. obvious.
 Qed.
 
-Hint Resolve
+Global Hint Resolve
   invert_irred_cbv_App_1
   invert_irred_cbv_App_2
   invert_irred_cbv_Let_1
@@ -496,7 +496,7 @@ Inductive stuck : term -> Prop :=
     stuck t ->
     stuck (Let t u).
 
-Hint Constructors stuck : stuck.
+Global Hint Constructors stuck : stuck.
 
 (* To go wrong is to reduce to a stuck term. *)
 
@@ -531,7 +531,7 @@ Proof.
   { congruence. }
 Qed.
 
-Hint Resolve stuck_irred : irred obvious.
+Global Hint Resolve stuck_irred : irred obvious.
 
 (* Every irreducible term either is a value or is stuck. *)
 

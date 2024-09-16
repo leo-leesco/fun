@@ -368,7 +368,7 @@ Proof.
   intros. destruct v; simpl; tauto.
 Qed.
 
-Hint Resolve is_value_cpsv : is_value obvious.
+Global Hint Resolve is_value_cpsv : is_value obvious.
 
 Hint Rewrite cpsv_var cpsv_lam : cpsv.
 Ltac cpsv := autorewrite with cpsv.

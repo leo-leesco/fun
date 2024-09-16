@@ -121,7 +121,7 @@ Qed.
 
 End Env.
 
-Hint Resolve
+Global Hint Resolve
   env_ren_comp_id
   env_ren_comp_up
   env_ren_comp_prepend

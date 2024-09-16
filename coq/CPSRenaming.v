@@ -89,4 +89,4 @@ Proof.
   eauto using upn_sigma_f, cpsv_renaming with is_ren typeclass_instances.
 Qed.
 
-Hint Resolve up_sigma_cpsv upn_sigma_cpsv : obvious.
+Global Hint Resolve up_sigma_cpsv upn_sigma_cpsv : obvious.

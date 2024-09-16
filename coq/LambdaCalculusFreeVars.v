@@ -101,7 +101,7 @@ Proof.
   unfold closed; intros; fv. tauto.
 Qed.
 
-Hint Resolve closed_Var closed_AppL closed_AppR closed_LetL : closed.
+Global Hint Resolve closed_Var closed_AppL closed_AppR closed_LetL : closed.
 
 (* -------------------------------------------------------------------------- *)
 

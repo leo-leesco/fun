@@ -74,7 +74,7 @@ Inductive mbigcbv : menv -> metal -> mvalue -> Prop :=
     mbigcbv e (MPi i t) mv
 .
 
-Hint Constructors mbigcbv : mbigcbv.
+Global Hint Constructors mbigcbv : mbigcbv.
 
 (* -------------------------------------------------------------------------- *)
 
