@@ -74,7 +74,7 @@ var Alectryon;
 
         function onkeydown(e) {
             e = e || window.event;
-            if (e.ctrlKey) {
+            if (e.ctrlKey || e.metaKey) {
                 if (e.keyCode == keys.ARROW_UP)
                     slideshow.previous();
                 else if (e.keyCode == keys.ARROW_DOWN)
@@ -108,7 +108,7 @@ var Alectryon;
                 var sentence = evt.currentTarget;
 
                 // Ensure that the goal is shown on the side, not inline
-                var checkbox = sentence.getElementsByClassName("coq-toggle")[0];
+                var checkbox = sentence.getElementsByClassName("alectryon-toggle")[0];
                 if (checkbox)
                     checkbox.checked = false;
 
@@ -120,7 +120,7 @@ var Alectryon;
         function init() {
             document.onkeydown = onkeydown;
             slideshow.pos = -1;
-            slideshow.sentences = Array.from(document.getElementsByClassName("coq-sentence"));
+            slideshow.sentences = Array.from(document.getElementsByClassName("alectryon-sentence"));
             slideshow.sentences.forEach(function (s, idx) {
                 s.addEventListener('click', handleClick, false);
                 s.alectryon_index = idx;
@@ -150,18 +150,18 @@ var Alectryon;
         }
 
         function init() {
-            var header = document.getElementsByClassName("alectryon-header")[0];
-            if (header) {
-                header.append(" Style: ");
+            var banner = document.getElementsByClassName("alectryon-banner")[0];
+            if (banner) {
+                banner.append(" Style: ");
                 styleNames.forEach(function (styleName, idx) {
                     var s = styleName;
                     var a = document.createElement("a");
                     a.onclick = function() { setStyle(s); };
                     a.append(styleName);
-                    if (idx > 0) header.append("; ");
-                    header.appendChild(a);
+                    if (idx > 0) banner.append("; ");
+                    banner.appendChild(a);
                 });
-                header.append(".");
+                banner.append(".");
             }
         }
 
