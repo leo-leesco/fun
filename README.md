@@ -56,17 +56,18 @@ The syllabus is organized in four main segments of five lectures each.
 * (24/09/2024) System F and a syntactic proof of its type soundness (FP).
   * ([slides 02](slides/fpottier-02.pdf),
      [slides without animations 02](slides/fpottier-printing-02.pdf)).
-* (01/10/2024) Algebraic data types, existential types, and GADTs (FP).
+* (01/10/2024) Algebraic data types and existential types (FP).
   * ([slides 03](slides/fpottier-03.pdf),
      [slides without animations 03](slides/fpottier-printing-03.pdf)).
-* (08/10/2024) GADTs, continued (FP).
-  * (see slides of previous week).
-* (15/10/2024) Closure conversion and defunctionalization (FP).
+* (08/10/2024) GADTs (FP).
   * ([slides 04](slides/fpottier-04.pdf),
      [slides without animations 04](slides/fpottier-printing-04.pdf)).
-* (read at home) (optional) The CPS transformation (FP).
+* (15/10/2024) Closure conversion and defunctionalization (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
+* (read at home) (optional) The CPS transformation (FP).
+  * ([slides 06](slides/fpottier-06.pdf),
+     [slides without animations 06](slides/fpottier-printing-06.pdf)).
 * (22/10/2024) System F with mutable state; the value restriction; type soundness (GS)
   * ([slides](slides/scherer-02.pdf))
 
