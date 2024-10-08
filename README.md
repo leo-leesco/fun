@@ -174,15 +174,108 @@ third of the final grade.
 
 ## Research Internship Proposals
 
-We are planning to post a few internship proposals
-at some point during the fall or winter.
-
-The internship offers posted by
-[the Prosecco team](https://team.inria.fr/prosecco/job-offers/)
-at Inria Paris are also relevant.
+We, the teachers of this course, are planning to post a few internship
+proposals at some point during the fall.
 
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
+
+To find internships related to the topics of this course,
+you may wish to also contact our colleagues:
+
+* The [Cambium](https://cambium.inria.fr/) team at Inria Paris.
+  Keywords:
+  program verification in separation logic (Iris; Osiris),
+  programming language design and implementation (OCaml),
+  proof assistants (Coq; MetaCoq),
+  type systems,
+  verified compilation,
+  and more.
+* The [PPS](https://www.irif.fr/poles/pps/index) lab at IRIF,
+  which includes the [Picube](https://www.irif.fr/equipes/picube/index) team.
+  Keywords:
+  programming language design and implementation (OCaml),
+  proof assistants (Coq),
+  semantics,
+  type theory,
+  and more.
+* The [Prosecco](https://team.inria.fr/prosecco/) team at Inria Paris.
+  Keywords:
+  verification of security protocols (ProVerif; CryptoVerif; Squirrel),
+  program verification,
+  programming languages for the law (Catala),
+  proof assistants (F*),
+  software security,
+  and more.
+* The [Antique](https://team.inria.fr/antique/) team at ENS Paris.
+  Keywords:
+  abstract interpretation,
+  program analysis,
+  analysis of biological systems,
+  and more.
+* The [Parkas](https://parkas.di.ens.fr/) team at ENS Paris.
+  Keywords:
+  synchronous programming languages,
+  type systems,
+  verified compilation,
+  and more.
+* The [Partout](https://team.inria.fr/partout/) team at Inria Saclay.
+  Keywords:
+  connections between computation and deduction,
+  proof theory,
+  type theory,
+  and more.
+* The [Gallinette](https://gallinette.gitlabpages.inria.fr/website/) team at Inria Nantes.
+  Keywords:
+  formalized mathematics (Mathematical Components),
+  proof assistants (Coq),
+  type theory,
+  and more.
+* The [Toccata](https://toccata.gitlabpages.inria.fr/toccata/index.fr.html) team at Inria Saclay.
+  Keywords:
+  automated deduction,
+  program verification,
+  and more.
+* The [Epicure](https://team.inria.fr/epicure/) team at Inria Rennes.
+  Keywords:
+  automated deduction,
+  program analysis,
+  semantics,
+  software security,
+  verified compilation,
+  and more.
+* The [Pesto](https://team.inria.fr/pesto/) team at Inria Nancy.
+  Keywords:
+  electronic voting,
+  verification of security protocols,
+  verified compilation,
+  and more.
+* The [Stamp](https://www.inria.fr/fr/stamp) team at Inria Sophia.
+  Keywords:
+  formalized mathematics (Mathematical Components),
+  proof assistants (Coq),
+  verification of security protocols (EasyCrypt),
+  and more.
+* The [Cash](https://www.ens-lyon.fr/LIP/CASH/?page_id=9) team at ENS Lyon.
+  Keywords:
+  compilation,
+  formalized mathematics (Mathematical Components),
+  program analysis,
+  semantics,
+  type systems,
+  verified compilation,
+  and more.
+* The [Camus](https://team.inria.fr/camus/fr/) team at Inria Strasbourg.
+  Keywords:
+  compilation,
+  parallelism,
+  program verification,
+  semantics,
+  and more.
+
+We also have contacts abroad, mainly in Europe, North America, and Asia.
+If you would like to find an internship abroad,
+do not hesitate to talk to us.
 
 See also
 [the official list of internship offers](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=internships)
