@@ -83,7 +83,7 @@ The syllabus is organized in four main segments of five lectures each.
 * (19/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
   * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
 
-* **(26/11/2024) mid-term exam**, in the usual room and at the usual time,
+* **(03/12/2024) mid-term exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
@@ -118,7 +118,7 @@ The syllabus is organized in four main segments of five lectures each.
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term exam will take place on **26/11/2024**.
+The mid-term exam will take place on **03/12/2024**.
 
 The final exam will take place on **11/03/2025**.
 
