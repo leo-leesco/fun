@@ -73,14 +73,14 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* (22/10/2024) Unary logical relations for simple types; (weak) normalisation of simply-typed λ-calculus (GS).
+* (29/10/2024) Unary logical relations for simple types; (weak) normalisation of simply-typed λ-calculus (GS).
   * ([slides](slides/scherer-01.pdf),
      [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf).
-* (29/10/2024) Unary logical relations for polymorphic types; (weak) normalisation of System F (GS).
+* (05/11/2024) Unary logical relations for polymorphic types; (weak) normalisation of System F (GS).
   * (Same slides).
-* (05/11/2024) Binary logical relations and parametricity (GS).
+* (12/11/2024) Binary logical relations and parametricity (GS).
   * (Same slides).
-* (12/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
+* (19/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
   * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
 
 * **(26/11/2024) mid-term exam**, in the usual room and at the usual time,
