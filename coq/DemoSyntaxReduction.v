@@ -31,6 +31,8 @@ Instance SubstLemmas_term : SubstLemmas term. derive. Qed.
 
 (* A demo of the tactics [autosubst] and [asimpl]. *)
 
+(* (λx. x y)[σ] = (λx. x y[⇑σ]) *)
+
 Goal
   forall sigma,
   (Lam (App (Var 0) (Var 1))).[sigma] =
@@ -106,6 +108,7 @@ Inductive red : term -> term -> Prop :=
     forall t1 t2 u,
     t1.[t2/] = u ->
     red (App (Lam t1) t2) u
+    (* (λx.t1) t2 → [t2/x]t1 *)
 
 (* Reduction in the left-hand side of an application. *)
 | RedAppL:
@@ -144,9 +147,11 @@ Local Hint Extern 1 (_ = _) => autosubst : autosubst.
 
 Definition Delta :=
   Lam (App (Var 0) (Var 0)).
+  (* Δ := λx.(x x) *)
 
 Definition Omega :=
   App Delta Delta.
+  (* Ω := (Δ Δ) *)
 
 Goal
   red Omega Omega.
