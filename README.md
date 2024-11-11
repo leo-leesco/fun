@@ -65,21 +65,35 @@ The syllabus is organized in four main segments of five lectures each.
 * (15/10/2024) Closure conversion and defunctionalization (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
-* (read at home) (optional) The CPS transformation (FP).
-  * ([slides 06](slides/fpottier-06.pdf),
-     [slides without animations 06](slides/fpottier-printing-06.pdf)).
 * (22/10/2024) System F with mutable state; the value restriction; type soundness (GS)
   * ([slides](slides/scherer-02.pdf))
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* (29/10/2024) Unary logical relations for simple types; (weak) normalisation of simply-typed λ-calculus (GS).
+* (29/10/2024)
+  Unary logical relations for simple types;
+  (weak) normalisation of simply-typed λ-calculus
+  (GS).
   * ([slides](slides/scherer-01.pdf),
      [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf).
-* (05/11/2024) Unary logical relations for polymorphic types; (weak) normalisation of System F (GS).
+* (05/11/2024)
+  Unary logical relations for polymorphic types;
+  (weak) normalisation of System F;
+  binary logical relations and parametricity
+  (GS).
   * (Same slides).
-* (12/11/2024) Binary logical relations and parametricity (GS).
-  * (Same slides).
+
+* (12/11/2024) The CPS transformation (FP).
+
+  * ([slides 06](slides/fpottier-06.pdf),
+     [slides without animations 06](slides/fpottier-printing-06.pdf)).
+
+  A proof of type soundness in Coq (FP).
+
+  * [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
+  * [auxiliary lemmas and judgements](coq/STLCLemmas.v)
+  * subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
+
 * (19/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
   * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
 
