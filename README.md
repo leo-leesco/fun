@@ -84,15 +84,13 @@ The syllabus is organized in four main segments of five lectures each.
   * (Same slides).
 
 * (12/11/2024) The CPS transformation (FP).
-
-  * ([slides 06](slides/fpottier-06.pdf),
+  + ([slides 06](slides/fpottier-06.pdf),
      [slides without animations 06](slides/fpottier-printing-06.pdf)).
 
   A proof of type soundness in Coq (FP).
-
-  * [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
-  * [auxiliary lemmas and judgements](coq/STLCLemmas.v)
-  * subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
+  + [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
+  + [auxiliary lemmas and judgements](coq/STLCLemmas.v)
+  + subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
 
 * (19/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
   * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
