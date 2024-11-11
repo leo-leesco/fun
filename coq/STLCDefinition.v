@@ -36,7 +36,7 @@ The typing judgement
 --------------------
 
 The simply-typed lambda-calculus is defined by the following three
-typing rules.
+typing rules. (For simplicity, the typing rule for `Let` is omitted.)
 
 |*)
 
@@ -58,11 +58,11 @@ Inductive jt : tyenv -> term -> ty -> Prop :=
 
 (*|
 
-The tactic [pick_jt t] picks a hypothesis [h] whose statement is a typing
-judgement about the term [t], and passes [h] to the Ltac continuation [k].
+The tactic `pick_jt t` picks a hypothesis `h` whose statement is a typing
+judgement about the term `t`, and passes `h` to the Ltac continuation `k`.
 
-Thus, for instance, [pick_jt t invert] selects a typing judgement that is
-at hand for the term [t] and inverts it.
+Thus, for instance, `pick_jt t invert` selects a typing judgement that is
+at hand for the term `t` and inverts it.
 
 |*)
 
