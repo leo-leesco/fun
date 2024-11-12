@@ -205,7 +205,8 @@ Ltac finished :=
 
 Ltac invert_cbv :=
   pick (red cbv_mask) invert;
-  try solve [ false; eauto 3 with obvious ].
+  try solve [ false; eauto 3 with obvious ];
+  repeat (pick cbv_mask ltac:(fun h => clear h)).
 
 Ltac invert_star_cbv :=
   pick (star cbv) invert.
