@@ -19,11 +19,22 @@ Inductive ty :=
 
 (*|
 
-A type environment is viewed as a total function of variables to types.
+A type environment is a total function of variables to types.
 
-In principle, an environment should be modeled as a list of types, which
-represents a partial function of variables to types. This introduces a few
-complications, and is left as an exercise for the reader.
+A type environment can also be viewed as an infinite list of types.
+
+An environment is traditionally modeled as a list of types, which represents a
+partial function of variables to types. This introduces a few complications,
+and is left as an exercise for the reader who prefers modeling environments as
+lists.
+
+By modeling environments as total functions, we apparently lose the ability to
+control which variables are allowed to occur free in a term `t`.
+
+However, this can be expressed separately by the judgement `fv k t`, which
+guarantees that every free variable of the term `t` is less than `k`. (The
+judgement `closed t` is sugar for `fv 0 t`.) So, in reality, we lose nothing
+by modeling environments as total functions.
 
 |*)
 

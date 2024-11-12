@@ -190,11 +190,13 @@ Qed.
 (* If the free variables of the term [t] are below [k], then [t] is unaffected
    by a substitution of the form [upn k sigma]. *)
 
-(* Unfortunately, in this file, where the definition of type [A] is unknown, I
-   am unable to establish this result for arbitrary substitutions [sigma]. I
-   am able to establish it for *regular* substitutions, where The proof is somewhat interesting, so it is given here, even
-   though, once the definition of the type [A] is known, a more direct proof,
-   without a regularity hypothesis, can usually be given. *)
+(* Unfortunately, in this file, where the definition of the type [A] is
+   unknown, I am unable to establish this result for arbitrary substitutions
+   [sigma]. I am able to establish it for *regular* substitutions.
+
+   The proof is somewhat interesting, so it is given here, even though, once
+   the definition of the type [A] is known, a more direct proof, without a
+   regularity hypothesis, can usually be given. *)
 
 (* An intermediate result states that, since [upn k (ren (+1))] does not
    affect [t], then (by iteration) neither does [upn k (ren (+j))]. *)

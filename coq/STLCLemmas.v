@@ -85,8 +85,8 @@ x` has type `Delta x`.
 This auxiliary judgement encourages us to think of terms of *total*
 substitutions, where *every* variable is replaced by a term. This
 concept turns out to be easier to understand and manipulate,
-especially during proofs by induction. Of course one always later
-consider the special case of a substitution that seems to affect just
+especially during proofs by induction. Of course, later, one always
+considers the special case of a substitution that seems to affect just
 one variable, say variable 0. (In reality, such a substitution affects
 all variables, as the variables other than 0 are renumbered.)
 
