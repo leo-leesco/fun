@@ -146,7 +146,7 @@ Ltac injections :=
 
 (* -------------------------------------------------------------------------- *)
 
-(* The following incantations are suppose to allow [eauto with lia] to solve
+(* The following incantations are supposed to allow [eauto with lia] to solve
    goals of the form [_ < _] or [_ <= _]. *)
 
 Global Hint Extern 1 (_ <  _) => lia : lia.
