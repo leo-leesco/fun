@@ -188,10 +188,18 @@ third of the final grade.
 ## Research Internship Proposals
 
 We, the teachers of this course, are planning to post a few internship
-proposals at some point during the fall.
+offers at some point during the fall.
 
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
+
+So far, the following offers have been posted:
+
+* Our colleague
+  [Arthur Charguéraud](https://www.chargueraud.org/)
+  has posted an offer entitled
+  [Optimisation interactive de programmes OCaml
+   via des transformations source-à-source](https://chargueraud.org/research/2024/optitrust/2024_11_sujet_m2_optitrust_ocaml.pdf).
 
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
