@@ -119,7 +119,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 ### Programming with Resources in Rust
 
-* (04/02/2025) When the aliasing discipline is too strong (JHJ) ([slides](slides/jhjourdan-02.pdf)).
+* (04/02/2025) Rust: Generics and traits (JHJ) ([slides](slides/jhjourdan-02.pdf)).
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
 * (11/02/2025) Practicing Rust.
 * (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
