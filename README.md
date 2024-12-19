@@ -100,6 +100,9 @@ The syllabus is organized in four main segments of five lectures each.
 * **(03/12/2024) mid-term exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
+  
+  [Exam topic, with solutions.](exams/partiel-2024-2025.pdf)  
+  (If you find a mistake, write to `gabriel.scherer@irif.fr`.)
 
 * (10/12/2024) (Interlude.) Introduction to programming in Rust (JHJ)
   * ([slides](slides/jhjourdan-01.pdf)).
