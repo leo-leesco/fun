@@ -204,6 +204,12 @@ So far, the following offers have been posted:
   [Optimisation interactive de programmes OCaml
    via des transformations source-à-source](https://chargueraud.org/research/2024/optitrust/2024_11_sujet_m2_optitrust_ocaml.pdf).
 
+* Xavier Leroy and François Pottier
+  have an offer entitled
+  *Relational Separation Logic for Compiler Verification*.
+  Please write us, or talk to us,
+  for details.
+
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
 
