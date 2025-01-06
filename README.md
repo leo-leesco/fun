@@ -198,12 +198,6 @@ lecture), to contact us by email, or to visit us at our offices.
 
 So far, the following offers have been posted:
 
-* Our colleague
-  [Arthur Charguéraud](https://www.chargueraud.org/)
-  has posted an offer entitled
-  [Optimisation interactive de programmes OCaml
-   via des transformations source-à-source](https://chargueraud.org/research/2024/optitrust/2024_11_sujet_m2_optitrust_ocaml.pdf).
-
 * Xavier Leroy and François Pottier
   have an offer entitled
   *Relational Separation Logic for Compiler Verification*.
