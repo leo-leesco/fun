@@ -111,6 +111,7 @@ The syllabus is organized in four main segments of five lectures each.
 
 * (17/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
 * (07/01/2025) Applicative functors and monads (PED).
+  + Practicals: bring a laptop!
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
 * (14/01/2025) System Fω and modules (PED).
