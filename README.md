@@ -115,6 +115,7 @@ The syllabus is organized in four main segments of five lectures each.
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
 * (14/01/2025) System Fω and modules (PED).
+  + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 * (21/01/2025) Hindley-Milner type inference and elaboration (PED).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
