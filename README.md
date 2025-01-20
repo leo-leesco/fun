@@ -75,7 +75,7 @@ The syllabus is organized in four main segments of five lectures each.
   (weak) normalisation of simply-typed λ-calculus
   (GS).
   * ([slides](slides/scherer-01.pdf),
-     [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf).
+     [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf)).
 * (05/11/2024)
   Unary logical relations for polymorphic types;
   (weak) normalisation of System F;
@@ -184,6 +184,9 @@ and their solutions:
 Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
+
+The project for year 2024-2025 is available [here](project/mpri-2.4-projet-2024-2025.tar.gz).
+The description is given in file sujet.pdf in the archive.
 
 ## Research Internship Proposals
 
