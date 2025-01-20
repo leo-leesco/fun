@@ -101,6 +101,9 @@ The syllabus is organized in four main segments of five lectures each.
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
+  [Exam topic, with solutions.](exams/partiel-2024-2025.pdf)
+  (If you find a mistake, write to `gabriel.scherer@irif.fr`.)
+
 * (10/12/2024) (Interlude.) Introduction to programming in Rust (JHJ)
   * ([slides](slides/jhjourdan-01.pdf)).
 
@@ -108,9 +111,11 @@ The syllabus is organized in four main segments of five lectures each.
 
 * (17/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
 * (07/01/2025) Applicative functors and monads (PED).
+  + Practicals: bring a laptop!
   + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
   + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
 * (14/01/2025) System Fω and modules (PED).
+  + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 * (21/01/2025) Hindley-Milner type inference and elaboration (PED).
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
@@ -198,11 +203,11 @@ lecture), to contact us by email, or to visit us at our offices.
 
 So far, the following offers have been posted:
 
-* Our colleague
-  [Arthur Charguéraud](https://www.chargueraud.org/)
-  has posted an offer entitled
-  [Optimisation interactive de programmes OCaml
-   via des transformations source-à-source](https://chargueraud.org/research/2024/optitrust/2024_11_sujet_m2_optitrust_ocaml.pdf).
+* Xavier Leroy and François Pottier
+  have an offer entitled
+  *Relational Separation Logic for Compiler Verification*.
+  Please write us, or talk to us,
+  for details.
 
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
