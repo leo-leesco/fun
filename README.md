@@ -139,7 +139,18 @@ students.
 
 The mid-term exam will take place on **03/12/2024**.
 
+The deadline for the programming project is **28/02/2025**.
+
 The final exam will take place on **11/03/2025**.
+
+The coefficients are:
+
++ **either** mid-term exam: 3 and final exam: 4
+  **or** mid-term exam: 4 and final exam: 3
+  (whichever is more advantageous for each student);
++ programming project: 3.
+
+Thus, the sum of the coefficients is 10.
 
 The exam takes place
 in the usual room and at the usual time,
