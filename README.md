@@ -204,6 +204,9 @@ third of the final grade.
 The project for year 2024-2025 is available [here](project/mpri-2.4-projet-2024-2025.tar.gz).
 The description is given in file sujet.pdf in the archive.
 
+**IMPORTANT**: please use the e-mail address jacques-henri.jourdan@universite-paris-saclay.fr to send your project.
+The email address mentionned in the project's subject has some security "filters" which may remove your attached .tar.gz archive. 
+
 ## Research Internship Proposals
 
 We, the teachers of this course, are planning to post a few internship
