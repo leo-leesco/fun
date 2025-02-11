@@ -126,7 +126,8 @@ The syllabus is organized in four main segments of five lectures each.
 
 * (04/02/2025) Rust: Generics and traits (JHJ) ([slides](slides/jhjourdan-02.pdf)).
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (11/02/2025) Practicing Rust.
+* (11/02/2025) Practicing Rust, concurrency (JHJ) ([slides](slides/jhjourdan-03.pdf))..
+  + Hands-on: ([exercises](tdtp/jhjourdan2.pdf), [solution](tdtp/jhjourdan2_solution.rs)).
 * (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
 * (25/02/2025) Exercise session (GS).
 * (04/03/2025) *break*
