@@ -131,7 +131,9 @@ The syllabus is organized in four main segments of five lectures each.
 * (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
 * (25/02/2025) Exercise session (GS).
 * (04/03/2025) *break*
-* (11/03/2025) **final exam**
+* (11/03/2025) **final exam**, in the usual room and at the usual time,
+  **from 12:45 to 15:30**, without a break.
+  The duration of the exam is 2h45.
 
 ## Evaluation of the course
 
