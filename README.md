@@ -135,6 +135,10 @@ The syllabus is organized in four main segments of five lectures each.
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
+  [Exam topic.](exams/final-2024-2025.pdf)
+  (If you find a mistake, write to `gabriel.scherer@irif.fr`.)
+
+
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
