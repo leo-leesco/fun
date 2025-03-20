@@ -136,7 +136,6 @@ The syllabus is organized in four main segments of five lectures each.
   The duration of the exam is 2h45.
 
   [Exam topic.](exams/final-2024-2025.pdf)
-  (If you find a mistake, write to `gabriel.scherer@irif.fr`.)
 
 
 ## Evaluation of the course
