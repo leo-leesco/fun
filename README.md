@@ -217,19 +217,11 @@ The email address mentionned in the project's subject has some security "filters
 
 ## Research Internship Proposals
 
-We, the teachers of this course, are planning to post a few internship
+We, the teachers of this course, usually post a few internship
 offers at some point during the fall.
 
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
-
-So far, the following offers have been posted:
-
-* Xavier Leroy and François Pottier
-  have an offer entitled
-  *Relational Separation Logic for Compiler Verification*.
-  Please write us, or talk to us,
-  for details.
 
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
