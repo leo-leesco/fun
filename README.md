@@ -1,7 +1,7 @@
-# Functional programming and type systems (2024-2025)
+# Functional programming and type systems (FUN) (2024-2025)
 
 This page supplements
-[the official page of MPRI 2-4](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-2-4-2).
+[the official page of MPRI FUN](https://mpri-master.ens.fr/doku.php?id=cours:fun).
 
 This course presents the principles, formalisms, and mathematical techniques
 that underlie many of today's typed programming languages, including OCaml,
@@ -318,7 +318,7 @@ If you would like to find an internship abroad,
 do not hesitate to talk to us.
 
 See also
-[the official list of internship offers](https://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=internships)
+[the official list of internship offers](https://mpri-master.ens.fr/doku.php?id=start#internships)
 at MPRI.
 
 ## Recommended software
