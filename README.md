@@ -1,7 +1,10 @@
-# Functional programming and type systems (FUN) (2024-2025)
+# Functional programming and type systems (FUN) (2025-2026)
 
-This page supplements
-[the official page of MPRI FUN](https://mpri-master.ens.fr/doku.php?id=cours:fun).
+This is the main home page
+of the course *Functional programming and type systems*,
+also known under the code names *2.4* and *FUN*.
+The course also has a shorter
+[official page](https://mpri-master.ens.fr/doku.php?id=cours:fun) on MPRI's site.
 
 This course presents the principles, formalisms, and mathematical techniques
 that underlie many of today's typed programming languages, including OCaml,
@@ -9,17 +12,22 @@ Haskell, and Rust.
 Here are some [introductory slides](slides/fpottier-00.pdf).
 
 The course is taught by
-[Pierre-Evariste Dagand](https://www.irif.fr/~dagand/) (PED),
 [Jacques-Henri Jourdan](https://jhjourdan.mketjh.fr/) (JHJ),
 [François Pottier](http://cambium.inria.fr/~fpottier/) (FP)
 (*head*),
+[Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/) (GS),
 and
-[Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/) (GS).
+[Yannick Zakowski](https://cambium.inria.fr/~yzakowsk/) (YZ).
 
-The content of the course is partly renewed in 2024-2025. In particular, we
-will teach both **syntactic and semantic proofs of type soundness**, place
-more emphasis on **logical relations**, including **logical relations in
-Iris**, and present **two distinct algorithmic approaches to type inference**.
+The content of the course is partly renewed in 2025-2026.
+In particular,
+we will go deeper into monads,
+with two new lectures on **interaction trees**
+and **modular monadic semantics**
+for programming languages.
+Also, the last part of the course includes
+a new lecture on
+**translating Rust to purely functional code**.
 
 Didier Rémy's [slides and lecture notes](http://cristal.inria.fr/~remy/mpri/),
 from an earlier version of the course,
@@ -31,123 +39,92 @@ The lectures take place at University of Paris,
 Bâtiment Sophie Germain,
 in room **1002**.
 
-They are scheduled on **Tuesdays** from **12:45** to **15:30**.
+They are scheduled on **Wednesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
 so each lecture lasts 2h30.
 
 ## Syllabus and Time Table
 
-The syllabus is organized in four main segments of five lectures each.
+The syllabus is organized in four main segments of roughly comparable sizes.
 
-### [Operational Semantics, Type Systems, and Program Transformations](overview/pottier.md)
+### [Syntax, Operational Semantics, and Type Systems](overview/pottier.md)
 
-* (17/09/2024) Syntax, semantics, and interpreters (FP).
-  * Introduction to this course
-      ([slides 00](slides/fpottier-00.pdf))
-  * From operational semantics to interpreters
-      ([slides 01](slides/fpottier-01.pdf),
-       [slides without animations 01](slides/fpottier-printing-01.pdf))
-  * Machine-checked proofs and de Bruijn syntax in Coq
-      ([slides 01b](slides/fpottier-01b.pdf),
-       [slides without animations 01b](slides/fpottier-printing-01b.pdf))
-  * Source files:
-      + [λ-calculus in OCaml](ocaml/pottier/Lambda.ml)
-      + [λ-calculus in Coq](coq/DemoSyntaxReduction.v)
-* (24/09/2024) System F and a syntactic proof of its type soundness (FP).
-  * ([slides 02](slides/fpottier-02.pdf),
-     [slides without animations 02](slides/fpottier-printing-02.pdf)).
-* (01/10/2024) Algebraic data types and existential types (FP).
+* (17/09/2025) Operational semantics and interpreters (FP).
+* (24/09/2025) Syntactic proofs of type soundness for simply-typed lambda-calculus and for System F (FP).
+  + [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
+  + [auxiliary lemmas and judgements](coq/STLCLemmas.v)
+  + subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
+* (01/10/2025) Algebraic data types and existential types (FP).
   * ([slides 03](slides/fpottier-03.pdf),
      [slides without animations 03](slides/fpottier-printing-03.pdf)).
-* (08/10/2024) GADTs (FP).
+* (08/10/2025) GADTs (FP).
   * ([slides 04](slides/fpottier-04.pdf),
      [slides without animations 04](slides/fpottier-printing-04.pdf)).
-* (15/10/2024) Closure conversion and defunctionalization (FP).
+* (15/10/2025) Closure conversion and defunctionalization (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
-* (22/10/2024) System F with mutable state; the value restriction; type soundness (GS)
+* (22/10/2025) Hindley-Milner type inference; bidirectional type inference (GS).
+* (29/10/2025) *Break*
+* (05/11/2025) System F with mutable state; the value restriction; type soundness (GS).
   * ([slides](slides/scherer-02.pdf))
 
 ### Semantic Proofs of Type Soundness and Logical Relations
 
-* (29/10/2024)
+* (12/11/2025)
   Unary logical relations for simple types;
-  (weak) normalisation of simply-typed λ-calculus
-  (GS).
+  (weak) normalisation of simply-typed λ-calculus;
+  unary logical relations for polymorphic types;
+  (weak) normalisation of System F (GS).
   * ([slides](slides/scherer-01.pdf),
      [course notes from Lau Skorstengaard](https://arxiv.org/pdf/1907.11133.pdf)).
-* (05/11/2024)
-  Unary logical relations for polymorphic types;
-  (weak) normalisation of System F;
-  binary logical relations and parametricity
-  (GS).
-  * (Same slides).
 
-* (12/11/2024) The CPS transformation (FP).
-  + ([slides 06](slides/fpottier-06.pdf),
-     [slides without animations 06](slides/fpottier-printing-06.pdf)).
+* (19/11/2025)
+  Binary logical relations and parametricity;
+  logical relations for mutable state, with step-indexing (GS).
 
-  A proof of type soundness in Coq (FP).
-  + [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
-  + [auxiliary lemmas and judgements](coq/STLCLemmas.v)
-  + subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
+* (26/11/2025) *Break*
 
-* (19/11/2024) Semantic type soundness for System F with mutable state in Coq/Iris (JHJ).
-  * ([slides](slides/jhjourdan-00.pdf), [Coq/Iris development](coq/logic_rel.tar.gz))
-
-* (26/11/2024) *break*
-
-* **(03/12/2024) mid-term exam**, in the usual room and at the usual time,
+* **(03/12/2025) mid-term exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
-  [Exam topic, with solutions.](exams/partiel-2024-2025.pdf)
-  (If you find a mistake, write to `gabriel.scherer@irif.fr`.)
-
-* (10/12/2024) (Interlude.) Introduction to programming in Rust (JHJ)
-  * ([slides](slides/jhjourdan-01.pdf)).
+* (10/12/2025) System Fω; modules (GS).
+  + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
+  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 ### [Typed Programming](overview/dagand.md)
 
-* (17/12/2024) Ad-hoc polymorphism and overloading ([handout by D. Rémy](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf), PED).
-* (07/01/2025) Applicative functors and monads (PED).
-  + Practicals: bring a laptop!
-  + [Monadic gymnastics (OCaml)](https://gitlab.com/pedagand/mpri-2.4-monads)
-  + [Functor-oriented programming (Agda)](./agda/04-generic/Desc.lagda.rst)
-* (14/01/2025) System Fω and modules (PED).
-  + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
-  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
-* (21/01/2025) Hindley-Milner type inference and elaboration (PED).
-  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/2013/cours3.pdf)
-* (28/01/2025) Bidirectional type inference and elaboration (PED).
-  + [Bidirectional typing, Dunfield & Krishnaswamy](https://arxiv.org/abs/1908.05839)
+* (17/12/2025) Ad hoc polymorphism and overloading (Didier Rémy).
+  + ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+* (07/01/2026) Applicative functors and monads (YZ).
+* (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
+* (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
 
 ### Programming with Resources in Rust
 
-* (04/02/2025) Rust: Generics and traits (JHJ) ([slides](slides/jhjourdan-02.pdf)).
+* (28/01/2026) Introduction to programming in Rust (JHJ)
+  * ([slides](slides/jhjourdan-01.pdf)).
+* (04/02/2026) Rust generics and traits (JHJ) ([slides](slides/jhjourdan-02.pdf)).
   + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (11/02/2025) Practicing Rust, concurrency (JHJ) ([slides](slides/jhjourdan-03.pdf))..
+* (11/02/2026) Practicing Rust; concurrency (JHJ) ([slides](slides/jhjourdan-03.pdf))..
   + Hands-on: ([exercises](tdtp/jhjourdan2.pdf), [template for persistent arrays](tdtp/jhjourdan2_template.rs), [template for union-find](tdtp/jhjourdan-td2-uninonfind.tar.gz), [solution](tdtp/jhjourdan2_solution.rs)).
-* (18/02/2025) Metatheory of Rust's type system (JHJ) ([slides](slides/jhjourdan-04.pdf)).
-* (25/02/2025) Exercise session (GS).
-* (04/03/2025) *break*
-* (11/03/2025) **final exam**, in the usual room and at the usual time,
+* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ) ([slides](slides/jhjourdan-04.pdf)).
+* (25/02/2026) Translating Rust to purely functional code (JHJ).
+* (04/03/2026) *break*
+* (11/03/2026) **final exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
-
-  [Exam topic.](exams/final-2024-2025.pdf)
-
 
 ## Evaluation of the course
 
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term exam will take place on **03/12/2024**.
+The mid-term exam will take place on **03/12/2025**.
 
-The deadline for the programming project is **28/02/2025**.
+The deadline for the programming project is **28/02/2026**.
 
-The final exam will take place on **11/03/2025**.
+The final exam will take place on **11/03/2026**.
 
 The coefficients are:
 
@@ -158,7 +135,7 @@ The coefficients are:
 
 Thus, the sum of the coefficients is 10.
 
-The exam takes place
+The exams take place
 in the usual room and at the usual time,
 **from 12:45 to 15:30**, without a break.
 The duration of the exam is 2h45.
@@ -171,6 +148,10 @@ Although the course evolves over time,
 you are encouraged to have a look at the previous exams
 and their solutions:
 
+* final exam 2024-2025:
+  [structural ML type inference](exams/final-2024-2025.pdf).
+* mid-term exam 2024-2025:
+  [a simple proof technique for certain parametricity results](exams/partiel-2024-2025.pdf).
 * final exam 2023-2024:
   [circuits and functors](exams/final-2023-2024.pdf).
 * mid-term exam 2023-2024:
@@ -207,8 +188,7 @@ Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
-The project for the year 2024-2025 is available [here](project/mpri-2.4-projet-2024-2025.tar.gz).
-The description is given in file sujet.pdf in the archive.
+The project for the year 2025-2026 will be made available in late fall or early winter.
 
 The deadline was: **Friday, February 28, 2025**, at 23:59.
 
@@ -326,7 +306,7 @@ at MPRI.
 ### Coq
 
 Please install [opam](https://opam.ocaml.org/doc/Install.html) first.
-A recent version is recommended (at the time of writing, 2.1.5).
+A recent version is recommended.
 If you have installed it already, skip this step.
 
 Then, install OCaml 4.12.0,
