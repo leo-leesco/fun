@@ -100,7 +100,7 @@ The syllabus is organized in four main segments of roughly comparable sizes.
 * (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
 * (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
 
-### Programming with Resources in Rust
+### [Programming with Resources in Rust](overview/jourdan.md)
 
 * (28/01/2026) Introduction to programming in Rust (JHJ)
   * ([slides](slides/jhjourdan-01.pdf)).
