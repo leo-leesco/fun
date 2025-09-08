@@ -38,3 +38,8 @@ of functional programming languages, so they help understand what happens when
 the machine executes a program. We discuss how to *prove* that the meaning of
 programs is preserved by these transformations, based on an operational
 semantics.
+
+The sixth and seventh lectures (by Gabriel Scherer) concern *type inference*
+(via two quite different approaches, namely type inference based on equality
+constraints and bidirectional type inference) and the extension of System F
+with *mutable state*.
