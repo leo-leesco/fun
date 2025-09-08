@@ -92,7 +92,7 @@ The syllabus is organized in four main segments of roughly comparable sizes.
   + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
-### [Typed Programming](overview/dagand.md)
+### [Monads as a Programming Tool and as a Semantic Tool](overview/zakowski.md)
 
 * (17/12/2025) Ad hoc polymorphism and overloading (Didier Rémy).
   + ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
