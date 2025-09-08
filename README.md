@@ -18,6 +18,8 @@ The course is taught by
 [Gabriel Scherer](http://www.lix.polytechnique.fr/Labo/Gabriel.Scherer/) (GS),
 and
 [Yannick Zakowski](https://cambium.inria.fr/~yzakowsk/) (YZ).
+This year,
+one lecture will be given by Didier Rémy (DR).
 
 The content of the course is partly renewed in 2025-2026.
 In particular,
@@ -46,6 +48,8 @@ so each lecture lasts 2h30.
 ## Syllabus and Time Table
 
 The syllabus is organized in four main segments of roughly comparable sizes.
+The title of each segment (below) is a hyperlink;
+click it to obtain a more detailed description of each segment.
 
 ### [Syntax, Operational Semantics, and Type Systems](overview/pottier.md)
 
@@ -92,15 +96,15 @@ The syllabus is organized in four main segments of roughly comparable sizes.
   + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
   + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
-### [Typed Programming](overview/dagand.md)
+### [Monads as a Programming Tool and as a Semantic Tool](overview/zakowski.md)
 
-* (17/12/2025) Ad hoc polymorphism and overloading (Didier Rémy).
+* (17/12/2025) Ad hoc polymorphism and overloading (DR).
   + ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 * (07/01/2026) Applicative functors and monads (YZ).
 * (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
 * (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
 
-### Programming with Resources in Rust
+### [Programming with Resources in Rust](overview/jourdan.md)
 
 * (28/01/2026) Introduction to programming in Rust (JHJ)
   * ([slides](slides/jhjourdan-01.pdf)).
