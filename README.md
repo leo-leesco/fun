@@ -99,6 +99,7 @@ click it to obtain a more detailed description of each segment.
 ### [Monads as a Programming Tool and as a Semantic Tool](overview/zakowski.md)
 
 * (17/12/2025) Ad hoc polymorphism and overloading (DR).
+  + ([summary](overview/remy.md))
   + ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 * (07/01/2026) Applicative functors and monads (YZ).
 * (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
