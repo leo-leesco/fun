@@ -106,13 +106,10 @@ click it to obtain a more detailed description of each segment.
 
 ### [Programming with Resources in Rust](overview/jourdan.md)
 
-* (28/01/2026) Introduction to programming in Rust (JHJ)
-  * ([slides](slides/jhjourdan-01.pdf)).
-* (04/02/2026) Rust generics and traits (JHJ) ([slides](slides/jhjourdan-02.pdf)).
-  + Hands-on: binary search trees in Rust ([exercises](tdtp/jhjourdan1.pdf), [solution](tdtp/jhjourdan1_solution.rs)).
-* (11/02/2026) Practicing Rust; concurrency (JHJ) ([slides](slides/jhjourdan-03.pdf))..
-  + Hands-on: ([exercises](tdtp/jhjourdan2.pdf), [template for persistent arrays](tdtp/jhjourdan2_template.rs), [template for union-find](tdtp/jhjourdan-td2-uninonfind.tar.gz), [solution](tdtp/jhjourdan2_solution.rs)).
-* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ) ([slides](slides/jhjourdan-04.pdf)).
+* (28/01/2026) Introduction to programming in Rust (JHJ).
+* (04/02/2026) Rust generics and traits (JHJ).
+* (11/02/2026) Practicing Rust; concurrency (JHJ).
+* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ).
 * (25/02/2026) Translating Rust to purely functional code (JHJ).
 * (04/03/2026) *break*
 * (11/03/2026) **final exam**, in the usual room and at the usual time,

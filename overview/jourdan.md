@@ -18,10 +18,10 @@ escaping from the safe fragment and encapsulating these uses of unsafe
 features behind safe interfaces. We will study the important example
 of interior mutability.
 
-Next, we will focus on two recent research subjects on Rust. First, it
-is possible to translate programs written in the safe fragment of Rust
-into a functional language, thus completely erasing state. This makes
-it possible to ease verification of Rust programs. Second, we will
-give an overview of one proof of soundness of the type system of Rust,
-which also proves that many libraries written in the unsafe fragment
-are, in fact, safe.
+Next, we will focus on two recent research subjects on Rust. First, we
+will give an overview of one proof of soundness of the type system of
+Rust, which also proves that many libraries written in the unsafe
+fragment are, in fact, safe.  Second, we will see that it is possible
+to translate programs written in the safe fragment of Rust into a
+functional language, thus completely erasing state. This makes it
+possible to ease verification of Rust programs.
