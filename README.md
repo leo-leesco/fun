@@ -55,6 +55,12 @@ click it to obtain a more detailed description of each segment.
 
 * (17/09/2025) Operational semantics and interpreters (FP).
   * Introduction to this course ([slides](slides/fpottier-00.pdf))
+  * Optional extra material:
+    towards machine-checked proofs;
+    Rocq in a nutshell;
+    representing abstract syntax with binders
+    ([slides](slides/fpottier-01b.pdf),
+     [slides without animations](slides/fpottier-printing-01b.pdf))
 
 * (24/09/2025) Syntactic proofs of type soundness
   for simply-typed lambda-calculus and for System F (FP).
