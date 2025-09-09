@@ -54,22 +54,33 @@ click it to obtain a more detailed description of each segment.
 ### [Syntax, Operational Semantics, and Type Systems](overview/pottier.md)
 
 * (17/09/2025) Operational semantics and interpreters (FP).
-* (24/09/2025) Syntactic proofs of type soundness for simply-typed lambda-calculus and for System F (FP).
-  + [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
-  + [auxiliary lemmas and judgements](coq/STLCLemmas.v)
-  + subject reduction and progress: [template](coq/STLCTypeSoundnessBlank.v), [solution](coq/STLCTypeSoundnessComplete.v)
+
+* (24/09/2025) Syntactic proofs of type soundness
+  for simply-typed lambda-calculus and for System F (FP).
+  * [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
+  * [auxiliary lemmas and judgements](coq/STLCLemmas.v)
+  * subject reduction and progress:
+    [template](coq/STLCTypeSoundnessBlank.v),
+    [solution](coq/STLCTypeSoundnessComplete.v)
+
 * (01/10/2025) Algebraic data types and existential types (FP).
   * ([slides 03](slides/fpottier-03.pdf),
      [slides without animations 03](slides/fpottier-printing-03.pdf)).
+
 * (08/10/2025) GADTs (FP).
   * ([slides 04](slides/fpottier-04.pdf),
      [slides without animations 04](slides/fpottier-printing-04.pdf)).
+
 * (15/10/2025) Closure conversion and defunctionalization (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
+
 * (22/10/2025) Hindley-Milner type inference; bidirectional type inference (GS).
+
 * (29/10/2025) *Break*
-* (05/11/2025) System F with mutable state; the value restriction; type soundness (GS).
+
+* (05/11/2025) System F with mutable state;
+  the value restriction; type soundness (GS).
   * ([slides](slides/scherer-02.pdf))
 
 ### Semantic Proofs of Type Soundness and Logical Relations
@@ -92,27 +103,37 @@ click it to obtain a more detailed description of each segment.
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
-* (10/12/2025) System Fω; modules (GS).
-  + [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
-  + [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
+### [Modular Programming and Modular Semantics](overview/zakowski.md)
 
-### [Monads as a Programming Tool and as a Semantic Tool](overview/zakowski.md)
+* (10/12/2025) System Fω; modules (GS).
+  * [State of the art of Module systems by C. Blaudeau (Ch.2)](https://clement.blaudeau.net/assets/pdf/thesis.pdf#page=23)
+  * [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 * (17/12/2025) Ad hoc polymorphism and overloading (DR).
-  + ([summary](overview/remy.md))
-  + ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+  * ([summary](overview/remy.md))
+  * ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+
 * (07/01/2026) Applicative functors and monads (YZ).
+
 * (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
+
 * (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
 
 ### [Programming with Resources in Rust](overview/jourdan.md)
 
 * (28/01/2026) Introduction to programming in Rust (JHJ).
+
 * (04/02/2026) Rust generics and traits (JHJ).
+
 * (11/02/2026) Practicing Rust; concurrency (JHJ).
-* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ).
+
+* (18/02/2026) Metatheory of Rust's type system;
+  a semantic interpretation of types (JHJ).
+
 * (25/02/2026) Translating Rust to purely functional code (JHJ).
+
 * (04/03/2026) *break*
+
 * (11/03/2026) **final exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
@@ -130,10 +151,10 @@ The final exam will take place on **11/03/2026**.
 
 The coefficients are:
 
-+ **either** mid-term exam: 3 and final exam: 4
+* **either** mid-term exam: 3 and final exam: 4
   **or** mid-term exam: 4 and final exam: 3
   (whichever is more advantageous for each student);
-+ programming project: 3.
+* programming project: 3.
 
 Thus, the sum of the coefficients is 10.
 
@@ -247,13 +268,15 @@ you may wish to also contact our colleagues:
   proof theory,
   type theory,
   and more.
-* The [Gallinette](https://gallinette.gitlabpages.inria.fr/website/) team at Inria Nantes.
+* The [Gallinette](https://gallinette.gitlabpages.inria.fr/website/)
+  team at Inria Nantes.
   Keywords:
   formalized mathematics (Mathematical Components),
   proof assistants (Coq),
   type theory,
   and more.
-* The [Toccata](https://toccata.gitlabpages.inria.fr/toccata/index.fr.html) team at Inria Saclay.
+* The [Toccata](https://toccata.gitlabpages.inria.fr/toccata/index.fr.html)
+  team at Inria Saclay.
   Keywords:
   automated deduction,
   program verification,
@@ -348,6 +371,7 @@ If desired, ProofGeneral can be further
 
 In order to participate to the hands-on exercises on Rust,
 please install the following tools:
+
 * The Rust compiler (version 1.41 or newer)
 * The Cargo package manager (any compatible version)
 
