@@ -3,11 +3,13 @@
 (* The type of lambda-terms, in de Bruijn's representation. *)
 
 type var = int (* a de Bruijn index *)
+type binder = unit
+
 type term =
   | Var of var
   | Lam of (* bind: *) term
   | App of term * term
-  | Let of (* bind: *) term * term
+  | Let of term * (* bind: *) term
 
 (* -------------------------------------------------------------------------- *)
 
@@ -92,39 +94,37 @@ let (let*) = bind
    [Some t'] if and only if the relation [cbv t t'] holds, and returns [None]
    if no such term [t'] exists. *)
 
-let rec step (t : term) : term option =
+exception Irreducible
+let rec step (t : term) : term =
   match t with
-  | Lam _ | Var _ -> fail
+  | Lam _ | Var _ ->
+      raise Irreducible
   | App (Lam t, v) when is_value v ->   (* Plotkin's BetaV *)
-      return (subst (singleton v) t)
+      subst (singleton v) t
   | App (t, u) when not (is_value t) -> (* Plotkin's AppL  *)
-      let* t' = step t in
-      return (App (t', u))
+      let t' = step t in App (t', u)
   | App (v, u) when is_value v ->       (* Plotkin's AppVR *)
-      let* u' = step u in
-      return (App (v, u'))
+      let u' = step u in App (v, u')
   | App (_, _) ->             (* All cases covered already *)
       assert false            (*  but OCaml cannot see it. *)
   | Let (t, u) when not (is_value t) ->
-      let* t' = step t in
-      return (Let (t', u))
+      let t' = step t in Let (t', u)
   | Let (v, u) when is_value v ->
-      return (subst (singleton v) u)
+      subst (singleton v) u
   | Let (_, _) ->
       assert false
 
 let rec eval (t : term) : term =
   match step t with
-  | None ->
+  | exception Irreducible ->
       t
-  | Some t' ->
+  | t' ->
       eval t'
 
 (* -------------------------------------------------------------------------- *)
 
 (* A naive, substitution-based big-step interpreter. *)
 
-exception RuntimeError
 let rec eval (t : term) : term =
   match t with
   | Lam _ | Var _ -> t
@@ -136,7 +136,7 @@ let rec eval (t : term) : term =
       let v2 = eval t2 in
       match v1 with
       | Lam u1 -> eval (subst (singleton v2) u1)
-      | _      -> raise RuntimeError
+      | _      -> assert false (* every value is a function *)
 
 (* -------------------------------------------------------------------------- *)
 
@@ -144,18 +144,25 @@ let rec eval (t : term) : term =
 
 open Printf
 
-let rec print f = function
-  | Var x ->
-      fprintf f "(Var %d)" x
-  | Lam t ->
-      fprintf f "(Lam %a)" print t
-  | App (t1, t2) ->
-      fprintf f "(App %a %a)" print t1 print t2
-  | Let (t1, t2) ->
-      fprintf f "(Let %a %a)" print t1 print t2
+module Print = struct
+
+  let var f x =
+    fprintf f "%d" x
+
+  let rec term f = function
+    | Var x ->
+        fprintf f "(Var %a)" var x
+    | Lam t ->
+        fprintf f "(Lam %a)" term t
+    | App (t1, t2) ->
+        fprintf f "(App %a %a)" term t1 term t2
+    | Let (t1, t2) ->
+        fprintf f "(Let %a %a)" term t1 term t2
+
+end
 
 let print t =
-  fprintf stdout "%a\n" print t
+  fprintf stdout "%a\n" Print.term t
 
 (* -------------------------------------------------------------------------- *)
 
@@ -167,12 +174,10 @@ let id =
 let idid =
   App (id, id)
 
+(* I am ashamed of the triviality of this unit test. *)
 let () =
-  match step idid with
-  | None ->
-      assert false
-  | Some reduct ->
-      print reduct
+  assert (eval idid = id)
 
+(* Some output. *)
 let () =
   print (eval idid)
