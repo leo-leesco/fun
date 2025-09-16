@@ -6,6 +6,10 @@ also known under the code names *2.4* and *FUN*.
 The course also has a shorter
 [official page](https://mpri-master.ens.fr/doku.php?id=cours:fun) on MPRI's site.
 
+**Optional:** please take a few minutes to fill our
+[unofficial registration](https://framaforms.org/mpri-fun-2025-unofficial-registration-1757935916)
+form. This helps us know you better and faster.
+
 This course presents the principles, formalisms, and mathematical techniques
 that underlie many of today's typed programming languages, including OCaml,
 Haskell, and Rust.
