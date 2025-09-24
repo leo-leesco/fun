@@ -70,9 +70,12 @@ click it to obtain a more detailed description of each segment.
 
 * (24/09/2025) Syntactic proofs of type soundness
   for simply-typed lambda-calculus and for System F (FP).
-  * [definition of simply-typed λ-calculus](coq/STLCDefinition.v)
-  * [auxiliary lemmas and judgements](coq/STLCLemmas.v)
-  * subject reduction and progress:
+  * Slides
+    ([with    animations](slides/fpottier-02.pdf);
+     [without animations](slides/fpottier-printing-02.pdf))
+  * [definition of simply-typed λ-calculus](coq/STLCDefinition.v) in Rocq
+  * [auxiliary lemmas and judgements](coq/STLCLemmas.v) in Rocq
+  * subject reduction and progress in Rocq:
     [template](coq/STLCTypeSoundnessBlank.v),
     [solution](coq/STLCTypeSoundnessComplete.v)
 
