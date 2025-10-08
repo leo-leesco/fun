@@ -161,7 +161,7 @@ students.
 
 The mid-term exam will take place on **03/12/2025**.
 
-The deadline for the programming project is **28/02/2026**.
+The deadline for the programming project is **27/02/2026**.
 
 The final exam will take place on **11/03/2026**.
 
@@ -227,9 +227,9 @@ Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
-The project for the year 2025-2026 will be made available in late fall or early winter.
+The project for the year 2025-2026 should be made available in late November 2025.
 
-The deadline was: **Friday, February 28, 2025**, at 23:59.
+The deadline is: **Friday, February 27, 2026**, at 23:59.
 
 ## Research Internship Proposals
 
