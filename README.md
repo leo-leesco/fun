@@ -239,6 +239,12 @@ offers at some point during the fall.
 Please do not hesitate to talk to us (during the break or at the end of each
 lecture), to contact us by email, or to visit us at our offices.
 
+* Xavier Leroy and François Pottier are offering an internship
+  on [relational separation logic for compiler verification](https://cambium.inria.fr/~fpottier/stages/sujet2026-m2.pdf).
+
+* Our colleague Yannick Forster has posted
+  [several possible topics](https://yforster.de/internships.html).
+
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
 
