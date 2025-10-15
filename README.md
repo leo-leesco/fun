@@ -90,6 +90,10 @@ click it to obtain a more detailed description of each segment.
 * (15/10/2025) Closure conversion and defunctionalization (FP).
   * ([slides 05](slides/fpottier-05.pdf),
      [slides without animations 05](slides/fpottier-printing-05.pdf)).
+  * Optional extra material:
+    the CPS transformation
+    ([slides 06](slides/fpottier-06.pdf);
+     [slides without animations 06](slides/fpottier-printing-06.pdf))
 
 * (22/10/2025) Hindley-Milner type inference; bidirectional type inference (GS).
 
