@@ -249,8 +249,15 @@ lecture), to contact us by email, or to visit us at our offices.
 * Yannick Zakowski has posted
   [several offers](https://cambium.inria.fr/~yzakowsk/internship.html).
 
+* Didier Rémy has posted two offers on
+  [the revival of
+  semi-infication](https://cambium.inria.fr/~remy/mpri/semiunif.pdf)
+  and 
+  [Hybridizing Fω and ML](https://cambium.inria.fr/~remy/mpri/fmlw.pdf)
+
 * Our colleague Yannick Forster has posted
   [several offers](https://yforster.de/internships.html).
+  
 
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
