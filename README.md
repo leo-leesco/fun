@@ -96,6 +96,7 @@ click it to obtain a more detailed description of each segment.
      [slides without animations 06](slides/fpottier-printing-06.pdf))
 
 * (22/10/2025) Hindley-Milner type inference; bidirectional type inference (GS).
+   + ([slides](slides/scherer-type-inference.pdf))
 
 * (29/10/2025) *Break*
 
