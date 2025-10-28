@@ -251,6 +251,7 @@ lecture), to contact us by email, or to visit us at our offices.
   semi-unification](https://cambium.inria.fr/~remy/mpri/semiunif.pdf)
   and 
   [Hybridizing Fω and ML](https://cambium.inria.fr/~remy/mpri/fmlw.pdf).
+* Gabriel Scherer has [a topic on Typst](https://www.irif.fr/~scherer/topics/typst.pdf).
 * Yannick Zakowski has posted
   [several offers](https://cambium.inria.fr/~yzakowsk/internship.html).
 * Our colleague Yannick Forster has posted
