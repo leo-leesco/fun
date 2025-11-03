@@ -246,7 +246,7 @@ lecture), to contact us by email, or to visit us at our offices.
 
 * Xavier Leroy and François Pottier have posted an offer
   on [relational separation logic for compiler verification](https://cambium.inria.fr/~fpottier/stages/sujet2026-m2.pdf).
-  **This offer has been taken up* and is no longer available.
+  **This offer has been taken up** and is no longer available.
 * Didier Rémy has posted two offers on
   [the revival of
   semi-unification](https://cambium.inria.fr/~remy/mpri/semiunif.pdf)
