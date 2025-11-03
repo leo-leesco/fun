@@ -246,17 +246,18 @@ lecture), to contact us by email, or to visit us at our offices.
 
 * Xavier Leroy and François Pottier have posted an offer
   on [relational separation logic for compiler verification](https://cambium.inria.fr/~fpottier/stages/sujet2026-m2.pdf).
+  **This offer has been taken up* and is no longer available.
 * Didier Rémy has posted two offers on
   [the revival of
   semi-unification](https://cambium.inria.fr/~remy/mpri/semiunif.pdf)
-  and 
+  and
   [Hybridizing Fω and ML](https://cambium.inria.fr/~remy/mpri/fmlw.pdf).
 * Gabriel Scherer has [a topic on Typst](https://www.irif.fr/~scherer/topics/typst.pdf).
 * Yannick Zakowski has posted
   [several offers](https://cambium.inria.fr/~yzakowsk/internship.html).
 * Our colleague Yannick Forster has posted
   [several offers](https://yforster.de/internships.html).
-  
+
 
 To find internships related to the topics of this course,
 you may wish to also contact our colleagues:
