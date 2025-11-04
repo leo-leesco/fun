@@ -118,11 +118,11 @@ click it to obtain a more detailed description of each segment.
   Binary logical relations and parametricity;
   logical relations for mutable state, with step-indexing (GS).
 
-* (26/11/2025) *Break*
-
-* **(03/12/2025) mid-term exam**, in the usual room and at the usual time,
+* **(26/11/2025) mid-term exam**, in rooms **1002 and 1004** and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
+
+* (03/12/2025) *Break*
 
 ### [Modular Programming and Modular Semantics](overview/zakowski.md)
 
