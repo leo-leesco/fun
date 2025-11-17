@@ -164,7 +164,7 @@ click it to obtain a more detailed description of each segment.
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term exam will take place on **03/12/2025**.
+The mid-term exam will take place on **26/11/2025**.
 
 The deadline for the programming project is **27/02/2026**.
 
