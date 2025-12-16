@@ -131,9 +131,10 @@ click it to obtain a more detailed description of each segment.
   * [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 * (17/12/2025) Ad hoc polymorphism and overloading (DR).
-  * ([summary](overview/remy.md))
-  * ([slides](http://cambium.inria.fr/~remy/mpri/handouts-overloading.pdf))
-  * ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+  * ([summary](overview/remy.md),
+     [slides](http://cambium.inria.fr/~remy/mpri/handouts-overloading.pdf),
+     and 
+     [handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 
 * (07/01/2026) Applicative functors and monads (YZ).
 
