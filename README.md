@@ -192,6 +192,8 @@ Although the course evolves over time,
 you are encouraged to have a look at the previous exams
 and their solutions:
 
+* mid-term exam 2025-2026:
+  [nominal types / random access lists](exams/partiel-2025-2026.pdf).
 * final exam 2024-2025:
   [structural ML type inference](exams/final-2024-2025.pdf).
 * mid-term exam 2024-2025:
