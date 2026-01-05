@@ -43,7 +43,8 @@ are still available and can serve as a useful reference.
 
 The lectures take place at University of Paris,
 Bâtiment Sophie Germain,
-in room **1004**.
+in room **2035**.
+(Exception: on January 14, 2026, the course takes place in room **1004**.)
 
 They are scheduled on **Wednesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
@@ -133,14 +134,14 @@ click it to obtain a more detailed description of each segment.
 * (17/12/2025) Ad hoc polymorphism and overloading (DR).
   * ([summary](overview/remy.md),
      [slides](http://cambium.inria.fr/~remy/mpri/handout-overloading.pdf),
-     and 
+     and
      [handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 
-* (07/01/2026) Applicative functors and monads (YZ).
+* (07/01/2026) Applicative functors and monads (YZ). **Room 2035**.
 
-* (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
+* (14/01/2026) The free monad, the delay monad, and interaction trees (YZ). **Room 1004**.
 
-* (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
+* (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ). **Room 2035**.
 
 ### [Programming with Resources in Rust](overview/jourdan.md)
 
