@@ -138,7 +138,7 @@ click it to obtain a more detailed description of each segment.
      [handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 
 * (07/01/2026) Towards Monadic Interpreters (YZ). **Room 2035**.
-  *([material](https://gitlab.inria.fr/yzakowsk/mpri-2.4-rip))
+  * ([material](https://gitlab.inria.fr/yzakowsk/mpri-2.4-rip))
   
 * (14/01/2026) CoInduction theory, the delay monad, and interaction trees (YZ). **Room 1004**.
 
