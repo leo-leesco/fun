@@ -155,9 +155,10 @@ click it to obtain a more detailed description of each segment.
 * (18/02/2026) Metatheory of Rust's type system;
   a semantic interpretation of types (JHJ).
 
-* (25/02/2026) Translating Rust to purely functional code (JHJ).
+* (25/02/2026) *break*
 
-* (04/03/2026) *break*
+* (04/03/2026) Translating Rust to purely functional code (JHJ).
+  * **Date changed !**
 
 * (11/03/2026) **final exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
