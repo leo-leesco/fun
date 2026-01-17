@@ -239,9 +239,13 @@ Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
-The project for the year 2025-2026 will be made available shortly (between January 14th and January 21st).
+The project for the year 2025-2026 is available!
+<https://codeberg.org/gasche/mpri-fun-project-2025-2026>
 
 The deadline is: **Tuesday, March 3rd, 2026**, at 23:59.
+
+For any questions regarding the project, please feel free to write
+to <gabriel.scherer@inria.fr>.
 
 ## Research Internship Proposals
 
