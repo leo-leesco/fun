@@ -147,6 +147,7 @@ click it to obtain a more detailed description of each segment.
 ### [Programming with Resources in Rust](overview/jourdan.md)
 
 * (28/01/2026) Introduction to programming in Rust (JHJ).
+    * [slides](slides/jhjourdan-01.pdf),
 
 * (04/02/2026) Rust generics and traits (JHJ).
 
