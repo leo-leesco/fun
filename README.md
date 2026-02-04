@@ -150,6 +150,9 @@ click it to obtain a more detailed description of each segment.
     * ([slides](slides/jhjourdan-01.pdf))
 
 * (04/02/2026) Rust generics and traits (JHJ).
+    * ([slides](slides/jhjourdan-02.pdf))
+    * ([exercises](tdtp/jhjourdan1.pdf))
+    * ([solution to exercises](slides/jhjourdan1_solution.rs))
 
 * (11/02/2026) Practicing Rust; concurrency (JHJ).
 
