@@ -5,7 +5,7 @@ mod parray {
     enum PAState<T> {
         Arr(Vec<T>),
         Diff(usize, T, PArray<T>),
-        Invalid
+        Invalid,
     }
     use self::PAState::*;
 
@@ -19,7 +19,11 @@ mod parray {
         }
 
         fn from_diff(self) -> (usize, T, PArray<T>) {
-            if let Diff(i, x, a) = self { (i, x, a) } else { panic!() }
+            if let Diff(i, x, a) = self {
+                (i, x, a)
+            } else {
+                panic!()
+            }
         }
     }
 
@@ -36,7 +40,10 @@ mod parray {
             PArray(Rc::new(RefCell::new(Arr(v))))
         }
 
-        pub fn get(&self, i: usize) -> T where T: Copy {
+        pub fn get(&self, i: usize) -> T
+        where
+            T: Copy,
+        {
             self.reroot();
             self.0.borrow().get_arr()[i]
         }
@@ -50,7 +57,9 @@ mod parray {
         #[allow(dead_code)]
         fn reroot_rec(&self) {
             let mut bself = self.0.borrow_mut();
-            if let Arr(_) = &*bself { return }
+            if let Arr(_) = &*bself {
+                return;
+            }
             let (i, x, next) = std::mem::replace(&mut *bself, Invalid).from_diff();
             next.reroot_rec();
             let mut bnext = next.0.borrow_mut();
@@ -60,7 +69,9 @@ mod parray {
 
         fn reroot(&self) {
             // Optimize for hot path
-            if let Arr(_) = &*self.0.borrow() { return }
+            if let Arr(_) = &*self.0.borrow() {
+                return;
+            }
 
             let mut st = Invalid;
             let mut cur = self.clone();
@@ -68,27 +79,24 @@ mod parray {
                 std::mem::swap(&mut *cur.0.borrow_mut(), &mut st);
                 match st {
                     Diff(_, _, ref mut next) => std::mem::swap(next, &mut cur),
-                    Arr(mut vec) => {
-                        loop {
-                            let mut b = cur.0.borrow_mut();
-                            match &mut *b {
-                                Diff(i, x, next) => {
-                                    std::mem::swap(x, &mut vec[*i]);
-                                    let next = next.clone();
-                                    drop(b);
-                                    cur = next;
-                                },
-                                Invalid => {
-                                    *b = Arr(vec);
-                                    return
-                                },
-                                Arr(_) => panic!()
+                    Arr(mut vec) => loop {
+                        let mut b = cur.0.borrow_mut();
+                        match &mut *b {
+                            Diff(i, x, next) => {
+                                std::mem::swap(x, &mut vec[*i]);
+                                let next = next.clone();
+                                drop(b);
+                                cur = next;
                             }
+                            Invalid => {
+                                *b = Arr(vec);
+                                return;
+                            }
+                            Arr(_) => panic!(),
                         }
-                    }
-                    Invalid => panic!()
+                    },
+                    Invalid => panic!(),
                 }
-
             }
         }
     }
@@ -112,19 +120,19 @@ fn bench_0() {
         v.push(a.clone());
         a = a.set(0, i)
     }
-    let res : i64 = v.iter().map(|a| a.get(0)).sum();
+    let res: i64 = v.iter().map(|a| a.get(0)).sum();
     let dt = start.elapsed().as_secs_f32();
     assert!(res == 500000499999);
     println!("Time: {}", dt)
 }
 
 mod nqueens {
-    use PArray;
+    use crate::parray::*;
 
     #[derive(Clone)]
     struct Board {
         n: usize,
-        tab: PArray<bool>
+        tab: PArray<bool>,
     }
 
     impl Board {
@@ -139,8 +147,11 @@ mod nqueens {
         fn print(&self) {
             for r in 0..self.n {
                 for c in 0..self.n {
-                    if self.get(r, c) { print!("X") }
-                    else { print!("_") }
+                    if self.get(r, c) {
+                        print!("X")
+                    } else {
+                        print!("_")
+                    }
                 }
                 println!();
             }
@@ -148,27 +159,47 @@ mod nqueens {
 
         fn is_consistent(&self, r: usize, c: usize) -> bool {
             for i in 0..self.n {
-                if self.get(r, i) { return false }
+                if self.get(r, i) {
+                    return false;
+                }
             }
             for i in 0..self.n {
-                if self.get(i, c) { return false }
+                if self.get(i, c) {
+                    return false;
+                }
             }
             for i in 0..self.n {
-                if r >= i && c >= i && self.get(r-i, c-i) { return false }
-                if r >= i && c+i < self.n && self.get(r-i, c+i) { return false }
-                if r+i < self.n && c >= i && self.get(r+i, c-i) { return false }
-                if r+i < self.n && c+i < self.n && self.get(r+i, c+i) { return false }
+                if r >= i && c >= i && self.get(r - i, c - i) {
+                    return false;
+                }
+                if r >= i && c + i < self.n && self.get(r - i, c + i) {
+                    return false;
+                }
+                if r + i < self.n && c >= i && self.get(r + i, c - i) {
+                    return false;
+                }
+                if r + i < self.n && c + i < self.n && self.get(r + i, c + i) {
+                    return false;
+                }
             }
             true
         }
 
         fn nqueens_inner(&self, col: usize) -> Option<Board> {
-            if col == self.n { return Some(self.clone()) }
+            if col == self.n {
+                return Some(self.clone());
+            }
             for row in 0..self.n {
                 if self.is_consistent(row, col) {
-                    let b = Board{ tab: self.tab.set(self.pos(row, col), true), ..*self };
-                    let r = b.nqueens_inner(col+1);
-                    match r { Some(_) => return r, _ => () }
+                    let b = Board {
+                        tab: self.tab.set(self.pos(row, col), true),
+                        ..*self
+                    };
+                    let r = b.nqueens_inner(col + 1);
+                    match r {
+                        Some(_) => return r,
+                        _ => (),
+                    }
                 }
             }
             None
@@ -176,7 +207,10 @@ mod nqueens {
     }
 
     pub fn go(n: usize) {
-        let b = Board{ n, tab: PArray::new(vec![false; n*n])};
+        let b = Board {
+            n,
+            tab: PArray::new(vec![false; n * n]),
+        };
         if let Some(b) = b.nqueens_inner(0) {
             b.print()
         }
