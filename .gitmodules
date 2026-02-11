@@ -1,0 +1,3 @@
+[submodule "project/2025-2026"]
+	path = project/2025-2026
+	url = https://codeberg.org/gasche/mpri-fun-project-2025-2026.git
