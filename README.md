@@ -43,7 +43,8 @@ are still available and can serve as a useful reference.
 
 The lectures take place at University of Paris,
 Bâtiment Sophie Germain,
-in room **1004**.
+in room **2035**.
+(Exception: on January 14, 2026, the course takes place in room **1004**.)
 
 They are scheduled on **Wednesdays** from **12:45** to **15:30**.
 There is a 15-minute break in the middle of each lecture,
@@ -131,29 +132,41 @@ click it to obtain a more detailed description of each segment.
   * [Handout by D. Rémy](http://gallium.inria.fr/~remy/mpri/cours-fomega.pdf)
 
 * (17/12/2025) Ad hoc polymorphism and overloading (DR).
-  * ([summary](overview/remy.md))
-  * ([handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
+  * ([summary](overview/remy.md),
+     [slides](http://cambium.inria.fr/~remy/mpri/handout-overloading.pdf),
+     and
+     [handout](http://cambium.inria.fr/~remy/mpri/cours-overloading.pdf))
 
-* (07/01/2026) Applicative functors and monads (YZ).
+* (07/01/2026) Towards Monadic Interpreters (YZ). **Room 2035**.
+  * ([material](https://gitlab.inria.fr/yzakowsk/mpri-2.4-rip))
+  
+* (14/01/2026) CoInduction theory, the delay monad, and interaction trees (YZ). **Room 1004**.
 
-* (14/01/2026) The free monad, the delay monad, and interaction trees (YZ).
-
-* (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ).
+* (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ). **Room 2035**.
 
 ### [Programming with Resources in Rust](overview/jourdan.md)
 
 * (28/01/2026) Introduction to programming in Rust (JHJ).
+    * ([slides](slides/jhjourdan-01.pdf))
 
 * (04/02/2026) Rust generics and traits (JHJ).
+    * ([slides](slides/jhjourdan-02.pdf))
+    * ([exercises](tdtp/jhjourdan1.pdf))
+    * ([solution to exercises](slides/jhjourdan1_solution.rs))
 
 * (11/02/2026) Practicing Rust; concurrency (JHJ).
+    * ([slides](slides/jhjourdan-03.pdf))
+    * ([exercises](tdtp/jhjourdan2.pdf))
+    * (Templates for the hands-on exercises: [persistent arrays](tdtp/jhjourdan2_template.rs) and [union find](tdtp/jhjourdan-td2-unionfind.tar.gz))
+    * ([solution for persistent arrays](slides/jhjourdan2_solution.rs))
 
 * (18/02/2026) Metatheory of Rust's type system;
   a semantic interpretation of types (JHJ).
 
-* (25/02/2026) Translating Rust to purely functional code (JHJ).
+* (25/02/2026) *break*
 
-* (04/03/2026) *break*
+* (04/03/2026) Translating Rust to purely functional code (JHJ).
+  * **Date changed !**
 
 * (11/03/2026) **final exam**, in the usual room and at the usual time,
   **from 12:45 to 15:30**, without a break.
@@ -166,7 +179,7 @@ students.
 
 The mid-term exam will take place on **26/11/2025**.
 
-The deadline for the programming project is **27/02/2026**.
+The deadline for the programming project is **03/03/2026**.
 
 The final exam will take place on **11/03/2026**.
 
@@ -192,6 +205,8 @@ Although the course evolves over time,
 you are encouraged to have a look at the previous exams
 and their solutions:
 
+* mid-term exam 2025-2026:
+  [nominal types / random access lists](exams/partiel-2025-2026.pdf).
 * final exam 2024-2025:
   [structural ML type inference](exams/final-2024-2025.pdf).
 * mid-term exam 2024-2025:
@@ -232,9 +247,13 @@ Programming is an important part of the course. We give a mandatory
 programming project, which counts for about a
 third of the final grade.
 
-The project for the year 2025-2026 should be made available in late November 2025.
+The project for the year 2025-2026 is available!
+<https://codeberg.org/gasche/mpri-fun-project-2025-2026>
 
-The deadline is: **Friday, February 27, 2026**, at 23:59.
+The deadline is: **Tuesday, March 3rd, 2026**, at 23:59.
+
+For any questions regarding the project, please feel free to write
+to <gabriel.scherer@inria.fr>.
 
 ## Research Internship Proposals
 
