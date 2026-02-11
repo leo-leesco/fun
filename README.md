@@ -157,7 +157,7 @@ click it to obtain a more detailed description of each segment.
 * (11/02/2026) Practicing Rust; concurrency (JHJ).
     * ([slides](slides/jhjourdan-03.pdf))
     * ([exercises](tdtp/jhjourdan2.pdf))
-    * (Templates for the hands-on exercises: [persistent arrays](tdtp/jhjourdan_template.rs) and [union find](tdtp/jhjourdan-td2-unionfind.tar.gz))
+    * (Templates for the hands-on exercises: [persistent arrays](tdtp/jhjourdan2_template.rs) and [union find](tdtp/jhjourdan-td2-unionfind.tar.gz))
     * ([solution for persistent arrays](slides/jhjourdan2_solution.rs))
 
 * (18/02/2026) Metatheory of Rust's type system;
