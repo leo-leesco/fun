@@ -160,8 +160,8 @@ click it to obtain a more detailed description of each segment.
     * (Templates for the hands-on exercises: [persistent arrays](tdtp/jhjourdan2_template.rs) and [union find](tdtp/jhjourdan-td2-unionfind.tar.gz))
     * ([solution for persistent arrays](slides/jhjourdan2_solution.rs))
 
-* (18/02/2026) Metatheory of Rust's type system;
-  a semantic interpretation of types (JHJ).
+* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ).
+    * ([slides](slides/jhjourdan-04.pdf))
 
 * (25/02/2026) *break*
 
