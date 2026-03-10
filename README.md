@@ -139,7 +139,7 @@ click it to obtain a more detailed description of each segment.
 
 * (07/01/2026) Towards Monadic Interpreters (YZ). **Room 2035**.
   * ([material](https://gitlab.inria.fr/yzakowsk/mpri-2.4-rip))
-  
+
 * (14/01/2026) CoInduction theory, the delay monad, and interaction trees (YZ). **Room 1004**.
 
 * (21/01/2026) Modular monadic semantics via layers of effect interpretations (YZ). **Room 2035**.
@@ -160,15 +160,16 @@ click it to obtain a more detailed description of each segment.
     * (Templates for the hands-on exercises: [persistent arrays](tdtp/jhjourdan2_template.rs) and [union find](tdtp/jhjourdan-td2-unionfind.tar.gz))
     * ([solution for persistent arrays](slides/jhjourdan2_solution.rs))
 
-* (18/02/2026) Metatheory of Rust's type system;
-  a semantic interpretation of types (JHJ).
+* (18/02/2026) Metatheory of Rust's type system; a semantic interpretation of types (JHJ).
+    * ([slides](slides/jhjourdan-04.pdf))
 
 * (25/02/2026) *break*
 
 * (04/03/2026) Translating Rust to purely functional code (JHJ).
   * **Date changed !**
 
-* (11/03/2026) **final exam**, in the usual room and at the usual time,
+* (11/03/2026) **final exam**,
+  in rooms **1002 and 1004** and at the usual time,
   **from 12:45 to 15:30**, without a break.
   The duration of the exam is 2h45.
 
@@ -177,9 +178,9 @@ click it to obtain a more detailed description of each segment.
 Two written exams and one programming project are used to evaluate the
 students.
 
-The mid-term exam will take place on **26/11/2025**.
+The mid-term exam has taken place on **26/11/2025**.
 
-The deadline for the programming project is **03/03/2026**.
+The deadline for the programming project was **03/03/2026**.
 
 The final exam will take place on **11/03/2026**.
 
